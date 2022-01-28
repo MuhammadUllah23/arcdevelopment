@@ -1,6 +1,7 @@
 import React from "react";
 import { AppBar } from "@material-ui/core/";
 import { Toolbar } from "@material-ui/core/";
+import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 
 function ElevationScroll(props) {
     const { children, window } = props;
@@ -21,9 +22,11 @@ function ElevationScroll(props) {
  
 export default function Header(props) {
     return (
+        <ElevationScroll >
         <AppBar position="fixed">
             <Toolbar>Arc Development</Toolbar>
             {/* Toolbar helps lay content out in a horizontal manner */}
         </AppBar>
+        </ElevationScroll>
     )
 }

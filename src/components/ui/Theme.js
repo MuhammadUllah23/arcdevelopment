@@ -1,6 +1,5 @@
-import { createMuiTheme } from '@material-ui/core';
-import { createTheme } from '@mui/material/styles';
+import { createMuiTheme } from "@material-ui/core"
 
 export default createMuiTheme({
-    
+
 })

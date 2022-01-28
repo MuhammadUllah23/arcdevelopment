@@ -4,16 +4,15 @@ import { Toolbar } from "@material-ui/core/";
 import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 
 function ElevationScroll(props) {
-    const { children, window } = props;
-    // Note that you normally won't need to set the window ref as useScrollTrigger
-    // will default to window.
-    // This is only being set here because the demo is in an iframe.
+    const { children } = props;
+    // useScrollTrigger is an event listener
     const trigger = useScrollTrigger({
-      disableHysteresis: true,
-      threshold: 0,
-      target: window ? window() : undefined,
+      disableHysteresis: true,   
+      threshold: 0
+    //   how far a user needs to scroll to trigger event listener. Default is 100.
     });
-  
+    
+    // returns new version of component that is being wrapped by ElevationScroll. Clones the children and returns a new copy of the elevation when triggered
     return React.cloneElement(children, {
       elevation: trigger ? 4 : 0,
     });

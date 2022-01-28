@@ -22,7 +22,7 @@ function ElevationScroll(props) {
 export default function Header(props) {
     return (
         <ElevationScroll >
-        <AppBar position="fixed">
+        <AppBar position="fixed" color="primary">
             <Toolbar>Arc Development</Toolbar>
             {/* Toolbar helps lay content out in a horizontal manner */}
         </AppBar>

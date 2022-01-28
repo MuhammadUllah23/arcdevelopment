@@ -26,6 +26,7 @@ function ElevationScroll(props) {
           ...theme.mixins.toolbar
       },
       logo: {
+          height: "7em"
       }
   }))
   

@@ -20,11 +20,17 @@ function ElevationScroll(props) {
     });
   }
 
-  const usedStyle = makeStyles()
+  const useStyles = makeStyles(theme => ({
+      toolbarmargin: {
+          ...theme.mixins.toolbar
+      }
+  }))
   
  
 export default function Header(props) {
+    const classes = useStyles()
     return (
+        <React.Fragment>
         <ElevationScroll >
         <AppBar position="fixed" >
             <Toolbar>
@@ -35,5 +41,7 @@ export default function Header(props) {
             {/* Toolbar helps lay content out in a horizontal manner */}
         </AppBar>
         </ElevationScroll>
+        <div className={classes.toolbarmargin} />
+        </React.Fragment>
     )
 }

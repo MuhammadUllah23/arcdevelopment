@@ -3,10 +3,13 @@ import { AppBar } from "@material-ui/core/";
 import { Toolbar } from "@material-ui/core/";
 import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 import { makeStyles } from "@material-ui/styles";
+import Tabs from "@material-ui/core/Tabs";
+import Tab from "@material-ui/core/Tab";
 
 import logo from '../../assets/logo.svg'
 
 function ElevationScroll(props) {
+     
     const { children } = props;
     // useScrollTrigger is an event listener
     const trigger = useScrollTrigger({
@@ -41,7 +44,13 @@ export default function Header(props) {
             <Toolbar disableGutters>
             
                 <img alt="company logo" className={classes.logo} src={logo} />
-               
+                <Tabs>
+                    <Tab label="Home" />
+                    <Tab label="Services" />
+                    <Tab label="The Revolution" />
+                    <Tab label="About Us" />
+                    <Tab label="Contact Us" />
+                </Tabs>
             </Toolbar>
             {/* Toolbar helps lay content out in a horizontal manner */}
         </AppBar>

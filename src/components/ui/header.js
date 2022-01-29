@@ -31,6 +31,9 @@ function ElevationScroll(props) {
       },
       logo: {
           height: "7em"
+      },
+      tabcontainer: {
+          marginLeft: 'auto'
       }
   }))
   
@@ -44,7 +47,7 @@ export default function Header(props) {
             <Toolbar disableGutters>
             
                 <img alt="company logo" className={classes.logo} src={logo} />
-                <Tabs>
+                <Tabs className={classes.tabcontainer}>
                     <Tab label="Home" />
                     <Tab label="Services" />
                     <Tab label="The Revolution" />

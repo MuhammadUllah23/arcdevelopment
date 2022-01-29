@@ -32,8 +32,11 @@ function ElevationScroll(props) {
       logo: {
           height: "7em"
       },
-      tabcontainer: {
+      tabContainer: {
           marginLeft: 'auto'
+      },
+      tab: {
+          fontFamily: "Raleway"
       }
   }))
   
@@ -47,12 +50,12 @@ export default function Header(props) {
             <Toolbar disableGutters>
             
                 <img alt="company logo" className={classes.logo} src={logo} />
-                <Tabs className={classes.tabcontainer}>
-                    <Tab label="Home" />
-                    <Tab label="Services" />
-                    <Tab label="The Revolution" />
-                    <Tab label="About Us" />
-                    <Tab label="Contact Us" />
+                <Tabs className={classes.tabContainer}>
+                    <Tab className={classes.tab} label="Home" />
+                    <Tab className={classes.tab} label="Services" />
+                    <Tab className={classes.tab} label="The Revolution" />
+                    <Tab className={classes.tab} label="About Us" />
+                    <Tab className={classes.tab} label="Contact Us" />
                 </Tabs>
             </Toolbar>
             {/* Toolbar helps lay content out in a horizontal manner */}

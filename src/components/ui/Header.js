@@ -130,7 +130,8 @@ export default function Header(props) {
                 <Button variant="contained" color="secondary" className={classes.button}>
                     Free Estimate
                 </Button>
-                <Menu id="simple-menu" anchorEl={anchorEl} open={open} onClose={handleClose}>
+                <Menu id="simple-menu" anchorEl={anchorEl} open={open} onClose={handleClose} MenuListProps={{onMouseLeave: handleClose}}>
+                {/* MenuListProps prop let us use the props for MenuList compnent inside the Menu component. It is set to a javascript function with and object to close menu when mouse is off the menu */}
                     <MenuItem onClick={handleClose}>Custom Software Development</MenuItem>
                     <MenuItem onClick={handleClose}>Mobile App Development</MenuItem>
                     <MenuItem onClick={handleClose}>Website Development</MenuItem>

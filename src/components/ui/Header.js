@@ -115,7 +115,7 @@ export default function Header(props) {
                     {/* The to="" prop is a prop of the link component. 
                         All properties that are not used by the Tab component are passed down to the Link component
                         thanks to the component={Link} composition provided by Material UI*/}
-                    <Tab className={classes.tab} component={Link} to="/services" label="Services" />
+                    <Tab aria-owns={anchorel ? "simple-menu" : undefined} className={classes.tab} component={Link} to="/services" label="Services" />
                     <Tab className={classes.tab} component={Link} to="/revolution" label="The Revolution" />
                     <Tab className={classes.tab} component={Link} to="/about" label="About Us" />
                     <Tab className={classes.tab} component={Link} to="/contact" label="Contact Us" />

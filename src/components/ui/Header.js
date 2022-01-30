@@ -75,6 +75,11 @@ export default function Header(props) {
     const handleClick = (e) => {
         setAnchorEl(e.currentTarget)
         setOpen(true)
+    };
+
+    const handleClose = (e) => {
+        setAnchorEl(null)
+        setOpen(false)
     }
 
     useEffect(() => {

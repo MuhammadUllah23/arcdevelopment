@@ -67,7 +67,12 @@ export default function Header(props) {
             <Toolbar disableGutters>
             
                 <img alt="company logo" className={classes.logo} src={logo} />
-                <Tabs value={value} onChange={handleChange} className={classes.tabContainer}>
+                <Tabs 
+                    value={value} 
+                    onChange={handleChange} 
+                    className={classes.tabContainer}
+                    indicatorColor="primary"
+                >
                     <Tab className={classes.tab} label="Home" />
                     <Tab className={classes.tab} label="Services" />
                     <Tab className={classes.tab} label="The Revolution" />

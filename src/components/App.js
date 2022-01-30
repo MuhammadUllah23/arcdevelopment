@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import ThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
 import theme from './ui/Theme'
-import Header from './ui/header';
+import Header from './ui/Header';
 
 function App() {
   return (

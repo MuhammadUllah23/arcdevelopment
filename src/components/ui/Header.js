@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import { AppBar } from "@material-ui/core/";
 import { Toolbar } from "@material-ui/core/";
@@ -73,11 +74,11 @@ export default function Header(props) {
                     className={classes.tabContainer}
                     indicatorColor="primary"
                 >
-                    <Tab className={classes.tab} label="Home" />
-                    <Tab className={classes.tab} label="Services" />
-                    <Tab className={classes.tab} label="The Revolution" />
-                    <Tab className={classes.tab} label="About Us" />
-                    <Tab className={classes.tab} label="Contact Us" />
+                    <Tab className={classes.tab} component={Link} label="Home" />
+                    <Tab className={classes.tab} component={Link} label="Services" />
+                    <Tab className={classes.tab} component={Link} label="The Revolution" />
+                    <Tab className={classes.tab} component={Link} label="About Us" />
+                    <Tab className={classes.tab} component={Link} label="Contact Us" />
                 </Tabs>
                 <Button variant="contained" color="secondary" className={classes.button}>
                     Free Estimate

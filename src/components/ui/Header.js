@@ -37,7 +37,10 @@ function ElevationScroll(props) {
           height: "8em"
       },
       logoContainer: {
-        padding: 0
+        padding: 0,
+        "&:hover": {
+            backgroundColor: "transparent"
+        }
       },
       tabContainer: {
           marginLeft: 'auto'
@@ -85,7 +88,7 @@ export default function Header(props) {
         <ElevationScroll >
         <AppBar position="fixed" >
             <Toolbar disableGutters>
-                <Button component={Link} to="/" className={classes.logoContainer} onClick={() => setValue(0)}>
+                <Button component={Link} to="/" disableRipple className={classes.logoContainer} onClick={() => setValue(0)}>
                     <img alt="company logo" className={classes.logo} src={logo} />
                 </Button>
                 <Tabs 

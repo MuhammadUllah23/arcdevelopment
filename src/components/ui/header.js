@@ -1,4 +1,6 @@
 import React from "react";
+import { useState } from "react";
+
 import { AppBar } from "@material-ui/core/";
 import { Toolbar } from "@material-ui/core/";
 import useScrollTrigger from "@material-ui/core/useScrollTrigger";
@@ -53,6 +55,7 @@ function ElevationScroll(props) {
  
 export default function Header(props) {
     const classes = useStyles()
+    const [value, setValue] = useState(0) 
     return (
         <React.Fragment>
         <ElevationScroll >

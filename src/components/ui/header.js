@@ -63,7 +63,7 @@ export default function Header(props) {
             <Toolbar disableGutters>
             
                 <img alt="company logo" className={classes.logo} src={logo} />
-                <Tabs className={classes.tabContainer}>
+                <Tabs value={value} className={classes.tabContainer}>
                     <Tab className={classes.tab} label="Home" />
                     <Tab className={classes.tab} label="Services" />
                     <Tab className={classes.tab} label="The Revolution" />

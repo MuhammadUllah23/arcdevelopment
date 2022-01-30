@@ -72,6 +72,11 @@ export default function Header(props) {
         setValue(value)
     };
 
+    const handleClick = (e) => {
+        setAnchorEl(e.currentTarget)
+        setOpen(true)
+    }
+
     useEffect(() => {
         if (window.location.pathname === "/" && value !== 0) {
             setValue(0)

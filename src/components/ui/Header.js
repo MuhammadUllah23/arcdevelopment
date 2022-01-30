@@ -121,7 +121,7 @@ export default function Header(props) {
                     className={classes.tab} 
                     component={Link} to="/services" 
                     label="Services" 
-                    onClick={(event) => handleClick(event)}
+                    onMouseOver={(event) => handleClick(event)}
                     />
                     <Tab className={classes.tab} component={Link} to="/revolution" label="The Revolution" />
                     <Tab className={classes.tab} component={Link} to="/about" label="About Us" />

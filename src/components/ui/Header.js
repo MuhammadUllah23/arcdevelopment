@@ -132,9 +132,9 @@ export default function Header(props) {
                 </Button>
                 <Menu id="simple-menu" anchorEl={anchorEl} open={open} onClose={handleClose} MenuListProps={{onMouseLeave: handleClose}}>
                 {/* MenuListProps prop let us use the props for MenuList compnent inside the Menu component. It is set to a javascript function with and object to close menu when mouse is off the menu */}
-                    <MenuItem onClick={handleClose} component={Link} to="/customsoftware">Custom Software Development</MenuItem>
-                    <MenuItem onClick={handleClose} component={Link} to="/mobileapps">Mobile App Development</MenuItem>
-                    <MenuItem onClick={handleClose} component={Link} to="/websites">Website Development</MenuItem>
+                    <MenuItem onClick={() => {handleClose(); setValue(1)}} component={Link} to="/customsoftware">Custom Software Development</MenuItem>
+                    <MenuItem onClick={() => {handleClose(); setValue(2)}} component={Link} to="/mobileapps">Mobile App Development</MenuItem>
+                    <MenuItem onClick={() => {handleClose(); setValue(3)}} component={Link} to="/websites">Website Development</MenuItem>
                 </Menu>
             </Toolbar>
             {/* Toolbar helps lay content out in a horizontal manner */}

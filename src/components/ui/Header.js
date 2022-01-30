@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import { AppBar } from "@material-ui/core/";
@@ -60,7 +60,11 @@ export default function Header(props) {
 
     const handleChange = (e, value) => {
         setValue(value)
-    }
+    };
+
+    useEffect(() => {
+        
+    })
     return (
         <React.Fragment>
         <ElevationScroll >
@@ -78,7 +82,7 @@ export default function Header(props) {
                     {/* The to="" prop is a prop of the link component. 
                         All properties that are not used by the Tab component are passed down to the Link component
                         thanks to the component={Link} composition provided by Material UI*/}
-                    <Tab className={classes.tab} component={Link} to="/service" label="Services" />
+                    <Tab className={classes.tab} component={Link} to="/services" label="Services" />
                     <Tab className={classes.tab} component={Link} to="/revolution" label="The Revolution" />
                     <Tab className={classes.tab} component={Link} to="/about" label="About Us" />
                     <Tab className={classes.tab} component={Link} to="/contact" label="Contact Us" />

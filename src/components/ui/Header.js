@@ -59,6 +59,11 @@ function ElevationScroll(props) {
           marginRight: "25px",
           height: "45px",
       },
+      menu: {
+          backgroundColor: theme.palette.common.blue,
+          color: "white",
+          
+      },
   }))
   
  
@@ -130,7 +135,7 @@ export default function Header(props) {
                 <Button variant="contained" color="secondary" className={classes.button}>
                     Free Estimate
                 </Button>
-                <Menu id="simple-menu" anchorEl={anchorEl} open={open} onClose={handleClose} MenuListProps={{onMouseLeave: handleClose}} classes={({paper: classes.menu})}>
+                <Menu id="simple-menu" anchorEl={anchorEl} open={open} onClose={handleClose} MenuListProps={{onMouseLeave: handleClose}} classes={{paper: classes.menu}}>
                 {/* MenuListProps prop let us use the props for MenuList compnent inside the Menu component. It is set to a javascript function with and object to close menu when mouse is off the menu. 
                     we use classes and set it anbject with property of paper with value of classes.menu. We use this because Menu component is built on top of other material UI components*/}
                     <MenuItem onClick={() => {handleClose(); setValue(1)}} component={Link} to="/services">Services</MenuItem>

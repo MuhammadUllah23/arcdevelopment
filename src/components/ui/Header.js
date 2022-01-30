@@ -130,6 +130,7 @@ export default function Header(props) {
                 <Button variant="contained" color="secondary" className={classes.button}>
                     Free Estimate
                 </Button>
+                <Menu id="simple-menu" anchorEl={anchorEl} open={open} onClose={handleClose}></Menu>
             </Toolbar>
             {/* Toolbar helps lay content out in a horizontal manner */}
         </AppBar>

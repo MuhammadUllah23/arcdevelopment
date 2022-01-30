@@ -19,7 +19,7 @@ function App() {
           <Route path="/revolution" element={() => <div>revolution</div>}/>
           <Route path="/about" element={() => <div>about</div>}/>
           <Route path="/contact" element={() => <div>contact</div>}/>
-          <Route path="/estimate" element={() => <div>estimate</div>}/>
+          <Route path="/estimate" element={() => <div>estimate </div>}/>
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

@@ -1,4 +1,6 @@
 import React from 'react';
+import { BrowserRouter, Route } from "react-router-dom";
+
 import ThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
 import theme from './ui/Theme'
 import Header from './ui/header';
@@ -6,8 +8,9 @@ import Header from './ui/header';
 function App() {
   return (
     <ThemeProvider theme={theme}> 
-      <Header />
-      Hello
+      <BrowserRouter>
+        <Header />
+      </BrowserRouter>
     </ThemeProvider>
       
     

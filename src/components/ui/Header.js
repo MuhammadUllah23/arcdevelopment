@@ -65,7 +65,8 @@ function ElevationScroll(props) {
 export default function Header(props) {
     const classes = useStyles()
     const [value, setValue] = useState(0) 
-    
+    const [anchorEl, setAnchorEl] = useState(null)
+    const [open, setOpen] = useState(false)
 
     const handleChange = (e, value) => {
         setValue(value)

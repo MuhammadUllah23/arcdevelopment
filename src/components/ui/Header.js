@@ -11,6 +11,8 @@ import Tab from "@material-ui/core/Tab";
 import Button from "@material-ui/core/Button";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
+import { useTheme } from "@material-ui/core/styles";
 
 import logo from '../../assets/logo.svg'
 
@@ -36,7 +38,7 @@ function ElevationScroll(props) {
           marginBottom: "3em"
       },
       logo: {
-          height: "8em"
+          height: "7rem"
       },
       logoContainer: {
         padding: 0,
@@ -77,6 +79,7 @@ function ElevationScroll(props) {
  
 export default function Header(props) {
     const classes = useStyles()
+    const them = useTheme()
     const [value, setValue] = useState(0) 
     const [anchorEl, setAnchorEl] = useState(null)
     const [open, setOpen] = useState(false)

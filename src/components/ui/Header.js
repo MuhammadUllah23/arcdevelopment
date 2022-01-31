@@ -162,8 +162,14 @@ export default function Header(props) {
                     Classes: set it anbject with property of paper with value of classes.menu. We use this because Menu component is built on top of other material UI components
                     Elevation:  Will change the default material ui elevation and dropshadow to the 0 preset in the theme which is none */}
                     {menuOptions.map((option, i) => (
-                        <MenuItem>
-                            {option.name}
+                        <MenuItem 
+                        key={option} 
+                        component={Link} 
+                        to={option.link} 
+                        classes={{root: classes.menuItem}} 
+                        onClick={(event) => {handleMenuItemClick(event, i); setValue(1); handleClose()}} 
+                        selected={i === selectedIndex}> 
+                            {option.name} 
                         </MenuItem>
                     ))}
                 </Menu>

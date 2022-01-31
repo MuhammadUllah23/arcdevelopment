@@ -80,6 +80,7 @@ export default function Header(props) {
     const [value, setValue] = useState(0) 
     const [anchorEl, setAnchorEl] = useState(null)
     const [open, setOpen] = useState(false)
+    const [selectedIndex, setSelectedIndex] = useState(0);
 
     const handleChange = (e, value) => {
         setValue(value)

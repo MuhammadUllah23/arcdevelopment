@@ -65,7 +65,11 @@ function ElevationScroll(props) {
 
       },
       menuItem: {
-          ...theme.typography.tab
+          ...theme.typography.tab,
+          opacity: 0.7,
+          "&:hover": {
+              opacity: 1
+          }
       }
   }))
   

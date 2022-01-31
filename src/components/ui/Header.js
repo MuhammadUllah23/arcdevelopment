@@ -62,6 +62,7 @@ function ElevationScroll(props) {
       menu: {
           backgroundColor: theme.palette.common.blue,
           color: "white",
+          borderRadius: "0px"
 
       },
       menuItem: {

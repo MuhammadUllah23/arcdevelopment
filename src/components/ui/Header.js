@@ -91,6 +91,12 @@ export default function Header(props) {
         setOpen(true)
     };
 
+    const handleMenuItemClick = (e, i) => {
+        setAnchorEl(null);
+        setOpen(false);
+        setSelectedIndex(i)
+    }
+
     const handleClose = (e) => {
         setAnchorEl(null)
         setOpen(false)

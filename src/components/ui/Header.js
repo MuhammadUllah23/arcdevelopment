@@ -94,7 +94,14 @@ export default function Header(props) {
     const handleClose = (e) => {
         setAnchorEl(null)
         setOpen(false)
-    }
+    };
+
+    const menuOptions = [
+        {name: "Services", link: "/services"}, 
+        {name: "Custom Software Development", link: "/customsoftware"}, 
+        {name: "Mobile Apps Development", link: "/mobileapps"}, 
+        {name: "Website Development", link: "/websites"}
+    ]
 
     useEffect(() => {
         if (window.location.pathname === "/" && value !== 0) {

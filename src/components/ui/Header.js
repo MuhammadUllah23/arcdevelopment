@@ -64,6 +64,9 @@ function ElevationScroll(props) {
           color: "white",
 
       },
+      menuItem: {
+          ...theme.typography.tab
+      }
   }))
   
  
@@ -137,11 +140,12 @@ export default function Header(props) {
                 </Button>
                 <Menu id="simple-menu" anchorEl={anchorEl} open={open} onClose={handleClose} MenuListProps={{onMouseLeave: handleClose}} classes={{paper: classes.menu}} elevation={0}>
                 {/* MenuListProps prop let us use the props for MenuList compnent inside the Menu component. It is set to a javascript function with and object to close menu when mouse is off the menu. 
-                    we use classes and set it anbject with property of paper with value of classes.menu. We use this because Menu component is built on top of other material UI components*/}
-                    <MenuItem onClick={() => {handleClose(); setValue(1)}} component={Link} to="/services">Services</MenuItem>
-                    <MenuItem onClick={() => {handleClose(); setValue(1)}} component={Link} to="/customsoftware">Custom Software Development</MenuItem>
-                    <MenuItem onClick={() => {handleClose(); setValue(1)}} component={Link} to="/mobileapps">Mobile App Development</MenuItem>
-                    <MenuItem onClick={() => {handleClose(); setValue(1)}} component={Link} to="/websites">Website Development</MenuItem>
+                    Classes: set it anbject with property of paper with value of classes.menu. We use this because Menu component is built on top of other material UI components
+                    Elevation:  Will change the default material ui elevation and dropshadow to the 0 preset in the theme which is none */}
+                    <MenuItem classes={{root: classes.menuItem}} onClick={() => {handleClose(); setValue(1)}} component={Link} to="/services">Services</MenuItem>
+                    <MenuItem classes={{root: classes.menuItem}} onClick={() => {handleClose(); setValue(1)}} component={Link} to="/customsoftware">Custom Software Development</MenuItem>
+                    <MenuItem classes={{root: classes.menuItem}} onClick={() => {handleClose(); setValue(1)}} component={Link} to="/mobileapps">Mobile App Development</MenuItem>
+                    <MenuItem classes={{root: classes.menuItem}} onClick={() => {handleClose(); setValue(1)}} component={Link} to="/websites">Website Development</MenuItem>
                 </Menu>
             </Toolbar>
             {/* Toolbar helps lay content out in a horizontal manner */}

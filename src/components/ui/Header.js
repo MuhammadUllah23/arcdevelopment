@@ -38,7 +38,10 @@ function ElevationScroll(props) {
           marginBottom: "3em"
       },
       logo: {
-          height: "7rem"
+          height: "8em",
+          [theme.breakpoints.down("md")]: {
+              height: "7em"
+          }
       },
       logoContainer: {
         padding: 0,

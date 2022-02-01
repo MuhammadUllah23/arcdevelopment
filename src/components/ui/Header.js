@@ -81,6 +81,7 @@ export default function Header(props) {
     const classes = useStyles()
     const theme = useTheme()
     const matches = useMediaQuery(theme.breakpoints.down("md"))
+    // Meida Query is going to select everything medium and below to true
     const [value, setValue] = useState(0) 
     const [anchorEl, setAnchorEl] = useState(null)
     const [open, setOpen] = useState(false)
@@ -173,9 +174,6 @@ export default function Header(props) {
 
     const tabs = (
         <React.Fragment>
-            <Button component={Link} to="/" disableRipple className={classes.logoContainer} onClick={() => setValue(0)}>
-                    <img alt="company logo" className={classes.logo} src={logo} />
-                </Button>
                 <Tabs 
                     value={value} 
                     onChange={handleChange} 
@@ -224,6 +222,9 @@ export default function Header(props) {
         <ElevationScroll >
         <AppBar position="fixed" >
             <Toolbar disableGutters>
+                <Button component={Link} to="/" disableRipple className={classes.logoContainer} onClick={() => setValue(0)}>
+                    <img alt="company logo" className={classes.logo} src={logo} />
+                </Button>
                 
             </Toolbar>
             {/* Toolbar helps lay content out in a horizontal manner */}

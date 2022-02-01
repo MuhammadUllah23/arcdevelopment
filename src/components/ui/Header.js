@@ -79,7 +79,8 @@ function ElevationScroll(props) {
  
 export default function Header(props) {
     const classes = useStyles()
-    const them = useTheme()
+    const theme = useTheme()
+    const matches = useMediaQuery(theme.breakpoints.down("md"))
     const [value, setValue] = useState(0) 
     const [anchorEl, setAnchorEl] = useState(null)
     const [open, setOpen] = useState(false)

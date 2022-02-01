@@ -225,7 +225,7 @@ export default function Header(props) {
                 <Button component={Link} to="/" disableRipple className={classes.logoContainer} onClick={() => setValue(0)}>
                     <img alt="company logo" className={classes.logo} src={logo} />
                 </Button>
-                
+                {matches ? null : tabs}
             </Toolbar>
             {/* Toolbar helps lay content out in a horizontal manner */}
         </AppBar>

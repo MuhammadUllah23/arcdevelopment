@@ -241,8 +241,8 @@ export default function Header(props) {
             <SwipeableDrawer disableBackdropTransition={!iOS} disableDiscovery={iOS} open={openDrawer} onClose={() => setOpenDrawer(false)} onOpen={setOpenDrawer(true)}>
                 Example Drawer
             </SwipeableDrawer>;
-            <IconButton>
-
+            <IconButton onClick={() => setOpenDrawer(!openDrawer)} disableRipple>
+                <MenuIcon />
             </IconButton>
         </React.Fragment>
     );

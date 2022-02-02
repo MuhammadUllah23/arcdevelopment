@@ -100,7 +100,7 @@ export default function Header(props) {
     const [openDrawer, setopenDrawer] = useState(false);
     const [value, setValue] = useState(0) 
     const [anchorEl, setAnchorEl] = useState(null)
-    const [open, setOpen] = useState(false)
+    const [openMenu, setOpenMenu] = useState(false)
     const [selectedIndex, setSelectedIndex] = useState(0);
     
 
@@ -110,18 +110,18 @@ export default function Header(props) {
 
     const handleClick = (e) => {
         setAnchorEl(e.currentTarget)
-        setOpen(true)
+        setOpenMenu(true)
     };
 
     const handleMenuItemClick = (e, i) => {
         setAnchorEl(null);
-        setOpen(false);
+        setOpenMenu(false);
         setSelectedIndex(i)
     }
 
     const handleClose = (e) => {
         setAnchorEl(null)
-        setOpen(false)
+        setOpenMenu(false)
     };
 
     const menuOptions = [
@@ -216,7 +216,7 @@ export default function Header(props) {
                 <Button variant="contained" color="secondary" className={classes.button}>
                     Free Estimate
                 </Button>
-                <Menu id="simple-menu" anchorEl={anchorEl} open={open} onClose={handleClose} MenuListProps={{onMouseLeave: handleClose}} classes={{paper: classes.menu}} elevation={0}>
+                <Menu id="simple-menu" anchorEl={anchorEl} open={openMenu} onClose={handleClose} MenuListProps={{onMouseLeave: handleClose}} classes={{paper: classes.menu}} elevation={0}>
                 {/* MenuListProps prop let us use the props for MenuList compnent inside the Menu component. It is set to a javascript function with and object to close menu when mouse is off the menu. 
                     Classes: set it anbject with property of paper with value of classes.menu. We use this because Menu component is built on top of other material UI components
                     Elevation:  Will change the default material ui elevation and dropshadow to the 0 preset in the theme which is none */}

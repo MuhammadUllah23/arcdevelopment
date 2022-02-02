@@ -14,6 +14,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/core/styles";
 import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
+import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu"
 
 import logo from '../../assets/logo.svg'
@@ -238,8 +239,11 @@ export default function Header(props) {
     const drawer = (
         <React.Fragment>
             <SwipeableDrawer disableBackdropTransition={!iOS} disableDiscovery={iOS} open={openDrawer} onClose={() => setOpenDrawer(false)} onOpen={setOpenDrawer(true)}>
-
+                Example Drawer
             </SwipeableDrawer>;
+            <IconButton>
+
+            </IconButton>
         </React.Fragment>
     );
 

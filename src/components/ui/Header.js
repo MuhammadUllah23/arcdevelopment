@@ -97,7 +97,7 @@ export default function Header(props) {
     const iOS = typeof navigator !== 'undefined' && /iPad|iPhone|iPod/.test(navigator.userAgent);
     const matches = useMediaQuery(theme.breakpoints.down("md"))
     // Meida Query is going to select everything medium and below to true
-    const [openDrawer, setopenDrawer] = useState(false);
+    const [openDrawer, setOpenDrawer] = useState(false);
     const [value, setValue] = useState(0) 
     const [anchorEl, setAnchorEl] = useState(null)
     const [openMenu, setOpenMenu] = useState(false)
@@ -237,7 +237,9 @@ export default function Header(props) {
 
     const drawer = (
         <React.Fragment>
+            <SwipeableDrawer disableBackdropTransition={!iOS} disableDiscovery={iOS} open={openDrawer} onClose={() => setOpenDrawer(false)} onOpen={setOpenDrawer(true)}>
 
+            </SwipeableDrawer>;
         </React.Fragment>
     );
 

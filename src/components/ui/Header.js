@@ -104,8 +104,8 @@ export default function Header(props) {
     const [selectedIndex, setSelectedIndex] = useState(0);
     
 
-    const handleChange = (e, value) => {
-        setValue(value)
+    const handleChange = (e, newValue) => {
+        setValue(newValue)
     };
 
     const handleClick = (e) => {

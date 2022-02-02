@@ -94,14 +94,15 @@ function ElevationScroll(props) {
 export default function Header(props) {
     const classes = useStyles()
     const theme = useTheme()
-
+    const iOS = typeof navigator !== 'undefined' && /iPad|iPhone|iPod/.test(navigator.userAgent);
     const matches = useMediaQuery(theme.breakpoints.down("md"))
     // Meida Query is going to select everything medium and below to true
+    const [openDrawer, setopenDrawer] = useState(false);
     const [value, setValue] = useState(0) 
     const [anchorEl, setAnchorEl] = useState(null)
     const [open, setOpen] = useState(false)
     const [selectedIndex, setSelectedIndex] = useState(0);
-    const iOS = typeof navigator !== 'undefined' && /iPad|iPhone|iPod/.test(navigator.userAgent);
+    
 
     const handleChange = (e, value) => {
         setValue(value)

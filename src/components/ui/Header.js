@@ -233,7 +233,14 @@ export default function Header(props) {
                     ))}
                 </Menu>
         </React.Fragment>
-    )
+    );
+
+    const drawer = (
+        <React.Fragment>
+
+        </React.Fragment>
+    );
+
     return (
         <React.Fragment>
         <ElevationScroll >

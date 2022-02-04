@@ -15,7 +15,8 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useTheme } from "@material-ui/core/styles";
 import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
 import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu"
+import MenuIcon from "@material-ui/icons/Menu";
+
 
 import logo from '../../assets/logo.svg'
 
@@ -95,7 +96,7 @@ function ElevationScroll(props) {
 export default function Header(props) {
     const classes = useStyles()
     const theme = useTheme()
-    const iOS = typeof navigator !== 'undefined' && /iPad|iPhone|iPod/.test(navigator.userAgent);
+    const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
     const matches = useMediaQuery(theme.breakpoints.down("md"))
     // Meida Query is going to select everything medium and below to true
     const [openDrawer, setOpenDrawer] = useState(false);
@@ -238,7 +239,7 @@ export default function Header(props) {
 
     const drawer = (
         <React.Fragment>
-            <SwipeableDrawer disableBackdropTransition={!iOS} disableDiscovery={iOS} open={openDrawer} onClose={() => setOpenDrawer(false)} onOpen={setOpenDrawer(true)}>
+            <SwipeableDrawer disableBackdropTransition={!iOS} disableDiscovery={iOS} open={openDrawer} onClose={() => setOpenDrawer(false)} onOpen={() => setOpenDrawer(true)}>
                 Example Drawer
             </SwipeableDrawer>;
             <IconButton onClick={() => setOpenDrawer(!openDrawer)} disableRipple>
@@ -255,7 +256,7 @@ export default function Header(props) {
                 <Button component={Link} to="/" disableRipple className={classes.logoContainer} onClick={() => setValue(0)}>
                     <img alt="company logo" className={classes.logo} src={logo} />
                 </Button>
-                {matches ? null : tabs}
+                {matches ? drawer : tabs}
             </Toolbar>
             {/* Toolbar helps lay content out in a horizontal manner */}
         </AppBar>

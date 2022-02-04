@@ -96,7 +96,8 @@ function ElevationScroll(props) {
 export default function Header(props) {
     const classes = useStyles()
     const theme = useTheme()
-    const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
+    const iOS =
+  typeof navigator !== 'undefined' && /iPad|iPhone|iPod/.test(navigator.userAgent);
     const matches = useMediaQuery(theme.breakpoints.down("md"))
     // Meida Query is going to select everything medium and below to true
     const [openDrawer, setOpenDrawer] = useState(false);
@@ -241,7 +242,7 @@ export default function Header(props) {
         <React.Fragment>
             <SwipeableDrawer disableBackdropTransition={!iOS} disableDiscovery={iOS} open={openDrawer} onClose={() => setOpenDrawer(false)} onOpen={() => setOpenDrawer(true)}>
                 Example Drawer
-            </SwipeableDrawer>;
+            </SwipeableDrawer>
             <IconButton onClick={() => setOpenDrawer(!openDrawer)} disableRipple>
                 <MenuIcon />
             </IconButton>

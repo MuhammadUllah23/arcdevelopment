@@ -163,7 +163,7 @@ export default function Header(props) {
 
     const routes = [
         {name: "Home", link: "/", activeIndex: 0},
-        {name: "Services", link: "/services", activeIndex: 1},
+        {name: "Services", link: "/services", activeIndex: 1, ariaOwns: anchorEl ? "simple-menu" : undefined, ariaPopup: anchorEl ? "true" : undefined, mouseOver: event => handleClick(event)},
         {name: "The Revolution", link: "/revolution", activeIndex: 2},
         {name: "About Us", link: "/about", activeIndex: 3},
         {name: "Contact Us", link: "/contact", activeIndex: 4}
@@ -207,7 +207,7 @@ export default function Header(props) {
                     className={classes.tab} 
                     component={Link} to="/services" 
                     label="Services" 
-                    onMouseOver={(event) => handleClick(event)}
+                    onMouseOver={event => handleClick(event)}
                     />
                     <Tab className={classes.tab} component={Link} to="/revolution" label="The Revolution" />
                     <Tab className={classes.tab} component={Link} to="/about" label="About Us" />

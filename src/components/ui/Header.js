@@ -265,22 +265,22 @@ export default function Header(props) {
         <React.Fragment>
             <SwipeableDrawer disableBackdropTransition={!iOS} disableDiscovery={iOS} open={openDrawer} onClose={() => setOpenDrawer(false)} onOpen={() => setOpenDrawer(true)} classes={{paper: classes.drawer}}>
                 <List disablePadding>
-                    <ListItem onClick={() => setOpenDrawer(false)} divider button component={Link} to="/" >
+                    <ListItem onClick={() => {setOpenDrawer(false); setValue(0)}} divider button component={Link} to="/" selected={value === 0}>
                         <ListItemText className={classes.drawerItem} disableTypography>Home</ListItemText>
                     </ListItem>
-                    <ListItem onClick={() => setOpenDrawer(false)} divider button component={Link} to="/services" >
+                    <ListItem onClick={() => setOpenDrawer(false)} divider button component={Link} to="/services" selected={value === 1}>
                         <ListItemText className={classes.drawerItem} disableTypography>Services</ListItemText>
                     </ListItem>
-                    <ListItem onClick={() => setOpenDrawer(false)} divider button component={Link} to="/revolution" >
+                    <ListItem onClick={() => setOpenDrawer(false)} divider button component={Link} to="/revolution" selected={value === 2}>
                         <ListItemText className={classes.drawerItem} disableTypography>The Revolution</ListItemText>
                     </ListItem>
-                    <ListItem onClick={() => setOpenDrawer(false)} divider button component={Link} to="/about" >
+                    <ListItem onClick={() => setOpenDrawer(false)} divider button component={Link} to="/about" selected={value === 3}>
                         <ListItemText className={classes.drawerItem} disableTypography>About Us</ListItemText>
                     </ListItem>
-                    <ListItem onClick={() => setOpenDrawer(false)} divider button component={Link} to="/contact" >
+                    <ListItem onClick={() => setOpenDrawer(false)} divider button component={Link} to="/contact" selected={value === 4}>
                         <ListItemText className={classes.drawerItem} disableTypography>Contact Us</ListItemText>
                     </ListItem>
-                    <ListItem onClick={() => setOpenDrawer(false)} className={classes.drawerItemEstimate} divider button component={Link} to="/estimate" >
+                    <ListItem onClick={() => setOpenDrawer(false)} className={classes.drawerItemEstimate} divider button component={Link} to="/estimate" selected={value === 5}>
                         <ListItemText className={classes.drawerItem} disableTypography>Free Estimate</ListItemText>
                     </ListItem>
                 </List>

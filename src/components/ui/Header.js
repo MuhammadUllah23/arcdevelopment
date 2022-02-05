@@ -205,7 +205,6 @@ export default function Header(props) {
                          aria-owns={route.ariaOwns} 
                          aria-haspopup={route.ariaPopup} 
                          onMouseOver={route.mouseOver} 
-                             
                          />
                     ))}
                     {/* The to="" prop is a prop of the link component. 
@@ -238,6 +237,11 @@ export default function Header(props) {
         <React.Fragment>
             <SwipeableDrawer disableBackdropTransition={!iOS} disableDiscovery={iOS} open={openDrawer} onClose={() => setOpenDrawer(false)} onOpen={() => setOpenDrawer(true)} classes={{paper: classes.drawer}}>
                 <List disablePadding>
+                    {routes.map((route, index) => (
+                        <ListItem>
+                            <ListItemText></ListItemText>
+                        </ListItem>
+                    ))}
                     <ListItem onClick={() => {setOpenDrawer(false); setValue(0)}} divider button component={Link} to="/" selected={value === 0}>
                         <ListItemText className={value === 0 ? [classes.drawerItem, classes.drawerItemSelected] : classes.drawerItem} disableTypography>Home</ListItemText>
                     </ListItem>

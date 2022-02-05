@@ -102,6 +102,9 @@ function ElevationScroll(props) {
       drawerIcon: {
           height: "50px",
           width: "50px"
+      },
+      drawer: {
+          backgroundColor: theme.palette.common.blue
       }
   }))
   
@@ -253,7 +256,7 @@ export default function Header(props) {
 
     const drawer = (
         <React.Fragment>
-            <SwipeableDrawer disableBackdropTransition={!iOS} disableDiscovery={iOS} open={openDrawer} onClose={() => setOpenDrawer(false)} onOpen={() => setOpenDrawer(true)}>
+            <SwipeableDrawer disableBackdropTransition={!iOS} disableDiscovery={iOS} open={openDrawer} onClose={() => setOpenDrawer(false)} onOpen={() => setOpenDrawer(true)} classes={{paper: classes.drawer}}>
                 <List disablePadding>
                     <ListItem onClick={() => setOpenDrawer(false)} divider button component={Link} to="/" >
                         <ListItemText disableTypography>Home</ListItemText>

@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
 
 import { AppBar } from "@material-ui/core/";
 import { Toolbar } from "@material-ui/core/";
@@ -237,9 +237,9 @@ export default function Header(props) {
         <React.Fragment>
             <SwipeableDrawer disableBackdropTransition={!iOS} disableDiscovery={iOS} open={openDrawer} onClose={() => setOpenDrawer(false)} onOpen={() => setOpenDrawer(true)} classes={{paper: classes.drawer}}>
                 <List disablePadding>
-                    {routes.map((route, index) => (
-                        <ListItem>
-                            <ListItemText></ListItemText>
+                    {routes.map(route => (
+                        <ListItem onClick={() => {setOpenDrawer(false); setValue(route.activeIndex)}} divider button component={Link} to={route.link} selected={value === route.activeIndex}>
+                            <ListItemText className={value === route.activeIndex ? [classes.drawerItem, classes.drawerItemSelected] : classes.drawerItem} disableTypography>{route.name}</ListItemText>
                         </ListItem>
                     ))}
                     <ListItem onClick={() => {setOpenDrawer(false); setValue(0)}} divider button component={Link} to="/" selected={value === 0}>

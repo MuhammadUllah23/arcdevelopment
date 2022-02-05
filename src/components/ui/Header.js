@@ -280,8 +280,8 @@ export default function Header(props) {
                     <ListItem onClick={() => setOpenDrawer(false)} divider button component={Link} to="/contact" >
                         <ListItemText className={classes.drawerItem} disableTypography>Contact Us</ListItemText>
                     </ListItem>
-                    <ListItem onClick={() => setOpenDrawer(false)} divider button component={Link} to="/estimate" >
-                        <ListItemText className={[classes.drawerItem, classes.drawerItemEstimate]} disableTypography>Free Estimate</ListItemText>
+                    <ListItem onClick={() => setOpenDrawer(false)} className={classes.drawerItemEstimate} divider button component={Link} to="/estimate" >
+                        <ListItemText className={classes.drawerItem} disableTypography>Free Estimate</ListItemText>
                     </ListItem>
                 </List>
             </SwipeableDrawer>

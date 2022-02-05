@@ -198,7 +198,9 @@ export default function Header(props) {
                     indicatorColor="primary"
                 >
                     {routes.map((route, index) => (
-                        <Tab className={classes.tab}
+                        <Tab 
+                         key={`${route}${index}`}
+                         className={classes.tab}
                          component={Link} 
                          to={route.link} 
                          label={route.name} 
@@ -247,7 +249,7 @@ export default function Header(props) {
             <SwipeableDrawer disableBackdropTransition={!iOS} disableDiscovery={iOS} open={openDrawer} onClose={() => setOpenDrawer(false)} onOpen={() => setOpenDrawer(true)} classes={{paper: classes.drawer}}>
                 <List disablePadding>
                     {routes.map(route => (
-                        <ListItem onClick={() => {setOpenDrawer(false); setValue(route.activeIndex)}} divider button component={Link} to={route.link} selected={value === route.activeIndex}>
+                        <ListItem key={`${route}${route.activeIndex}`} onClick={() => {setOpenDrawer(false); setValue(route.activeIndex)}} divider button component={Link} to={route.link} selected={value === route.activeIndex}>
                             <ListItemText className={value === route.activeIndex ? [classes.drawerItem, classes.drawerItemSelected] : classes.drawerItem} disableTypography>{route.name}</ListItemText>
                         </ListItem>
                     ))}

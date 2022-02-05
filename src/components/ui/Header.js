@@ -19,6 +19,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 
 
 import logo from '../../assets/logo.svg'
+import { Widgets } from "@material-ui/icons";
 
 function ElevationScroll(props) {
      
@@ -89,6 +90,16 @@ function ElevationScroll(props) {
           "&:hover": {
               opacity: 1
           }
+      },
+      drawerIconContainer: {
+          marginLeft: "auto",
+          "&:hover": {
+              background: "transparent"
+          }
+      },
+      drawerIcon: {
+          height: "50px",
+          width: "50px"
       }
   }))
   
@@ -243,8 +254,8 @@ export default function Header(props) {
             <SwipeableDrawer disableBackdropTransition={!iOS} disableDiscovery={iOS} open={openDrawer} onClose={() => setOpenDrawer(false)} onOpen={() => setOpenDrawer(true)}>
                 Example Drawer
             </SwipeableDrawer>
-            <IconButton onClick={() => setOpenDrawer(!openDrawer)} disableRipple>
-                <MenuIcon />
+            <IconButton className={classes.drawerIconContainer} onClick={() => setOpenDrawer(!openDrawer)} disableRipple>
+                <MenuIcon className={classes.drawerIcon} />
             </IconButton>
         </React.Fragment>
     );

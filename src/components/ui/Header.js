@@ -115,7 +115,11 @@ function ElevationScroll(props) {
           backgroundColor: theme.palette.common.orange
       },
       drawerItemSelected: {
-          opacity: 1
+        //   Setting styles for each lsit item and this class wil apply only if the list item is selected and it specifies that any list item text component 
+        //   within a selected list item component is going to have an opacity of 1 on its root class.
+          "& .MuiListItemText-root": {
+              opacity: 1
+          }
       },
       appbar: {
         // zIndex determines which elements appear on top of which other elements and a higher zIndex places you further on top of the screen    
@@ -254,12 +258,20 @@ export default function Header(props) {
                 <div className={classes.toolbarMargin} />
                 <List disablePadding>
                     {routes.map(route => (
-                        <ListItem key={`${route}${route.activeIndex}`} onClick={() => {setOpenDrawer(false); setValue(route.activeIndex)}} divider button component={Link} to={route.link} selected={value === route.activeIndex}>
-                            <ListItemText className={value === route.activeIndex ? [classes.drawerItem, classes.drawerItemSelected] : classes.drawerItem} disableTypography>{route.name}</ListItemText>
+                        <ListItem 
+                        key={`${route}${route.activeIndex}`} 
+                        onClick={() => {setOpenDrawer(false); setValue(route.activeIndex)}} 
+                        divider button 
+                        component={Link} 
+                        to={route.link} 
+                        selected={value === route.activeIndex} 
+                        classes={{selected: classes.drawerItemSelected}} //class is only going to be applied to a selected list item
+                        >
+                            <ListItemText className={classes.drawerItem} disableTypography>{route.name}</ListItemText>
                         </ListItem>
                     ))}
-                    <ListItem onClick={() => {setOpenDrawer(false); setValue(5)}} className={classes.drawerItemEstimate} divider button component={Link} to="/estimate" selected={value === 5}>
-                        <ListItemText className={value === 5 ? [classes.drawerItem, classes.drawerItemSelected] : classes.drawerItem} disableTypography>Free Estimate</ListItemText>
+                    <ListItem onClick={() => {setOpenDrawer(false); setValue(5)}} className={classes.drawerItemEstimate} divider button component={Link} to="/estimate" selected={value === 5} classes={{root: classes.drawerItemSelected}}>
+                        <ListItemText className={classes.drawerItem} disableTypography>Free Estimate</ListItemText>
                     </ListItem>
                 </List>
             </SwipeableDrawer>

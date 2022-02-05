@@ -116,6 +116,10 @@ function ElevationScroll(props) {
       },
       drawerItemSelected: {
           opacity: 1
+      },
+      appbar: {
+        // zIndex determines which elements appear on top of which other elements and a higher zIndex places you further on top of the screen    
+          zIndex: theme.zIndex.modal + 1
       }
   }))
   
@@ -267,7 +271,7 @@ export default function Header(props) {
     return (
         <React.Fragment>
         <ElevationScroll >
-        <AppBar position="fixed" >
+        <AppBar position="fixed" className={classes.appbar} >
             <Toolbar disableGutters>
                 <Button component={Link} to="/" disableRipple className={classes.logoContainer} onClick={() => setValue(0)}>
                     <img alt="company logo" className={classes.logo} src={logo} />

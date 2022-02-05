@@ -254,7 +254,7 @@ export default function Header(props) {
     const drawer = (
         <React.Fragment>
             <SwipeableDrawer disableBackdropTransition={!iOS} disableDiscovery={iOS} open={openDrawer} onClose={() => setOpenDrawer(false)} onOpen={() => setOpenDrawer(true)}>
-                <List>
+                <List disablePadding>
                     <ListItem component={Link} to="/" >
                         <ListItemText disableTypography>Home</ListItemText>
                     </ListItem>

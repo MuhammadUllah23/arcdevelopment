@@ -240,7 +240,7 @@ export default function Header(props) {
                     Elevation:  Will change the default material ui elevation and dropshadow to the 0 preset in the theme which is none */}
                     {menuOptions.map((option, i) => (
                         <MenuItem 
-                        key={option} 
+                        key={`${option}${i}`} 
                         component={Link} 
                         to={option.link} 
                         classes={{root: classes.menuItem}} 

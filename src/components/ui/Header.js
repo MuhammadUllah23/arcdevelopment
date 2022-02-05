@@ -268,19 +268,19 @@ export default function Header(props) {
                     <ListItem onClick={() => {setOpenDrawer(false); setValue(0)}} divider button component={Link} to="/" selected={value === 0}>
                         <ListItemText className={classes.drawerItem} disableTypography>Home</ListItemText>
                     </ListItem>
-                    <ListItem onClick={() => setOpenDrawer(false)} divider button component={Link} to="/services" selected={value === 1}>
+                    <ListItem onClick={() => {setOpenDrawer(false); setValue(1)}} divider button component={Link} to="/services" selected={value === 1}>
                         <ListItemText className={classes.drawerItem} disableTypography>Services</ListItemText>
                     </ListItem>
-                    <ListItem onClick={() => setOpenDrawer(false)} divider button component={Link} to="/revolution" selected={value === 2}>
+                    <ListItem onClick={() => {setOpenDrawer(false); setValue(2)}} divider button component={Link} to="/revolution" selected={value === 2}>
                         <ListItemText className={classes.drawerItem} disableTypography>The Revolution</ListItemText>
                     </ListItem>
-                    <ListItem onClick={() => setOpenDrawer(false)} divider button component={Link} to="/about" selected={value === 3}>
+                    <ListItem onClick={() => {setOpenDrawer(false); setValue(3)}} divider button component={Link} to="/about" selected={value === 3}>
                         <ListItemText className={classes.drawerItem} disableTypography>About Us</ListItemText>
                     </ListItem>
-                    <ListItem onClick={() => setOpenDrawer(false)} divider button component={Link} to="/contact" selected={value === 4}>
+                    <ListItem onClick={() => {setOpenDrawer(false); setValue(4)}} divider button component={Link} to="/contact" selected={value === 4}>
                         <ListItemText className={classes.drawerItem} disableTypography>Contact Us</ListItemText>
                     </ListItem>
-                    <ListItem onClick={() => setOpenDrawer(false)} className={classes.drawerItemEstimate} divider button component={Link} to="/estimate" selected={value === 5}>
+                    <ListItem onClick={() => {setOpenDrawer(false); setValue(5)}} className={classes.drawerItemEstimate} divider button component={Link} to="/estimate" selected={value === 5}>
                         <ListItemText className={classes.drawerItem} disableTypography>Free Estimate</ListItemText>
                     </ListItem>
                 </List>

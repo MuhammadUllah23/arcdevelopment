@@ -162,11 +162,11 @@ export default function Header(props) {
     ];
 
     const routes = [
-        {name: "Home", link: "/"},
-        {name: "Services", link: "/services"},
-        {name: "The Revolution", link: "/revolution"},
-        {name: "About Us", link: "/about"},
-        {name: "Contact Us", link: "/contact"}
+        {name: "Home", link: "/", activeIndex: 0},
+        {name: "Services", link: "/services", activeIndex: 1},
+        {name: "The Revolution", link: "/revolution", activeIndex: 2},
+        {name: "About Us", link: "/about", activeIndex: 3},
+        {name: "Contact Us", link: "/contact", activeIndex: 4}
     ]
 
     useEffect(() => {

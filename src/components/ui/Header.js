@@ -109,6 +109,9 @@ function ElevationScroll(props) {
       drawerItem: {
           ...theme.typography.tab,
           color: "white"
+      },
+      drawerItemEstimate: {
+          backgroundColor: theme.palette.common.orange
       }
   }))
   
@@ -278,7 +281,7 @@ export default function Header(props) {
                         <ListItemText className={classes.drawerItem} disableTypography>Contact Us</ListItemText>
                     </ListItem>
                     <ListItem onClick={() => setOpenDrawer(false)} divider button component={Link} to="/estimate" >
-                        <ListItemText className={classes.drawerItem} disableTypography>Free Estimate</ListItemText>
+                        <ListItemText className={[classes.drawerItem, classes.drawerItemEstimate]} disableTypography>Free Estimate</ListItemText>
                     </ListItem>
                 </List>
             </SwipeableDrawer>

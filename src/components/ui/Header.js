@@ -256,22 +256,22 @@ export default function Header(props) {
             <SwipeableDrawer disableBackdropTransition={!iOS} disableDiscovery={iOS} open={openDrawer} onClose={() => setOpenDrawer(false)} onOpen={() => setOpenDrawer(true)}>
                 <List>
                     <ListItem component={Link} to="/" >
-                        <ListItemText>Home</ListItemText>
+                        <ListItemText disableTypography>Home</ListItemText>
                     </ListItem>
                     <ListItem component={Link} to="/services" >
-                        <ListItemText>Services</ListItemText>
+                        <ListItemText disableTypography>Services</ListItemText>
                     </ListItem>
                     <ListItem component={Link} to="/revolution" >
-                        <ListItemText>The Revolution</ListItemText>
+                        <ListItemText disableTypography>The Revolution</ListItemText>
                     </ListItem>
                     <ListItem component={Link} to="/about" >
-                        <ListItemText>About Us</ListItemText>
+                        <ListItemText disableTypography>About Us</ListItemText>
                     </ListItem>
                     <ListItem component={Link} to="/contact" >
-                        <ListItemText>Contact Use</ListItemText>
+                        <ListItemText disableTypography>Contact Use</ListItemText>
                     </ListItem>
                     <ListItem component={Link} to="/estimate" >
-                        <ListItemText>Free Estimate</ListItemText>
+                        <ListItemText disableTypography>Free Estimate</ListItemText>
                     </ListItem>
                 </List>
             </SwipeableDrawer>

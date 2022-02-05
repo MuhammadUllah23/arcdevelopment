@@ -270,7 +270,7 @@ export default function Header(props) {
                             <ListItemText className={classes.drawerItem} disableTypography>{route.name}</ListItemText>
                         </ListItem>
                     ))}
-                    <ListItem onClick={() => {setOpenDrawer(false); setValue(5)}} className={classes.drawerItemEstimate} divider button component={Link} to="/estimate" selected={value === 5} classes={{root: classes.drawerItemSelected}}>
+                    <ListItem onClick={() => {setOpenDrawer(false); setValue(5)}} divider button component={Link} to="/estimate" selected={value === 5} classes={{root: classes.drawerItemSelected, selected: classes.drawerItemSelected}}>
                         <ListItemText className={classes.drawerItem} disableTypography>Free Estimate</ListItemText>
                     </ListItem>
                 </List>

@@ -222,7 +222,8 @@ export default function Header(props) {
                 MenuListProps={{onMouseLeave: handleClose}} 
                 classes={{paper: classes.menu}} 
                 elevation={0}
-                keepMounted>
+                keepMounted //Makes sure all menu items are always mounted on the dom which makes it better for search engine optimization
+                >
                 {/* MenuListProps prop let us use the props for MenuList compnent inside the Menu component. It is set to a javascript function with and object to close menu when mouse is off the menu. 
                     Classes: set it anbject with property of paper with value of classes.menu. We use this because Menu component is built on top of other material UI components
                     Elevation:  Will change the default material ui elevation and dropshadow to the 0 preset in the theme which is none */}

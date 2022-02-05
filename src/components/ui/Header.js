@@ -214,7 +214,15 @@ export default function Header(props) {
                 <Button variant="contained" color="secondary" className={classes.button}>
                     Free Estimate
                 </Button>
-                <Menu id="simple-menu" anchorEl={anchorEl} open={openMenu} onClose={handleClose} MenuListProps={{onMouseLeave: handleClose}} classes={{paper: classes.menu}} elevation={0}>
+                <Menu 
+                id="simple-menu" 
+                anchorEl={anchorEl} 
+                open={openMenu} 
+                onClose={handleClose} 
+                MenuListProps={{onMouseLeave: handleClose}} 
+                classes={{paper: classes.menu}} 
+                elevation={0}
+                keepMounted>
                 {/* MenuListProps prop let us use the props for MenuList compnent inside the Menu component. It is set to a javascript function with and object to close menu when mouse is off the menu. 
                     Classes: set it anbject with property of paper with value of classes.menu. We use this because Menu component is built on top of other material UI components
                     Elevation:  Will change the default material ui elevation and dropshadow to the 0 preset in the theme which is none */}

@@ -40,7 +40,7 @@ function ElevationScroll(props) {
   }
 
   const useStyles = makeStyles(theme => ({
-      toolbarmargin: {
+      toolbarMargin: {
           ...theme.mixins.toolbar,
           marginBottom: "3em",
           [theme.breakpoints.down('md')]: {
@@ -119,7 +119,7 @@ function ElevationScroll(props) {
       },
       appbar: {
         // zIndex determines which elements appear on top of which other elements and a higher zIndex places you further on top of the screen    
-          zIndex: theme.zIndex.modal + 1
+          zIndex: theme.zIndex.modal +  1
       }
   }))
   
@@ -251,6 +251,7 @@ export default function Header(props) {
     const drawer = (
         <React.Fragment>
             <SwipeableDrawer disableBackdropTransition={!iOS} disableDiscovery={iOS} open={openDrawer} onClose={() => setOpenDrawer(false)} onOpen={() => setOpenDrawer(true)} classes={{paper: classes.drawer}}>
+                <div className={classes.toolbarMargin} />
                 <List disablePadding>
                     {routes.map(route => (
                         <ListItem key={`${route}${route.activeIndex}`} onClick={() => {setOpenDrawer(false); setValue(route.activeIndex)}} divider button component={Link} to={route.link} selected={value === route.activeIndex}>
@@ -281,7 +282,7 @@ export default function Header(props) {
             {/* Toolbar helps lay content out in a horizontal manner */}
         </AppBar>
         </ElevationScroll>
-        <div className={classes.toolbarmargin} />
+        <div className={classes.toolbarMargin} />
         </React.Fragment>
     )
 }

@@ -255,22 +255,22 @@ export default function Header(props) {
         <React.Fragment>
             <SwipeableDrawer disableBackdropTransition={!iOS} disableDiscovery={iOS} open={openDrawer} onClose={() => setOpenDrawer(false)} onOpen={() => setOpenDrawer(true)}>
                 <List disablePadding>
-                    <ListItem divider button component={Link} to="/" >
+                    <ListItem onClick={() => setOpenDrawer(false)} divider button component={Link} to="/" >
                         <ListItemText disableTypography>Home</ListItemText>
                     </ListItem>
-                    <ListItem divider button component={Link} to="/services" >
+                    <ListItem onClick={() => setOpenDrawer(false)} divider button component={Link} to="/services" >
                         <ListItemText disableTypography>Services</ListItemText>
                     </ListItem>
-                    <ListItem divider button component={Link} to="/revolution" >
+                    <ListItem onClick={() => setOpenDrawer(false)} divider button component={Link} to="/revolution" >
                         <ListItemText disableTypography>The Revolution</ListItemText>
                     </ListItem>
-                    <ListItem divider button component={Link} to="/about" >
+                    <ListItem onClick={() => setOpenDrawer(false)} divider button component={Link} to="/about" >
                         <ListItemText disableTypography>About Us</ListItemText>
                     </ListItem>
-                    <ListItem divider button component={Link} to="/contact" >
+                    <ListItem onClick={() => setOpenDrawer(false)} divider button component={Link} to="/contact" >
                         <ListItemText disableTypography>Contact Use</ListItemText>
                     </ListItem>
-                    <ListItem divider button component={Link} to="/estimate" >
+                    <ListItem onClick={() => setOpenDrawer(false)} divider button component={Link} to="/estimate" >
                         <ListItemText disableTypography>Free Estimate</ListItemText>
                     </ListItem>
                 </List>

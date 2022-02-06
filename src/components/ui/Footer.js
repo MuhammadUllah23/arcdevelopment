@@ -29,6 +29,9 @@ const useStyles = makeStyles(theme => ({
         fontFamily: "Arial",
         fontSize: ".75rem",
         fontWeight: "bold"
+    },
+    gridItem: {
+        margin: "3em"
     }
 }))
 
@@ -45,7 +48,7 @@ export default function Footer() {
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid item >
+            <Grid item className={classes.gridItem}>
                 <Grid container direction="column" spacing={2}>
                     <Grid item className={classes.link}>
                         Services
@@ -61,7 +64,7 @@ export default function Footer() {
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid item >
+            <Grid item className={classes.gridItem}>
                 <Grid container direction="column" spacing={2}>
                     <Grid item className={classes.link}>
                         The Revolution
@@ -77,7 +80,7 @@ export default function Footer() {
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid item >
+            <Grid item className={classes.gridItem}>
                 <Grid container direction="column" spacing={2}>
                     <Grid item className={classes.link}>
                         About Us
@@ -90,7 +93,7 @@ export default function Footer() {
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid item>
+            <Grid item className={classes.gridItem}>
                 <Grid container direction='column' spacing={2}>
                     <Grid item className={classes.link}>
                         Contact Us

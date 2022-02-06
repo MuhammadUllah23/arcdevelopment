@@ -25,9 +25,7 @@ function App() {
         </Routes>
         <Footer />
       </BrowserRouter>
-    </ThemeProvider>
-      
-    
+    </ThemeProvider>   
   );
 }
 

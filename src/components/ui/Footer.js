@@ -1,5 +1,6 @@
 import React from 'react';
 import {makeStyles} from '@material-ui/core/styles';
+import { Grid } from '@material-ui/core';
 
 import footerAdornment from '../../assets/Footer Adornment.svg'
 
@@ -25,5 +26,12 @@ const useStyles = makeStyles(theme => ({
 export default function Footer() {
     const classes = useStyles()
 
-    return <footer className={classes.footer}><img alt="black decorative slash" src={footerAdornment} className={classes.adornment} /></footer>
+    return ( 
+    <footer className={classes.footer}>
+        <Grid container>
+            Home
+        </Grid>
+        <img alt="black decorative slash" src={footerAdornment} className={classes.adornment} />
+    </footer>
+    )
 }

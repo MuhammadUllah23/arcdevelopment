@@ -48,16 +48,32 @@ export default function Footer() {
             <Grid item >
                 <Grid container direction="column" >
                     <Grid item className={classes.link}>
-
+                        Services
                     </Grid>
                     <Grid item className={classes.link}>
-
+                        Custom Software Development
                     </Grid>
                     <Grid item className={classes.link}>
-
+                        Mobile App Development
                     </Grid>
                     <Grid item className={classes.link}>
-
+                        Website Development
+                    </Grid>
+                </Grid>
+            </Grid>
+            <Grid item >
+                <Grid container direction="column">
+                    <Grid item className={classes.link}>
+                        The Revolution
+                    </Grid>
+                    <Grid item className={classes.link}>
+                        Vision
+                    </Grid>
+                    <Grid item className={classes.link}>
+                        Technology
+                    </Grid>
+                    <Grid item className={classes.link}>
+                        Process
                     </Grid>
                 </Grid>
             </Grid>

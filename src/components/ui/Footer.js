@@ -45,6 +45,22 @@ export default function Footer() {
                     </Grid>
                 </Grid>
             </Grid>
+            <Grid item >
+                <Grid container direction="column" >
+                    <Grid item className={classes.link}>
+
+                    </Grid>
+                    <Grid item className={classes.link}>
+
+                    </Grid>
+                    <Grid item className={classes.link}>
+
+                    </Grid>
+                    <Grid item className={classes.link}>
+
+                    </Grid>
+                </Grid>
+            </Grid>
         </Grid>
         <img alt="black decorative slash" src={footerAdornment} className={classes.adornment} />
     </footer>

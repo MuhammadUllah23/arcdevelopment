@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import {makeStyles} from '@material-ui/core/styles';
 import { Grid } from '@material-ui/core';
+import { Hidden } from '@material-ui/core';
 
 
 import footerAdornment from '../../assets/Footer Adornment.svg'
@@ -44,6 +45,7 @@ export default function Footer(props) {
 
     return ( 
     <footer className={classes.footer}>
+        <Hidden mdDown>
         <Grid container justify="center" className={classes.mainContainer}>
             <Grid item className={classes.gridItem}>
                 <Grid container direction="column" spacing={2}>
@@ -105,6 +107,7 @@ export default function Footer(props) {
                 </Grid>
             </Grid>
         </Grid>
+        </Hidden>
         <img alt="black decorative slash" src={footerAdornment} className={classes.adornment} />
     </footer>
     )

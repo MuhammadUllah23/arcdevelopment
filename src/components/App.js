@@ -27,7 +27,7 @@ function App() {
           <Route path="/contact" element={<div style={{height: "300px"}}>contact</div>}/>
           <Route path="/estimate" element={<div style={{height: "300px"}}>estimate </div>}/>
         </Routes>
-        <Footer />
+        <Footer value={value} setValue={setValue} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex}/>
       </BrowserRouter>
     </ThemeProvider>   
   );

@@ -40,8 +40,8 @@ export default function Footer() {
         <Grid container justify="center" className={classes.mainContainer}>
             <Grid item >
                 <Grid container direction="column">
-                    <Grid item >
-                        
+                    <Grid item className={classes.link}>
+                        Home
                     </Grid>
                 </Grid>
             </Grid>

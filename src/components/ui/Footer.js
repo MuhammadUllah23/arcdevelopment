@@ -115,13 +115,13 @@ export default function Footer(props) {
         <Grid container >
             {/* component is set to regular html element which is "a" as an anchor tag giving the grid item the same properties as an anchor tag */}
             {/* rel and target props will tell the links to open to a new page or app*/}
-            <Grid item component={"a"} href="www.facebook.com" rel="noopener noreferrer" target="_blank" >
+            <Grid item component={"a"} href="https://www.facebook.com" rel="noopener noreferrer" target="_blank" >
                 <img alt="facebook logo" src={facebook} className={classes.icon} />
             </Grid>
-            <Grid item component={"a"} href="www.twitter.com" rel="noopener noreferrer" target="_blank" >
+            <Grid item component={"a"} href="https://www.twitter.com" rel="noopener noreferrer" target="_blank" >
                 <img alt="twitter logo" src={twitter} className={classes.icon} />
             </Grid>
-            <Grid item component={"a"} href="www.instagram.com" rel="noopener noreferrer" target="_blank" >
+            <Grid item component={"a"} href="https://www.instagram.com" rel="noopener noreferrer" target="_blank" >
                 <img alt="instagram logo" src={instagram} className={classes.icon} />
             </Grid>
         </Grid>

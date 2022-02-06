@@ -13,7 +13,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<div>Home</div>}/>
+          <Route path="/" element={<div style={{height: "300px"}}>Home</div>}/>
           <Route path="/services" element={<div>services</div>}/>
           <Route path="/customsoftware" element={<div>customsoftware</div>}/>
           <Route path="/mobileapps" element={<div>mobileapps</div>}/>

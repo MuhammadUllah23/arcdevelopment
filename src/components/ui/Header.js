@@ -221,7 +221,7 @@ export default function Header(props) {
                         All properties that are not used by the Tab component are passed down to the Link component
                         thanks to the component={Link} composition provided by Material UI*/}
                 </Tabs>
-                <Button variant="contained" color="secondary" className={classes.button}>
+                <Button component={Link} to="/estimate" variant="contained" color="secondary" className={classes.button} onClick={() => props.setValue(5)} >
                     Free Estimate
                 </Button>
                 <Menu 
@@ -271,7 +271,7 @@ export default function Header(props) {
                             <ListItemText className={classes.drawerItem} disableTypography>{route.name}</ListItemText>
                         </ListItem>
                     ))}
-                    <ListItem onClick={() => {setOpenDrawer(false); setValue(5)}} divider button component={Link} to="/estimate" selected={value === 5} classes={{root: classes.drawerItemSelected, selected: classes.drawerItemSelected}}>
+                    <ListItem onClick={() => {setOpenDrawer(false); setValue(5)}} divider button component={Link} to="/estimate" selected={value === 5} classes={{root: classes.drawerItemEstimate, selected: classes.drawerItemSelected}}>
                         <ListItemText className={classes.drawerItem} disableTypography>Free Estimate</ListItemText>
                     </ListItem>
                 </List>

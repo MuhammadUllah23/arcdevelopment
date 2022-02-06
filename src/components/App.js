@@ -4,6 +4,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
 import theme from './ui/Theme'
 import Header from './ui/Header';
+import Footer from './ui/Footer';
+
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
           <Route path="/contact" element={() => <div>contact</div>}/>
           <Route path="/estimate" element={() => <div>estimate </div>}/>
         </Routes>
+        <Footer />
       </BrowserRouter>
     </ThemeProvider>
       

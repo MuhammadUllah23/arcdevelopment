@@ -23,6 +23,12 @@ const useStyles = makeStyles(theme => ({
     },
     mainContainer: {
         position: "absolute"
+    },
+    link: {
+        color: "white",
+        fontFamily: "Arial",
+        fontSize: ".75rem",
+        fontWeight: "bold"
     }
 }))
 
@@ -32,7 +38,7 @@ export default function Footer() {
     return ( 
     <footer className={classes.footer}>
         <Grid container className={classes.mainContainer}>
-            Home
+            <Grid item className={classes.link}>Home</Grid>
         </Grid>
         <img alt="black decorative slash" src={footerAdornment} className={classes.adornment} />
     </footer>

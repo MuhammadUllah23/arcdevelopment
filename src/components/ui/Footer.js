@@ -37,8 +37,14 @@ export default function Footer() {
 
     return ( 
     <footer className={classes.footer}>
-        <Grid container className={classes.mainContainer}>
-            <Grid item className={classes.link}>Home</Grid>
+        <Grid container justify="center" className={classes.mainContainer}>
+            <Grid item >
+                <Grid container direction="column">
+                    <Grid item >
+                        
+                    </Grid>
+                </Grid>
+            </Grid>
         </Grid>
         <img alt="black decorative slash" src={footerAdornment} className={classes.adornment} />
     </footer>

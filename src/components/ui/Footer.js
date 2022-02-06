@@ -113,14 +113,15 @@ export default function Footer(props) {
         <img alt="black decorative slash" src={footerAdornment} className={classes.adornment} />
 
         <Grid container >
-            <Grid item>
-                <img alt="facebook logo" src={facebook} />
+            {/* component is set to regular html element which is "a" as an anchor tag giving the grid item the same properties as an anchor tag */}
+            <Grid item component={"a"} href="www.facebook.com">
+                <img alt="facebook logo" src={facebook} className={classes.icon} />
             </Grid>
-            <Grid item>
-                <img alt="twitter logo" src={twitter} />
+            <Grid item component={"a"} href="www.twitter.com">
+                <img alt="twitter logo" src={twitter} className={classes.icon} />
             </Grid>
-            <Grid item>
-                <img alt="instagram logo" src={instagram} />
+            <Grid item component={"a"} href="www.instagram.com">
+                <img alt="instagram logo" src={instagram} className={classes.icon} />
             </Grid>
         </Grid>
     </footer>

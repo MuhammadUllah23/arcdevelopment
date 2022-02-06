@@ -7,11 +7,21 @@ const useStyles = makeStyles(theme => ({
     footer: {
         backgroundColor: theme.palette.common.blue,
         width: "100%"
+    },
+    adornment: {
+        width: "25em",
+        verticalAlign: "bottom",
+        [theme.breakpoints.down("md")]: {
+            width: "21em"
+        },
+        [theme.breakpoints.down("xs")]: {
+            width: "15em"
+        }
     }
 }))
 
 export default function Footer() {
     const classes = useStyles()
 
-    return <footer className={classes.footer}><img alt="black decorative slash" src={footerAdornment} /></footer>
+    return <footer className={classes.footer}><img alt="black decorative slash" src={footerAdornment} className={classes.adornment} /></footer>
 }

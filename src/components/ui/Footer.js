@@ -111,6 +111,12 @@ export default function Footer(props) {
         </Grid>
         </Hidden>
         <img alt="black decorative slash" src={footerAdornment} className={classes.adornment} />
+
+        <Grid container >
+            <Grid item>
+                
+            </Grid>
+        </Grid>
     </footer>
     )
 }

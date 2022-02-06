@@ -54,16 +54,16 @@ export default function Footer(props) {
             </Grid>
             <Grid item className={classes.gridItem}>
                 <Grid container direction="column" spacing={2}>
-                    <Grid item component={Link} onClick={() => props.setValue(1)} to="/services" className={classes.link}>
+                    <Grid item component={Link} onClick={() => {props.setValue(1); props.setSelectedIndex(0)}} to="/services" className={classes.link}>
                         Services
                     </Grid>
-                    <Grid item component={Link} onClick={() => props.setValue(1)} to="/customsoftware" className={classes.link}>
+                    <Grid item component={Link} onClick={() => {props.setValue(1); props.setSelectedIndex(1)}} to="/customsoftware" className={classes.link}>
                         Custom Software Development
                     </Grid>
-                    <Grid item component={Link} onClick={() => props.setValue(1)} to="/mobileapps" className={classes.link}>
+                    <Grid item component={Link} onClick={() => {props.setValue(1); props.setSelectedIndex(2)}} to="/mobileapps" className={classes.link}>
                         Mobile App Development
                     </Grid>
-                    <Grid item component={Link} onClick={() => props.setValue(1)} to="/websites" className={classes.link}>
+                    <Grid item component={Link} onClick={() => {props.setValue(1); props.setSelectedIndex(3)}} to="/websites" className={classes.link}>
                         Website Development
                     </Grid>
                 </Grid>

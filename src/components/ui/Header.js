@@ -136,10 +136,9 @@ export default function Header(props) {
     const matches = useMediaQuery(theme.breakpoints.down("md"))
     // Meida Query is going to select everything medium and below to true
     const [openDrawer, setOpenDrawer] = useState(false);
-    const [value, setValue] = useState(0) 
+    
     const [anchorEl, setAnchorEl] = useState(null)
     const [openMenu, setOpenMenu] = useState(false)
-    const [selectedIndex, setSelectedIndex] = useState(0);
     
 
     const handleChange = (e, newValue) => {

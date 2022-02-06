@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import ThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
@@ -8,10 +9,13 @@ import Footer from './ui/Footer';
 
 
 function App() {
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [value, setValue] = useState(0) 
+
   return (
     <ThemeProvider theme={theme}> 
       <BrowserRouter>
-        <Header />
+        <Header value={value} setValue={setValue} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex} />
         <Routes>
           <Route path="/" element={<div style={{height: "300px"}}>Home</div>}/>
           <Route path="/services" element={<div style={{height: "300px"}}>services</div>}/>

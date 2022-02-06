@@ -142,7 +142,7 @@ export default function Header(props) {
     
 
     const handleChange = (e, newValue) => {
-        setValue(newValue)
+        props.setValue(newValue)
     };
 
     const handleClick = (e) => {
@@ -153,7 +153,7 @@ export default function Header(props) {
     const handleMenuItemClick = (e, i) => {
         setAnchorEl(null);
         setOpenMenu(false);
-        setSelectedIndex(i)
+        props.setSelectedIndex(i)
     }
 
     const handleClose = (e) => {
@@ -180,10 +180,10 @@ export default function Header(props) {
         [...menuOptions, ...routes].forEach(route => {
             switch (window.location.pathname) {
                 case `${route.link}`:
-                    if (value !== route.activeIndex) {
-                        setValue(route.activeIndex)
-                        if (route.selectedIndex && route.selectedIndex !== selectedIndex) {
-                            setSelectedIndex(route.selectedIndex)
+                    if (props.value !== route.activeIndex) {
+                        props.setValue(route.activeIndex)
+                        if (route.selectedIndex && route.selectedIndex !== props.selectedIndex) {
+                            props.setSelectedIndex(route.selectedIndex)
                         }
                     }
                     break;
@@ -192,14 +192,14 @@ export default function Header(props) {
             }
         })
        
-    }, [value, menuOptions, selectedIndex, routes] ) 
+    }, [props.value, menuOptions, props.selectedIndex, routes, props] ) 
     // Value constant is being passed as dependancy which tells the usEffect hook that we are depending on the state value 
     // and we dont want to run the code again if the value has not changed.
 
     const tabs = (
         <React.Fragment>
                 <Tabs 
-                    value={value} 
+                    value={props.value} 
                     onChange={handleChange} 
                     className={classes.tabContainer}
                     indicatorColor="primary"
@@ -243,8 +243,8 @@ export default function Header(props) {
                         component={Link} 
                         to={option.link} 
                         classes={{root: classes.menuItem}} 
-                        onClick={(event) => {handleMenuItemClick(event, i); setValue(1); handleClose()}} 
-                        selected={i === selectedIndex && value === 1}> 
+                        onClick={(event) => {handleMenuItemClick(event, i); props.setValue(1); handleClose()}} 
+                        selected={i === props.selectedIndex && props.value === 1}> 
                             {option.name} 
                         </MenuItem>
                     ))}
@@ -260,17 +260,17 @@ export default function Header(props) {
                     {routes.map(route => (
                         <ListItem 
                         key={`${route}${route.activeIndex}`} 
-                        onClick={() => {setOpenDrawer(false); setValue(route.activeIndex)}} 
+                        onClick={() => {setOpenDrawer(false);  props.setValue(route.activeIndex)}} 
                         divider button 
                         component={Link} 
                         to={route.link} 
-                        selected={value === route.activeIndex} 
+                        selected={ props.value === route.activeIndex} 
                         classes={{selected: classes.drawerItemSelected}} //class is only going to be applied to a selected list item
                         >
                             <ListItemText className={classes.drawerItem} disableTypography>{route.name}</ListItemText>
                         </ListItem>
                     ))}
-                    <ListItem onClick={() => {setOpenDrawer(false); setValue(5)}} divider button component={Link} to="/estimate" selected={value === 5} classes={{root: classes.drawerItemEstimate, selected: classes.drawerItemSelected}}>
+                    <ListItem onClick={() => {setOpenDrawer(false);  props.setValue(5)}} divider button component={Link} to="/estimate" selected={ props.value === 5} classes={{root: classes.drawerItemEstimate, selected: classes.drawerItemSelected}}>
                         <ListItemText className={classes.drawerItem} disableTypography>Free Estimate</ListItemText>
                     </ListItem>
                 </List>
@@ -286,7 +286,7 @@ export default function Header(props) {
         <ElevationScroll >
         <AppBar position="fixed" className={classes.appbar} >
             <Toolbar disableGutters>
-                <Button component={Link} to="/" disableRipple className={classes.logoContainer} onClick={() => setValue(0)}>
+                <Button component={Link} to="/" disableRipple className={classes.logoContainer} onClick={() =>  props.setValue(0)}>
                     <img alt="company logo" className={classes.logo} src={logo} />
                 </Button>
                 {matches ? drawer : tabs}

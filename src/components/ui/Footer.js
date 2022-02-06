@@ -114,7 +114,13 @@ export default function Footer(props) {
 
         <Grid container >
             <Grid item>
-                
+                <img alt="facebook logo" src={facebook} />
+            </Grid>
+            <Grid item>
+                <img alt="twitter logo" src={twitter} />
+            </Grid>
+            <Grid item>
+                <img alt="instagram logo" src={instagram} />
             </Grid>
         </Grid>
     </footer>

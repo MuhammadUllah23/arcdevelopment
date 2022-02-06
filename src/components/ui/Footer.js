@@ -36,7 +36,7 @@ const useStyles = makeStyles(theme => ({
         textDecoration: "none"
     },
     gridItem: {
-        margin: "3em"
+        margin: "4em"
     }
 }))
 

@@ -20,6 +20,9 @@ const useStyles = makeStyles(theme => ({
         [theme.breakpoints.down("xs")]: {
             width: "15em"
         }
+    },
+    mainContainer: {
+        position: "absolute"
     }
 }))
 
@@ -28,7 +31,7 @@ export default function Footer() {
 
     return ( 
     <footer className={classes.footer}>
-        <Grid container>
+        <Grid container className={classes.mainContainer}>
             Home
         </Grid>
         <img alt="black decorative slash" src={footerAdornment} className={classes.adornment} />

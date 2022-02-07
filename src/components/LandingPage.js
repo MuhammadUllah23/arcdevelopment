@@ -29,7 +29,7 @@ export default function LandingPage() {
         <Grid container direction="column">
             <Grid item>
                 <Grid container justify="flex-end" alignItems="center" direction="row">
-                    <Grid item>
+                    <Grid sm item>
                         <Typography variant='h2' align='center'>Bringing West Coast Technology<br />to the Midwest</Typography>
                         <Grid container>
                             <Grid item>
@@ -40,7 +40,7 @@ export default function LandingPage() {
                             </Grid>
                         </Grid>
                     </Grid>
-                    <Grid item >
+                    <Grid sm item >
                         <Lottie options={defaultOptions} height={"100%"} width={"100%"} />
                     </Grid>
                 </Grid>

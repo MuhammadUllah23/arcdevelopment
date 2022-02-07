@@ -57,6 +57,15 @@ export default createMuiTheme({
             fontSize: "1.25rem",
             fontWeight: 300,
             color: arcGrey
+          },
+          learnMore: {
+            borderColor: arcBlue,
+            color: arcBlue,
+            borderWidth: 2,
+            textTransform: "none",
+            borderRadius: 50,
+            fontFamily: "Roboto",
+            fontWeight: "bold",
           }
     }
 })

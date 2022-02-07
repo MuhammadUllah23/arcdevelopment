@@ -36,13 +36,7 @@ const useStyles = makeStyles(theme => ({
         marginTop: "1em"
     },
     buttonLearnMore: {
-        borderColor: theme.palette.common.blue,
-        color: theme.palette.common.blue,
-        borderWidth: 2,
-        textTransform: "none",
-        borderRadius: 50,
-        fontFamily: "Roboto",
-        fontWeight: "bold",
+        ...theme.typography.learnMore,
         fontSize: "0.9rem",
         height: 45,
         width: 145
@@ -117,7 +111,7 @@ export default function LandingPage() {
                         <Typography variant="subtitle1">
                             Complete digital solutions, from investigation to{" "} <span className={classes.specialText}>celebration.</span>
                         </Typography>
-                        <Button variant="outlined" >
+                        <Button variant="outlined" className={classes.buttonLearnMore} >
                             <span style={{marginRight: 10}}> Learn More </span>
                             <ButtonArrow width={10} height={10} fill={theme.palette.common.blue} />
                         </Button>

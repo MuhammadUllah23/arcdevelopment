@@ -6,6 +6,7 @@ import ThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
 import theme from './ui/Theme'
 import Header from './ui/Header';
 import Footer from './ui/Footer';
+import LandingPage from './LandingPage';
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
       <BrowserRouter>
         <Header value={value} setValue={setValue} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex} />
         <Routes>
-          <Route path="/" element={<div style={{height: "400px"}}>Home</div>}/>
+          <Route path="/" element={<LandingPage />}/>
           <Route path="/services" element={<div style={{height: "400px"}}>services</div>}/>
           <Route path="/customsoftware" element={<div style={{height: "400px"}}>customsoftware</div>}/>
           <Route path="/mobileapps" element={<div style={{height: "400px"}}>mobileapps</div>}/>

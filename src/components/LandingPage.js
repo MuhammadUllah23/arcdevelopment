@@ -21,8 +21,6 @@ export default function LandingPage() {
       };
 
     return (
-        <div>
-            Hello
-        </div>
+        <Lottie options={defaultOptions} height={"100%"} width={"100%"} />
     )
 }

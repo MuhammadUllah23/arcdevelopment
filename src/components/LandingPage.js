@@ -1,8 +1,9 @@
 import React from 'react';
 import Lottie from 'react-lottie';
 
+
 import { Typography } from '@material-ui/core';
-import {makeStyles} from '@material-ui/core/styles';
+import {makeStyles, useTheme} from '@material-ui/core/styles';
 import { Grid } from '@material-ui/core';
 import { Button } from '@material-ui/core';
 
@@ -47,6 +48,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function LandingPage() {
     const classes = useStyles()
+    const theme = useTheme()
 
     const defaultOptions = {
         loop: true,
@@ -68,7 +70,7 @@ export default function LandingPage() {
                                 <Button className={classes.estimateButton} variant="contained">Free Estimate</Button>
                             </Grid>
                             <Grid item>
-                                <Button className={classes.buttonLearnMore} variant="outlined">Learn More <ButtonArrow width={15} length={15} fill="red" /> </Button>
+                                <Button className={classes.buttonLearnMore} variant="outlined"> <span style={{marginRight: 10}}>Learn More</span> <ButtonArrow width={15} length={15} fill={theme.palette.common.blue} /> </Button>
                             </Grid>
                         </Grid>
                     </Grid>

@@ -29,6 +29,18 @@ const useStyles = makeStyles(theme => ({
     },
     buttonCont: {
         marginTop: "1em"
+    },
+    buttonLearnMore: {
+        borderColor: theme.palette.common.blue,
+        color: theme.palette.common.blue,
+        borderWidth: 2,
+        textTransform: "none",
+        borderRadius: 50,
+        fontFamily: "Roboto",
+        fontWeight: "bold",
+        fontSize: "0.9rem",
+        height: 45,
+        width: 145
     }
 
 }))
@@ -56,7 +68,7 @@ export default function LandingPage() {
                                 <Button className={classes.estimateButton} variant="contained">Free Estimate</Button>
                             </Grid>
                             <Grid item>
-                                <Button variant="outlined">Learn More <ButtonArrow width={15} length={15} fill="red" /> </Button>
+                                <Button className={classes.buttonLearnMore} variant="outlined">Learn More <ButtonArrow width={15} length={15} fill="red" /> </Button>
                             </Grid>
                         </Grid>
                     </Grid>

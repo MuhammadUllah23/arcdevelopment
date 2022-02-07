@@ -30,7 +30,7 @@ export default function LandingPage() {
             <Grid item>
                 <Grid container justify="flex-end" alignItems="center" direction="row">
                     <Grid item>
-                        <Typography>Bringing West Coast Technology<br />to the Midwest</Typography>
+                        <Typography variant='h2' align='center'>Bringing West Coast Technology<br />to the Midwest</Typography>
                         <Grid container>
                             <Grid item>
                                 <Button variant="contained">Free Estimate</Button>

@@ -89,7 +89,9 @@ export default function LandingPage() {
                                 <Button className={classes.estimateButton} variant="contained">Free Estimate</Button>
                             </Grid>
                             <Grid item>
-                                <Button className={classes.buttonLearnMore} variant="outlined"> <span style={{marginRight: 10}}>Learn More</span> <ButtonArrow width={15} length={15} fill={theme.palette.common.blue} /> </Button>
+                                <Button className={classes.buttonLearnMore} variant="outlined"> <span style={{marginRight: 10}}>Learn More</span> 
+                                <ButtonArrow width={15} length={15} fill={theme.palette.common.blue} /> 
+                                </Button>
                             </Grid>
                         </Grid>
                     </Grid>
@@ -110,6 +112,10 @@ export default function LandingPage() {
                         <Typography variant="subtitle1">
                             Complete digital solutions, from investigation to{" "} <span>celebration</span>
                         </Typography>
+                        <Button variant="outlined" >
+                            <span style={{marginRight: 10}}> Learn More </span>
+                            <ButtonArrow width={10} height={10} fill={theme.palette.common.blue} />
+                        </Button>
                     </Grid>
                 </Grid>
             </Grid>

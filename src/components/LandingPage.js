@@ -31,7 +31,10 @@ export default function LandingPage() {
                         <div>Bringing West Coast Technology<br />to the Midwest</div>
                         <Grid container>
                             <Grid item>
-                                
+                                <Button variant="contained">Free Estimate</Button>
+                            </Grid>
+                            <Grid item>
+                                <Button variant="outlined">Learn More</Button>
                             </Grid>
                         </Grid>
                     </Grid>

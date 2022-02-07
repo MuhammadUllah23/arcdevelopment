@@ -62,6 +62,10 @@ const useStyles = makeStyles(theme => ({
         [theme.breakpoints.down("xs")]: {
             marginLeft: 0
         }
+    },
+    specialText: {
+        fontFamily: "Pacifico",
+        color: theme.palette.common.orange
     }
 
 }))
@@ -111,7 +115,7 @@ export default function LandingPage() {
                             Save Energy. Save Time. Save Money.
                         </Typography>
                         <Typography variant="subtitle1">
-                            Complete digital solutions, from investigation to{" "} <span>celebration.</span>
+                            Complete digital solutions, from investigation to{" "} <span className={classes.specialText}>celebration.</span>
                         </Typography>
                         <Button variant="outlined" >
                             <span style={{marginRight: 10}}> Learn More </span>

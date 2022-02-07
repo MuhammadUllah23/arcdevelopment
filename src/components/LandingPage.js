@@ -26,6 +26,9 @@ const useStyles = makeStyles(theme => ({
         "&:hover": {
             backgroundColor: theme.palette.secondary.light
         }
+    },
+    buttonCont: {
+        marginTop: "1em"
     }
 
 }))
@@ -48,7 +51,7 @@ export default function LandingPage() {
                 <Grid container justify="flex-end" alignItems="center" direction="row">
                     <Grid sm item>
                         <Typography variant='h2' align='center'>Bringing West Coast Technology<br />to the Midwest</Typography>
-                        <Grid container justify='center' >
+                        <Grid container justify='center' className={classes.buttonCont} >
                             <Grid item>
                                 <Button className={classes.estimateButton} variant="contained">Free Estimate</Button>
                             </Grid>

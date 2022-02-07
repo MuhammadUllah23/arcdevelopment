@@ -15,7 +15,10 @@ const useStyles = makeStyles(theme => ({
         maxWidth: "50em",
         minWidth: "21em",
         marginTop: "2em",
-        marginLeft: "10%"
+        marginLeft: "10%",
+        [theme.breakpoints.down("sm")]: {
+            maxWidth: "30em"
+        }
     },
     estimateButton: {
         ...theme.typography.estimate,

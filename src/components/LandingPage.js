@@ -13,7 +13,7 @@ import animationData from '../animations/landinganimation/data'
 const useStyles = makeStyles(theme => ({
     animation: {
         maxWidth: "50em",
-        minWidth: "21 em",
+        minWidth: "21em",
         marginTop: "2em",
         marginLeft: "10%"
     },
@@ -42,6 +42,22 @@ const useStyles = makeStyles(theme => ({
         fontSize: "0.9rem",
         height: 45,
         width: 145
+    },
+    mainCont: {
+        marginTop: "5em",
+        [theme.breakpoints.down("md")]: {
+            marginTop: "3em"
+        },
+        [theme.breakpoints.down("md")]: {
+            marginTop: "2em"
+        },
+    },
+    heroTextCont: {
+        minWidth: "21.5em",
+        marginLeft: "1em",
+        [theme.breakpoints.down("xs")]: {
+            marginLeft: 0
+        }
     }
 
 }))
@@ -60,10 +76,10 @@ export default function LandingPage() {
       };
 
     return (
-        <Grid container direction="column">
+        <Grid container direction="column" className={classes.mainCont}>
             <Grid item>
                 <Grid container justify="flex-end" alignItems="center" direction="row">
-                    <Grid sm item>
+                    <Grid sm item className={classes.heroTextCont}>
                         <Typography variant='h2' align='center'>Bringing West Coast Technology<br />to the Midwest</Typography>
                         <Grid container justify='center' className={classes.buttonCont} >
                             <Grid item>

@@ -27,7 +27,7 @@ export default function LandingPage() {
     return (
         <Grid container direction="column">
             <Grid item>
-                <Grid container direction="row">
+                <Grid container justify="flex-end" alignItems="center" direction="row">
                     <Grid item>
                         <div>Bringing West Coast Technology<br />to the Midwest</div>
                         <Grid container>
@@ -35,7 +35,7 @@ export default function LandingPage() {
                                 <Button variant="contained">Free Estimate</Button>
                             </Grid>
                             <Grid item>
-                                <Button variant="outlined">Learn More <ButtonArrow width={15} length{15} fill="red" /> </Button>
+                                <Button variant="outlined">Learn More <ButtonArrow width={15} length={15} fill="red" /> </Button>
                             </Grid>
                         </Grid>
                     </Grid>

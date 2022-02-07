@@ -35,11 +35,17 @@ const useStyles = makeStyles(theme => ({
     buttonCont: {
         marginTop: "1em"
     },
-    buttonLearnMore: {
+    buttonLearnMoreHero: {
         ...theme.typography.learnMore,
         fontSize: "0.9rem",
         height: 45,
         width: 145
+    },
+    buttonLearnMoreServices: {
+        ...theme.typography.learnMore,
+        fontSize: "0.7rem",
+        height: 35,
+        padding: 5 
     },
     mainCont: {
         marginTop: "5em",
@@ -88,7 +94,7 @@ export default function LandingPage() {
                                 <Button className={classes.estimateButton} variant="contained">Free Estimate</Button>
                             </Grid>
                             <Grid item>
-                                <Button className={classes.buttonLearnMore} variant="outlined"> <span style={{marginRight: 10}}>Learn More</span> 
+                                <Button className={classes.buttonLearnMoreHero} variant="outlined"> <span style={{marginRight: 10}}>Learn More</span> 
                                 <ButtonArrow width={15} length={15} fill={theme.palette.common.blue} /> 
                                 </Button>
                             </Grid>
@@ -111,7 +117,7 @@ export default function LandingPage() {
                         <Typography variant="subtitle1">
                             Complete digital solutions, from investigation to{" "} <span className={classes.specialText}>celebration.</span>
                         </Typography>
-                        <Button variant="outlined" className={classes.buttonLearnMore} >
+                        <Button variant="outlined" className={classes.buttonLearnMoreServices} >
                             <span style={{marginRight: 10}}> Learn More </span>
                             <ButtonArrow width={10} height={10} fill={theme.palette.common.blue} />
                         </Button>

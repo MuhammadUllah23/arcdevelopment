@@ -10,6 +10,12 @@ import ButtonArrow from './ui/ButtonArrow';
 import animationData from '../animations/landinganimation/data'
 
 const useStyles = makeStyles(theme => ({
+    animation: {
+        maxWidth: "50em",
+        minWidth: "21 em",
+        marginTop: "2em",
+        marginLeft: "10%"
+    }
 
 }))
 
@@ -40,7 +46,7 @@ export default function LandingPage() {
                             </Grid>
                         </Grid>
                     </Grid>
-                    <Grid sm item >
+                    <Grid sm item className={classes.animation}>
                         <Lottie options={defaultOptions} height={"100%"} width={"100%"} />
                     </Grid>
                 </Grid>

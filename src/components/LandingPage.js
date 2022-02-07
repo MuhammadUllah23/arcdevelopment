@@ -100,7 +100,17 @@ export default function LandingPage() {
             </Grid>
             <Grid item> {/*------SERVICES BLOCK------*/}
                 <Grid container direction="row ">
-                    
+                    <Grid item >
+                        <Typography variant="h4" >
+                            Custom Software Development
+                        </Typography>
+                        <Typography variant="subtitle1">
+                            Save Energy. Save Time. Save Money.
+                        </Typography>
+                        <Typography variant="subtitle1">
+                            Complete digital solutions, from investigation to{" "} <span>celebration</span>
+                        </Typography>
+                    </Grid>
                 </Grid>
             </Grid>
         </Grid>

@@ -39,9 +39,12 @@ export default function LandingPage() {
                             </Grid>
                         </Grid>
                     </Grid>
+                    <Grid item >
+                        <Lottie options={defaultOptions} height={"100%"} width={"100%"} />
+                    </Grid>
                 </Grid>
             </Grid>
         </Grid>
-        <Lottie options={defaultOptions} height={"100%"} width={"100%"} />
+        
     )
 }

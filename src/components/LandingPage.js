@@ -80,7 +80,7 @@ export default function LandingPage() {
 
     return (
         <Grid container direction="column" className={classes.mainCont}>
-            <Grid item>
+            <Grid item> {/*------HERO BLOCK------*/}
                 <Grid container justify="flex-end" alignItems="center" direction="row">
                     <Grid sm item className={classes.heroTextCont}>
                         <Typography variant='h2' align='center'>Bringing West Coast Technology<br />to the Midwest</Typography>
@@ -96,6 +96,11 @@ export default function LandingPage() {
                     <Grid sm item className={classes.animation}>
                         <Lottie options={defaultOptions} height={"100%"} width={"100%"} />
                     </Grid>
+                </Grid>
+            </Grid>
+            <Grid item> {/*------SERVICES BLOCK------*/}
+                <Grid container direction="row ">
+                    
                 </Grid>
             </Grid>
         </Grid>

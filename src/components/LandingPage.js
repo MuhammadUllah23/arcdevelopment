@@ -10,7 +10,16 @@ const useStyles = makeStyles(theme => ({
 
 export default function LandingPage() {
     const classes = useStyles()
-    
+
+    const defaultOptions = {
+        loop: true,
+        autoplay: true, 
+        animationData: animationData,
+        rendererSettings: {
+          preserveAspectRatio: 'xMidYMid slice'
+        }
+      };
+
     return (
         <div>
             Hello

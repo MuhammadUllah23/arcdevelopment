@@ -25,7 +25,11 @@ export default function LandingPage() {
     return (
         <Grid container direction="column">
             <Grid item>
-                
+                <Grid container direction="row">
+                    <Grid item>
+                        <div>Bringing West Coast Technology<br />to the Midwest</div>
+                    </Grid>
+                </Grid>
             </Grid>
         </Grid>
         <Lottie options={defaultOptions} height={"100%"} width={"100%"} />

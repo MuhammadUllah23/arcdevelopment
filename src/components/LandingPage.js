@@ -6,6 +6,7 @@ import { Typography } from '@material-ui/core';
 import {makeStyles, useTheme} from '@material-ui/core/styles';
 import { Grid } from '@material-ui/core';
 import { Button } from '@material-ui/core';
+import { useMediaQuery } from '@material-ui/core';
 
 import ButtonArrow from './ui/ButtonArrow';
 import animationData from '../animations/landinganimation/data'
@@ -87,6 +88,7 @@ const useStyles = makeStyles(theme => ({
 export default function LandingPage() {
     const classes = useStyles()
     const theme = useTheme()
+    const matchesSM = useMediaQuery(theme.breakpoints.down("sm"))
 
     const defaultOptions = {
         loop: true,
@@ -120,7 +122,7 @@ export default function LandingPage() {
                 </Grid>
             </Grid>
             <Grid item> {/*------SERVICES BLOCK------*/}
-                <Grid container direction="row" className={classes.serviceCont}>
+                <Grid container direction="row" className={classes.serviceCont} justify={matchesSM ? "center" : undefined} >
                     <Grid item style={{marginLeft: "5em"}}>
                         <Typography variant="h4" >
                             Custom Software Development

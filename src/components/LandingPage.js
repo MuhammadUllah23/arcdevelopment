@@ -72,10 +72,15 @@ const useStyles = makeStyles(theme => ({
     },
     icon: {
         marginLeft: "2em",
-        [theme.breakpoints.down("xs")] {
+        [theme.breakpoints.down("xs")]: {
             marginLeft: 0
         }
-    }
+    },
+    serviceCont: {
+        marginTop: "12em"
+        
+    },
+
 
 }))
 
@@ -115,8 +120,8 @@ export default function LandingPage() {
                 </Grid>
             </Grid>
             <Grid item> {/*------SERVICES BLOCK------*/}
-                <Grid container direction="row ">
-                    <Grid item >
+                <Grid container direction="row" className={classes.serviceCont}>
+                    <Grid item style={{marginLeft: "5em"}}>
                         <Typography variant="h4" >
                             Custom Software Development
                         </Typography>

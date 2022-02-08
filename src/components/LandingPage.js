@@ -46,7 +46,10 @@ const useStyles = makeStyles(theme => ({
         ...theme.typography.learnMore,
         fontSize: "0.7rem",
         height: 35,
-        padding: 5 
+        padding: 5,
+        [theme.breakpoints.down("sm")]: {
+            marginBottom: "2em"
+        } 
     },
     mainCont: {
         marginTop: "5em",
@@ -78,7 +81,10 @@ const useStyles = makeStyles(theme => ({
         }
     },
     serviceCont: {
-        marginTop: "12em"
+        marginTop: "12em",
+        [theme.breakpoints.down("sm")]: {
+            padding: 25
+        }
         
     },
 
@@ -123,7 +129,7 @@ export default function LandingPage() {
             </Grid>
             <Grid item> {/*------SERVICES BLOCK------*/}
                 <Grid container direction="row" className={classes.serviceCont} justify={matchesSM ? "center" : undefined} >
-                    <Grid item style={{marginLeft: "5em"}}>
+                    <Grid item style={{marginLeft: matchesSM ? 0 : "5em", textAlign: matchesSM ? "center" : undefined}}>
                         <Typography variant="h4" >
                             Custom Software Development
                         </Typography>

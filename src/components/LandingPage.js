@@ -69,6 +69,12 @@ const useStyles = makeStyles(theme => ({
     },
     subtitle: {
         marginBottom: "1em"
+    },
+    icon: {
+        marginLeft: "2em",
+        [theme.breakpoints.down("xs")] {
+            marginLeft: 0
+        }
     }
 
 }))
@@ -126,7 +132,7 @@ export default function LandingPage() {
                         </Button>
                     </Grid>
                     <Grid item>
-                        <img alt="custom software icon" src={customSoftwareIcon} />
+                        <img className={classes.icon} alt="custom software icon" src={customSoftwareIcon} />
                     </Grid>
                 </Grid>
             </Grid>

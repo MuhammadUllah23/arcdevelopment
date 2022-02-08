@@ -30,7 +30,7 @@ const useStyles = makeStyles(theme => ({
         marginRight: 40,
         "&:hover": {
             backgroundColor: theme.palette.secondary.light
-        }
+        } 
     },
     buttonCont: {
         marginTop: "1em"
@@ -66,6 +66,9 @@ const useStyles = makeStyles(theme => ({
     specialText: {
         fontFamily: "Pacifico",
         color: theme.palette.common.orange
+    },
+    subtitle: {
+        marginBottom: "1em"
     }
 
 }))
@@ -111,7 +114,7 @@ export default function LandingPage() {
                         <Typography variant="h4" >
                             Custom Software Development
                         </Typography>
-                        <Typography variant="subtitle1">
+                        <Typography variant="subtitle1" className={classes.subtitle} >
                             Save Energy. Save Time. Save Money.
                         </Typography>
                         <Typography variant="subtitle1">

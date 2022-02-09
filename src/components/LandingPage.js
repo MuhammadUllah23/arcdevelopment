@@ -11,6 +11,7 @@ import { useMediaQuery } from '@material-ui/core';
 import ButtonArrow from './ui/ButtonArrow';
 import animationData from '../animations/landinganimation/data'
 import customSoftwareIcon from '../assets/Custom Software Icon.svg'
+import mobileAppsIcon from '../assets/mobileIcon.svg'
 
 const useStyles = makeStyles(theme => ({
     animation: {
@@ -127,7 +128,29 @@ export default function LandingPage() {
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid item> {/*------SERVICES BLOCK------*/}
+            <Grid item> {/*------CUSTOM SOFTWARE BLOCK------*/}
+                <Grid container direction="row" className={classes.serviceCont} justify={matchesSM ? "center" : undefined} >
+                    <Grid item style={{marginLeft: matchesSM ? 0 : "5em", textAlign: matchesSM ? "center" : undefined}}>
+                        <Typography variant="h4" >
+                            Custom Software Development
+                        </Typography>
+                        <Typography variant="subtitle1" className={classes.subtitle} >
+                            Save Energy. Save Time. Save Money.
+                        </Typography>
+                        <Typography variant="subtitle1">
+                            Complete digital solutions, from investigation to{" "} <span className={classes.specialText}>celebration.</span>
+                        </Typography>
+                        <Button variant="outlined" className={classes.buttonLearnMoreServices} >
+                            <span style={{marginRight: 10}}> Learn More </span>
+                            <ButtonArrow width={10} height={10} fill={theme.palette.common.blue} />
+                        </Button>
+                    </Grid>
+                    <Grid item>
+                        <img className={classes.icon} alt="custom software icon" src={customSoftwareIcon} />
+                    </Grid>
+                </Grid>
+            </Grid>
+            <Grid item> {/*------iOS/ANDROID BLOCK------*/}
                 <Grid container direction="row" className={classes.serviceCont} justify={matchesSM ? "center" : undefined} >
                     <Grid item style={{marginLeft: matchesSM ? 0 : "5em", textAlign: matchesSM ? "center" : undefined}}>
                         <Typography variant="h4" >

@@ -154,13 +154,13 @@ export default function LandingPage() {
                 <Grid container direction="row" className={classes.serviceCont} justify={matchesSM ? "center" : undefined} >
                     <Grid item style={{marginLeft: matchesSM ? 0 : "5em", textAlign: matchesSM ? "center" : undefined}}>
                         <Typography variant="h4" >
-                            Custom Software Development
+                            iOS/Android App Development
                         </Typography>
                         <Typography variant="subtitle1" className={classes.subtitle} >
-                            Save Energy. Save Time. Save Money.
+                            Extend Functionality. Extend Access. Increase Engagement.
                         </Typography>
                         <Typography variant="subtitle1">
-                            Complete digital solutions, from investigation to{" "} <span className={classes.specialText}>celebration.</span>
+                            Integrate your web experience or create a standalone app{matchesSM ? null : <br />}
                         </Typography>
                         <Button variant="outlined" className={classes.buttonLearnMoreServices} >
                             <span style={{marginRight: 10}}> Learn More </span>

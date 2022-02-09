@@ -152,7 +152,7 @@ export default function LandingPage() {
             </Grid>
             <Grid item> {/*------iOS/ANDROID BLOCK------*/}
                 <Grid container direction="row" className={classes.serviceCont} justify={matchesSM ? "center" : "flex-end"} >
-                    <Grid item style={{marginLeft: matchesSM ? 0 : "5em", textAlign: matchesSM ? "center" : undefined}}>
+                    <Grid item style={{textAlign: matchesSM ? "center" : undefined}}>
                         <Typography variant="h4" >
                             iOS/Android App Development
                         </Typography>
@@ -167,7 +167,7 @@ export default function LandingPage() {
                             <ButtonArrow width={10} height={10} fill={theme.palette.common.blue} />
                         </Button>
                     </Grid>
-                    <Grid item>
+                    <Grid item style={{marginRight: matchesSM ? 0 : "5em"}}>
                         <img className={classes.icon} alt="mobile apps icon" src={mobileAppsIcon} />
                     </Grid>
                 </Grid>

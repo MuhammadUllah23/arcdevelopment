@@ -173,17 +173,17 @@ export default function LandingPage() {
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid item> {/*------CUSTOM SOFTWARE BLOCK------*/}
+            <Grid item> {/*------WEBSITES BLOCK------*/}
                 <Grid container direction="row" className={classes.serviceCont} justify={matchesSM ? "center" : undefined} >
                     <Grid item style={{marginLeft: matchesSM ? 0 : "5em", textAlign: matchesSM ? "center" : undefined}}>
                         <Typography variant="h4" >
-                            Custom Software Development
+                            Websites Development
                         </Typography>
                         <Typography variant="subtitle1" className={classes.subtitle} >
-                            Save Energy. Save Time. Save Money.
+                            Reach More. Discover More. Sell More.
                         </Typography>
                         <Typography variant="subtitle1">
-                            Complete digital solutions, from investigation to{" "} <span className={classes.specialText}>celebration.</span>
+                            Optimiazed for Serch Engines, built for speed.
                         </Typography>
                         <Button variant="outlined" className={classes.buttonLearnMoreServices} >
                             <span style={{marginRight: 10}}> Learn More </span>
@@ -191,7 +191,7 @@ export default function LandingPage() {
                         </Button>
                     </Grid>
                     <Grid item>
-                        <img className={classes.icon} alt="custom software icon" src={customSoftwareIcon} />
+                        <img className={classes.icon} alt="website icon" src={websiteIcon} />
                     </Grid>
                 </Grid>
             </Grid>       

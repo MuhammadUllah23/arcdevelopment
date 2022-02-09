@@ -151,7 +151,7 @@ export default function LandingPage() {
                 </Grid>
             </Grid>
             <Grid item> {/*------iOS/ANDROID BLOCK------*/}
-                <Grid container direction="row" className={classes.serviceCont} justify={matchesSM ? "center" : undefined} >
+                <Grid container direction="row" className={classes.serviceCont} justify={matchesSM ? "center" : "flex-end"} >
                     <Grid item style={{marginLeft: matchesSM ? 0 : "5em", textAlign: matchesSM ? "center" : undefined}}>
                         <Typography variant="h4" >
                             iOS/Android App Development
@@ -160,7 +160,7 @@ export default function LandingPage() {
                             Extend Functionality. Extend Access. Increase Engagement.
                         </Typography>
                         <Typography variant="subtitle1">
-                            Integrate your web experience or create a standalone app{matchesSM ? null : <br />}
+                            Integrate your web experience or create a standalone app{matchesSM ? null : <br />}with either mobile platform
                         </Typography>
                         <Button variant="outlined" className={classes.buttonLearnMoreServices} >
                             <span style={{marginRight: 10}}> Learn More </span>
@@ -168,7 +168,7 @@ export default function LandingPage() {
                         </Button>
                     </Grid>
                     <Grid item>
-                        <img className={classes.icon} alt="custom software icon" src={customSoftwareIcon} />
+                        <img className={classes.icon} alt="mobile apps icon" src={mobileAppsIcon} />
                     </Grid>
                 </Grid>
             </Grid>

@@ -198,25 +198,28 @@ export default function LandingPage() {
                 </Grid>
             </Grid>
             <Grid item >
-                <Card>
-                    <CardContent>
-                        <Grid container direction="column" style={{textAlign: "center"}} >
-                            <Grid item >
-                                <Typography variant="h3" >
-                                    The Revolution
-                                </Typography>
+                <Grid container alignItems='center' justify='center' >
+                    <Card>
+                        <CardContent>
+                            <Grid container direction="column" style={{textAlign: "center"}} >
+                                <Grid item >
+                                    <Typography variant="h3" >
+                                        The Revolution
+                                    </Typography>
+                                </Grid>
+                                <Grid item >
+                                    <Typography variant="subtitle1" >
+                                        Visionary insights coupled with cutting-edge technology is a recipe for revolution.
+                                    </Typography>
+                                    <Button className={classes.buttonLearnMoreHero} variant="outlined"> <span style={{marginRight: 10}}>Learn More</span> 
+                                        <ButtonArrow width={15} length={15} fill={theme.palette.common.blue} /> 
+                                    </Button>
+                                </Grid>
                             </Grid>
-                            <Grid item >
-                                <Typography variant="subtitle1" >
-                                    Visionary insights coupled with cutting-edge technology is a recipe for revolution.
-                                </Typography>
-                                <Button className={classes.buttonLearnMoreHero} variant="outlined"> <span style={{marginRight: 10}}>Learn More</span> 
-                                    <ButtonArrow width={15} length={15} fill={theme.palette.common.blue} /> 
-                                </Button>
-                            </Grid>
-                        </Grid>
-                    </CardContent>
-                </Card>
+                        </CardContent>
+                    </Card>
+                </Grid>
+                
             </Grid>       
         </Grid>
         

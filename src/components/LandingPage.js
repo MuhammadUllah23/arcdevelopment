@@ -210,6 +210,9 @@ export default function LandingPage() {
                                 <Typography variant="subtitle1" >
                                     Visionary insights coupled with cutting-edge technology is a recipe for revolution.
                                 </Typography>
+                                <Button className={classes.buttonLearnMoreHero} variant="outlined"> <span style={{marginRight: 10}}>Learn More</span> 
+                                    <ButtonArrow width={15} length={15} fill={theme.palette.common.blue} /> 
+                                </Button>
                             </Grid>
                         </Grid>
                     </CardContent>

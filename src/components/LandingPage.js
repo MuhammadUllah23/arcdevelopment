@@ -198,7 +198,13 @@ export default function LandingPage() {
                 </Grid>
             </Grid>
             <Grid item>
-                
+                <Card>
+                    <CardContent>
+                        <Grid container direction="column">
+                            
+                        </Grid>
+                    </CardContent>
+                </Card>
             </Grid>       
         </Grid>
         

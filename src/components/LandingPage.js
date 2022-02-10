@@ -201,7 +201,16 @@ export default function LandingPage() {
                 <Card>
                     <CardContent>
                         <Grid container direction="column">
-                            
+                            <Grid item >
+                                <Typography variant="h3" >
+                                    The Revolution
+                                </Typography>
+                            </Grid>
+                            <Grid item >
+                                <Typography variant="subtitle1" >
+                                    Visionary insights coupled with cutting-edge technology is a recipe for revolution.
+                                </Typography>
+                            </Grid>
                         </Grid>
                     </CardContent>
                 </Card>

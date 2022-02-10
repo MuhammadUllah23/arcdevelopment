@@ -7,6 +7,8 @@ import {makeStyles, useTheme} from '@material-ui/core/styles';
 import { Grid } from '@material-ui/core';
 import { Button } from '@material-ui/core';
 import { useMediaQuery } from '@material-ui/core';
+import { Card } from '@material-ui/core';
+import { CardContent } from '@material-ui/core';
 
 import ButtonArrow from './ui/ButtonArrow';
 import animationData from '../animations/landinganimation/data'
@@ -194,6 +196,9 @@ export default function LandingPage() {
                         <img className={classes.icon} alt="website icon" src={websiteIcon} />
                     </Grid>
                 </Grid>
+            </Grid>
+            <Grid item>
+                
             </Grid>       
         </Grid>
         

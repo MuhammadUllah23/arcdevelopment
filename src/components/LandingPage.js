@@ -215,7 +215,7 @@ export default function LandingPage() {
                 </Grid>
             </Grid>
             <Grid item >
-                <Grid container style={{height: '100em'}} alignItems='center' justify='center' >
+                <Grid container style={{height: '100em', marginTop: '12em'}} alignItems='center' justify='center' >
                     <Card className={classes.revolutionCard}>
                         <CardContent>
                             <Grid container direction="column" style={{textAlign: "center"}} >

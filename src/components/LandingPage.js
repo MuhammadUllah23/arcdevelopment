@@ -15,6 +15,7 @@ import animationData from '../animations/landinganimation/data'
 import customSoftwareIcon from '../assets/Custom Software Icon.svg'
 import mobileAppsIcon from '../assets/mobileIcon.svg'
 import websiteIcon from '../assets/websiteIcon.svg'
+import revolutionBackground from '../assets/repeatingBackground.svg'
 
 const useStyles = makeStyles(theme => ({
     animation: {
@@ -91,6 +92,13 @@ const useStyles = makeStyles(theme => ({
         }
         
     },
+    revolutionBackground: {
+        backgroundImage: `url(${revolutionBackground})`,
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeate',
+        height: '100%'
+    }
 
 
 }))
@@ -218,6 +226,7 @@ export default function LandingPage() {
                             </Grid>
                         </CardContent>
                     </Card>
+                    <div className={classes.revolutionBackground} />
                 </Grid>
                 
             </Grid>       

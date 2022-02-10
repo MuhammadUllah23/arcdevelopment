@@ -95,9 +95,13 @@ const useStyles = makeStyles(theme => ({
     revolutionBackground: {
         backgroundImage: `url(${revolutionBackground})`,
         backgroundPosition: 'center',
+        // to cover the entire container
         backgroundSize: 'cover',
+        // the extra space is not filled with duplicating the icon 
         backgroundRepeat: 'no-repeate',
-        height: '100%'
+        // to take all the space it can
+        height: '100%',
+        width: '100%'
     }
 
 
@@ -206,7 +210,7 @@ export default function LandingPage() {
                 </Grid>
             </Grid>
             <Grid item >
-                <Grid container alignItems='center' justify='center' >
+                <Grid container style={{height: '100em'}} alignItems='center' justify='center' >
                     <Card>
                         <CardContent>
                             <Grid container direction="column" style={{textAlign: "center"}} >

@@ -197,10 +197,10 @@ export default function LandingPage() {
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid item>
+            <Grid item >
                 <Card>
                     <CardContent>
-                        <Grid container direction="column">
+                        <Grid container direction="column" style={{textAlign: "center"}} >
                             <Grid item >
                                 <Typography variant="h3" >
                                     The Revolution

@@ -107,7 +107,15 @@ const useStyles = makeStyles(theme => ({
         position: "absolute",
         boxShadow: theme.shadows[10],
         borderRadius: 15,
-        padding: '10em'
+        padding: '10em',
+        [theme.breakpoints.down("sm")]: {
+            paddingTop: '8em',
+            paddingBottom: '8em',
+            paddingLeft: 0,
+            paddingRight: 0,
+            borderRadius: 0,
+            width: '100%'
+        }
     }
 
 }))
@@ -220,7 +228,8 @@ export default function LandingPage() {
                         <CardContent>
                             <Grid container direction="column" style={{textAlign: "center"}} >
                                 <Grid item >
-                                    <Typography variant="h3" >
+                                    <Typography variant="h3" gutterBottom >
+                                    {/* gutterBottom is to create a margin below */}
                                         The Revolution
                                     </Typography>
                                 </Grid>

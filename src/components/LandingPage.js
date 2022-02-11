@@ -262,7 +262,7 @@ export default function LandingPage() {
             <Grid item > {/*------INFORMATION BLOCK------*/}
                 <Grid container style={{height: '80em'}} alignItems='center' direction="row">
                 <Grid item container style={{position: 'absolute'}}>
-                    <Grid item style={{marginLeft: '5em'}} >
+                    <Grid item sm style={{marginLeft: '5em'}} >
                         <Grid container direction="column" >
                             <Typography variant="h2" style={{color: "white"}}>About Us</Typography>
                             <Typography variant='subtitle2'>Let's get personal.</Typography>
@@ -274,7 +274,7 @@ export default function LandingPage() {
                             </Grid>
                         </Grid>
                     </Grid>
-                    <Grid item style={{ marginRight: '5em'}} >
+                    <Grid item sm style={{ marginRight: '5em', textAlign: 'right'}} >
                         <Grid container direction="column" >
                             <Typography variant="h2" style={{color: "white"}}>Contact Us</Typography>
                             <Typography variant='subtitle2'>Say hello! <span role="img" aria-label="waving-hand">👋</span></Typography>

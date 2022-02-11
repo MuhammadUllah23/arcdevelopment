@@ -248,13 +248,14 @@ export default function LandingPage() {
                 </Grid>
             </Grid>    
             <Grid item > {/*------INFORMATION BLOCK------*/}
-                <Grid container direction="row">
+                <Grid container style={{height: '80em'}} direction="row">
                     <Grid item >
                         <Grid container direction="column" >
                             <Typography variant="h2" style={{color: "white"}}>About Us</Typography>
                             <Typography variant='subtitle2'>Let's get personal.</Typography>
                         </Grid>
                     </Grid>
+                    <div className={classes.infoBackground} />
                 </Grid>
             </Grid>   
         </Grid>

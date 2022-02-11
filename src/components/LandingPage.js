@@ -136,6 +136,7 @@ export default function LandingPage() {
     const classes = useStyles()
     const theme = useTheme()
     const matchesSM = useMediaQuery(theme.breakpoints.down("sm"))
+    const matchesXS = useMediaQuery(theme.breakpoints.down("xs"))
 
     const defaultOptions = {
         loop: true,
@@ -261,8 +262,8 @@ export default function LandingPage() {
             </Grid>    
             <Grid item > {/*------INFORMATION BLOCK------*/}
                 <Grid container style={{height: '80em'}} alignItems='center' direction="row">
-                <Grid item container style={{position: 'absolute'}}>
-                    <Grid item sm style={{marginLeft: '5em'}} >
+                <Grid item container style={{position: 'absolute', textAlign: matchesXS ? 'center' : 'inherit'}} direction={matchesXS ? 'column': 'row'}>
+                    <Grid item sm style={{marginLeft: matchesSM ? '2em' : '5em'}} >
                         <Grid container direction="column" >
                             <Typography variant="h2" style={{color: "white"}}>About Us</Typography>
                             <Typography variant='subtitle2'>Let's get personal.</Typography>
@@ -274,7 +275,7 @@ export default function LandingPage() {
                             </Grid>
                         </Grid>
                     </Grid>
-                    <Grid item sm style={{ marginRight: '5em', textAlign: 'right'}} >
+                    <Grid item sm style={{ marginRight: matchesSM ? '2em' : '5em', textAlign: matchesXS ? 'center' : 'right'}} >
                         <Grid container direction="column" >
                             <Typography variant="h2" style={{color: "white"}}>Contact Us</Typography>
                             <Typography variant='subtitle2'>Say hello! <span role="img" aria-label="waving-hand">👋</span></Typography>

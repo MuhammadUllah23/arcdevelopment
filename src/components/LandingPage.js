@@ -16,6 +16,7 @@ import customSoftwareIcon from '../assets/Custom Software Icon.svg'
 import mobileAppsIcon from '../assets/mobileIcon.svg'
 import websiteIcon from '../assets/websiteIcon.svg'
 import revolutionBackground from '../assets/repeatingBackground.svg'
+import infoBackground from '../assets/infoBackground.svg'
 
 const useStyles = makeStyles(theme => ({
     animation: {
@@ -116,6 +117,17 @@ const useStyles = makeStyles(theme => ({
             borderRadius: 0,
             width: '100%'
         }
+    },
+    infoBackground: {
+        backgroundImage: `url(${infoBackground})`,
+        backgroundPosition: 'center',
+        // to cover the entire container
+        backgroundSize: 'cover',
+        // the extra space is not filled with duplicating the icon 
+        backgroundRepeat: 'no-repeate',
+        // to take all the space it can
+        height: '100%',
+        width: '100%'
     }
 
 }))

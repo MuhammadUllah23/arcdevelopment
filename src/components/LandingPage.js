@@ -251,7 +251,8 @@ export default function LandingPage() {
                 <Grid container direction="row">
                     <Grid item >
                         <Grid container direction="column" >
-                            
+                            <Typography variant="h2" style={{color: "white"}}>About Us</Typography>
+                            <Typography>Let's get personal.</Typography>
                         </Grid>
                     </Grid>
                 </Grid>

@@ -222,7 +222,7 @@ export default function LandingPage() {
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid item >
+            <Grid item > {/*------REVOLUTION BLOCK------*/}
                 <Grid container style={{height: '100em', marginTop: '12em'}} alignItems='center' justify='center' >
                     <Card className={classes.revolutionCard}>
                         <CardContent>
@@ -246,8 +246,16 @@ export default function LandingPage() {
                     </Card>
                     <div className={classes.revolutionBackground} />
                 </Grid>
-                
-            </Grid>       
+            </Grid>    
+            <Grid item > {/*------INFORMATION BLOCK------*/}
+                <Grid container direction="row">
+                    <Grid item >
+                        <Grid container direction="column" >
+                            
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Grid>   
         </Grid>
         
     )

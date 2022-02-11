@@ -274,7 +274,7 @@ export default function LandingPage() {
                             </Grid>
                         </Grid>
                     </Grid>
-                    <Grid item style={{ marginLeft: '5em'}} >
+                    <Grid item style={{ marginRight: '5em'}} >
                         <Grid container direction="column" >
                             <Typography variant="h2" style={{color: "white"}}>Contact Us</Typography>
                             <Typography variant='subtitle2'>Say hello! <span role="img" aria-label="waving-hand">👋</span></Typography>

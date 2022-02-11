@@ -261,7 +261,7 @@ export default function LandingPage() {
             </Grid>    
             <Grid item > {/*------INFORMATION BLOCK------*/}
                 <Grid container style={{height: '80em'}} direction="row">
-                    <Grid item >
+                    <Grid item style={{position: 'absolute', marginLeft: '5em'}} >
                         <Grid container direction="column" >
                             <Typography variant="h2" style={{color: "white"}}>About Us</Typography>
                             <Typography variant='subtitle2'>Let's get personal.</Typography>

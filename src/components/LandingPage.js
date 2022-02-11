@@ -266,7 +266,7 @@ export default function LandingPage() {
                             <Typography variant="h2" style={{color: "white"}}>About Us</Typography>
                             <Typography variant='subtitle2'>Let's get personal.</Typography>
                             <Grid item>
-                                <Button variant="outlined" className={classes.buttonLearnMoreServices} >
+                                <Button variant="outlined" style={{color: 'white', borderColor: 'white'}} className={classes.buttonLearnMoreServices} >
                                     <span style={{marginRight: 10}}> Learn More </span>
                                     <ButtonArrow width={10} height={10} fill='white' />
                                 </Button>

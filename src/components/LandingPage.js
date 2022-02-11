@@ -265,6 +265,10 @@ export default function LandingPage() {
                         <Grid container direction="column" >
                             <Typography variant="h2" style={{color: "white"}}>About Us</Typography>
                             <Typography variant='subtitle2'>Let's get personal.</Typography>
+                            <Button variant="outlined" className={classes.buttonLearnMoreServices} >
+                            <span style={{marginRight: 10}}> Learn More </span>
+                            <ButtonArrow width={10} height={10} fill={theme.palette.common.blue} />
+                        </Button>
                         </Grid>
                     </Grid>
                     <div className={classes.infoBackground} />

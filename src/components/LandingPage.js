@@ -275,8 +275,8 @@ export default function LandingPage() {
                     </Grid>
                     <Grid item style={{position: 'absolute', marginLeft: '5em'}} >
                         <Grid container direction="column" >
-                            <Typography variant="h2" style={{color: "white"}}>About Us</Typography>
-                            <Typography variant='subtitle2'>Let's get personal.</Typography>
+                            <Typography variant="h2" style={{color: "white"}}>Contact Us</Typography>
+                            <Typography variant='subtitle2'>Say hello! <span role="img" aria-label="waving-hand">👋</span></Typography>
                             <Grid item>
                                 <Button variant="outlined" style={{color: 'white', borderColor: 'white'}} className={classes.buttonLearnMoreServices} >
                                     <span style={{marginRight: 10}}> Learn More </span>

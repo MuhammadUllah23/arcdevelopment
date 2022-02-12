@@ -15,7 +15,8 @@ export default function CallToAction() {
             <Grid item>
                 <Grid container direction='columns'>
                     <Grid item>
-                        
+                        <Typography variant='h2' >Simple Software.<br />Revolutionary</Typography>
+                        <Typography variant='subtitle2' >The advantage of the 21st Century.</Typography>
                     </Grid>
                 </Grid>
             </Grid>

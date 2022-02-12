@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => ({
         // the extra space is not filled with duplicating the icon 
         backgroundRepeat: 'no-repeate',
         // to take all the space it can
-        height: '100%',
+        height: '60em',
         width: '100%',
         [theme.breakpoints.down("md")]: {
             backgroundImage: `url(${mobileBackground})`,
@@ -51,8 +51,8 @@ export default function CallToAction() {
     const theme = useTheme()
 
     return (
-        <Grid container style={{height: '60em'}} alignItems='center' >
-            <Grid item style={{position: 'absolute', marginLeft: '5em'}}>
+        <Grid container alignItems='center' justify="space-between" className={classes.background} >
+            <Grid item style={{marginLeft: '5em'}}>
                 <Grid container direction='columns'>
                     <Grid item>
                         <Typography variant='h2' >Simple Software.<br />Revolutionary</Typography>
@@ -66,10 +66,9 @@ export default function CallToAction() {
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid item>
+            <Grid item >
                 <Button variant='contained' className={classes.estimateButton}>Free Estimate</Button>
             </Grid>
-            <div className={classes.background} />
         </Grid>
     )
 }

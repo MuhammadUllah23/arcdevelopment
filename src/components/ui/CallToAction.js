@@ -52,10 +52,10 @@ const useStyles = makeStyles(theme => ({
 export default function CallToAction() {
     const classes = useStyles()
     const theme = useTheme()
-    const matchesSM = useMediaQuerytheme.breakpoints.down("sm"))
+    const matchesSM = useMediaQuery(theme.breakpoints.down("sm"))
 
     return (
-        <Grid container alignItems='center' justify="space-between" className={classes.background} >
+        <Grid container alignItems='center' justify={matchesSM ? "center" : "space-between"} className={classes.background} direction={matchesSM ? 'column' : 'row'}>
             <Grid item style={{marginLeft: '5em'}}>
                 <Grid container direction='columns'>
                     <Grid item>

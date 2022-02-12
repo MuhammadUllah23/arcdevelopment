@@ -40,6 +40,7 @@ const useStyles = makeStyles(theme => ({
         height: 80,
         width: 205,
         fontSize: '1.5rem',
+        marginRight: '5em',
         "&:hover": {
             backgroundColor: theme.palette.secondary.light
         } 

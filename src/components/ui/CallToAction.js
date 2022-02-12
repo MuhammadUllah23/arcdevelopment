@@ -4,6 +4,7 @@ import { Grid } from "@material-ui/core";
 import { Typography } from "@material-ui/core";
 import { makeStyles, useTheme } from "@material-ui/styles";
 import Button from "@material-ui/core/Button";
+import { useMediaQuery } from "@material-ui/core";
 
 import ButtonArrow from './ButtonArrow'
 import background from '../../assets/background.jpg'
@@ -41,6 +42,7 @@ const useStyles = makeStyles(theme => ({
         width: 205,
         fontSize: '1.5rem',
         marginRight: '5em',
+        marginLeft: '2em',
         "&:hover": {
             backgroundColor: theme.palette.secondary.light
         } 
@@ -50,6 +52,7 @@ const useStyles = makeStyles(theme => ({
 export default function CallToAction() {
     const classes = useStyles()
     const theme = useTheme()
+    const matchesSM = useMediaQuerytheme.breakpoints.down("sm"))
 
     return (
         <Grid container alignItems='center' justify="space-between" className={classes.background} >

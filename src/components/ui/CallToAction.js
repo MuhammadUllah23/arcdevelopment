@@ -55,6 +55,9 @@ export default function CallToAction() {
                     </Grid>
                 </Grid>
             </Grid>
+            <Grid item>
+                <Button variant='contained' >Free Estimate</Button>
+            </Grid>
             <div className={classes.background} />
         </Grid>
     )

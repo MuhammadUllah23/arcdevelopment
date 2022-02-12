@@ -295,7 +295,7 @@ export default function LandingPage() {
                 </Grid>
             </Grid>
             <Grid item > {/*------CALL TO ACTION BLOCK------*/}
-
+                <CallToAction />
             </Grid>   
         </Grid>
         

@@ -34,6 +34,7 @@ const useStyles = makeStyles(theme => ({
         width: '100%',
         [theme.breakpoints.down("md")]: {
             backgroundImage: `url(${mobileBackground})`,
+            backgroundAttachment: 'inherit'
         }
     },
     estimateButton: {

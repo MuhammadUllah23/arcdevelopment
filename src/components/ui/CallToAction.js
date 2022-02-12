@@ -1,7 +1,10 @@
 import React from "react";
+
 import { Grid } from "@material-ui/core";
 import { Typography } from "@material-ui/core";
-import { makeStyles } from "@material-ui/styles";
+import { makeStyles, useTheme } from "@material-ui/styles";
+import Button from "@material-ui/core/Button";
+import ButtonArrow from './ButtonArrow'
 
 const useStyles = makeStyles(theme => ({
 
@@ -9,6 +12,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function CallToAction() {
     const classes = useStyles()
+    const theme = useTheme()
 
     return (
         <Grid container >

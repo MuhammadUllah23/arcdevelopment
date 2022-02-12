@@ -41,11 +41,11 @@ export default function CallToAction() {
 
     return (
         <Grid container style={{height: '60em'}} >
-            <Grid item>
+            <Grid item style={{position: 'absolute'}}>
                 <Grid container direction='columns'>
                     <Grid item>
                         <Typography variant='h2' >Simple Software.<br />Revolutionary</Typography>
-                        <Typography variant='subtitle2' >The advantage of the 21st Century.</Typography>
+                        <Typography variant='subtitle2' style={{fontSize: '1.5em'}} >The advantage of the 21st Century.</Typography>
                         <Grid container item>
                             <Button variant="outlined" className={classes.buttonLearnMore} >
                                 <span style={{marginRight: 5}}> Learn More </span>

@@ -19,6 +19,20 @@ const useStyles = makeStyles(theme => ({
             marginBottom: "2em"
         } 
     },
+    background: {
+        backgroundImage: `url(${background})`,
+        backgroundPosition: 'center',
+        // to cover the entire container
+        backgroundSize: 'cover',
+        // the extra space is not filled with duplicating the icon 
+        backgroundRepeat: 'no-repeate',
+        // to take all the space it can
+        height: '100%',
+        width: '100%',
+        [theme.breakpoints.down("md")]: {
+            backgroundImage: `url(${mobileBackground})`,
+        }
+    }
 }))
 
 export default function CallToAction() {
@@ -26,7 +40,7 @@ export default function CallToAction() {
     const theme = useTheme()
 
     return (
-        <Grid container >
+        <Grid container style={{height: '60em'}} >
             <Grid item>
                 <Grid container direction='columns'>
                     <Grid item>

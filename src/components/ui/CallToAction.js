@@ -28,6 +28,8 @@ const useStyles = makeStyles(theme => ({
         // the extra space is not filled with duplicating the icon 
         backgroundRepeat: 'no-repeate',
         // to take all the space it can
+        backgroundAttachment: 'fixed',
+        // gives a parallax look
         height: '60em',
         width: '100%',
         [theme.breakpoints.down("md")]: {

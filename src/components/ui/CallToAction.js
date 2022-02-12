@@ -31,7 +31,7 @@ export default function CallToAction() {
                         <Typography variant='subtitle2' >The advantage of the 21st Century.</Typography>
                         <Grid container item>
                             <Button variant="outlined" className={classes.buttonLearnMore} >
-                                <span style={{marginRight: 10}}> Learn More </span>
+                                <span style={{marginRight: 5}}> Learn More </span>
                                 <ButtonArrow width={10} height={10} fill={theme.palette.common.blue} />
                             </Button>
                         </Grid>

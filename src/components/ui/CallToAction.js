@@ -7,7 +7,15 @@ import Button from "@material-ui/core/Button";
 import ButtonArrow from './ButtonArrow'
 
 const useStyles = makeStyles(theme => ({
-
+    buttonLearnMore: {
+        ...theme.typography.learnMore,
+        fontSize: "0.7rem",
+        height: 35,
+        padding: 5,
+        [theme.breakpoints.down("sm")]: {
+            marginBottom: "2em"
+        } 
+    },
 }))
 
 export default function CallToAction() {
@@ -22,9 +30,9 @@ export default function CallToAction() {
                         <Typography variant='h2' >Simple Software.<br />Revolutionary</Typography>
                         <Typography variant='subtitle2' >The advantage of the 21st Century.</Typography>
                         <Grid container item>
-                            <Button variant="outlined" style={{color: 'white', borderColor: 'white'}} className={classes.buttonLearnMoreServices} >
+                            <Button variant="outlined" className={classes.buttonLearnMore} >
                                 <span style={{marginRight: 10}}> Learn More </span>
-                                <ButtonArrow width={10} height={10} fill='white' />
+                                <ButtonArrow width={10} height={10} fill={theme.palette.common.blue} />
                             </Button>
                         </Grid>
                     </Grid>

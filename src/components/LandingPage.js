@@ -50,7 +50,7 @@ const useStyles = makeStyles(theme => ({
         height: 45,
         width: 145
     },
-    buttonLearnMoreServices: {
+    buttonLearnMore: {
         ...theme.typography.learnMore,
         fontSize: "0.7rem",
         height: 35,
@@ -183,7 +183,7 @@ export default function LandingPage() {
                         <Typography variant="subtitle1">
                             Complete digital solutions, from investigation to{" "} <span className={classes.specialText}>celebration.</span>
                         </Typography>
-                        <Button variant="outlined" className={classes.buttonLearnMoreServices} >
+                        <Button variant="outlined" className={classes.buttonLearnMore} >
                             <span style={{marginRight: 10}}> Learn More </span>
                             <ButtonArrow width={10} height={10} fill={theme.palette.common.blue} />
                         </Button>
@@ -205,7 +205,7 @@ export default function LandingPage() {
                         <Typography variant="subtitle1">
                             Integrate your web experience or create a standalone app{matchesSM ? null : <br />}with either mobile platform
                         </Typography>
-                        <Button variant="outlined" className={classes.buttonLearnMoreServices} >
+                        <Button variant="outlined" className={classes.buttonLearnMore} >
                             <span style={{marginRight: 10}}> Learn More </span>
                             <ButtonArrow width={10} height={10} fill={theme.palette.common.blue} />
                         </Button>
@@ -227,7 +227,7 @@ export default function LandingPage() {
                         <Typography variant="subtitle1">
                             Optimiazed for Serch Engines, built for speed.
                         </Typography>
-                        <Button variant="outlined" className={classes.buttonLearnMoreServices} >
+                        <Button variant="outlined" className={classes.buttonLearnMore} >
                             <span style={{marginRight: 10}}> Learn More </span>
                             <ButtonArrow width={10} height={10} fill={theme.palette.common.blue} />
                         </Button>
@@ -270,7 +270,7 @@ export default function LandingPage() {
                             <Typography variant="h2" style={{color: "white"}}>About Us</Typography>
                             <Typography variant='subtitle2'>Let's get personal.</Typography>
                             <Grid item>
-                                <Button variant="outlined" style={{color: 'white', borderColor: 'white'}} className={classes.buttonLearnMoreServices} >
+                                <Button variant="outlined" style={{color: 'white', borderColor: 'white'}} className={classes.buttonLearnMore} >
                                     <span style={{marginRight: 10}}> Learn More </span>
                                     <ButtonArrow width={10} height={10} fill='white' />
                                 </Button>
@@ -282,7 +282,7 @@ export default function LandingPage() {
                             <Typography variant="h2" style={{color: "white"}}>Contact Us</Typography>
                             <Typography variant='subtitle2'>Say hello! <span role="img" aria-label="waving-hand">👋</span></Typography>
                             <Grid item>
-                                <Button variant="outlined" style={{color: 'white', borderColor: 'white'}} className={classes.buttonLearnMoreServices} >
+                                <Button variant="outlined" style={{color: 'white', borderColor: 'white'}} className={classes.buttonLearnMore} >
                                     <span style={{marginRight: 10}}> Learn More </span>
                                     <ButtonArrow width={10} height={10} fill='white' />
                                 </Button>

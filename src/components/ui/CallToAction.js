@@ -40,8 +40,8 @@ export default function CallToAction() {
     const theme = useTheme()
 
     return (
-        <Grid container style={{height: '60em'}} >
-            <Grid item style={{position: 'absolute'}}>
+        <Grid container style={{height: '60em'}} alignItems='center' >
+            <Grid item style={{position: 'absolute', marginLeft: '5em'}}>
                 <Grid container direction='columns'>
                     <Grid item>
                         <Typography variant='h2' >Simple Software.<br />Revolutionary</Typography>

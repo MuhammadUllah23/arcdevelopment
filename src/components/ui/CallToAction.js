@@ -32,7 +32,18 @@ const useStyles = makeStyles(theme => ({
         [theme.breakpoints.down("md")]: {
             backgroundImage: `url(${mobileBackground})`,
         }
-    }
+    },
+    estimateButton: {
+        ...theme.typography.estimate,
+        backgroundColor: theme.palette.common.orange,
+        borderRadius: 50,
+        height: 80,
+        width: 205,
+        fontSize: '1.5rem',
+        "&:hover": {
+            backgroundColor: theme.palette.secondary.light
+        } 
+    },
 }))
 
 export default function CallToAction() {
@@ -56,7 +67,7 @@ export default function CallToAction() {
                 </Grid>
             </Grid>
             <Grid item>
-                <Button variant='contained' >Free Estimate</Button>
+                <Button variant='contained' className={classes.estimateButton}>Free Estimate</Button>
             </Grid>
             <div className={classes.background} />
         </Grid>

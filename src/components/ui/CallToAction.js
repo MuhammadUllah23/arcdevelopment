@@ -4,7 +4,10 @@ import { Grid } from "@material-ui/core";
 import { Typography } from "@material-ui/core";
 import { makeStyles, useTheme } from "@material-ui/styles";
 import Button from "@material-ui/core/Button";
+
 import ButtonArrow from './ButtonArrow'
+import background from '../../assets/background.jpg'
+import mobileBackground from '../../assets/mobileBackground.jpg'
 
 const useStyles = makeStyles(theme => ({
     buttonLearnMore: {
@@ -38,6 +41,7 @@ export default function CallToAction() {
                     </Grid>
                 </Grid>
             </Grid>
+            <div className={classes.background} />
         </Grid>
     )
 }

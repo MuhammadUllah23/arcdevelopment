@@ -53,7 +53,7 @@ const useStyles = makeStyles(theme => ({
         marginTop: "-6em",
         right: "1.5em",
         [theme.breakpoints.down("xs")]: {
-            right: "0.6em"
+            right: "1.2em"
         }
     }
 }))

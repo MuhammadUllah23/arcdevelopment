@@ -96,8 +96,8 @@ export default function Services(props) {
                 </Grid>
             </Grid>
             <Grid item> {/*------WEBSITES BLOCK------*/}
-                <Grid container direction="row" className={classes.serviceCont} justify={matchesSM ? "center" : undefined} >
-                    <Grid item style={{marginLeft: matchesSM ? 0 : "5em", textAlign: matchesSM ? "center" : undefined}}>
+                <Grid container direction="row" className={classes.serviceCont} justify={matchesSM ? "center" : 'flex-end'} >
+                    <Grid item style={{textAlign: matchesSM ? "center" : undefined}}>
                         <Typography variant="h4" >
                             Websites Development
                         </Typography>
@@ -112,7 +112,7 @@ export default function Services(props) {
                             <ButtonArrow width={10} height={10} fill={theme.palette.common.blue} />
                         </Button>
                     </Grid>
-                    <Grid item>
+                    <Grid item style={{marginRight: matchesSM ? 0 : "5em" }}>
                         <img className={classes.icon} alt="website icon" src={websiteIcon} />
                     </Grid>
                 </Grid>

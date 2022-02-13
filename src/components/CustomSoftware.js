@@ -26,7 +26,7 @@ const useStyles = makeStyles(theme => ({
     }
 }))
 
-export default function CustomSoftware() {
+export default function CustomSoftware(props) {
     const classes = useStyles()
     const theme = useTheme
 

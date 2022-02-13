@@ -7,6 +7,7 @@ import theme from './ui/Theme'
 import Header from './ui/Header';
 import Footer from './ui/Footer';
 import LandingPage from './LandingPage';
+import Services from './Services';
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
         <Header value={value} setValue={setValue} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex} />
         <Routes>
           <Route path="/" element={<LandingPage setValue={setValue} setSelectedIndex={setSelectedIndex} />}/>
-          <Route path="/services" element={<div style={{height: "400px"}}>services</div>}/>
+          <Route path="/services" element={<Services setValue={setValue} setSelectedIndex={setSelectedIndex} />}/>
           <Route path="/customsoftware" element={<div style={{height: "400px"}}>customsoftware</div>}/>
           <Route path="/mobileapps" element={<div style={{height: "400px"}}>mobileapps</div>}/>
           <Route path="/websites" element={<div style={{height: "400px"}}>websites</div>}/>

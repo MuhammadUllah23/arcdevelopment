@@ -22,7 +22,12 @@ export default function CustomSoftware() {
     return (
         <Grid container direction='column'>
             <Grid item container direction='row' >
-                
+                <Grid item >
+                    <IconButton>
+                    {/* IconButton does the samething as button component except it specializes in dealing only with images*/}
+                        <img src={backArrow} alt="Back to Services Page" />
+                    </IconButton>
+                </Grid>
             </Grid>
         </Grid>
     )

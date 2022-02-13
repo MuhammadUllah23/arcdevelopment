@@ -13,7 +13,35 @@ import { Button } from "@material-ui/core";
 import { useMediaQuery } from "@material-ui/core";
 
 const useStyles = makeStyles(theme => ({
-
+    specialText: {
+        fontFamily: "Pacifico",
+        color: theme.palette.common.orange
+    },
+    subtitle: {
+        marginBottom: "1em"
+    },
+    icon: {
+        marginLeft: "2em",
+        [theme.breakpoints.down("xs")]: {
+            marginLeft: 0
+        }
+    },
+    serviceCont: {
+        marginTop: "12em",
+        [theme.breakpoints.down("sm")]: {
+            padding: 25
+        }
+        
+    },
+    buttonLearnMore: {
+        ...theme.typography.learnMore,
+        fontSize: "0.7rem",
+        height: 35,
+        padding: 5,
+        [theme.breakpoints.down("sm")]: {
+            marginBottom: "2em"
+        } 
+    },
 }))
 
 export default function Services(props) {

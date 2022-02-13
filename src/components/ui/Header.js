@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React from "react";
 import { useState, useEffect } from "react";
-import { Link, Route } from "react-router-dom";
+import { Link} from "react-router-dom";
 
 import { AppBar } from "@material-ui/core/";
 import { Toolbar } from "@material-ui/core/";

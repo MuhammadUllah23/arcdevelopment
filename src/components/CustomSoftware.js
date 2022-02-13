@@ -12,6 +12,12 @@ import backArrow from '../assets/backArrow.svg'
 import forwardArrow from '../assets/forwardArrow.svg'
 
 const useStyles = makeStyles(theme => ({
+    mainCont: {
+        paddingLeft: '5em',
+        paddingRight: '5em',
+        paddingTop: '2em',
+        paddingBottom: '10em'
+    },
     heading: {
         maxWidth: '40em'
     },
@@ -25,7 +31,7 @@ export default function CustomSoftware() {
     const theme = useTheme
 
     return (
-        <Grid container direction='column'>
+        <Grid container direction='column' className={classes.mainCont}>
             <Grid item container direction='row' >
                 <Grid item className={classes.arrowCont} >
                     <IconButton style={{backgroundColor: 'transparent'}}>

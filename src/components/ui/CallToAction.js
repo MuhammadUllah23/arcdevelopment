@@ -57,7 +57,7 @@ const useStyles = makeStyles(theme => ({
     },
 }))
 
-export default function CallToAction() {
+export default function CallToAction(props) {
     const classes = useStyles()
     const theme = useTheme()
     const matchesSM = useMediaQuery(theme.breakpoints.down("sm"))
@@ -79,7 +79,7 @@ export default function CallToAction() {
                         <Typography variant='h2' >Simple Software.<br />Revolutionary.</Typography>
                         <Typography variant='subtitle2' style={{fontSize: '1.5em'}} >The advantage of the 21st Century.</Typography>
                         <Grid container justify={matchesSM ? 'center' : 'undefined'} item>
-                            <Button component={Link} to="/revolution" variant="outlined" className={classes.buttonLearnMore} >
+                            <Button component={Link} to="/revolution" onClick={() => props.setValue(2)} variant="outlined" className={classes.buttonLearnMore} >
                                 <span style={{marginRight: 5}}> Learn More </span>
                                 <ButtonArrow width={10} height={10} fill={theme.palette.common.blue} />
                             </Button>
@@ -88,7 +88,7 @@ export default function CallToAction() {
                 </Grid>
             </Grid>
             <Grid item >
-                <Button component={Link} to="/estimate" variant='contained' className={classes.estimateButton}>Free Estimate</Button>
+                <Button component={Link} to="/estimate"  onClick={() => props.setValue(5)} variant='contained' className={classes.estimateButton}>Free Estimate</Button>
             </Grid>
         </Grid>
     )

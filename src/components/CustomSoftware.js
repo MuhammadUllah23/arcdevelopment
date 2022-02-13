@@ -12,23 +12,28 @@ import backArrow from '../assets/backArrow.svg'
 import forwardArrow from '../assets/forwardArrow.svg'
 
 const useStyles = makeStyles(theme => ({
-
+    heading: {
+        maxWidth: '40em'
+    },
+    arrowCont: {
+        marginTop: '0.5em'
+    }
 }))
 
 export default function CustomSoftware() {
-    const classes = useStyles
+    const classes = useStyles()
     const theme = useTheme
 
     return (
         <Grid container direction='column'>
             <Grid item container direction='row' >
-                <Grid item >
-                    <IconButton>
+                <Grid item className={classes.arrowCont} >
+                    <IconButton style={{backgroundColor: 'transparent'}}>
                     {/* IconButton does the samething as button component except it specializes in dealing only with images*/}
                         <img src={backArrow} alt="Back to Services Page" />
                     </IconButton>
                 </Grid>
-                <Grid item container direction='column' >
+                <Grid item container direction='column' className={classes.heading} >
                     <Grid item >
                         <Typography variant='h2'>Custom Software Development</Typography>
                     </Grid>
@@ -55,9 +60,12 @@ export default function CustomSoftware() {
                             We create exactly what you what, exactly how you want it.
                         </Typography>
                     </Grid>
-                    <Grid item>
-                        <img src={forwardArrow} alt="Forward to iOS/Android App Development Page"/>
-                    </Grid>
+                    
+                </Grid>
+                <Grid item className={classes.arrowCont} >
+                    <IconButton style={{backgroundColor: 'transparent'}}>
+                       <img src={forwardArrow} alt="Forward to iOS/Android App Development Page"/> 
+                    </IconButton>
                 </Grid>
             </Grid>
         </Grid>

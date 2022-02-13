@@ -53,7 +53,7 @@ export default function Services(props) {
         <Grid container direction="column" >
             <Grid item> {/*------iOS/ANDROID BLOCK------*/}
                 <Grid container direction="row" className={classes.serviceCont} justify={matchesSM ? "center" : "flex-end"} style={{marginTop: matchesSM ? '1em' : '5em'}}>
-                    <Grid item style={{textAlign: matchesSM ? "center" : undefined}}>
+                    <Grid item style={{textAlign: matchesSM ? "center" : undefined, width: matchesSM ? undefined : '35em'}}>
                         <Typography variant="h4" >
                             iOS/Android App Development
                         </Typography>
@@ -69,7 +69,7 @@ export default function Services(props) {
                         </Button>
                     </Grid>
                     <Grid item style={{marginRight: matchesSM ? 0 : "5em"}}>
-                        <img className={classes.icon} alt="mobile apps icon" src={mobileAppsIcon} />
+                        <img className={classes.icon} alt="mobile apps icon" src={mobileAppsIcon} width='250em' />
                     </Grid>
                 </Grid>
             </Grid>
@@ -91,13 +91,13 @@ export default function Services(props) {
                         </Button>
                     </Grid>
                     <Grid item>
-                        <img className={classes.icon} alt="custom software icon" src={customSoftwareIcon} />
+                        <img className={classes.icon} alt="custom software icon" src={customSoftwareIcon}  />
                     </Grid>
                 </Grid>
             </Grid>
             <Grid item> {/*------WEBSITES BLOCK------*/}
                 <Grid container direction="row" className={classes.serviceCont} justify={matchesSM ? "center" : 'flex-end'} style={{marginBottom: '10em'}} >
-                    <Grid item style={{textAlign: matchesSM ? "center" : undefined}}>
+                    <Grid item style={{textAlign: matchesSM ? "center" : undefined, width: matchesSM ? undefined : '35em'}}>
                         <Typography variant="h4" >
                             Websites Development
                         </Typography>
@@ -113,7 +113,7 @@ export default function Services(props) {
                         </Button>
                     </Grid>
                     <Grid item style={{marginRight: matchesSM ? 0 : "5em" }}>
-                        <img className={classes.icon} alt="website icon" src={websiteIcon} />
+                        <img className={classes.icon} alt="website icon" src={websiteIcon} width='250em'/>
                     </Grid>
                 </Grid>
             </Grid>

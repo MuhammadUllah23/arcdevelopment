@@ -264,9 +264,9 @@ export default function LandingPage(props) {
             </Grid>    
             <Grid item > {/*------INFORMATION BLOCK------*/}
                 <Grid container style={{height: '80em'}} alignItems='center' direction="row" className={classes.infoBackground}>
-                <Grid item container style={{textAlign: matchesXS ? 'center' : 'inherit'}} direction={matchesXS ? 'column': 'row'} spacing={matchesXS ? 10 : 0}>
+                <Grid item container style={{textAlign: matchesXS ? 'center' : 'inherit'}} direction={matchesXS ? 'column': 'row'} >
                     <Grid item sm style={{marginLeft: matchesXS ? 0 : matchesSM ? '2em' : '5em'}} >
-                        <Grid container direction="column" >
+                        <Grid container style={{marginBottom: matchesXS ? '10em' : 0}} direction="column" >
                             <Typography variant="h2" style={{color: "white"}}>About Us</Typography>
                             <Typography variant='subtitle2'>Let's get personal.</Typography>
                             <Grid item>

@@ -14,6 +14,8 @@ export default function Services() {
     const classes = useStyles()
 
     return (
-        
+        <Grid container direction="column" >
+            
+        </Grid>
     )
 }

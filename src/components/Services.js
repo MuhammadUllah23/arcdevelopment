@@ -1,11 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import ButtonArrow from "./ui/ButtonArrow";
+import customSoftwareIcon from '../assets/Custom Software Icon.svg'
+import mobileAppsIcon from '../assets/mobileIcon.svg'
+import websiteIcon from '../assets/websiteIcon.svg'
+
 import { makeStyles, useTheme } from "@material-ui/core";
 import { Grid } from "@material-ui/core";
 import { Typography } from "@material-ui/core";
 import { Button } from "@material-ui/core";
-import ButtonArrow from "./ui/ButtonArrow";
 import { useMediaQuery } from "@material-ui/core";
 
 const useStyles = makeStyles(theme => ({

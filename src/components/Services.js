@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => ({
         }
     },
     serviceCont: {
-        marginTop: "12em",
+        marginTop: "10em",
         [theme.breakpoints.down("sm")]: {
             padding: 25
         }
@@ -52,7 +52,7 @@ export default function Services(props) {
     return (
         <Grid container direction="column" >
             <Grid item> {/*------iOS/ANDROID BLOCK------*/}
-                <Grid container direction="row" className={classes.serviceCont} justify={matchesSM ? "center" : "flex-end"} >
+                <Grid container direction="row" className={classes.serviceCont} justify={matchesSM ? "center" : "flex-end"} style={{marginTop: '5em'}}>
                     <Grid item style={{textAlign: matchesSM ? "center" : undefined}}>
                         <Typography variant="h4" >
                             iOS/Android App Development
@@ -96,7 +96,7 @@ export default function Services(props) {
                 </Grid>
             </Grid>
             <Grid item> {/*------WEBSITES BLOCK------*/}
-                <Grid container direction="row" className={classes.serviceCont} justify={matchesSM ? "center" : 'flex-end'} >
+                <Grid container direction="row" className={classes.serviceCont} justify={matchesSM ? "center" : 'flex-end'} style={{marginBottom: '10em'}} >
                     <Grid item style={{textAlign: matchesSM ? "center" : undefined}}>
                         <Typography variant="h4" >
                             Websites Development

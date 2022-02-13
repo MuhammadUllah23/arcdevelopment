@@ -33,7 +33,7 @@ export default function CustomSoftware() {
     return (
         <Grid container direction='column' className={classes.mainCont}>
             <Grid item container direction='row' >
-                <Grid item className={classes.arrowCont} >
+                <Grid item className={classes.arrowCont} style={{marginRight: '1em', marginLeft: '-3.5em'}} >
                     <IconButton style={{backgroundColor: 'transparent'}}>
                     {/* IconButton does the samething as button component except it specializes in dealing only with images*/}
                         <img src={backArrow} alt="Back to Services Page" />

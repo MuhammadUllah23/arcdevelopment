@@ -21,6 +21,7 @@ export default createMuiTheme({
         tab: {
           fontFamily: "Raleway",
           textTransform: 'none',
+          color: "white",
           fontWeight: 700,
           fontSize: "1rem",
         },

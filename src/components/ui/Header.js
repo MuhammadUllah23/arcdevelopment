@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React from "react";
 import { useState, useEffect } from "react";
 import { Link, Route } from "react-router-dom";
@@ -85,7 +86,7 @@ function ElevationScroll(props) {
       },
       menu: {
           backgroundColor: theme.palette.common.blue,
-          color: "white",
+        //   color: "white",
           borderRadius: "0px"
 
       },

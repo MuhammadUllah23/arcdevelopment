@@ -52,7 +52,7 @@ export default function Services(props) {
     return (
         <Grid container direction="column" >
             <Grid item> {/*------iOS/ANDROID BLOCK------*/}
-                <Grid container direction="row" className={classes.serviceCont} justify={matchesSM ? "center" : "flex-end"} style={{marginTop: '5em'}}>
+                <Grid container direction="row" className={classes.serviceCont} justify={matchesSM ? "center" : "flex-end"} style={{marginTop: matchesSM ? '1em' : '5em'}}>
                     <Grid item style={{textAlign: matchesSM ? "center" : undefined}}>
                         <Typography variant="h4" >
                             iOS/Android App Development

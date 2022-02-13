@@ -18,7 +18,7 @@ function App() {
       <BrowserRouter>
         <Header value={value} setValue={setValue} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex} />
         <Routes>
-          <Route path="/" element={<LandingPage />}/>
+          <Route path="/" element={<LandingPage setValue={setValue} setSelectedIndex={setSelectedIndex} />}/>
           <Route path="/services" element={<div style={{height: "400px"}}>services</div>}/>
           <Route path="/customsoftware" element={<div style={{height: "400px"}}>customsoftware</div>}/>
           <Route path="/mobileapps" element={<div style={{height: "400px"}}>mobileapps</div>}/>
@@ -28,7 +28,7 @@ function App() {
           <Route path="/contact" element={<div style={{height: "400px"}}>contact</div>}/>
           <Route path="/estimate" element={<div style={{height: "400px"}}>estimate </div>}/>
         </Routes>
-        <Footer value={value} setValue={setValue} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex}/>
+        <Footer setValue={setValue} setSelectedIndex={setSelectedIndex}/>
       </BrowserRouter>
     </ThemeProvider>   
   );

@@ -55,6 +55,9 @@ export default function CustomSoftware() {
                             We create exactly what you what, exactly how you want it.
                         </Typography>
                     </Grid>
+                    <Grid item>
+                        <img src={forwardArrow} alt="Forward to iOS/Android App Development Page"/>
+                    </Grid>
                 </Grid>
             </Grid>
         </Grid>

@@ -157,17 +157,9 @@ export default function CustomSoftware(props) {
                         </Grid>
                         <Grid item>
                             <Typography variant='body1' paragraph>
-                                Reduce Errors. Reduce Waste. Reduce Costs.
-                            </Typography>
-                            <Typography variant='body1' paragraph>
-                                Billions are spent annually on the purchasing, printing, and
-                                distribution of paper. On top of the massive environmental
-                                impact this has, it causes harm to your bottom line as well.
-                            </Typography>
-                            <Typography variant='body1' paragraph>
-                                By utilizing digital forms and documents you can remove these
-                                obsolete expenses, accelerate your communication, and help the
-                                Earth.
+                                Whether you're a large brand, just getting started, or taking
+                                off right now, our application architecture ensures pain-free
+                                growth and reliability.
                             </Typography>
                         </Grid>
                     </Grid>                      

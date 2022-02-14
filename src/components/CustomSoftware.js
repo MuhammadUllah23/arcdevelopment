@@ -78,20 +78,20 @@ export default function CustomSoftware(props) {
                 </Grid>
             </Grid>
             <Grid item container direction='row' >
-                <Grid item container direction='column' md >
+                <Grid item container direction='column' md style={{maxWidth: '40em'}} >
                     {/* the md property tells item containers explicitly that need to share that space available */}
                     <Typography variant='h4'>Save Energy</Typography>
                     <Grid item>
                         <img src={lightbulb} alt='lightbulb'/>
                     </Grid>
                 </Grid>
-                <Grid item container direction='column' md >
+                <Grid item container direction='column' md style={{maxWidth: '40em'}} >
                     <Typography variant='h4'>Save Time</Typography>
                     <Grid item>
                         <img src={stopwatch} alt='stopwatch'/>
                     </Grid>
                 </Grid>
-                <Grid item container direction='column' md >
+                <Grid item container direction='column' md style={{maxWidth: '40em'}} >
                     <Typography variant='h4'>Save Money</Typography>
                     <Grid item>
                         <img src={cash} alt='cash'/>

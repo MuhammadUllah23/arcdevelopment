@@ -34,7 +34,7 @@ export default function CustomSoftware(props) {
         <Grid container direction='column' className={classes.mainCont}>
             <Grid item container direction='row' >
                 <Grid item className={classes.arrowCont} style={{marginRight: '1em', marginLeft: '-3.5em'}} >
-                    <IconButton component={Link} to='/services' style={{backgroundColor: 'transparent'}}>
+                    <IconButton component={Link} to='/services' onClick={() => props.setSelectedIndex(0)} style={{backgroundColor: 'transparent'}}>
                     {/* IconButton does the samething as button component except it specializes in dealing only with images*/}
                         <img src={backArrow} alt="Back to Services Page" />
                     </IconButton>
@@ -69,7 +69,7 @@ export default function CustomSoftware(props) {
                     
                 </Grid>
                 <Grid item className={classes.arrowCont} >
-                    <IconButton component={Link} to='/mobileapps' style={{backgroundColor: 'transparent'}}>
+                    <IconButton component={Link} to='/mobileapps' onClick={() => props.setSelectedIndex(2)} style={{backgroundColor: 'transparent'}}>
                        <img src={forwardArrow} alt="Forward to iOS/Android App Development Page"/> 
                     </IconButton>
                 </Grid>

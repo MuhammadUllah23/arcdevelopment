@@ -14,6 +14,7 @@ import lightbulb from '../assets/bulb.svg'
 import cash from '../assets/cash.svg'
 import stopwatch from '../assets/stopwatch.svg'
 import documentsAnimation from '../animations/documentsAnimation/data'
+import scaleAnimation from '../animations/scaleAnimation/data.json'
 
 const useStyles = makeStyles(theme => ({
     mainCont: {
@@ -46,6 +47,14 @@ export default function CustomSoftware(props) {
         }
       };
 
+      const scaleOptions = {
+        loop: true,
+        autoplay: true, 
+        animationData: scaleAnimation,
+        rendererSettings: {
+          preserveAspectRatio: 'xMidYMid slice'
+        }
+      };
 
     return (
         <Grid container direction='column' className={classes.mainCont}>
@@ -141,7 +150,7 @@ export default function CustomSoftware(props) {
                 <Grid item container className={classes.itemContainer}>
                     <Grid item container direction='column' md>
                         <Grid item md>
-                            <Lottie options={documentsOptions} style={{maxHeight: 325, maxWidth: 275, minHeight: 275}} />
+                            <Lottie options={scaleOptions} style={{maxHeight: 260, maxWidth: 280}} />
                         </Grid>
                         <Grid item>
                             <Typography variant='h4'>Scale</Typography>

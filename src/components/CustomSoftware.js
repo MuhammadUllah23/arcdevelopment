@@ -84,6 +84,18 @@ export default function CustomSoftware(props) {
                         <img src={lightbulb} alt='lightbulb'/>
                     </Grid>
                 </Grid>
+                <Grid item container direction='column' >
+                    <Typography variant='h4'>Save Time</Typography>
+                    <Grid item>
+                        <img src={stopwatch} alt='stopwatch'/>
+                    </Grid>
+                </Grid>
+                <Grid item container direction='column' >
+                    <Typography variant='h4'>Save Money</Typography>
+                    <Grid item>
+                        <img src={cash} alt='cash'/>
+                    </Grid>
+                </Grid>
             </Grid>
         </Grid>
     )

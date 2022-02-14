@@ -140,8 +140,11 @@ export default function CustomSoftware(props) {
                 </Grid>
                 <Grid item container className={classes.itemContainer}>
                     <Grid item container direction='column' md>
+                        <Grid item md>
+                            <Lottie options={documentsOptions} style={{maxHeight: 325, maxWidth: 275, minHeight: 275}} />
+                        </Grid>
                         <Grid item>
-                            <Typography variant='h4'>Digital Documents & Data</Typography>
+                            <Typography variant='h4'>Scale</Typography>
                         </Grid>
                         <Grid item>
                             <Typography variant='body1' paragraph>
@@ -158,10 +161,7 @@ export default function CustomSoftware(props) {
                                 Earth.
                             </Typography>
                         </Grid>
-                    </Grid>    
-                    <Grid item md>
-                        <Lottie options={documentsOptions} style={{maxHeight: 325, maxWidth: 275, minHeight: 275}} />
-                    </Grid>
+                    </Grid>                      
                 </Grid>
             </Grid>
         </Grid>

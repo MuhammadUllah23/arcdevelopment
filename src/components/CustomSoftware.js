@@ -36,6 +36,16 @@ export default function CustomSoftware(props) {
     const classes = useStyles()
     const theme = useTheme
 
+    const documentOptions = {
+        loop: true,
+        autoplay: true, 
+        animationData: animationData,
+        rendererSettings: {
+          preserveAspectRatio: 'xMidYMid slice'
+        }
+      };
+
+
     return (
         <Grid container direction='column' className={classes.mainCont}>
             <Grid item container direction='row' >

@@ -148,10 +148,11 @@ export default function CustomSoftware(props) {
                     </Grid>
                 </Grid>
                 <Grid item container className={classes.itemContainer}>
+                    <Grid item md>
+                        <Lottie options={scaleOptions} style={{maxHeight: 260, maxWidth: 280}} />
+                    </Grid>
                     <Grid item container direction='column' md>
-                        <Grid item md>
-                            <Lottie options={scaleOptions} style={{maxHeight: 260, maxWidth: 280}} />
-                        </Grid>
+                        
                         <Grid item>
                             <Typography variant='h4'>Scale</Typography>
                         </Grid>

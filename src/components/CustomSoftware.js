@@ -10,6 +10,9 @@ import { useMediaQuery } from '@material-ui/core';
 
 import backArrow from '../assets/backArrow.svg'
 import forwardArrow from '../assets/forwardArrow.svg'
+import lightbulb from '../assets/bulb.svg'
+import cash from '../assets/cash.svg'
+import stopwatch from '../assets/stopwatch.svg'
 
 const useStyles = makeStyles(theme => ({
     mainCont: {
@@ -76,7 +79,10 @@ export default function CustomSoftware(props) {
             </Grid>
             <Grid item container direction='row' >
                 <Grid item container direction='column' >
-                    
+                    <Typography variant='h4'>Save Energy</Typography>
+                    <Grid item>
+                        <img src={lightbulb} alt='lightbulb'/>
+                    </Grid>
                 </Grid>
             </Grid>
         </Grid>

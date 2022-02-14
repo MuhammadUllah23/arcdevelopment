@@ -13,7 +13,7 @@ import forwardArrow from '../assets/forwardArrow.svg'
 import lightbulb from '../assets/bulb.svg'
 import cash from '../assets/cash.svg'
 import stopwatch from '../assets/stopwatch.svg'
-import documentsAnimation from '../assets/documentsAnimation/data'
+import documentsAnimation from '../animations/documentsAnimation/data'
 
 const useStyles = makeStyles(theme => ({
     mainCont: {
@@ -37,7 +37,7 @@ export default function CustomSoftware(props) {
     const classes = useStyles()
     const theme = useTheme
 
-    const documentOptions = {
+    const documentsOptions = {
         loop: true,
         autoplay: true, 
         animationData: documentsAnimation,
@@ -132,6 +132,9 @@ export default function CustomSoftware(props) {
                             Earth.
                         </Typography>
                     </Grid>
+                </Grid>
+                <Grid item>
+                    <Lottie options={documentsOptions} />
                 </Grid>
             </Grid>
         </Grid>

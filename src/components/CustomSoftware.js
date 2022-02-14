@@ -13,6 +13,7 @@ import forwardArrow from '../assets/forwardArrow.svg'
 import lightbulb from '../assets/bulb.svg'
 import cash from '../assets/cash.svg'
 import stopwatch from '../assets/stopwatch.svg'
+import documentsAnimation from '../assets/documentsAnimation/data'
 
 const useStyles = makeStyles(theme => ({
     mainCont: {
@@ -39,7 +40,7 @@ export default function CustomSoftware(props) {
     const documentOptions = {
         loop: true,
         autoplay: true, 
-        animationData: animationData,
+        animationData: documentsAnimation,
         rendererSettings: {
           preserveAspectRatio: 'xMidYMid slice'
         }

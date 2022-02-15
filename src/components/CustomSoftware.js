@@ -225,12 +225,12 @@ export default function CustomSoftware(props) {
                         </Grid>
                     </Grid>    
                     <Grid item md>
-                        <Lottie options={automationOptions} style={{maxHeight: 275, maxWidth: 275, minHeight: 250}} />
+                        <Lottie options={automationOptions} style={{maxHeight: 290, maxWidth: 280}} />
                     </Grid>
                 </Grid>
                 <Grid item container className={classes.itemContainer} md>
                     <Grid item md>
-                        <Lottie options={uxOptions} style={{maxHeight: 260, maxWidth: 280}} />
+                        <Lottie options={uxOptions} style={{maxHeight: 310, maxWidth: 155}} />
                     </Grid>
                     <Grid item container direction='column' md>             
                         <Grid item>

@@ -171,7 +171,7 @@ export default function CustomSoftware(props) {
                     <Grid item >
                         <img src={roots} alt="tree with roots extending out" height="450em" width="450em" />
                     </Grid>
-                    <Grid item >
+                    <Grid item className={classes.itemContainer} >
                         <Typography variant='h4' align='center' gutterBottom>Root-Cause Analysis</Typography>
                         <Typography variant='body1' align='center' paragraph>
                             Many problems are merely symptoms of larger, underlying issues.

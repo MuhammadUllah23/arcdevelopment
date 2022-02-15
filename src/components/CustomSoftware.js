@@ -188,21 +188,19 @@ export default function CustomSoftware(props) {
                 <Grid item container className={classes.itemContainer} md>
                     <Grid item container direction='column' md>
                         <Grid item>
-                            <Typography variant='h4'>Digital Documents & Data</Typography>
+                            <Typography variant='h4'>Automation</Typography>
                         </Grid>
                         <Grid item>
                             <Typography variant='body1' paragraph>
-                                Reduce Errors. Reduce Waste. Reduce Costs.
+                                Why waste time when you don’t have to?
                             </Typography>
                             <Typography variant='body1' paragraph>
-                                Billions are spent annually on the purchasing, printing, and
-                                distribution of paper. On top of the massive environmental
-                                impact this has, it causes harm to your bottom line as well.
+                               We can help you identify processes with time or event based
+                               actions which can now easily be automated.
                             </Typography>
                             <Typography variant='body1' paragraph>
-                                By utilizing digital forms and documents you can remove these
-                                obsolete expenses, accelerate your communication, and help the
-                                Earth.
+                                Increasing efficiency increases profits, leaving you more time
+                               to focus on your business, not busywork.
                             </Typography>
                         </Grid>
                     </Grid>    

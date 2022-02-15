@@ -122,7 +122,7 @@ export default function CustomSoftware(props) {
                 </Grid>
             </Grid>
             <Grid item container direction='row' justify='space-between' >
-                <Grid item container className={classes.itemContainer}>
+                <Grid item container className={classes.itemContainer} md>
                     <Grid item container direction='column' md>
                         <Grid item>
                             <Typography variant='h4'>Digital Documents & Data</Typography>
@@ -147,7 +147,7 @@ export default function CustomSoftware(props) {
                         <Lottie options={documentsOptions} style={{maxHeight: 275, maxWidth: 275, minHeight: 250}} />
                     </Grid>
                 </Grid>
-                <Grid item container className={classes.itemContainer}>
+                <Grid item container className={classes.itemContainer} md>
                     <Grid item md>
                         <Lottie options={scaleOptions} style={{maxHeight: 260, maxWidth: 280}} />
                     </Grid>

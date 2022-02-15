@@ -214,13 +214,20 @@ export default function CustomSoftware(props) {
                     </Grid>
                     <Grid item container direction='column' md>             
                         <Grid item>
-                            <Typography variant='h4' align='right'>Scale</Typography>
+                            <Typography variant='h4' align='right'>User Experience Design</Typography>
                         </Grid>
                         <Grid item>
                             <Typography variant='body1' align='right' paragraph>
-                                Whether you're a large brand, just getting started, or taking
-                                off right now, our application architecture ensures pain-free
-                                growth and reliability.
+                                A good design that isn’t usable isn’t a good design.
+                            </Typography>
+                            <Typography variant='body1' align='right' paragraph>
+                                So why are so many pieces of software complicated, confusing,
+                                and frustrating?
+                            </Typography>
+                            <Typography variant='body1' align='right' paragraph>
+                                By prioritizing users and the real ways they interact with
+                                technology we're able to develop unique, personable experiences
+                                that solve problems rather than create new ones.
                             </Typography>
                         </Grid>
                     </Grid>                      

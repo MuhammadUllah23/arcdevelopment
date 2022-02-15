@@ -16,6 +16,8 @@ import stopwatch from '../assets/stopwatch.svg'
 import documentsAnimation from '../animations/documentsAnimation/data'
 import scaleAnimation from '../animations/scaleAnimation/data.json'
 import roots from '../assets/root.svg'
+import automationAnimation from '../animations/automationAnimation/data.json'
+import uxAnimation from '../animations/uxAnimation/data'
 
 const useStyles = makeStyles(theme => ({
     mainCont: {
@@ -60,7 +62,7 @@ export default function CustomSoftware(props) {
       const automationOptions = {
         loop: true,
         autoplay: true, 
-        animationData: scaleAnimation,
+        animationData: automationAnimation,
         rendererSettings: {
           preserveAspectRatio: 'xMidYMid slice'
         }
@@ -69,7 +71,7 @@ export default function CustomSoftware(props) {
       const uxOptions = {
         loop: true,
         autoplay: true, 
-        animationData: scaleAnimation,
+        animationData: uxAnimation,
         rendererSettings: {
           preserveAspectRatio: 'xMidYMid slice'
         }
@@ -223,12 +225,12 @@ export default function CustomSoftware(props) {
                         </Grid>
                     </Grid>    
                     <Grid item md>
-                        <Lottie options={documentsOptions} style={{maxHeight: 275, maxWidth: 275, minHeight: 250}} />
+                        <Lottie options={automationOptions} style={{maxHeight: 275, maxWidth: 275, minHeight: 250}} />
                     </Grid>
                 </Grid>
                 <Grid item container className={classes.itemContainer} md>
                     <Grid item md>
-                        <Lottie options={scaleOptions} style={{maxHeight: 260, maxWidth: 280}} />
+                        <Lottie options={uxOptions} style={{maxHeight: 260, maxWidth: 280}} />
                     </Grid>
                     <Grid item container direction='column' md>             
                         <Grid item>
@@ -236,7 +238,7 @@ export default function CustomSoftware(props) {
                         </Grid>
                         <Grid item>
                             <Typography variant='body1' align='right' paragraph>
-                                A good design that isn’t usable isn’t a good design.
+                                A good design that isn't usable isn't a good design.
                             </Typography>
                             <Typography variant='body1' align='right' paragraph>
                                 So why are so many pieces of software complicated, confusing,

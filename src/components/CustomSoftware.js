@@ -167,16 +167,16 @@ export default function CustomSoftware(props) {
                 </Grid>
             </Grid>
             <Grid item container direction="row" >
-                <Grid item container direction='column' >
+                <Grid item container direction='column' alignItems='center' >
                     <Grid item >
                         <img src={roots} alt="tree with roots extending out" height="450em" width="450em" />
                     </Grid>
                     <Grid item >
-                        <Typography variant='h4' gutterBottom>Root-Cause Analysis</Typography>
-                        <Typography variant='body1' paragraph>
+                        <Typography variant='h4' align='center' gutterBottom>Root-Cause Analysis</Typography>
+                        <Typography variant='body1' align='center' paragraph>
                             Many problems are merely symptoms of larger, underlying issues.
                         </Typography>
-                        <Typography variant='body1' paragraph>
+                        <Typography variant='body1' align='center' paragraph>
                             We can help you thoroughly examine all areas of your business to
                             develop a holistic plan for the most effective implementation of
                             technology.

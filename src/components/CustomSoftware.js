@@ -57,6 +57,24 @@ export default function CustomSoftware(props) {
         }
       };
 
+      const automationOptions = {
+        loop: true,
+        autoplay: true, 
+        animationData: scaleAnimation,
+        rendererSettings: {
+          preserveAspectRatio: 'xMidYMid slice'
+        }
+      };
+
+      const uxOptions = {
+        loop: true,
+        autoplay: true, 
+        animationData: scaleAnimation,
+        rendererSettings: {
+          preserveAspectRatio: 'xMidYMid slice'
+        }
+      };
+
     return (
         <Grid container direction='column' className={classes.mainCont}>
             <Grid item container direction='row' >

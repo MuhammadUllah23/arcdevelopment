@@ -186,7 +186,7 @@ export default function CustomSoftware(props) {
                     </Grid>                      
                 </Grid>
             </Grid>
-            <Grid item container direction="row" >
+            <Grid item container direction="row" style={{marginTop: '20em', marginBottom: '20em'}} >
                 <Grid item container direction='column' alignItems='center' >
                     <Grid item >
                         <img src={roots} alt="tree with roots extending out" height="450em" width="450em" />

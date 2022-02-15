@@ -15,6 +15,7 @@ import cash from '../assets/cash.svg'
 import stopwatch from '../assets/stopwatch.svg'
 import documentsAnimation from '../animations/documentsAnimation/data'
 import scaleAnimation from '../animations/scaleAnimation/data.json'
+import roots from '../assets/root.svg'
 
 const useStyles = makeStyles(theme => ({
     mainCont: {
@@ -163,6 +164,13 @@ export default function CustomSoftware(props) {
                             </Typography>
                         </Grid>
                     </Grid>                      
+                </Grid>
+            </Grid>
+            <Grid item container direction="row" >
+                <Grid item container direction='column' >
+                    <Grid item >
+                        <img src={roots} alt="tree with roots extending out" height="450em" width="450em" />
+                    </Grid>
                 </Grid>
             </Grid>
         </Grid>

@@ -40,7 +40,8 @@ const useStyles = makeStyles(theme => ({
 
 export default function CustomSoftware(props) {
     const classes = useStyles()
-    const theme = useTheme
+    const theme = useTheme()
+    const matchesMD = useMediaQuery(theme.breakpoints.down('md'))
 
     const documentsOptions = {
         loop: true,

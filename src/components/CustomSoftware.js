@@ -204,7 +204,7 @@ export default function CustomSoftware(props) {
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid item container direction='row' justify='space-between' >
+            <Grid item container direction='row' justify='space-between' style={{marginBottom: '10em'}} >
                 <Grid item container className={classes.itemContainer} md>
                     <Grid item container direction='column' md>
                         <Grid item>

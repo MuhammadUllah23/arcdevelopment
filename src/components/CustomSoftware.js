@@ -7,6 +7,7 @@ import { Grid } from '@material-ui/core';
 import IconButton from "@material-ui/core/IconButton";
 import { Typography } from '@material-ui/core';
 import { useMediaQuery } from '@material-ui/core';
+import { Hidden } from '@material-ui/core';
 
 import backArrow from '../assets/backArrow.svg'
 import forwardArrow from '../assets/forwardArrow.svg'
@@ -80,12 +81,14 @@ export default function CustomSoftware(props) {
     return (
         <Grid container direction='column' className={classes.mainCont}>
             <Grid item container direction='row' >
-                <Grid item className={classes.arrowCont} style={{marginRight: '1em', marginLeft: '-3.5em'}} >
+                <Hidden mdDown >
+                    <Grid item className={classes.arrowCont} style={{marginRight: '1em', marginLeft: '-3.5em'}} >
                     <IconButton component={Link} to='/services' onClick={() => props.setSelectedIndex(0)} style={{backgroundColor: 'transparent'}}>
                     {/* IconButton does the samething as button component except it specializes in dealing only with images*/}
                         <img src={backArrow} alt="Back to Services Page" />
                     </IconButton>
-                </Grid>
+                    </Grid>
+                </Hidden> 
                 <Grid item container direction='column' className={classes.heading} >
                     <Grid item >
                         <Typography variant='h2'>Custom Software Development</Typography>
@@ -115,11 +118,13 @@ export default function CustomSoftware(props) {
                     </Grid>
                     
                 </Grid>
-                <Grid item className={classes.arrowCont} >
+                <Hidden mdDown>
+                    <Grid item className={classes.arrowCont} >
                     <IconButton component={Link} to='/mobileapps' onClick={() => props.setSelectedIndex(2)} style={{backgroundColor: 'transparent'}}>
                        <img src={forwardArrow} alt="Forward to iOS/Android App Development Page"/> 
                     </IconButton>
-                </Grid>
+                    </Grid>
+                </Hidden>              
             </Grid>
             <Grid item container direction='row' justify='center' style={{marginTop: '15em', marginBottom: '20em'}} >
                 <Grid item container direction='column' md alignItems='center' style={{maxWidth: '40em'}} >

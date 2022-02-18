@@ -215,7 +215,7 @@ export default function CustomSoftware(props) {
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid item container direction={matchesMD ? 'column' : 'row'} align={matchesMD ? 'center' : undefined} justify='space-between' style={{marginBottom: '10em'}} className={classes.rowCont} >
+            <Grid item container direction={matchesMD ? 'column' : 'row'} alignItems={matchesMD ? 'center' : undefined} justify='space-between' style={{marginBottom: '20em'}} className={classes.rowCont} >
                 <Grid item container className={classes.itemContainer} style={{marginBottom: matchesMD ? '15em' : 0}} md direction={matchesSM ? 'column' : 'row'} >
                     <Grid item container direction='column' md>
                         <Grid item>

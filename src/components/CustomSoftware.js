@@ -22,15 +22,12 @@ import uxAnimation from '../animations/uxAnimation/data'
 import CallToAction from './ui/CallToAction'
 
 const useStyles = makeStyles(theme => ({
-    mainCont: {
+    rowCont: {
         paddingLeft: '5em',
         paddingRight: '5em',
-        paddingTop: '2em',
-        paddingBottom: '10em',
         [theme.breakpoints.down('sm')]: {
             paddingLeft: '1.5em',
             paddingRight: '1.5em',
-            paddingTop: '1em'
         }
     },
     heading: {

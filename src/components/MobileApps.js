@@ -17,6 +17,8 @@ export default function MobileApps() {
     const them = useTheme()
 
     return (
-        
+        <Grid container direction='column' >
+            
+        </Grid>
     )
 }

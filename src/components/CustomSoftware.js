@@ -150,7 +150,7 @@ export default function CustomSoftware(props) {
                 </Grid>
             </Grid>
             <Grid item container direction={matchesMD ? 'column' : 'row'} alignItems={matchesMD ? 'center' : undefined} justify='space-between' >
-                <Grid item container style={{marginBottom: matchesMD ? '15em' : 0}} className={classes.itemContainer} md>
+                <Grid item container style={{marginBottom: matchesMD ? '15em' : 0}} direction={matchesSM ? 'column' : 'row'} className={classes.itemContainer} md>
                     <Grid item container direction='column' md>
                         <Grid item>
                             <Typography align={matchesSM ? 'center' : undefined} variant='h4'>Digital Documents & Data</Typography>
@@ -175,7 +175,7 @@ export default function CustomSoftware(props) {
                         <Lottie options={documentsOptions} style={{maxHeight: 275, maxWidth: 275, minHeight: 250}} />
                     </Grid>
                 </Grid>
-                <Grid item container className={classes.itemContainer} md>
+                <Grid item container className={classes.itemContainer} md direction={matchesSM ? 'column' : 'row'} >
                     <Grid item md>
                         <Lottie options={scaleOptions} style={{maxHeight: 260, maxWidth: 280}} />
                     </Grid>
@@ -212,7 +212,7 @@ export default function CustomSoftware(props) {
                 </Grid>
             </Grid>
             <Grid item container direction={matchesMD ? 'column' : 'row'} align={matchesMD ? 'center' : undefined} justify='space-between' style={{marginBottom: '10em'}} >
-                <Grid item container className={classes.itemContainer} style={{marginBottom: matchesMD ? '15em' : 0}} md>
+                <Grid item container className={classes.itemContainer} style={{marginBottom: matchesMD ? '15em' : 0}} md direction={matchesSM ? 'column' : 'row'} >
                     <Grid item container direction='column' md>
                         <Grid item>
                             <Typography align={matchesSM ? 'center' : undefined} variant='h4'>Automation</Typography>
@@ -235,7 +235,7 @@ export default function CustomSoftware(props) {
                         <Lottie options={automationOptions} style={{maxHeight: 290, maxWidth: 280}} />
                     </Grid>
                 </Grid>
-                <Grid item container className={classes.itemContainer} md>
+                <Grid item container className={classes.itemContainer} md direction={matchesSM ? 'column' : 'row'} >
                     <Grid item md>
                         <Lottie options={uxOptions} style={{maxHeight: 310, maxWidth: 155}} />
                     </Grid>

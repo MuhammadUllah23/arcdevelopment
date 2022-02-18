@@ -153,18 +153,18 @@ export default function CustomSoftware(props) {
                 <Grid item container className={classes.itemContainer} md>
                     <Grid item container direction='column' md>
                         <Grid item>
-                            <Typography variant='h4'>Digital Documents & Data</Typography>
+                            <Typography align={matchesSM ? 'center' : undefined} variant='h4'>Digital Documents & Data</Typography>
                         </Grid>
                         <Grid item>
-                            <Typography variant='body1' paragraph>
+                            <Typography align={matchesSM ? 'center' : undefined} variant='body1' paragraph>
                                 Reduce Errors. Reduce Waste. Reduce Costs.
                             </Typography>
-                            <Typography variant='body1' paragraph>
+                            <Typography align={matchesSM ? 'center' : undefined} variant='body1' paragraph>
                                 Billions are spent annually on the purchasing, printing, and
                                 distribution of paper. On top of the massive environmental
                                 impact this has, it causes harm to your bottom line as well.
                             </Typography>
-                            <Typography variant='body1' paragraph>
+                            <Typography align={matchesSM ? 'center' : undefined} variant='body1' paragraph>
                                 By utilizing digital forms and documents you can remove these
                                 obsolete expenses, accelerate your communication, and help the
                                 Earth.
@@ -181,10 +181,10 @@ export default function CustomSoftware(props) {
                     </Grid>
                     <Grid item container direction='column' md>             
                         <Grid item>
-                            <Typography variant='h4' align='right'>Scale</Typography>
+                            <Typography variant='h4' align={matchesSM ? 'center' : 'right'} >Scale</Typography>
                         </Grid>
                         <Grid item>
-                            <Typography variant='body1' align='right' paragraph>
+                            <Typography variant='body1' align={matchesSM ? 'center' : 'right'} paragraph>
                                 Whether you're a large brand, just getting started, or taking
                                 off right now, our application architecture ensures pain-free
                                 growth and reliability.
@@ -215,17 +215,17 @@ export default function CustomSoftware(props) {
                 <Grid item container className={classes.itemContainer} style={{marginBottom: matchesMD ? '15em' : 0}} md>
                     <Grid item container direction='column' md>
                         <Grid item>
-                            <Typography variant='h4'>Automation</Typography>
+                            <Typography align={matchesSM ? 'center' : undefined} variant='h4'>Automation</Typography>
                         </Grid>
                         <Grid item>
-                            <Typography variant='body1' paragraph>
+                            <Typography align={matchesSM ? 'center' : undefined} variant='body1' paragraph>
                                 Why waste time when you don’t have to?
                             </Typography>
-                            <Typography variant='body1' paragraph>
+                            <Typography align={matchesSM ? 'center' : undefined} variant='body1' paragraph>
                                We can help you identify processes with time or event based
                                actions which can now easily be automated.
                             </Typography>
-                            <Typography variant='body1' paragraph>
+                            <Typography align={matchesSM ? 'center' : undefined} variant='body1' paragraph>
                                 Increasing efficiency increases profits, leaving you more time
                                to focus on your business, not busywork.
                             </Typography>
@@ -241,17 +241,17 @@ export default function CustomSoftware(props) {
                     </Grid>
                     <Grid item container direction='column' md>             
                         <Grid item>
-                            <Typography variant='h4' align='right'>User Experience Design</Typography>
+                            <Typography variant='h4' align={matchesSM ? 'center' : 'right'} >User Experience Design</Typography>
                         </Grid>
                         <Grid item>
-                            <Typography variant='body1' align='right' paragraph>
+                            <Typography variant='body1' align={matchesSM ? 'center' : 'right'} paragraph>
                                 A good design that isn't usable isn't a good design.
                             </Typography>
-                            <Typography variant='body1' align='right' paragraph>
+                            <Typography variant='body1' align={matchesSM ? 'center' : 'right'} paragraph>
                                 So why are so many pieces of software complicated, confusing,
                                 and frustrating?
                             </Typography>
-                            <Typography variant='body1' align='right' paragraph>
+                            <Typography variant='body1' align={matchesSM ? 'center' : 'right'} paragraph>
                                 By prioritizing users and the real ways they interact with
                                 technology we're able to develop unique, personable experiences
                                 that solve problems rather than create new ones.

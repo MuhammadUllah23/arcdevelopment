@@ -84,8 +84,8 @@ export default function CustomSoftware(props) {
       };
 
     return (
-        <Grid container direction='column' className={classes.mainCont}>
-            <Grid item container direction='row' justify={matchesMD ? 'center' : undefined} >
+        <Grid container direction='column'>
+            <Grid item container direction='row' justify={matchesMD ? 'center' : undefined} className={classes.rowCont} >
                 <Hidden mdDown >
                     <Grid item className={classes.arrowCont} style={{marginRight: '1em', marginLeft: '-3.5em'}} >
                     <IconButton component={Link} to='/services' onClick={() => props.setSelectedIndex(0)} style={{backgroundColor: 'transparent'}}>
@@ -131,7 +131,7 @@ export default function CustomSoftware(props) {
                     </Grid>
                 </Hidden>              
             </Grid>
-            <Grid item container direction='row' justify='center' style={{marginTop: '15em', marginBottom: '20em'}} >
+            <Grid item container direction='row' justify='center' style={{marginTop: '15em', marginBottom: '20em'}} className={classes.rowCont} >
                 <Grid item container direction='column' md alignItems='center' style={{maxWidth: '40em'}} >
                     {/* the md property tells item containers explicitly that need to share that space available */}
                     <Typography variant='h4'>Save Energy</Typography>
@@ -152,7 +152,7 @@ export default function CustomSoftware(props) {
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid item container direction={matchesMD ? 'column' : 'row'} alignItems={matchesMD ? 'center' : undefined} justify='space-between' >
+            <Grid item container direction={matchesMD ? 'column' : 'row'} alignItems={matchesMD ? 'center' : undefined} justify='space-between' className={classes.rowCont} >
                 <Grid item container style={{marginBottom: matchesMD ? '15em' : 0}} direction={matchesSM ? 'column' : 'row'} className={classes.itemContainer} md>
                     <Grid item container direction='column' md>
                         <Grid item>
@@ -196,7 +196,7 @@ export default function CustomSoftware(props) {
                     </Grid>                      
                 </Grid>
             </Grid>
-            <Grid item container direction="row" style={{marginTop: '20em', marginBottom: '20em'}} >
+            <Grid item container direction="row" style={{marginTop: '20em', marginBottom: '20em'}} className={classes.rowCont} >
                 <Grid item container direction='column' alignItems='center' >
                     <Grid item >
                         <img src={roots} alt="tree with roots extending out" height={matchesSM ? '300':"450em"} width={matchesSM ? '300':"450em"} />
@@ -214,7 +214,7 @@ export default function CustomSoftware(props) {
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid item container direction={matchesMD ? 'column' : 'row'} align={matchesMD ? 'center' : undefined} justify='space-between' style={{marginBottom: '10em'}} >
+            <Grid item container direction={matchesMD ? 'column' : 'row'} align={matchesMD ? 'center' : undefined} justify='space-between' style={{marginBottom: '10em'}} className={classes.rowCont} >
                 <Grid item container className={classes.itemContainer} style={{marginBottom: matchesMD ? '15em' : 0}} md direction={matchesSM ? 'column' : 'row'} >
                     <Grid item container direction='column' md>
                         <Grid item>

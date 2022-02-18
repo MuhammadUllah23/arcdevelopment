@@ -149,8 +149,8 @@ export default function CustomSoftware(props) {
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid item container direction={matchesMD ? 'column' : 'row'} align={matchesMD ? 'center' : undefined} style={{marginBottom: matchesMD ? '15em' : 0}} justify='space-between' >
-                <Grid item container className={classes.itemContainer} md>
+            <Grid item container direction={matchesMD ? 'column' : 'row'} alignItems={matchesMD ? 'center' : undefined} justify='space-between' >
+                <Grid item container style={{marginBottom: matchesMD ? '15em' : 0}} className={classes.itemContainer} md>
                     <Grid item container direction='column' md>
                         <Grid item>
                             <Typography align={matchesSM ? 'center' : undefined} variant='h4'>Digital Documents & Data</Typography>

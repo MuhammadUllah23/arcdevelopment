@@ -25,7 +25,12 @@ const useStyles = makeStyles(theme => ({
         paddingLeft: '5em',
         paddingRight: '5em',
         paddingTop: '2em',
-        paddingBottom: '10em'
+        paddingBottom: '10em',
+        [theme.breakpoints.down('sm')]: {
+            paddingLeft: '1.5em',
+            paddingRight: '1.5em',
+            paddingTop: '1em'
+        }
     },
     heading: {
         maxWidth: '40em'

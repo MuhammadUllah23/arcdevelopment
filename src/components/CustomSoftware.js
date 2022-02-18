@@ -46,7 +46,8 @@ export default function CustomSoftware(props) {
     const theme = useTheme()
     const matchesMD = useMediaQuery(theme.breakpoints.down('md'))
     const matchesSM = useMediaQuery(theme.breakpoints.down('sm'))
-
+    const matchesXS = useMediaQuery(theme.breakpoints.down('xs'))
+ 
     const documentsOptions = {
         loop: true,
         autoplay: true, 
@@ -85,7 +86,7 @@ export default function CustomSoftware(props) {
 
     return (
         <Grid container direction='column'>
-            <Grid item container direction='row' justify={matchesMD ? 'center' : undefined} className={classes.rowCont} >
+            <Grid item container direction='row' justify={matchesMD ? 'center' : undefined} style={{marginTop: matchesXS ? '1em' : '2em'}} className={classes.rowCont} >
                 <Hidden mdDown >
                     <Grid item className={classes.arrowCont} style={{marginRight: '1em', marginLeft: '-3.5em'}} >
                     <IconButton component={Link} to='/services' onClick={() => props.setSelectedIndex(0)} style={{backgroundColor: 'transparent'}}>

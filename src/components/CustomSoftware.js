@@ -19,6 +19,7 @@ import scaleAnimation from '../animations/scaleAnimation/data.json'
 import roots from '../assets/root.svg'
 import automationAnimation from '../animations/automationAnimation/data.json'
 import uxAnimation from '../animations/uxAnimation/data'
+import CallToAction from './ui/CallToAction'
 
 const useStyles = makeStyles(theme => ({
     mainCont: {
@@ -264,6 +265,9 @@ export default function CustomSoftware(props) {
                         </Grid>
                     </Grid>                      
                 </Grid>
+            </Grid>
+            <Grid item >
+                <CallToAction setValue={props.setValue} />
             </Grid>
         </Grid>
     )

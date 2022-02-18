@@ -196,7 +196,7 @@ export default function CustomSoftware(props) {
             <Grid item container direction="row" style={{marginTop: '20em', marginBottom: '20em'}} >
                 <Grid item container direction='column' alignItems='center' >
                     <Grid item >
-                        <img src={roots} alt="tree with roots extending out" height="450em" width="450em" />
+                        <img src={roots} alt="tree with roots extending out" height={matchesSM ? '300':"450em"} width={matchesSM ? '300':"450em"} />
                     </Grid>
                     <Grid item className={classes.itemContainer} >
                         <Typography variant='h4' align='center' gutterBottom>Root-Cause Analysis</Typography>

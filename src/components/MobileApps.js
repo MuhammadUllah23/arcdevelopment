@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 import backArrow from '../assets/backArrow.svg'
 import forwardArrow from '../assets/forwardArrow.svg'
+import integrationAnimation from '../animations/integrationAnimation/data.json'
 
 import { makeStyles, useTheme } from "@material-ui/core";
 import { Grid } from "@material-ui/core";
@@ -34,6 +35,15 @@ export default function MobileApps(props) {
     const theme = useTheme()
     const matchesMD = useMediaQuery(theme.breakpoints.down('md'))
     const matchesXS = useMediaQuery(theme.breakpoints.down('xs'))
+
+    const integrationOptions = {
+        loop: true,
+        autoplay: true, 
+        animationData: integrationAnimation,
+        rendererSettings: {
+          preserveAspectRatio: 'xMidYMid slice'
+        }
+      };
  
     return (
         <Grid container direction='column' >
@@ -91,6 +101,9 @@ export default function MobileApps(props) {
                             develop a stronger relationship with your users than ever before.
                         </Typography>
                     </Grid>
+                </Grid>
+                <Grid item md >
+                    <Lottie options={integrationOptions} />
                 </Grid>     
             </Grid>
         </Grid>

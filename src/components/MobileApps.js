@@ -8,14 +8,17 @@ import { Typography } from "@material-ui/core";
 import { useMediaQuery } from "@material-ui/core";
 import { Hidden } from "@material-ui/core";
 
+
 const useStyles = makeStyles(theme => ({
 
 }))
 
-export default function MobileApps() {
+export default function MobileApps(props) {
     const classes = useStyles()
-    const them = useTheme()
-
+    const theme = useTheme()
+    const matchesMD = useMediaQuery(theme.breakpoints.down('md'))
+    const matchesXS = useMediaQuery(theme.breakpoints.down('xs'))
+ 
     return (
         <Grid container direction='column' >
             <Grid item container direction='row' justify={matchesMD ? 'center' : undefined} style={{marginTop: matchesXS ? '1em' : '2em'}} className={classes.rowCont} >

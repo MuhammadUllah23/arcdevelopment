@@ -139,7 +139,7 @@ export default function MobileApps(props) {
                         <Typography align='center' variant='h4' gutterBottom >Extend Access</Typography>
                     </Grid>
                     <Grid item>
-                        <img src={access} alt='tear-one-off sign' style={{maxWidth: '28em'}} />
+                        <img src={access} alt='tear-one-off sign' style={{maxWidth: matchesXS ? '20em' : '28em'}} />
                     </Grid>
                 </Grid>
                 <Grid item container direction='column' alignItems="center" md >

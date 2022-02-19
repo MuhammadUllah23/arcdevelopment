@@ -123,6 +123,28 @@ export default function Websites(props) {
                     </Typography>
                 </Grid>
             </Grid>
+            <Grid item container direction='row' alignItems="center" className={classes.rowCont} >
+                <Grid item >
+                    {/* The reason it is new Grid container tag inside of Grid item tag instead of Grid item container tag is 
+                        because we dont want it to take the 100% width of the screeen that is allocated with the container prop */}
+                    <Grid container direction='column'  >
+                        <Grid item >
+                            <Typography align='center' variant='h4' gutterBottom>Outreach</Typography>
+                        </Grid>
+                        <Grid item >
+                            <img src={outreach} alt="megaphone" />
+                        </Grid>
+                    </Grid>
+                </Grid>
+                <Grid item style={{marginLeft: '1em'}} >
+                    <Typography variant="body1" className={classes.paragraphCont}>
+                        Draw people in with a dazzling website. Showing off your products
+                        online is a great way to help customers decide what’s right for them
+                        before visiting in person.
+                    </Typography>
+                    
+                </Grid>
+            </Grid>
         </Grid>
     )
 }

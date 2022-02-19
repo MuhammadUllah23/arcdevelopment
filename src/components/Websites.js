@@ -49,29 +49,18 @@ export default function Websites(props) {
                 </Hidden> 
                 <Grid item container direction='column' className={classes.heading} >
                     <Grid item >
-                        <Typography align={matchesMD ? 'center' : undefined} variant='h2'>Custom Software Development</Typography>
+                        <Typography align={matchesMD ? 'center' : undefined} variant='h2'>Website Development</Typography>
                     </Grid>
                     <Grid item>
                         <Typography align={matchesMD ? 'center' : undefined} variant='body1' paragraph>
-                            Whether we're replacing old software or inventing new solutions,
-                            Arc Development is here to help your business tackle technology.
+                            Having a website is a necessity in today’s business world. They
+                            give you one central, public location to let people know who you
+                            are, what you do, and why you’re the best at it.
                         </Typography>
                         <Typography align={matchesMD ? 'center' : undefined} variant='body1' paragraph>
-                            Using regular commercial software leaves you with a lot of stuff
-                            you don't need, without some of the stuff you do need, and
-                            ultimately controls the way you work. Without using any software
-                            at all you risk falling behind competitors and missing out on huge
-                            savings from increased efficiency.
-                        </Typography>
-                        <Typography align={matchesMD ? 'center' : undefined} variant='body1' paragraph>
-                            Our custom solutions are designed from the ground up with your
-                            needs, wants, and goals at the core. This collaborative process
-                            produces finely tuned software that is much more effective at
-                            improving your workflow and reducing costs than generalized
-                            options. 
-                        </Typography>
-                        <Typography align={matchesMD ? 'center' : undefined} variant='body1' paragraph>
-                            We create exactly what you what, exactly how you want it.
+                            From simply having your hours posted to having a full fledged
+                            online store, making yourself as accessible as possible to users
+                            online drives growth and enables you to reach new customers.
                         </Typography>
                     </Grid>
                     

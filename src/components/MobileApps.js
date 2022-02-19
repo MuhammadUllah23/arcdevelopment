@@ -107,17 +107,16 @@ export default function MobileApps(props) {
                 </Grid>
                 <Grid item container direction='column' md>
                     <Grid item >
-                        <Typography variant="h4" gutterBottom>Integration</Typography>
+                        <Typography variant="h4" gutterBottom>Simultaneous Platform Support</Typography>
                     </Grid>
                     <Grid item >
                         <Typography variant='body1' paragraph >
-                            Our technology enables an innate interconnection between web and
-                            mobile applications, putting everything you need right in one
-                            convenient place.
+                            Our cutting-edge development process allows us to create apps for
+                            iPhone, Android, and tablets — all at the same time.
                         </Typography>
                         <Typography variant='body1' paragraph >
-                            This allows you to extend your reach, reinvent interactions, and
-                            develop a stronger relationship with your users than ever before.
+                            This significantly reduces costs and creates a more unified brand
+                            experience across all devices.
                         </Typography>
                     </Grid>
                 </Grid>     

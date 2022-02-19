@@ -125,25 +125,25 @@ export default function MobileApps(props) {
                 </Grid>     
             </Grid>
             <Grid item container direction='row' className={classes.rowCont} >
-                <Grid item container direction='column' md >
+                <Grid item container direction='column' alignItems="center" md >
                     <Grid item>
-                        <Typography variant='h4' gutterBottom >Extend Functionality</Typography>
+                        <Typography align='center' variant='h4' gutterBottom >Extend Functionality</Typography>
                     </Grid>
                     <Grid item>
                         <img src={swiss} alt='swiss army knife' />
                     </Grid>
                 </Grid>
-                <Grid item container direction='column' md >
+                <Grid item container direction='column' alignItems="center" md >
                     <Grid item>
-                        <Typography variant='h4' gutterBottom >Extend Access</Typography>
+                        <Typography align='center' variant='h4' gutterBottom >Extend Access</Typography>
                     </Grid>
                     <Grid item>
                         <img src={access} alt='tear-one-off sign' />
                     </Grid>
                 </Grid>
-                <Grid item container direction='column' md >
+                <Grid item container direction='column' alignItems="center" md >
                     <Grid item>
-                        <Typography variant='h4' gutterBottom >Increase Engagement</Typography>
+                        <Typography align='center' variant='h4' gutterBottom >Increase Engagement</Typography>
                     </Grid>
                     <Grid item>
                         <img src={engagement} alt='app with notification' />

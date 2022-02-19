@@ -76,7 +76,7 @@ export default function Websites(props) {
                     </Grid>
                 </Hidden>              
             </Grid>
-            <Grid item container direction='row' className={classes.rowCont} >
+            <Grid item container direction='row' alignItems="center" className={classes.rowCont} >
                 <Grid item >
                     {/* The reason it is new Grid container tag inside of Grid item tag instead of Grid item container tag is 
                         because we dont want it to take the 100% width of the screeen that is allocated with the container prop */}
@@ -90,7 +90,11 @@ export default function Websites(props) {
                     </Grid>
                 </Grid>
                 <Grid item >
-                    
+                    <Typography variant="body1" className={classes.paragraphCont}>
+                        Knowledge is power, and data is 21st Century gold. Analyzing this
+                        data can reveal hidden patterns and trends in your business,
+                        empowering you to make smarter decisions with measurable effects.
+                    </Typography>
                 </Grid>
             </Grid>
         </Grid>

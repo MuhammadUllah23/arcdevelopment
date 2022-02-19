@@ -10,6 +10,7 @@ import LandingPage from './LandingPage';
 import Services from './Services';
 import CustomSoftware from './CustomSoftware';
 import MobileApps from './MobileApps';
+import Websites from './Websites';
 
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
           <Route path="/services" element={<Services setValue={setValue} setSelectedIndex={setSelectedIndex} />}/>
           <Route path="/customsoftware" element={<CustomSoftware setValue={setValue} setSelectedIndex={setSelectedIndex} />}/>
           <Route path="/mobileapps" element={<MobileApps setValue={setValue} setSelectedIndex={setSelectedIndex}/>}/>
-          <Route path="/websites" element={<div style={{height: "400px"}}>websites</div>}/>
+          <Route path="/websites" element={<Websites setValue={setValue} setSelectedIndex={setSelectedIndex}/>}/>
           <Route path="/revolution" element={<div style={{height: "400px"}}>revolution</div>}/>
           <Route path="/about" element={<div style={{height: "400px"}}>about</div>}/>
           <Route path="/contact" element={<div style={{height: "400px"}}>contact</div>}/>

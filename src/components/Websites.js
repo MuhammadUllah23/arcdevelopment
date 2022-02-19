@@ -16,13 +16,13 @@ const useStyles = makeStyles(theme => ({
 
 }))
 
-export default function Websites() {
+export default function Websites(props) {
     const classes = useStyles()
     const theme = useTheme()
 
     return (
         <Grid container direction='column' >
-            
+
         </Grid>
     )
 }

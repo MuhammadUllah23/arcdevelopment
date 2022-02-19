@@ -37,6 +37,7 @@ export default function MobileApps(props) {
     const classes = useStyles()
     const theme = useTheme()
     const matchesMD = useMediaQuery(theme.breakpoints.down('md'))
+    const matchesSM = useMediaQuery(theme.breakpoints.down('sm'))
     const matchesXS = useMediaQuery(theme.breakpoints.down('xs'))
 
     const integrationOptions = {
@@ -88,36 +89,36 @@ export default function MobileApps(props) {
                     </Grid>
                 </Hidden>              
             </Grid>
-            <Grid item container direction={matchesMD ? 'column' : 'row'} style={{marginTop: '15em', marginBottom: '15em'}} className={classes.rowCont} >
+            <Grid item container direction={matchesSM ? 'column' : 'row'} style={{marginTop: '15em', marginBottom: '15em'}} className={classes.rowCont} >
                 <Grid item container direction='column' md>
                     <Grid item >
-                        <Typography variant="h4" gutterBottom>Integration</Typography>
+                        <Typography align={matchesSM ? 'center' : undefined} variant="h4" gutterBottom>Integration</Typography>
                     </Grid>
                     <Grid item >
-                        <Typography variant='body1' paragraph >
+                        <Typography align={matchesSM ? 'center' : undefined} variant='body1' paragraph >
                             Our technology enables an innate interconnection between web and
                             mobile applications, putting everything you need right in one
                             convenient place.
                         </Typography>
-                        <Typography variant='body1' paragraph >
+                        <Typography align={matchesSM ? 'center' : undefined} variant='body1' paragraph >
                             This allows you to extend your reach, reinvent interactions, and
                             develop a stronger relationship with your users than ever before.
                         </Typography>
                     </Grid>
                 </Grid>
                 <Grid item md >
-                    <Lottie options={integrationOptions} />
+                    <Lottie options={integrationOptions} style={{maxWidth: '20em'}} />
                 </Grid>
                 <Grid item container direction='column' md>
                     <Grid item >
-                        <Typography variant="h4" align='right' gutterBottom>Simultaneous Platform Support</Typography>
+                        <Typography variant="h4" align={matchesSM ? 'center' : 'right'} gutterBottom>Simultaneous Platform Support</Typography>
                     </Grid>
                     <Grid item >
-                        <Typography variant='body1' align='right' paragraph >
+                        <Typography variant='body1' align={matchesSM ? 'center' : 'right'} paragraph >
                             Our cutting-edge development process allows us to create apps for
                             iPhone, Android, and tablets — all at the same time.
                         </Typography>
-                        <Typography variant='body1' align='right' paragraph >
+                        <Typography variant='body1' align={matchesSM ? 'center' : 'right'} paragraph >
                             This significantly reduces costs and creates a more unified brand
                             experience across all devices.
                         </Typography>

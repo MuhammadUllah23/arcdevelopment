@@ -79,7 +79,7 @@ export default function Websites(props) {
                     </Grid>
                 </Hidden>              
             </Grid>
-            <Grid item container direction='row' alignItems="center" className={classes.rowCont} >
+            <Grid item container direction='row' alignItems="center" className={classes.rowCont} style={{marginTop: '15em'}} >
                 <Grid item >
                     {/* The reason it is new Grid container tag inside of Grid item tag instead of Grid item container tag is 
                         because we dont want it to take the 100% width of the screeen that is allocated with the container prop */}
@@ -100,7 +100,7 @@ export default function Websites(props) {
                     </Typography>
                 </Grid>
             </Grid>
-            <Grid item container direction='row' alignItems="center" className={classes.rowCont} justify='flex-end'>
+            <Grid item container direction='row' alignItems="center" className={classes.rowCont} justify='flex-end' style={{marginTop: "15em", marginBottom: "15em"}}>
                 <Grid item >
                     {/* The reason it is new Grid container tag inside of Grid item tag instead of Grid item container tag is 
                         because we dont want it to take the 100% width of the screeen that is allocated with the container prop */}
@@ -144,7 +144,7 @@ export default function Websites(props) {
                     </Typography>             
                 </Grid>
             </Grid>
-            <Grid item container direction='row' alignItems="center" className={classes.rowCont} justify='flex-end'>
+            <Grid item container direction='row' alignItems="center" className={classes.rowCont} justify='flex-end' style={{marginTop: "15em", marginBottom: "15em"}}>
                 <Grid item >
                     {/* The reason it is new Grid container tag inside of Grid item tag instead of Grid item container tag is 
                         because we dont want it to take the 100% width of the screeen that is allocated with the container prop */}

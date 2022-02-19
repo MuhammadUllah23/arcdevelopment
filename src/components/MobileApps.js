@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import backArrow from '../assets/backArrow.svg'
 import forwardArrow from '../assets/forwardArrow.svg'
 import integrationAnimation from '../animations/integrationAnimation/data.json'
+import swiss from '../assets/swissKnife.svg'
 
 import { makeStyles, useTheme } from "@material-ui/core";
 import { Grid } from "@material-ui/core";
@@ -122,7 +123,14 @@ export default function MobileApps(props) {
                 </Grid>     
             </Grid>
             <Grid item container direction='row' className={classes.rowCont} >
-                
+                <Grid item container direction='column' md >
+                    <Grid item>
+                        <Typography variant='h4' gutterBottom >Extend Functionality</Typography>
+                    </Grid>
+                    <Grid item>
+                        <img src={swiss} alt='swiss army knife' />
+                    </Grid>
+                </Grid>
             </Grid>
         </Grid>
     )

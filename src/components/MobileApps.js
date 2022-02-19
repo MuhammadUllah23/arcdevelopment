@@ -121,6 +121,9 @@ export default function MobileApps(props) {
                     </Grid>
                 </Grid>     
             </Grid>
+            <Grid item container direction='row' className={classes.rowCont} >
+                
+            </Grid>
         </Grid>
     )
 }

@@ -133,7 +133,7 @@ export default function MobileApps(props) {
                         <img src={swiss} alt='swiss army knife' />
                     </Grid>
                 </Grid>
-                <Grid item container direction='column' alignItems="center" md >
+                <Grid item container direction='column' alignItems="center" style={{marginTop: matchesMD ? '10em' : 0, marginBottom: matchesMD ? '10em' : 0}} md >
                     <Grid item>
                         <Typography align='center' variant='h4' gutterBottom >Extend Access</Typography>
                     </Grid>

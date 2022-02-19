@@ -85,7 +85,7 @@ export default function MobileApps(props) {
                     </Grid>
                 </Hidden>              
             </Grid>
-            <Grid item container direction='row' className={classes.rowCont}>
+            <Grid item container direction='row' className={classes.rowCont} >
                 <Grid item container direction='column' md>
                     <Grid item >
                         <Typography variant="h4" gutterBottom>Integration</Typography>
@@ -107,14 +107,14 @@ export default function MobileApps(props) {
                 </Grid>
                 <Grid item container direction='column' md>
                     <Grid item >
-                        <Typography variant="h4" gutterBottom>Simultaneous Platform Support</Typography>
+                        <Typography variant="h4" align='right' gutterBottom>Simultaneous Platform Support</Typography>
                     </Grid>
                     <Grid item >
-                        <Typography variant='body1' paragraph >
+                        <Typography variant='body1' align='right' paragraph >
                             Our cutting-edge development process allows us to create apps for
                             iPhone, Android, and tablets — all at the same time.
                         </Typography>
-                        <Typography variant='body1' paragraph >
+                        <Typography variant='body1' align='right' paragraph >
                             This significantly reduces costs and creates a more unified brand
                             experience across all devices.
                         </Typography>

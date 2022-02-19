@@ -88,7 +88,7 @@ export default function MobileApps(props) {
                     </Grid>
                 </Hidden>              
             </Grid>
-            <Grid item container direction='row' className={classes.rowCont} >
+            <Grid item container direction={matchesMD ? 'column' : 'row'} style={{marginTop: '15em', marginBottom: '15em'}} className={classes.rowCont} >
                 <Grid item container direction='column' md>
                     <Grid item >
                         <Typography variant="h4" gutterBottom>Integration</Typography>
@@ -124,7 +124,7 @@ export default function MobileApps(props) {
                     </Grid>
                 </Grid>     
             </Grid>
-            <Grid item container direction='row' className={classes.rowCont} >
+            <Grid item container direction={matchesMD ? 'column' : 'row'} className={classes.rowCont} style={{marginBottom: '15em'}} >
                 <Grid item container direction='column' alignItems="center" md >
                     <Grid item>
                         <Typography align='center' variant='h4' gutterBottom >Extend Functionality</Typography>

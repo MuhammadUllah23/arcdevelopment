@@ -85,7 +85,7 @@ export default function Websites(props) {
                         because we dont want it to take the 100% width of the screeen that is allocated with the container prop */}
                     <Grid container direction='column' >
                         <Grid item >
-                            <Typography variant='h4' gutterBottom>Analytics</Typography>
+                            <Typography align={matchesSM ? "center" : undefined} variant='h4' gutterBottom>Analytics</Typography>
                         </Grid>
                         <Grid item >
                             <img src={analytics} style={{marginLeft: '-2.75em'}} alt="graph with magnifying glass revealing 1's and 0's" />
@@ -93,7 +93,7 @@ export default function Websites(props) {
                     </Grid>
                 </Grid>
                 <Grid item className={classes.paragraphCont}>
-                    <Typography variant="body1" >
+                    <Typography align={matchesSM ? "center" : undefined} variant="body1" >
                         Knowledge is power, and data is 21st Century gold. Analyzing this
                         data can reveal hidden patterns and trends in your business,
                         empowering you to make smarter decisions with measurable effects.
@@ -113,11 +113,11 @@ export default function Websites(props) {
                         </Grid>
                     </Grid>
                 </Grid>
-                <Grid item style={{marginLeft: '1em'}} className={classes.paragraphCont} >
-                    <Typography variant="body1" paragraph>
+                <Grid item style={{marginLeft: matchesSM ? 0 : '1em'}} className={classes.paragraphCont} >
+                    <Typography align={matchesSM ? "center" : undefined} variant="body1" paragraph>
                         It's no secret that people like to shop online.
                     </Typography>
-                    <Typography variant="body1" paragraph>
+                    <Typography align={matchesSM ? "center" : undefined} variant="body1" paragraph>
                         In 2017 over $2.3 trillion was spent in e-commerce, and it's time
                         for your slice of that pie.
                     </Typography>
@@ -136,8 +136,8 @@ export default function Websites(props) {
                         </Grid>
                     </Grid>
                 </Grid>
-                <Grid item style={{marginLeft: '1em'}} className={classes.paragraphCont} >
-                    <Typography variant="body1" >
+                <Grid item style={{marginLeft: matchesSM ? 0 : '1em'}} className={classes.paragraphCont} >
+                    <Typography align={matchesSM ? "center" : undefined} variant="body1" >
                         Draw people in with a dazzling website. Showing off your products
                         online is a great way to help customers decide what’s right for them
                         before visiting in person.
@@ -157,14 +157,14 @@ export default function Websites(props) {
                         </Grid>
                     </Grid>
                 </Grid>
-                <Grid item style={{marginLeft: '1em'}} className={classes.paragraphCont} >
-                    <Typography variant="body1" paragraph>
+                <Grid item style={{marginLeft: matchesSM ? 0 : '1em'}} className={classes.paragraphCont} >
+                    <Typography align={matchesSM ? "center" : undefined} variant="body1" paragraph>
                         How often have you ever been to the second page of Google results?
                     </Typography>
-                    <Typography variant="body1" paragraph>
+                    <Typography align={matchesSM ? "center" : undefined}variant="body1" paragraph>
                         If you're like us, probably never.
                     </Typography>
-                    <Typography variant="body1" paragraph>
+                    <Typography align={matchesSM ? "center" : undefined}variant="body1" paragraph>
                         Customers don't go there either, so we make sure your website is
                         designed to end up on top.
                     </Typography>

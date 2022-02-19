@@ -7,6 +7,7 @@ import forwardArrow from '../assets/forwardArrow.svg'
 import integrationAnimation from '../animations/integrationAnimation/data.json'
 import swiss from '../assets/swissKnife.svg'
 import access from '../assets/extendAccess.svg'
+import engagement from "../assets/increaseEngagement.svg";
 
 import { makeStyles, useTheme } from "@material-ui/core";
 import { Grid } from "@material-ui/core";
@@ -140,7 +141,14 @@ export default function MobileApps(props) {
                         <img src={access} alt='tear-one-off sign' />
                     </Grid>
                 </Grid>
-                
+                <Grid item container direction='column' md >
+                    <Grid item>
+                        <Typography variant='h4' gutterBottom >Increase Engagement</Typography>
+                    </Grid>
+                    <Grid item>
+                        <img src={engagement} alt='app with notification' />
+                    </Grid>
+                </Grid>
             </Grid>
         </Grid>
     )

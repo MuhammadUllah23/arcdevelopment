@@ -113,7 +113,7 @@ export default function Websites(props) {
                         </Grid>
                     </Grid>
                 </Grid>
-                <Grid item >
+                <Grid item style={{marginLeft: '1em'}} >
                     <Typography variant="body1" className={classes.paragraphCont} paragraph>
                         It's no secret that people like to shop online.
                     </Typography>

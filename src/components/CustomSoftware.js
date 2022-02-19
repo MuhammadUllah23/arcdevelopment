@@ -89,9 +89,9 @@ export default function CustomSoftware(props) {
             <Grid item container direction='row' justify={matchesMD ? 'center' : undefined} style={{marginTop: matchesXS ? '1em' : '2em'}} className={classes.rowCont} >
                 <Hidden mdDown >
                     <Grid item className={classes.arrowCont} style={{marginRight: '1em', marginLeft: '-3.5em'}} >
-                    <IconButton component={Link} to='/services' onClick={() => props.setSelectedIndex(0)} style={{backgroundColor: 'transparent'}}>
-                    {/* IconButton does the samething as button component except it specializes in dealing only with images*/}
-                        <img src={backArrow} alt="Back to Services Page" />
+                        <IconButton component={Link} to='/services' onClick={() => props.setSelectedIndex(0)} style={{backgroundColor: 'transparent'}}>
+                        {/* IconButton does the samething as button component except it specializes in dealing only with images*/}
+                            <img src={backArrow} alt="Back to Services Page" />
                     </IconButton>
                     </Grid>
                 </Hidden> 
@@ -126,9 +126,9 @@ export default function CustomSoftware(props) {
                 </Grid>
                 <Hidden mdDown>
                     <Grid item className={classes.arrowCont} >
-                    <IconButton component={Link} to='/mobileapps' onClick={() => props.setSelectedIndex(2)} style={{backgroundColor: 'transparent'}}>
-                       <img src={forwardArrow} alt="Forward to iOS/Android App Development Page"/> 
-                    </IconButton>
+                        <IconButton component={Link} to='/mobileapps' onClick={() => props.setSelectedIndex(2)} style={{backgroundColor: 'transparent'}}>
+                        <img src={forwardArrow} alt="Forward to iOS/Android App Development Page"/> 
+                        </IconButton>
                     </Grid>
                 </Hidden>              
             </Grid>

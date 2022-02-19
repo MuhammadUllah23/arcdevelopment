@@ -16,6 +16,8 @@ import { useMediaQuery } from "@material-ui/core";
 import { Hidden } from "@material-ui/core";
 import IconButton from "@material-ui/core/IconButton";
 
+import CallToAction from './ui/CallToAction'
+
 const useStyles = makeStyles(theme => ({
     rowCont: {
         paddingLeft: '5em',
@@ -150,6 +152,9 @@ export default function MobileApps(props) {
                         <img src={engagement} alt='app with notification' />
                     </Grid>
                 </Grid>
+            </Grid>
+            <Grid item >
+                <CallToAction setValue={props.setValue} />
             </Grid>
         </Grid>
     )

@@ -15,6 +15,8 @@ import seo from '../assets/seo.svg'
 import outreach from '../assets/outreach.svg'
 import ecommerce from '../assets/ecommerce.svg'
 
+import CallToAction from './ui/CallToAction'
+
 const useStyles = makeStyles(theme => ({
     rowCont: {
         paddingLeft: '5em',
@@ -169,6 +171,9 @@ export default function Websites(props) {
                         designed to end up on top.
                     </Typography>
                 </Grid>
+            </Grid>
+            <Grid item >
+                <CallToAction setValue={props.setValue} />
             </Grid>
         </Grid>
     )

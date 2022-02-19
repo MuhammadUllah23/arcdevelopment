@@ -6,6 +6,7 @@ import backArrow from '../assets/backArrow.svg'
 import forwardArrow from '../assets/forwardArrow.svg'
 import integrationAnimation from '../animations/integrationAnimation/data.json'
 import swiss from '../assets/swissKnife.svg'
+import access from '../assets/extendAccess.svg'
 
 import { makeStyles, useTheme } from "@material-ui/core";
 import { Grid } from "@material-ui/core";
@@ -131,6 +132,15 @@ export default function MobileApps(props) {
                         <img src={swiss} alt='swiss army knife' />
                     </Grid>
                 </Grid>
+                <Grid item container direction='column' md >
+                    <Grid item>
+                        <Typography variant='h4' gutterBottom >Extend Access</Typography>
+                    </Grid>
+                    <Grid item>
+                        <img src={access} alt='tear-one-off sign' />
+                    </Grid>
+                </Grid>
+                
             </Grid>
         </Grid>
     )

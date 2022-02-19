@@ -30,6 +30,9 @@ const useStyles = makeStyles(theme => ({
     arrowCont: {
         marginTop: '0.5em'
     },
+    paragraphCont: {
+        maxWidth: "30em"
+    }
 }))
 
 export default function Websites(props) {
@@ -85,7 +88,7 @@ export default function Websites(props) {
                             <Typography variant='h4' gutterBottom>Analytics</Typography>
                         </Grid>
                         <Grid item >
-                            <img src={analytics} alt="graph with magnifying glass revealing 1's and 0's" />
+                            <img src={analytics} style={{marginLeft: '-2.75em'}} alt="graph with magnifying glass revealing 1's and 0's" />
                         </Grid>
                     </Grid>
                 </Grid>

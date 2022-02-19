@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
 
 }))
 
-export default function MobileApps() {
+export default function MobileApps(props) {
     const classes = useStyles()
     const theme = useTheme()
     const matchesMD = useMediaQuery(theme.breakpoints.down('md'))

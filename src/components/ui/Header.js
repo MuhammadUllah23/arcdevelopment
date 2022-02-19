@@ -119,7 +119,7 @@ function ElevationScroll(props) {
           backgroundColor: theme.palette.common.orange
       },
       drawerItemSelected: {
-        //   Setting styles for each lsit item and this class wil apply only if the list item is selected and it specifies that any list item text component 
+        //   Setting styles for each list item and this class wil apply only if the list item is selected and it specifies that any list item text component 
         //   within a selected list item component is going to have an opacity of 1 on its root class.
           "& .MuiListItemText-root": {
               opacity: 1

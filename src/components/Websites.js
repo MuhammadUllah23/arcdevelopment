@@ -10,7 +10,10 @@ import { Hidden } from '@material-ui/core';
 
 import backArrow from '../assets/backArrow.svg'
 import forwardArrow from '../assets/forwardArrow.svg'
-
+import analytics from '../assets/analytics.svg'
+import seo from '../assets/seo.svg'
+import outreach from '../assets/outreach.svg'
+import ecommerce from '../assets/ecommerce.svg'
 
 const useStyles = makeStyles(theme => ({
     rowCont: {
@@ -75,7 +78,16 @@ export default function Websites(props) {
             </Grid>
             <Grid item container direction='row' className={classes.rowCont} >
                 <Grid item >
-                    
+                    {/* The reason it is new Grid container tag inside of Grid item tag instead of Grid item container tag is 
+                        because we dont want it to take the 100% width of the screeen that is allocated with the container prop */}
+                    <Grid container direction='column' >
+                        <Grid item >
+                            <Typography variant='h4' gutterBottom>Analytics</Typography>
+                        </Grid>
+                        <Grid item >
+                            <img src={analytics} alt="graph with magnifying glass revealing 1's and 0's" />
+                        </Grid>
+                    </Grid>
                 </Grid>
                 <Grid item >
                     

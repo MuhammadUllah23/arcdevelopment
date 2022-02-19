@@ -76,8 +76,21 @@ export default function MobileApps(props) {
                 </Hidden>              
             </Grid>
             <Grid item container direction='row' className={classes.rowCont}>
-                <Grid item container direction='column'>
-                    
+                <Grid item container direction='column' md>
+                    <Grid item >
+                        <Typography variant="h4" gutterBottom>Integration</Typography>
+                    </Grid>
+                    <Grid item >
+                        <Typography variant='body1' paragraph >
+                            Our technology enables an innate interconnection between web and
+                            mobile applications, putting everything you need right in one
+                            convenient place.
+                        </Typography>
+                        <Typography variant='body1' paragraph >
+                            This allows you to extend your reach, reinvent interactions, and
+                            develop a stronger relationship with your users than ever before.
+                        </Typography>
+                    </Grid>
                 </Grid>     
             </Grid>
         </Grid>

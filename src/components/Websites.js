@@ -79,7 +79,7 @@ export default function Websites(props) {
                     </Grid>
                 </Hidden>              
             </Grid>
-            <Grid item container direction='row' alignItems="center" className={classes.rowCont} style={{marginTop: '15em'}} >
+            <Grid item container direction={matchesSM ? "column" : "row"} alignItems="center" className={classes.rowCont} style={{marginTop: '15em'}} >
                 <Grid item >
                     {/* The reason it is new Grid container tag inside of Grid item tag instead of Grid item container tag is 
                         because we dont want it to take the 100% width of the screeen that is allocated with the container prop */}
@@ -92,15 +92,15 @@ export default function Websites(props) {
                         </Grid>
                     </Grid>
                 </Grid>
-                <Grid item >
-                    <Typography variant="body1" className={classes.paragraphCont}>
+                <Grid item className={classes.paragraphCont}>
+                    <Typography variant="body1" >
                         Knowledge is power, and data is 21st Century gold. Analyzing this
                         data can reveal hidden patterns and trends in your business,
                         empowering you to make smarter decisions with measurable effects.
                     </Typography>
                 </Grid>
             </Grid>
-            <Grid item container direction='row' alignItems="center" className={classes.rowCont} justify='flex-end' style={{marginTop: "15em", marginBottom: "15em"}}>
+            <Grid item container direction={matchesSM ? "column" : "row"} alignItems="center" className={classes.rowCont} justify='flex-end' style={{marginTop: "15em", marginBottom: "15em"}}>
                 <Grid item >
                     {/* The reason it is new Grid container tag inside of Grid item tag instead of Grid item container tag is 
                         because we dont want it to take the 100% width of the screeen that is allocated with the container prop */}
@@ -113,17 +113,17 @@ export default function Websites(props) {
                         </Grid>
                     </Grid>
                 </Grid>
-                <Grid item style={{marginLeft: '1em'}} >
-                    <Typography variant="body1" className={classes.paragraphCont} paragraph>
+                <Grid item style={{marginLeft: '1em'}} className={classes.paragraphCont} >
+                    <Typography variant="body1" paragraph>
                         It's no secret that people like to shop online.
                     </Typography>
-                    <Typography variant="body1" className={classes.paragraphCont} paragraph>
+                    <Typography variant="body1" paragraph>
                         In 2017 over $2.3 trillion was spent in e-commerce, and it's time
                         for your slice of that pie.
                     </Typography>
                 </Grid>
             </Grid>
-            <Grid item container direction='row' alignItems="center" className={classes.rowCont} >
+            <Grid item container direction={matchesSM ? "column" : "row"} alignItems="center" className={classes.rowCont} >
                 <Grid item >
                     {/* The reason it is new Grid container tag inside of Grid item tag instead of Grid item container tag is 
                         because we dont want it to take the 100% width of the screeen that is allocated with the container prop */}
@@ -136,15 +136,15 @@ export default function Websites(props) {
                         </Grid>
                     </Grid>
                 </Grid>
-                <Grid item style={{marginLeft: '1em'}} >
-                    <Typography variant="body1" className={classes.paragraphCont}>
+                <Grid item style={{marginLeft: '1em'}} className={classes.paragraphCont} >
+                    <Typography variant="body1" >
                         Draw people in with a dazzling website. Showing off your products
                         online is a great way to help customers decide what’s right for them
                         before visiting in person.
                     </Typography>             
                 </Grid>
             </Grid>
-            <Grid item container direction='row' alignItems="center" className={classes.rowCont} justify='flex-end' style={{marginTop: "15em", marginBottom: "15em"}}>
+            <Grid item container direction={matchesSM ? "column" : "row"} alignItems="center" className={classes.rowCont} justify='flex-end' style={{marginTop: "15em", marginBottom: "15em"}}>
                 <Grid item >
                     {/* The reason it is new Grid container tag inside of Grid item tag instead of Grid item container tag is 
                         because we dont want it to take the 100% width of the screeen that is allocated with the container prop */}
@@ -157,14 +157,14 @@ export default function Websites(props) {
                         </Grid>
                     </Grid>
                 </Grid>
-                <Grid item style={{marginLeft: '1em'}} >
-                    <Typography variant="body1" className={classes.paragraphCont} paragraph>
+                <Grid item style={{marginLeft: '1em'}} className={classes.paragraphCont} >
+                    <Typography variant="body1" paragraph>
                         How often have you ever been to the second page of Google results?
                     </Typography>
-                    <Typography variant="body1" className={classes.paragraphCont} paragraph>
+                    <Typography variant="body1" paragraph>
                         If you're like us, probably never.
                     </Typography>
-                    <Typography variant="body1" className={classes.paragraphCont} paragraph>
+                    <Typography variant="body1" paragraph>
                         Customers don't go there either, so we make sure your website is
                         designed to end up on top.
                     </Typography>

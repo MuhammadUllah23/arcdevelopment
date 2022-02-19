@@ -13,7 +13,20 @@ import { Hidden } from "@material-ui/core";
 import IconButton from "@material-ui/core/IconButton";
 
 const useStyles = makeStyles(theme => ({
-
+    rowCont: {
+        paddingLeft: '5em',
+        paddingRight: '5em',
+        [theme.breakpoints.down('sm')]: {
+            paddingLeft: '1.5em',
+            paddingRight: '1.5em',
+        }
+    },
+    heading: {
+        maxWidth: '40em'
+    },
+    arrowCont: {
+        marginTop: '0.5em'
+    },
 }))
 
 export default function MobileApps(props) {

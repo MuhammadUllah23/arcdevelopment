@@ -342,6 +342,32 @@ export default function Revolution(props) {
                     <img src={launch} alt="rocket"/>
                 </Grid>
             </Grid>
+            <Grid item container direction="row" className={classes.rowCont} style={{backgroundColor: "#B3B3B3", height: "90em"}}>
+                <Grid item container direction="column" lg>
+                    <Grid item>
+                        <Typography variant="h4" gutterBottom style={{color: "#000", marginTop: "5em"}}>Maintain</Typography>
+                    </Grid>
+                    <Grid item >
+                        <Typography variant="body1" paragraph style={{color: "#fff", maxWidth: "20em"}}>
+                            Our work doesn’t end there.
+                        </Typography>
+                        <Typography variant="body1" paragraph style={{color: "#fff", maxWidth: "20em"}}>
+                            After a successful launch we keep in close contact to listen to
+                            feedback and hear how the project is being received.
+                        </Typography>
+                        <Typography variant="body1" paragraph style={{color: "#fff", maxWidth: "20em"}}>
+                            From there on out we make sure your application is kept up to date
+                            and taking advantage of the best features and practices available.
+                            When new developments arise or new techniques are discovered in
+                            future projects, we will implement those advancements in your
+                            project as part of our routine maintenance.
+                        </Typography>
+                    </Grid>
+                </Grid>
+                <Grid item style={{alignSelf: "center"}} lg>
+                    <img src={maintain} alt="wrench tightening bolt"/>
+                </Grid>
+            </Grid>
         </Grid>
     )
 }

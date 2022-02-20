@@ -315,6 +315,33 @@ export default function Revolution(props) {
                     <img src={build} alt="Buildign Construction site"/>
                 </Grid>
             </Grid>
+            <Grid item container direction="row" className={classes.rowCont} style={{backgroundColor: "#B3B3B3", height: "90em"}}>
+                <Grid item container direction="column" lg>
+                    <Grid item>
+                        <Typography variant="h4" gutterBottom style={{color: "#000", marginTop: "5em"}}>Launch</Typography>
+                    </Grid>
+                    <Grid item >
+                        <Typography variant="body1" paragraph style={{color: "#fff", maxWidth: "20em"}}>
+                            The moment we've all been waiting for.
+                        </Typography>
+                        <Typography variant="body1" paragraph style={{color: "#fff", maxWidth: "20em"}}>
+                            When construction comes to a close you’re the first one to know.
+                            We’ll give our final demonstration to show off your shiny new
+                            software in the wild so you know exactly how it will look to your
+                            users.
+                        </Typography>
+                        <Typography variant="body1" paragraph style={{color: "#fff", maxWidth: "20em"}}>
+                            When you say the word, we press the button and launch your project
+                            out to the public. We’re there to ensure everything goes to plan
+                            so you can start reaping the rewards of your technological
+                            investment immediately.
+                        </Typography>
+                    </Grid>
+                </Grid>
+                <Grid item style={{alignSelf: "center"}} lg>
+                    <img src={launch} alt="rocket"/>
+                </Grid>
+            </Grid>
         </Grid>
     )
 }

@@ -6,6 +6,8 @@ import { Grid } from '@material-ui/core';
 import { Typography } from '@material-ui/core';
 import { useMediaQuery } from '@material-ui/core';
 
+import vision from '../assets/vision.svg'
+
 const useStyles = makeStyles(theme => ({
     rowCont: {
         paddingLeft: '5em',
@@ -23,10 +25,15 @@ export default function Revolution(props) {
 
     return (
         <Grid container direction="column" >
-            <Grid item className={classes.rowCont}>
+            <Grid item className={classes.rowCont} style={{marginTop: "2em"}}>
                 <Typography variant="h2" style={{fontFamily: 'Pacifico'}}>
                     The Revolution
                 </Typography>
+            </Grid>
+            <Grid item container direction="row" className={classes.rowCont}>
+                <Grid item >
+                    <img src={vision} alt="mountain through binoculars" />
+                </Grid>
             </Grid>
         </Grid>
     )

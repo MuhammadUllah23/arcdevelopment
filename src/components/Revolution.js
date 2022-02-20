@@ -203,6 +203,78 @@ export default function Revolution(props) {
                     <img src={mockup} alt="Basic website design outline"/>
                 </Grid>
             </Grid>
+            <Grid item container direction="row" className={classes.rowCont} style={{backgroundColor: "#B3B3B3", height: "90em"}}>
+                <Grid item container direction="column" lg>
+                    <Grid item>
+                        <Typography variant="h4" gutterBottom style={{color: "#000", marginTop: "5em"}}>Review</Typography>
+                    </Grid>
+                    <Grid item >
+                        <Typography variant="body1" paragraph style={{color: "#fff", maxWidth: "20em"}}>
+                            Before moving any farther we come back to you with our progress.
+                            This gives you the freedom to discuss any changes you may want or
+                            any ideas you may have come up with before any heavy lifting has
+                            been done.
+                        </Typography>
+                        <Typography variant="body1" paragraph style={{color: "#fff", maxWidth: "20em"}}>
+                            We give you an interactive demonstration of the mockups,
+                            thoroughly explaining the thought process that went into each
+                            screen and every anticipated feature.
+                        </Typography>
+                        <Typography variant="body1" paragraph style={{color: "#fff", maxWidth: "20em"}}>
+                            Once you're completely satisfied with the vision for our solution
+                            we get down to the nitty gritty, fine-details of design.
+                        </Typography>
+                    </Grid>
+                </Grid>
+                <Grid item style={{alignSelf: "center"}} lg>
+                    <img src={review} alt="Magnifying glass"/>
+                </Grid>
+            </Grid>
+            <Grid item container direction="row" className={classes.rowCont} style={{backgroundColor: "#B3B3B3", height: "90em"}}>
+                <Grid item container direction="column" lg>
+                    <Grid item>
+                        <Typography variant="h4" gutterBottom style={{color: "#000", marginTop: "5em"}}>Design</Typography>
+                    </Grid>
+                    <Grid item >
+                        <Typography variant="body1" paragraph style={{color: "#fff", maxWidth: "20em"}}>
+                            Using the mockups and notes taken during the consultation as
+                            guides, we will start ironing out what the final product will look
+                            like. This also involves using any brand material like fonts,
+                            colors, and logos to extend the experience you're already familiar
+                            with.
+                        </Typography>
+                        <Typography variant="body1" paragraph style={{color: "#fff", maxWidth: "20em"}}>
+                            No aspect is superfluous, and care will be taken with every
+                            decision.
+                        </Typography>
+                    </Grid>
+                </Grid>
+                <Grid item style={{alignSelf: "center"}} lg>
+                    <img src={design} alt="Leaving stroke of paint"/>
+                </Grid>
+            </Grid>
+            <Grid item container direction="row" className={classes.rowCont} style={{backgroundColor: "#B3B3B3", height: "90em"}}>
+                <Grid item container direction="column" lg>
+                    <Grid item>
+                        <Typography variant="h4" gutterBottom style={{color: "#000", marginTop: "5em"}}>Review</Typography>
+                    </Grid>
+                    <Grid item >
+                        <Typography variant="body1" paragraph style={{color: "#fff", maxWidth: "20em"}}>
+                            A second round of review is essential to our goal of creating
+                            exactly what you want, exactly how you want it.
+                        </Typography>
+                        <Typography variant="body1" paragraph style={{color: "#fff", maxWidth: "20em"}}>
+                            This time we'll be going over the finalized designs in another
+                            fully interactive demonstration. Again this gives you an
+                            opportunity to tweak things and make sure we get everything right
+                            the first time.
+                        </Typography>
+                    </Grid>
+                </Grid>
+                <Grid item style={{alignSelf: "center"}} lg>
+                    <img src={review} alt="Magnifying glass"/>
+                </Grid>
+            </Grid>
         </Grid>
     )
 }

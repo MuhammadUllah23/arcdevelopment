@@ -177,7 +177,7 @@ export default function Revolution(props) {
                     <img src={consultation} alt="Handshake"/>
                 </Grid>
             </Grid>
-            <Grid item container direction="row" className={classes.rowCont} style={{backgroundColor: "#B3B3B3", height: "90em"}}>
+            <Grid item container direction="row" className={classes.rowCont} style={{backgroundColor: "#FF7373", height: "90em"}}>
                 <Grid item container direction="column" lg>
                     <Grid item>
                         <Typography variant="h4" gutterBottom style={{color: "#000", marginTop: "5em"}}>Mockup</Typography>
@@ -203,7 +203,7 @@ export default function Revolution(props) {
                     <img src={mockup} alt="Basic website design outline"/>
                 </Grid>
             </Grid>
-            <Grid item container direction="row" className={classes.rowCont} style={{backgroundColor: "#B3B3B3", height: "90em"}}>
+            <Grid item container direction="row" className={classes.rowCont} style={{backgroundColor: "#39B54A", height: "90em"}}>
                 <Grid item container direction="column" lg>
                     <Grid item>
                         <Typography variant="h4" gutterBottom style={{color: "#000", marginTop: "5em"}}>Review</Typography>
@@ -230,7 +230,7 @@ export default function Revolution(props) {
                     <img src={review} alt="Magnifying glass"/>
                 </Grid>
             </Grid>
-            <Grid item container direction="row" className={classes.rowCont} style={{backgroundColor: "#B3B3B3", height: "90em"}}>
+            <Grid item container direction="row" className={classes.rowCont} style={{backgroundColor: "#A67C52", height: "90em"}}>
                 <Grid item container direction="column" lg>
                     <Grid item>
                         <Typography variant="h4" gutterBottom style={{color: "#000", marginTop: "5em"}}>Design</Typography>
@@ -253,7 +253,7 @@ export default function Revolution(props) {
                     <img src={design} alt="Leaving stroke of paint"/>
                 </Grid>
             </Grid>
-            <Grid item container direction="row" className={classes.rowCont} style={{backgroundColor: "#B3B3B3", height: "90em"}}>
+            <Grid item container direction="row" className={classes.rowCont} style={{backgroundColor: "#39B54A", height: "90em"}}>
                 <Grid item container direction="column" lg>
                     <Grid item>
                         <Typography variant="h4" gutterBottom style={{color: "#000", marginTop: "5em"}}>Review</Typography>
@@ -275,7 +275,7 @@ export default function Revolution(props) {
                     <img src={review} alt="Magnifying glass"/>
                 </Grid>
             </Grid>
-            <Grid item container direction="row" className={classes.rowCont} style={{backgroundColor: "#B3B3B3", height: "90em"}}>
+            <Grid item container direction="row" className={classes.rowCont} style={{backgroundColor: "#FBB03B", height: "90em"}}>
                 <Grid item container direction="column" lg>
                     <Grid item>
                         <Typography variant="h4" gutterBottom style={{color: "#000", marginTop: "5em"}}>Build</Typography>
@@ -315,7 +315,7 @@ export default function Revolution(props) {
                     <img src={build} alt="Buildign Construction site"/>
                 </Grid>
             </Grid>
-            <Grid item container direction="row" className={classes.rowCont} style={{backgroundColor: "#B3B3B3", height: "90em"}}>
+            <Grid item container direction="row" className={classes.rowCont} style={{backgroundColor: "#C1272D", height: "90em"}}>
                 <Grid item container direction="column" lg>
                     <Grid item>
                         <Typography variant="h4" gutterBottom style={{color: "#000", marginTop: "5em"}}>Launch</Typography>
@@ -342,7 +342,7 @@ export default function Revolution(props) {
                     <img src={launch} alt="rocket"/>
                 </Grid>
             </Grid>
-            <Grid item container direction="row" className={classes.rowCont} style={{backgroundColor: "#B3B3B3", height: "90em"}}>
+            <Grid item container direction="row" className={classes.rowCont} style={{backgroundColor: "#8E45CE", height: "90em"}}>
                 <Grid item container direction="column" lg>
                     <Grid item>
                         <Typography variant="h4" gutterBottom style={{color: "#000", marginTop: "5em"}}>Maintain</Typography>
@@ -368,7 +368,7 @@ export default function Revolution(props) {
                     <img src={maintain} alt="wrench tightening bolt"/>
                 </Grid>
             </Grid>
-            <Grid item container direction="row" className={classes.rowCont} style={{backgroundColor: "#B3B3B3", height: "90em"}}>
+            <Grid item container direction="row" className={classes.rowCont} style={{backgroundColor: "#29ABE2", height: "90em"}}>
                 <Grid item container direction="column" lg>
                     <Grid item>
                         <Typography variant="h4" gutterBottom style={{color: "#000", marginTop: "5em"}}>Iterate</Typography>

@@ -16,7 +16,11 @@ export default function Revolution() {
 
     return (
         <Grid container direction="column" >
-            
+            <Grid item >
+                <Typography variant="h2" >
+                    The Revolution
+                </Typography>
+            </Grid>
         </Grid>
     )
 }

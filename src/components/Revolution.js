@@ -368,6 +368,34 @@ export default function Revolution(props) {
                     <img src={maintain} alt="wrench tightening bolt"/>
                 </Grid>
             </Grid>
+            <Grid item container direction="row" className={classes.rowCont} style={{backgroundColor: "#B3B3B3", height: "90em"}}>
+                <Grid item container direction="column" lg>
+                    <Grid item>
+                        <Typography variant="h4" gutterBottom style={{color: "#000", marginTop: "5em"}}>Iterate</Typography>
+                    </Grid>
+                    <Grid item >
+                        <Typography variant="body1" paragraph style={{color: "#fff", maxWidth: "20em"}}>
+                            The cycle repeats whenever you come up with a new idea for
+                            extending your current project, or come up with a brand new system
+                            entirely.
+                        </Typography>
+                        <Typography variant="body1" paragraph style={{color: "#fff", maxWidth: "20em"}}>
+                            By planning for future features and changes we can build and
+                            evolve your application over time. As new use cases and customer
+                            needs develop we can respond with continuous integration of new
+                            content.
+                        </Typography>
+                        <Typography variant="body1" paragraph style={{color: "#fff", maxWidth: "20em"}}>
+                            Our iterative process will keep you current and competitive,
+                            allowing you to quickly implement changes instead of waiting
+                            months for a single update.
+                        </Typography>
+                    </Grid>
+                </Grid>
+                <Grid item style={{alignSelf: "center"}} lg>
+                    <img src={iterate} alt="falling dominoes"/>
+                </Grid>
+            </Grid>
         </Grid>
     )
 }

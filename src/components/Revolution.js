@@ -47,17 +47,17 @@ export default function Revolution(props) {
     return (
         <Grid container direction="column" >
             <Grid item className={classes.rowCont} style={{marginTop: "2em"}}>
-                <Typography variant="h2" style={{fontFamily: 'Pacifico'}}>
+                <Typography variant="h2" align={matchesMD ? "center" : undefined} style={{fontFamily: 'Pacifico'}}>
                     The Revolution
                 </Typography>
             </Grid>
-            <Grid item container direction="row" alignItems="center" className={classes.rowCont} style={{marginTop: "5em"}}>
+            <Grid item container direction={matchesMD ? "column" : "row"} alignItems="center" className={classes.rowCont} style={{marginTop: "5em"}}>
                 <Grid item lg>
-                    <img src={vision} alt="mountain through binoculars" style={{maxWidth: "40em", marginRight: "5em"}} />
+                    <img src={vision} alt="mountain through binoculars" style={{maxWidth: matchesSM ? "300px" : "40em", marginRight: matchesMD ? 0 : "5em", marginBottom: matchesMD ? "5em" : 0}} />
                 </Grid>
                 <Grid item container direction="column" style={{maxWidth: "40em"}} lg>
                     <Grid item >
-                        <Typography align="right" variant="h4" gutterBottom>Vision</Typography>
+                        <Typography align={matchesMD ? "center" : "right"} variant="h4" gutterBottom>Vision</Typography>
                     </Grid>
                     <Grid item>
                         <Typography align="right" variant="body1" paragraph>
@@ -92,7 +92,7 @@ export default function Revolution(props) {
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid item container direction="row" alignItems="center" className={classes.rowCont} style={{marginTop: "10em", marginBottom: "10em"}}>
+            <Grid item container direction={matchesMD ? "column" : "row"} alignItems="center" className={classes.rowCont} style={{marginTop: "10em", marginBottom: "10em"}}>
                 <Grid item container direction="column" style={{maxWidth: "40em"}} lg>
                     <Grid item >
                         <Typography variant="h4" gutterBottom>Technology</Typography>

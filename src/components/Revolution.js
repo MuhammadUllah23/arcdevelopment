@@ -7,7 +7,14 @@ import { Typography } from '@material-ui/core';
 import { useMediaQuery } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
-
+    rowCont: {
+        paddingLeft: '5em',
+        paddingRight: '5em',
+        [theme.breakpoints.down('sm')]: {
+            paddingLeft: '1.5em',
+            paddingRight: '1.5em',
+        }
+    },
 }))
 
 export default function Revolution(props) {
@@ -16,8 +23,8 @@ export default function Revolution(props) {
 
     return (
         <Grid container direction="column" >
-            <Grid item >
-                <Typography variant="h2" >
+            <Grid item className={classes.rowCont}>
+                <Typography variant="h2" style={{fontFamily: 'Pacifico'}}>
                     The Revolution
                 </Typography>
             </Grid>

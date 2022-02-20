@@ -134,6 +134,11 @@ export default function Revolution(props) {
                     <Lottie options={technologyOptions} style={{maxWidth: "40em", margin: 0}} />
                 </Grid>
             </Grid>
+            <Grid item container direction="row" className={classes.rowCont}>
+                <Grid item>
+                    <Typography variant="h4" gutterBottom>Process</Typography>
+                </Grid>
+            </Grid>
         </Grid>
     )
 }

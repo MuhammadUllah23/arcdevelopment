@@ -275,6 +275,46 @@ export default function Revolution(props) {
                     <img src={review} alt="Magnifying glass"/>
                 </Grid>
             </Grid>
+            <Grid item container direction="row" className={classes.rowCont} style={{backgroundColor: "#B3B3B3", height: "90em"}}>
+                <Grid item container direction="column" lg>
+                    <Grid item>
+                        <Typography variant="h4" gutterBottom style={{color: "#000", marginTop: "5em"}}>Build</Typography>
+                    </Grid>
+                    <Grid item >
+                        <Typography variant="body1" paragraph style={{color: "#fff", maxWidth: "20em"}}>
+                            Here's where we get down to business.
+                        </Typography>
+                        <Typography variant="body1" paragraph style={{color: "#fff", maxWidth: "20em"}}>
+                            Engineering begins after your approval on the final designs. We
+                            start by scaffolding out the project on a high level, prioritizing
+                            some areas over others.
+                        </Typography>
+                        <Typography variant="body1" paragraph style={{color: "#fff", maxWidth: "20em"}}>
+                            Each area is then developed in order of importance until ready to
+                            be connected to the next piece.
+                        </Typography>
+                        <Typography variant="body1" paragraph style={{color: "#fff", maxWidth: "20em"}}>
+                            Typically the backend, behind the scenes operations are completed
+                            first. Once all the services are in place we can then create the
+                            front end, user side of things.
+                        </Typography>
+                        <Typography variant="body1" paragraph style={{color: "#fff", maxWidth: "20em"}}>
+                            Finishing the application doesn't mean we're done though, because
+                            we use extensive testing to guarantee compatibility with all
+                            intended devices.
+                        </Typography>
+                        <Typography variant="body1" paragraph style={{color: "#fff", maxWidth: "20em"}}>
+                            Only after our rigorous examinations will we accept a product as
+                            finished, then pushing it through the production pipeline. This
+                            produces an optimized, compressed, consumer version of the code
+                            and assets ready for deployment.
+                        </Typography>
+                    </Grid>
+                </Grid>
+                <Grid item style={{alignSelf: "center"}} lg>
+                    <img src={build} alt="Buildign Construction site"/>
+                </Grid>
+            </Grid>
         </Grid>
     )
 }

@@ -10,7 +10,7 @@ const useStyles = makeStyles(theme => ({
 
 }))
 
-export default function Revolution() {
+export default function Revolution(props) {
     const classes = useStyles()
     const theme = useTheme()
 

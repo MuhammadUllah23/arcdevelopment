@@ -11,6 +11,7 @@ import Services from './Services';
 import CustomSoftware from './CustomSoftware';
 import MobileApps from './MobileApps';
 import Websites from './Websites';
+import Revolution from './Revolution';
 
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
           <Route path="/customsoftware" element={<CustomSoftware setValue={setValue} setSelectedIndex={setSelectedIndex} />}/>
           <Route path="/mobileapps" element={<MobileApps setValue={setValue} setSelectedIndex={setSelectedIndex}/>}/>
           <Route path="/websites" element={<Websites setValue={setValue} setSelectedIndex={setSelectedIndex}/>}/>
-          <Route path="/revolution" element={<div style={{height: "400px"}}>revolution</div>}/>
+          <Route path="/revolution" element={<Revolution setValue={setValue} setSelectedIndex={setSelectedIndex}/>}/>
           <Route path="/about" element={<div style={{height: "400px"}}>about</div>}/>
           <Route path="/contact" element={<div style={{height: "400px"}}>contact</div>}/>
           <Route path="/estimate" element={<div style={{height: "400px"}}>estimate </div>}/>

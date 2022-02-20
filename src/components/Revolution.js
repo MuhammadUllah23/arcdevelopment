@@ -10,6 +10,13 @@ import { useMediaQuery } from '@material-ui/core';
 import vision from '../assets/vision.svg'
 import technologyAnimation from '../animations/technologyAnimation/data.json'
 import consultation from "../assets/consultationIcon.svg"
+import mockup from "../assets/mockupIcon.svg";
+import review from "../assets/reviewIcon.svg";
+import design from "../assets/designIcon.svg";
+import build from "../assets/buildIcon.svg";
+import launch from "../assets/launchIcon.svg";
+import maintain from "../assets/maintainIcon.svg";
+import iterate from "../assets/iterateIcon.svg";
 
 const useStyles = makeStyles(theme => ({
     rowCont: {

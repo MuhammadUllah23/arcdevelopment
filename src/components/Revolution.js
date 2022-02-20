@@ -177,6 +177,32 @@ export default function Revolution(props) {
                     <img src={consultation} alt="Handshake"/>
                 </Grid>
             </Grid>
+            <Grid item container direction="row" className={classes.rowCont} style={{backgroundColor: "#B3B3B3", height: "90em"}}>
+                <Grid item container direction="column" lg>
+                    <Grid item>
+                        <Typography variant="h4" gutterBottom style={{color: "#000", marginTop: "5em"}}>Mockup</Typography>
+                    </Grid>
+                    <Grid item >
+                        <Typography variant="body1" paragraph style={{color: "#fff", maxWidth: "20em"}}>
+                            After we settle on the best path forward and decide on a solution
+                            to pursue, details like the cost and timeline will be finalized.
+                        </Typography>
+                        <Typography variant="body1" paragraph style={{color: "#fff", maxWidth: "20em"}}>
+                            Then it's time for us to start on your minimum viable product.
+                            That's just a fancy term for a mockup, which doesn’t include
+                            colors, images, or any other polished design elements, but
+                            captures the essential layout structure and functionality.
+                        </Typography>
+                        <Typography variant="body1" paragraph style={{color: "#fff", maxWidth: "20em"}}>
+                            This helps us understand and refine the solution itself before
+                            getting distracted by specifics and looks.
+                        </Typography>
+                    </Grid>
+                </Grid>
+                <Grid item style={{alignSelf: "center"}} lg>
+                    <img src={mockup} alt="Basic website design outline"/>
+                </Grid>
+            </Grid>
         </Grid>
     )
 }

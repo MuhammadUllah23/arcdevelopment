@@ -32,6 +32,8 @@ const useStyles = makeStyles(theme => ({
 export default function Revolution(props) {
     const classes = useStyles()
     const theme = useTheme()
+    const matchesMD = useMediaQuery(theme.breakpoints.down("md"))
+    const matchesSM = useMediaQuery(theme.breakpoints.down("sm"))
 
     const technologyOptions = {
         loop: true,

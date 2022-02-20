@@ -142,22 +142,22 @@ export default function Revolution(props) {
             <Grid item container direction="row" className={classes.rowCont} style={{backgroundColor: "#B3B3B3", height: "90em"}}>
                 <Grid item container direction="column" >
                     <Grid item>
-                        <Typography variant="h4" gutterBottom style={{color: "#000"}}>Consultation</Typography>
+                        <Typography variant="h4" gutterBottom style={{color: "#000", marginTop: "5em"}}>Consultation</Typography>
                     </Grid>
-                    <Grid item>
-                        <Typography variant="body1" paragraph style={{color: "#fff"}}>
+                    <Grid item >
+                        <Typography variant="body1" paragraph style={{color: "#fff", maxWidth: "20em"}}>
                             Our process begins the moment you realize you need a piece of
                             technology for your business. Whether you already have an idea for
                             where to start and what to do, or if you just know you want to
                             step things up, our initial consultation will help you examine
                             your business holistically to find the best solutions.
                         </Typography>
-                        <Typography variant="body1" paragraph style={{color: "#fff"}}>
+                        <Typography variant="body1" paragraph style={{color: "#fff", maxWidth: "20em"}}>
                             Detailed notes will be taken on your requirements and constraints,
                             while taking care to identify other potential areas for
                             consideration.
                         </Typography>
-                        <Typography variant="body1" paragraph style={{color: "#fff"}}>
+                        <Typography variant="body1" paragraph style={{color: "#fff", maxWidth: "20em"}}>
                             Cutting-edge advancements in machine learning like object
                             detection and natural language processing allow computers to do
                             things previously unimaginable, and our expertise and intuition

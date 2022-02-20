@@ -9,6 +9,7 @@ import { useMediaQuery } from '@material-ui/core';
 
 import vision from '../assets/vision.svg'
 import technologyAnimation from '../animations/technologyAnimation/data.json'
+import consultation from "../assets/consultationIcon.svg"
 
 const useStyles = makeStyles(theme => ({
     rowCont: {
@@ -140,7 +141,7 @@ export default function Revolution(props) {
                 </Grid>
             </Grid>
             <Grid item container direction="row" className={classes.rowCont} style={{backgroundColor: "#B3B3B3", height: "90em"}}>
-                <Grid item container direction="column" >
+                <Grid item container direction="column" lg>
                     <Grid item>
                         <Typography variant="h4" gutterBottom style={{color: "#000", marginTop: "5em"}}>Consultation</Typography>
                     </Grid>
@@ -164,6 +165,9 @@ export default function Revolution(props) {
                             will help usher you into this new future of possibilities.
                         </Typography>
                     </Grid>
+                </Grid>
+                <Grid item style={{alignSelf: "center"}} lg>
+                    <img src={consultation} alt="Handshake"/>
                 </Grid>
             </Grid>
         </Grid>

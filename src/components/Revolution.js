@@ -32,9 +32,9 @@ export default function Revolution(props) {
             </Grid>
             <Grid item container direction="row" alignItems="center" className={classes.rowCont}>
                 <Grid item lg>
-                    <img src={vision} alt="mountain through binoculars" />
+                    <img src={vision} alt="mountain through binoculars" style={{maxWidth: "40em", marginRight: "5em"}} />
                 </Grid>
-                <Grid item container direction="column" lg>
+                <Grid item container direction="column"style={{maxWidht: "40em"}} lg>
                     <Grid item >
                         <Typography align="right" variant="h4" gutterBottom>Vision</Typography>
                     </Grid>

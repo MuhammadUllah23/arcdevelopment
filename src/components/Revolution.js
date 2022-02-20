@@ -49,7 +49,7 @@ export default function Revolution(props) {
                     The Revolution
                 </Typography>
             </Grid>
-            <Grid item container direction="row" alignItems="center" className={classes.rowCont}>
+            <Grid item container direction="row" alignItems="center" className={classes.rowCont} style={{marginTop: "5em"}}>
                 <Grid item lg>
                     <img src={vision} alt="mountain through binoculars" style={{maxWidth: "40em", marginRight: "5em"}} />
                 </Grid>
@@ -90,7 +90,7 @@ export default function Revolution(props) {
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid item container direction="row" alignItems="center" className={classes.rowCont}>
+            <Grid item container direction="row" alignItems="center" className={classes.rowCont} style={{marginTop: "10em", marginBottom: "10em"}}>
                 <Grid item container direction="column" style={{maxWidth: "40em"}} lg>
                     <Grid item >
                         <Typography variant="h4" gutterBottom>Technology</Typography>

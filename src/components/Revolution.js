@@ -134,9 +134,36 @@ export default function Revolution(props) {
                     <Lottie options={technologyOptions} style={{maxWidth: "40em", margin: 0}} />
                 </Grid>
             </Grid>
-            <Grid item container direction="row" className={classes.rowCont}>
+            <Grid item container direction="row" justify="center" className={classes.rowCont}>
                 <Grid item>
                     <Typography variant="h4" gutterBottom>Process</Typography>
+                </Grid>
+            </Grid>
+            <Grid item container direction="row" className={classes.rowCont} >
+                <Grid item container direction="column" >
+                    <Grid item>
+                        <Typography variant="h4" gutterBottom>Consultation</Typography>
+                    </Grid>
+                    <Grid item>
+                        <Typography variant="body1" paragraph>
+                            Our process begins the moment you realize you need a piece of
+                            technology for your business. Whether you already have an idea for
+                            where to start and what to do, or if you just know you want to
+                            step things up, our initial consultation will help you examine
+                            your business holistically to find the best solutions.
+                        </Typography>
+                        <Typography variant="body1" paragraph>
+                            Detailed notes will be taken on your requirements and constraints,
+                            while taking care to identify other potential areas for
+                            consideration.
+                        </Typography>
+                        <Typography variant="body1" paragraph>
+                            Cutting-edge advancements in machine learning like object
+                            detection and natural language processing allow computers to do
+                            things previously unimaginable, and our expertise and intuition
+                            will help usher you into this new future of possibilities.
+                        </Typography>
+                    </Grid>
                 </Grid>
             </Grid>
         </Grid>

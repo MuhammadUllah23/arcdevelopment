@@ -45,7 +45,7 @@ export default function Revolution(props) {
                 <Grid item lg>
                     <img src={vision} alt="mountain through binoculars" style={{maxWidth: "40em", marginRight: "5em"}} />
                 </Grid>
-                <Grid item container direction="column"style={{maxWidht: "40em"}} lg>
+                <Grid item container direction="column" style={{maxWidth: "40em"}} lg>
                     <Grid item >
                         <Typography align="right" variant="h4" gutterBottom>Vision</Typography>
                     </Grid>
@@ -83,7 +83,7 @@ export default function Revolution(props) {
                 </Grid>
             </Grid>
             <Grid item container direction="row" alignItems="center" className={classes.rowCont}>
-                <Grid item container direction="column"style={{maxWidht: "40em"}} lg>
+                <Grid item container direction="column" style={{maxWidth: "40em"}} lg>
                     <Grid item >
                         <Typography variant="h4" gutterBottom>Technology</Typography>
                     </Grid>
@@ -130,8 +130,8 @@ export default function Revolution(props) {
                         </Typography>
                     </Grid>
                 </Grid>
-                <Grid item lg>
-                    <Lottie options={technologyOptions} />
+                <Grid item container justify="flex-end" lg>
+                    <Lottie options={technologyOptions} style={{maxWidth: "40em", margin: 0}} />
                 </Grid>
             </Grid>
         </Grid>

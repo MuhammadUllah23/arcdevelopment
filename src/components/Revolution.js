@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import Lottie from 'react-lottie';
 
 import {makeStyles, useTheme} from '@material-ui/core/styles';
 import { Grid } from '@material-ui/core';
@@ -7,6 +8,7 @@ import { Typography } from '@material-ui/core';
 import { useMediaQuery } from '@material-ui/core';
 
 import vision from '../assets/vision.svg'
+import technologyAnimation from '../animations/technologyAnimation/data.json'
 
 const useStyles = makeStyles(theme => ({
     rowCont: {
@@ -22,6 +24,15 @@ const useStyles = makeStyles(theme => ({
 export default function Revolution(props) {
     const classes = useStyles()
     const theme = useTheme()
+
+    const technologyOptions = {
+        loop: true,
+        autoplay: true, 
+        animationData: technologyAnimation,
+        rendererSettings: {
+          preserveAspectRatio: 'xMidYMid slice'
+        }
+      };
 
     return (
         <Grid container direction="column" >
@@ -120,7 +131,7 @@ export default function Revolution(props) {
                     </Grid>
                 </Grid>
                 <Grid item lg>
-                    <img src={vision} alt="mountain through binoculars" style={{maxWidth: "40em", marginRight: "5em"}} />
+                    <Lottie options={technologyOptions} />
                 </Grid>
             </Grid>
         </Grid>

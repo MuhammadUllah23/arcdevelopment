@@ -178,7 +178,7 @@ export default function Revolution(props) {
                     </Grid>
                 </Grid>
                 <Grid item style={{alignSelf: "center"}} lg>
-                    <img src={consultation} alt="Handshake"/>
+                    <img src={consultation} alt="Handshake" width="100%" style={{ maxWidth: 700 }}/>
                 </Grid>
             </Grid>
             <Grid item container direction={matchesMD ? "column" : "row"} className={classes.rowCont} style={{backgroundColor: "#FF7373", height: "90em"}}>
@@ -204,7 +204,7 @@ export default function Revolution(props) {
                     </Grid>
                 </Grid>
                 <Grid item style={{alignSelf: "center"}} lg>
-                    <img src={mockup} alt="Basic website design outline"/>
+                    <img src={mockup} alt="Basic website design outline" width="100%" style={{ maxWidth: 1000 }}/>
                 </Grid>
             </Grid>
             <Grid item container direction={matchesMD ? "column" : "row"} className={classes.rowCont} style={{backgroundColor: "#39B54A", height: "90em"}}>
@@ -233,7 +233,7 @@ export default function Revolution(props) {
                     </Grid>
                 </Grid>
                 <Grid item style={{alignSelf: "center"}} lg>
-                    <img src={review} alt="Magnifying glass"/>
+                    <img src={review} alt="Magnifying glass" width="100%" />
                 </Grid>
             </Grid>
             <Grid item container direction={matchesMD ? "column" : "row"} className={classes.rowCont} style={{backgroundColor: "#A67C52", height: "90em"}}>
@@ -258,7 +258,7 @@ export default function Revolution(props) {
                     </Grid>
                 </Grid>
                 <Grid item style={{alignSelf: "center"}} lg>
-                    <img src={design} alt="Leaving stroke of paint"/>
+                    <img src={design} alt="Leaving stroke of paint" width="100%" style={{ maxWidth: 1000 }}/>
                 </Grid>
             </Grid>
             <Grid item container direction={matchesMD ? "column" : "row"} className={classes.rowCont} style={{backgroundColor: "#39B54A", height: "90em"}}>
@@ -282,7 +282,7 @@ export default function Revolution(props) {
                     </Grid>
                 </Grid>
                 <Grid item style={{alignSelf: "center"}} lg>
-                    <img src={review} alt="Magnifying glass"/>
+                    <img src={review} alt="Magnifying glass" width="100%" />
                 </Grid>
             </Grid>
             <Grid item container direction={matchesMD ? "column" : "row"} className={classes.rowCont} style={{backgroundColor: "#FBB03B", height: "90em"}}>
@@ -324,7 +324,7 @@ export default function Revolution(props) {
                     </Grid>
                 </Grid>
                 <Grid item style={{alignSelf: "center"}} lg>
-                    <img src={build} alt="Buildign Construction site"/>
+                    <img src={build} alt="Buildign Construction site" width="100%" style={{ maxWidth: matchesMD ? 700 : 1000 }}/>
                 </Grid>
             </Grid>
             <Grid item container direction={matchesMD ? "column" : "row"} className={classes.rowCont} style={{backgroundColor: "#C1272D", height: "90em"}}>
@@ -353,7 +353,7 @@ export default function Revolution(props) {
                     </Grid>
                 </Grid>
                 <Grid item style={{alignSelf: "center"}} lg>
-                    <img src={launch} alt="rocket"/>
+                    <img src={launch} alt="rocket" width="100%" style={{ maxWidth: 200 }}/>
                 </Grid>
             </Grid>
             <Grid item container direction={matchesMD ? "column" : "row"} className={classes.rowCont} style={{backgroundColor: "#8E45CE", height: "90em"}}>
@@ -381,7 +381,7 @@ export default function Revolution(props) {
                     </Grid>
                 </Grid>
                 <Grid item style={{alignSelf: "center"}} lg>
-                    <img src={maintain} alt="wrench tightening bolt"/>
+                    <img src={maintain} alt="wrench tightening bolt" width="100%" style={{ maxWidth: 500 }}/>
                 </Grid>
             </Grid>
             <Grid item container direction={matchesMD ? "column" : "row"} className={classes.rowCont} style={{backgroundColor: "#29ABE2", height: "90em"}}>
@@ -411,7 +411,7 @@ export default function Revolution(props) {
                     </Grid>
                 </Grid>
                 <Grid item style={{alignSelf: "center"}} lg>
-                    <img src={iterate} alt="falling dominoes"/>
+                    <img src={iterate} alt="falling dominoes" width="100%" />
                 </Grid>
             </Grid>
         </Grid>

@@ -1,5 +1,4 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
 import Lottie from 'react-lottie';
 
 import {makeStyles, useTheme} from '@material-ui/core/styles';

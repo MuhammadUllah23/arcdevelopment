@@ -19,7 +19,18 @@ export default function About(props) {
 
     return (
         <Grid container direction="column" >
-
+            <Grid item>
+                <Typography variant="h2">About US</Typography>
+            </Grid>
+            <Grid item>
+                <Typography variant="h2">
+                    Whether it be person to person, business to consumer, or an individual
+                    to their interests, technology is meant to bring us closer to what we
+                    care about in the best way possible. Arc Development will use that
+                    principle to provide fast, modern, inexpensive, and aesthetic software
+                    to the Midwest and beyond.
+                </Typography>
+            </Grid>
         </Grid>
     )
 }

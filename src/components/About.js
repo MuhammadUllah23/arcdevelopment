@@ -10,11 +10,11 @@ const useStyles = makeStyles(theme => ({
 
 }))
 
-export default function About() {
+export default function About(props) {
 
     return (
         <Grid container direction="column" >
-            
+
         </Grid>
     )
 }

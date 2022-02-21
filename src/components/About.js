@@ -7,6 +7,8 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 import Hidden from "@material-ui/core/Hidden";
 import { LineWeight } from "@material-ui/icons";
 
+import history from '../assets/history.svg'
+
 const useStyles = makeStyles(theme => ({
     missionStatement: {
         fontStyle: "italic",
@@ -81,6 +83,9 @@ export default function About(props) {
                             we come in.
                         </Typography>
                     </Grid>
+                </Grid>
+                <Grid item>
+                    <img src={history} alt="quill pen sitting on top of book" />
                 </Grid>
             </Grid>
         </Grid>

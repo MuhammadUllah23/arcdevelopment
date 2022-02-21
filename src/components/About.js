@@ -14,7 +14,15 @@ const useStyles = makeStyles(theme => ({
         fontSize: "1.5rem",
         maxWidth: "50em",
         lineHeight: 1.4
-    }
+    },
+    rowCont: {
+        paddingLeft: '5em',
+        paddingRight: '5em',
+        [theme.breakpoints.down('sm')]: {
+            paddingLeft: '1.5em',
+            paddingRight: '1.5em',
+        }
+    },
 }))
 
 export default function About(props) {

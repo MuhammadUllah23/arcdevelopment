@@ -92,6 +92,21 @@ export default function About(props) {
                     </Grid>
                 </Grid>
             </Grid>
+            <Grid item container direction="column" className={classes.rowCont}>
+                <Grid item >
+                    <Typography variant="h4" align="center" gutterBottom>
+                      Team  
+                    </Typography>                  
+                </Grid>
+                <Grid item>
+                    <Typography variant="body1" align="center" paragraph>
+                       Zachary Reece, Founder 
+                    </Typography>         
+                    <Typography variant="body1" align="center" paragraph>
+                       I started coding when I was 9 years old. 
+                    </Typography>             
+                </Grid>
+            </Grid>
         </Grid>
     )
 }

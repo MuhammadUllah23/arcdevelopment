@@ -34,11 +34,11 @@ export default function About(props) {
 
     return (
         <Grid container direction="column" >
-            <Grid item>
+            <Grid item className={classes.rowCont} style={{marginTop: "2em"}}>
                 <Typography variant="h2">About US</Typography>
             </Grid>
-            <Grid item>
-                <Typography variant="h2" className={classes.missionStatement}>
+            <Grid item container justify="center" className={classes.rowCont}>
+                <Typography variant="h4" align="center" className={classes.missionStatement}>
                     Whether it be person to person, business to consumer, or an individual
                     to their interests, technology is meant to bring us closer to what we
                     care about in the best way possible. Arc Development will use that

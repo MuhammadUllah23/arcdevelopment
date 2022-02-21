@@ -30,6 +30,10 @@ const useStyles = makeStyles(theme => ({
             paddingRight: '1.5em',
         }
     },
+    avatar: {
+        height: "25em",
+        width: "25em"
+    }
 }))
 
 export default function About(props) {
@@ -97,7 +101,7 @@ export default function About(props) {
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid item container direction="column" className={classes.rowCont}>
+            <Grid item container direction="column" alignItems="center" className={classes.rowCont}>
                 <Grid item >
                     <Typography variant="h4" align="center" gutterBottom>
                       Team  
@@ -110,6 +114,9 @@ export default function About(props) {
                     <Typography variant="body1" align="center" paragraph>
                        I started coding when I was 9 years old. 
                     </Typography>             
+                </Grid>
+                <Grid item>
+                    <Avatar alt="founder" src={profile} className={classes.avatar}/>
                 </Grid>
             </Grid>
         </Grid>

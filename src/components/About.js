@@ -118,6 +118,16 @@ export default function About(props) {
                 <Grid item>
                     <Avatar alt="founder" src={profile} className={classes.avatar}/>
                 </Grid>
+                <Grid item contnainer >
+                    <Grid item continer direction="column">
+                        <Grid item>
+                            <img src={yearbook} alt="yearbook page about founder" />
+                        </Grid>
+                        <Grid item >
+                            <Typography variant="caption"> a page from my Sophomore yearbook</Typography>
+                        </Grid>
+                    </Grid>
+                </Grid>
             </Grid>
         </Grid>
     )

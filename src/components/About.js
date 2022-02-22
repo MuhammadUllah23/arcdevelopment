@@ -124,8 +124,22 @@ export default function About(props) {
                             <img src={yearbook} alt="yearbook page about founder" />
                         </Grid>
                         <Grid item >
-                            <Typography variant="caption"> a page from my Sophomore yearbook</Typography>
+                            <Typography variant="caption">
+                                a page from my Sophomore yearbook
+                            </Typography>
                         </Grid>
+                    </Grid>
+                    <Grid item>
+                        <Typography variaant="body1" align="center" paragraph>
+                            I taught myself basic coding from a library book in third grade,
+                            and ever since then my passion has solely been set on learning —
+                            learning about computers, learning mathematics and philosophy,
+                            studying design, always just learning.
+                        </Typography>
+                        <Typography variaant="body1" align="center" paragraph>
+                            Now I’m ready to apply everything I’ve learned, and to help
+                            others with the intuition I have developed.
+                        </Typography>
                     </Grid>
                 </Grid>
             </Grid>

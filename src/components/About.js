@@ -141,6 +141,15 @@ export default function About(props) {
                             others with the intuition I have developed.
                         </Typography>
                     </Grid>
+                    <Grid item container directio="column" >
+                        <Grid item>
+                            <img src={puppy} alt="grey spotted puppy" />
+                        </Grid>
+                        <Grid item >
+                            <Typography variant="caption">my miniature dapple dachshund, Sterling</Typography>
+                        </Grid>
+                    </Grid>
+                    
                 </Grid>
             </Grid>
         </Grid>

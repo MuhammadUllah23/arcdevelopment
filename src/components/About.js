@@ -6,13 +6,13 @@ import Typography from "@material-ui/core/Typography";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { Avatar } from "@material-ui/core";
 import Hidden from "@material-ui/core/Hidden";
-import { LineWeight } from "@material-ui/icons";
 
 import history from '../assets/history.svg'
 import profile from "../assets/founder.jpg";
 import yearbook from "../assets/yearbook.svg";
 import puppy from "../assets/puppy.svg";
 
+import CallToAction from './ui/CallToAction';
 
 const useStyles = makeStyles(theme => ({
     missionStatement: {
@@ -46,8 +46,6 @@ export default function About(props) {
     const classes = useStyles()
     const theme = useTheme()
     const matchesMD = useMediaQuery(theme.breakpoints.down('md'))
-    const matchesSM = useMediaQuery(theme.breakpoints.down('sm'))
-    const matchesXS = useMediaQuery(theme.breakpoints.down('xs'))
 
     return (
         <Grid container direction="column" >
@@ -178,6 +176,9 @@ export default function About(props) {
                         </Grid>
                     </Grid>     
                 </Grid>
+            </Grid>
+            <Grid item >
+                <CallToAction setValue={props.setValue} />
             </Grid>
         </Grid>
     )

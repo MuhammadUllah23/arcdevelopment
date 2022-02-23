@@ -57,29 +57,29 @@ export default function About(props) {
                     to the Midwest and beyond.
                 </Typography>
             </Grid>
-            <Grid item container className={classes.rowCont} justify="space-around">
+            <Grid item container direction={matchesMD ? "column" : "row"} alignItems={matchesMD ? "center" : undefined} className={classes.rowCont} justify="space-around">
                 <Grid item>
                     <Grid item container direction="column" style={{maxWidth: "35em"}} lg>
                         <Grid item >
-                            <Typography variant="h4">
+                            <Typography align={matchesMD ? "center" : undefined} variant="h4">
                                 History
                             </Typography>
                         </Grid>
                         <Grid item>
-                            <Typography variant="body1" style={{fontWeight: 700, fontStyle: "italic"}} paragraph>
+                            <Typography align={matchesMD ? "center" : undefined}  variant="body1" style={{fontWeight: 700, fontStyle: "italic"}} paragraph>
                                 We're the new kid on the block
                             </Typography>
-                            <Typography variant="body1" paragraph >
+                            <Typography align={matchesMD ? "center" : undefined}  variant="body1" paragraph >
                                 Founded in 2019, we’re ready to get our hands on the world’s
                                 business problems.
                             </Typography>
-                            <Typography variant="body1" paragraph >
+                            <Typography align={matchesMD ? "center" : undefined}  variant="body1" paragraph >
                                 It all started with one question: Why aren’t all businesses
                                 using available technology? There are many different answers to
                                 that question: economic barriers, social barriers, educational
                                 barriers, and sometimes institutional barriers.
                             </Typography>
-                            <Typography variant="body1" paragraph >
+                            <Typography align={matchesMD ? "center" : undefined}  variant="body1" paragraph >
                                 We aim to be a powerful force in overcoming these obstacles.
                                 Recent developments in software engineering and computing power,
                                 compounded by the proliferation of smart phones, has opened up
@@ -88,7 +88,7 @@ export default function About(props) {
                                 completely new methods of interaction are created daily. Taking
                                 full advantage of these advancements is the name of the game.
                             </Typography>
-                            <Typography variant="body1" paragraph >
+                            <Typography align={matchesMD ? "center" : undefined} variant="body1" paragraph >
                                 All this change can be a lot to keep up with, and that’s where
                                 we come in.
                             </Typography>

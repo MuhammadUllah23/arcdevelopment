@@ -118,8 +118,8 @@ export default function About(props) {
                 <Grid item>
                     <Avatar alt="founder" src={profile} className={classes.avatar}/>
                 </Grid>
-                <Grid item container >
-                    <Grid item continer direction="column" lg>
+                <Grid item container justify={matchesMD ? "center" : undefined} >
+                    <Grid item continer direction="column" alignItems={matchesMD ? "center" : undefined} lg>
                         <Grid item>
                             <img src={yearbook} alt="yearbook page about founder" />
                         </Grid>
@@ -141,7 +141,7 @@ export default function About(props) {
                             others with the intuition I have developed.
                         </Typography>
                     </Grid>
-                    <Grid item container direction="column" alignItems="flex-end" lg>
+                    <Grid item container direction="column" alignItems={matchesMD ? "center" : "flex-end"} lg>
                         <Grid item>
                             <img src={puppy} alt="grey spotted puppy" />
                         </Grid>

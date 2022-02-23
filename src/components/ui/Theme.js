@@ -69,6 +69,11 @@ export default createMuiTheme({
             color: arcGrey,
             fontWeight: 300
           },
+          caption: {
+            fontSize: "1.5rem",
+            fontWeight: 300,
+            color: arcGrey
+          },
           learnMore: {
             borderColor: arcBlue,
             color: arcBlue,

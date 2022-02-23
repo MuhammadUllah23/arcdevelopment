@@ -32,7 +32,13 @@ const useStyles = makeStyles(theme => ({
     },
     avatar: {
         height: "25em",
-        width: "25em"
+        width: "25em",
+        [theme.breakpoints.down("sm")]: {
+            height: "20em",
+            width: "20em",
+            maxHeight: 300,
+            maxWidth: 300
+        }
     }
 }))
 
@@ -101,7 +107,7 @@ export default function About(props) {
                 </Grid>
                 <Grid item>
                     <Grid item container justify="center" lg>
-                        <img src={history} alt="quill pen sitting on top of book" style={{maxHeight: "22em"}} />
+                        <img src={history} alt="quill pen sitting on top of book" style={{maxHeight: matchesMD ? 200 : "22em"}} />
                     </Grid>
                 </Grid>
             </Grid>
@@ -137,9 +143,9 @@ export default function About(props) {
                             </Typography>
                         </Grid>
                     </Hidden>
-                    <Grid item continer direction="column" alignItems={matchesMD ? "center" : undefined} lg>
+                    <Grid item continer direction="column" alignItems={matchesMD ? "center" : undefined} style={{marginBottom: matchesMD ? "2.5em" : 0}} lg>
                         <Grid item>
-                            <img src={yearbook} alt="yearbook page about founder" />
+                            <img src={yearbook} alt="yearbook page about founder" style={{maxWidth: matchesMD ? 300 : undefined}} />
                         </Grid>
                         <Grid item >
                             <Typography variant="caption">
@@ -163,7 +169,7 @@ export default function About(props) {
                     </Hidden>
                     <Grid item container direction="column" alignItems={matchesMD ? "center" : "flex-end"} lg>
                         <Grid item>
-                            <img src={puppy} alt="grey spotted puppy" />
+                            <img src={puppy} alt="grey spotted puppy" style={{maxWidth: matchesMD ? 300 : undefined}} />
                         </Grid>
                         <Grid item >
                             <Typography variant="caption">

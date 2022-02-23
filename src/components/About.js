@@ -51,8 +51,8 @@ export default function About(props) {
 
     return (
         <Grid container direction="column" >
-            <Grid item className={classes.rowCont} style={{marginTop: "2em"}}>
-                <Typography variant="h2">About US</Typography>
+            <Grid item className={classes.rowCont} style={{marginTop: matchesMD ? "1em" : "2em"}}>
+                <Typography align={matchesMD ? "center" : undefined} variant="h2">About US</Typography>
             </Grid>
             <Grid item container justify="center" style={{marginTop: "3em"}} className={classes.rowCont}>
                 <Typography variant="h4" align="center" className={classes.missionStatement}>

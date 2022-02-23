@@ -123,6 +123,20 @@ export default function About(props) {
                     <Avatar alt="founder" src={profile} className={classes.avatar}/>
                 </Grid>
                 <Grid item container justify={matchesMD ? "center" : undefined} >
+                    <Hidden lgUp>
+                        <Grid item style={{maxWidth: "45em", padding: "1.25em"}} lg>
+                            <Typography variaant="body1" align="center" paragraph>
+                                I taught myself basic coding from a library book in third grade,
+                                and ever since then my passion has solely been set on learning —
+                                learning about computers, learning mathematics and philosophy,
+                                studying design, always just learning.
+                            </Typography>
+                            <Typography variaant="body1" align="center" paragraph>
+                                Now I'm ready to apply everything I've learned, and to help
+                                others with the intuition I have developed.
+                            </Typography>
+                        </Grid>
+                    </Hidden>
                     <Grid item continer direction="column" alignItems={matchesMD ? "center" : undefined} lg>
                         <Grid item>
                             <img src={yearbook} alt="yearbook page about founder" />
@@ -133,18 +147,20 @@ export default function About(props) {
                             </Typography>
                         </Grid>
                     </Grid>
-                    <Grid item style={{maxWidth: "45em", padding: "1.25em"}} lg>
-                        <Typography variaant="body1" align="center" paragraph>
-                            I taught myself basic coding from a library book in third grade,
-                            and ever since then my passion has solely been set on learning —
-                            learning about computers, learning mathematics and philosophy,
-                            studying design, always just learning.
-                        </Typography>
-                        <Typography variaant="body1" align="center" paragraph>
-                            Now I'm ready to apply everything I've learned, and to help
-                            others with the intuition I have developed.
-                        </Typography>
-                    </Grid>
+                    <Hidden mdDown>
+                        <Grid item style={{maxWidth: "45em", padding: "1.25em"}} lg>
+                            <Typography variaant="body1" align="center" paragraph>
+                                I taught myself basic coding from a library book in third grade,
+                                and ever since then my passion has solely been set on learning —
+                                learning about computers, learning mathematics and philosophy,
+                                studying design, always just learning.
+                            </Typography>
+                            <Typography variaant="body1" align="center" paragraph>
+                                Now I'm ready to apply everything I've learned, and to help
+                                others with the intuition I have developed.
+                            </Typography>
+                        </Grid>
+                    </Hidden>
                     <Grid item container direction="column" alignItems={matchesMD ? "center" : "flex-end"} lg>
                         <Grid item>
                             <img src={puppy} alt="grey spotted puppy" />

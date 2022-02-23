@@ -48,7 +48,7 @@ export default function About(props) {
             <Grid item className={classes.rowCont} style={{marginTop: "2em"}}>
                 <Typography variant="h2">About US</Typography>
             </Grid>
-            <Grid item container justify="center" className={classes.rowCont}>
+            <Grid item container justify="center" style={{marginTop: "3em"}} className={classes.rowCont}>
                 <Typography variant="h4" align="center" className={classes.missionStatement}>
                     Whether it be person to person, business to consumer, or an individual
                     to their interests, technology is meant to bring us closer to what we
@@ -57,7 +57,11 @@ export default function About(props) {
                     to the Midwest and beyond.
                 </Typography>
             </Grid>
-            <Grid item container direction={matchesMD ? "column" : "row"} alignItems={matchesMD ? "center" : undefined} className={classes.rowCont} justify="space-around">
+            <Grid item container direction={matchesMD ? "column" : "row"} 
+                alignItems={matchesMD ? "center" : undefined} 
+                style={{marginTop: "10em", marginBottom: "10em"}} 
+                className={classes.rowCont} justify="space-around"
+                >
                 <Grid item>
                     <Grid item container direction="column" style={{maxWidth: "35em"}} lg>
                         <Grid item >
@@ -101,7 +105,7 @@ export default function About(props) {
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid item container direction="column" alignItems="center" className={classes.rowCont}>
+            <Grid item container direction="column" alignItems="center" style={{marginBottom: "15em"}} className={classes.rowCont}>
                 <Grid item >
                     <Typography variant="h4" align="center" gutterBottom>
                       Team  

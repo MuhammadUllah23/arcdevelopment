@@ -80,9 +80,17 @@ export default function Contact(props) {
     const matchesXS = useMediaQuery(theme.breakpoints.down("xs"))
 
     const [name, setName] = useState('')
+    const [nameHelper, setNameHelper] = useState("")
+
     const [email, setEmail] = useState('')
+    const [emailHelper, setEmailHelper] = useState("")
+    
     const [phone, setPhone] = useState('')
+    const [phoneHelper, setPhoneHelper] = useState("")
+    
     const [message, setMessage] = useState('')
+    const [messageHelper, setMessageHelper] = useState("")
+    
 
     return (
         <Grid container direction="row">

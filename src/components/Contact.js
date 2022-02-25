@@ -81,7 +81,7 @@ export default function Contact(props) {
 
     return (
         <Grid container direction="row">
-            <Grid item container direction="column" justify="center" alignItems="center" lg={3}>
+            <Grid item container direction="column" justify="center" alignItems="center" lg={4} xl={3}>
                 <Grid item>
                     <Grid container direction="column">
                         <Grid item>
@@ -124,7 +124,7 @@ export default function Contact(props) {
                                 InputProps={{disableUnderline: true}} 
                             />
                         </Grid>
-                        <Grid item>
+                        <Grid item container justify="center">
                             <Button variant="contained" className={classes.sendButton}>
                                 Send Message 
                                 <img src={airplane} alt="paper airplane" style={{marginLeft: "1em"}} />
@@ -133,7 +133,7 @@ export default function Contact(props) {
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid item container className={classes.background} lg={9} alignItems="center">
+            <Grid item container className={classes.background} lg={8} xl={9} alignItems="center">
                 <Grid item 
                 style={{
                     marginLeft: matchesSM ? 0 : '5em', 

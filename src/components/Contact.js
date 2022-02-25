@@ -8,6 +8,7 @@ import { Typography } from "@material-ui/core";
 import { Button } from "@material-ui/core";
 import { TextField } from "@material-ui/core";
 import { useMediaQuery } from "@material-ui/core";
+import ButtonArrow from "./ui/ButtonArrow";
 
 import background from '../assets/background.jpg'
 import phoneIcon from '../assets/phone.svg'
@@ -38,18 +39,19 @@ const useStyles = makeStyles(theme => ({
             marginRight: 0,
             marginLeft: 0,
         },
-        buttonLearnMore: {
-            ...theme.typography.learnMore,
-            fontSize: "0.7rem",
-            height: 35,
-            padding: 5,
-            [theme.breakpoints.down("sm")]: {
-                marginBottom: "2em"
-            } 
-        },
+    },
+    buttonLearnMore: {
+        ...theme.typography.learnMore,
+        fontSize: "0.7rem",
+        height: 35,
+        padding: 5,
+        [theme.breakpoints.down("sm")]: {
+            marginBottom: "2em"
+        } 
+    },
 }))
 
-export default function Contact() {
+export default function Contact(props) {
     const classes = useStyles()
     const theme = useTheme()
     const matchesMD = useMediaQuery(theme.breakpoints.down("md"))

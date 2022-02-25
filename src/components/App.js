@@ -32,7 +32,7 @@ function App() {
           <Route path="/websites" element={<Websites setValue={setValue} setSelectedIndex={setSelectedIndex}/>}/>
           <Route path="/revolution" element={<Revolution setValue={setValue} setSelectedIndex={setSelectedIndex}/>}/>
           <Route path="/about" element={<About setValue={setValue} setSelectedIndex={setSelectedIndex}/>}/>
-          <Route path="/contact" element={<Contact />}/>
+          <Route path="/contact" element={<Contact setValue={setValue} />}/>
           <Route path="/estimate" element={<div style={{height: "400px"}}>estimate </div>}/>
         </Routes>
         <Footer setValue={setValue} setSelectedIndex={setSelectedIndex}/>

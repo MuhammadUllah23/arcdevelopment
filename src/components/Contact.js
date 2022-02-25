@@ -53,7 +53,17 @@ const useStyles = makeStyles(theme => ({
         border: `2px solid ${theme.palette.common.blue}`,
         marginTop: "5em",
         borderRadius: 5,
-
+    },
+    sendButton: {
+        ...theme.typography.estimate,
+        borderRadius: 50,
+        height: 45,
+        width: 245,
+        fontSize: "1rem",
+        backgroundColor: theme.palette.common.orange,
+        "&:hover": {
+            backgroundColor: theme.palette.secondary.light
+        }
     }
 }))
 
@@ -113,7 +123,10 @@ export default function Contact(props) {
                     />
                 </Grid>
                 <Grid item>
-                    <Button variant="contained">Send Message <img src={airplane} alt="paper airplane" /></Button>
+                    <Button variant="contained" className={classes.sendButton}>
+                        Send Message 
+                        <img src={airplane} alt="paper airplane" style={{marginLeft: "1em"}} />
+                    </Button>
                 </Grid>
             </Grid>
             <Grid item container className={classes.background} lg={9} alignItems="center">

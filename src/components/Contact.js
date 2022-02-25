@@ -90,7 +90,7 @@ export default function Contact(props) {
                 direction="column" 
                 justify="center" 
                 alignItems="center" 
-                style={{marginBottom: matchesMD ? "5em" : 0, marginTop: matchesMD ? "5em" : 0}} 
+                style={{marginBottom: matchesMD ? "5em" : 0, marginTop: matchesSM ? "1em" : matchesMD ? "5em" : 0}} 
                 lg={4} xl={3}
             >
                 <Grid item>

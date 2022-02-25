@@ -12,6 +12,7 @@ import { useMediaQuery } from "@material-ui/core";
 import background from '../assets/background.jpg'
 import phoneIcon from '../assets/phone.svg'
 import emailIcon from '../assets/email.svg'
+import airplane from '../assets/send.svg'
 
 const useStyles = makeStyles(theme => ({
     background: {
@@ -73,7 +74,10 @@ export default function Contact() {
                     </Grid>
                 </Grid>
                 <Grid item>
-                    <TextField value={message} id ="message" onChange={event => setMessage(event.target.value)} />
+                    <TextField id ="message" value={message} onChange={event => setMessage(event.target.value)} multiline rows={10} />
+                </Grid>
+                <Grid item>
+                    <Button varaint="contained">Send Message <img src={airplane} alt="paper airplane" /></Button>
                 </Grid>
             </Grid>
             <Grid item container className={classes.background} lg={9}>

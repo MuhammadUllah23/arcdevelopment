@@ -21,7 +21,15 @@ export default function Contact() {
 
     return (
         <Grid container direction="row">
-            
+            <Grid item container direction="column">
+                <Grid item>
+                    <Typography variant="h2">Contact us</Typography>
+                    <Typography variant="body1">We're Waiting</Typography>
+                </Grid>
+            </Grid>
+            <Grid item container >
+
+            </Grid>
         </Grid>
     )
 }

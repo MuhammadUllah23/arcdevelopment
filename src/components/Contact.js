@@ -103,8 +103,16 @@ export default function Contact(props) {
                 } else {
                     setEmailHelper("")
                 }
-
                 break;
+                case 'phone':
+                    setPhone(event.target.value)
+                    valid = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/.test(event.target.value)
+
+                    if (!valid) {
+                        setPhoneHelper("Invalid phone")
+                    } else {
+                        setPhoneHelper("")
+                    }
                 default:
                     break;
         }
@@ -143,10 +151,10 @@ export default function Contact(props) {
                         </Grid>
                         <Grid item container direction="column" style={{maxWidth: "20em"}}>
                             <Grid item style={{marginBottom: "0.5em"}}>
-                                <TextField fullWidth label="Name" id="name" value={name} onChange={(event) => setName(event.target.value)} />
+                                <TextField fullWidth label="Name" id="name" value={name} onChange={onChange} />
                             </Grid>
                             <Grid item style={{marginBottom: "0.5em"}}>
-                                <TextField fullWidth label="Email" id="email" value={email} onChange={(event) => setEmail(event.target.value)} />
+                                <TextField fullWidth label="Email" id="email" value={email} onChange={onChange} />
                             </Grid>
                             <Grid item style={{marginBottom: "0.5em"}}>
                                 <TextField fullWidth label="Phone" id="phone" value={phone} onChange={(event) => setPhone(event.target.value)} />

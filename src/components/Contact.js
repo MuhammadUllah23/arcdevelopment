@@ -49,6 +49,12 @@ const useStyles = makeStyles(theme => ({
             marginBottom: "2em"
         } 
     },
+    message: {
+        border: `2px solid ${theme.palette.common.blue}`,
+        marginTop: "5em",
+        borderRadius: 5,
+
+    }
 }))
 
 export default function Contact(props) {
@@ -98,10 +104,16 @@ export default function Contact(props) {
                     </Grid>
                 </Grid>
                 <Grid item>
-                    <TextField id ="message" value={message} onChange={event => setMessage(event.target.value)} multiline rows={10} />
+                    <TextField id ="message" 
+                        value={message} 
+                        onChange={event => setMessage(event.target.value)} 
+                        multiline rows={10} 
+                        className={classes.message}
+                        InputProps={{disableUnderline: true}} 
+                    />
                 </Grid>
                 <Grid item>
-                    <Button varaint="contained">Send Message <img src={airplane} alt="paper airplane" /></Button>
+                    <Button variant="contained">Send Message <img src={airplane} alt="paper airplane" /></Button>
                 </Grid>
             </Grid>
             <Grid item container className={classes.background} lg={9} alignItems="center">

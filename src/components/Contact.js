@@ -151,13 +151,13 @@ export default function Contact(props) {
                         </Grid>
                         <Grid item container direction="column" style={{maxWidth: "20em"}}>
                             <Grid item style={{marginBottom: "0.5em"}}>
-                                <TextField fullWidth label="Name" id="name" value={name} onChange={onChange} />
+                                <TextField  fullWidth label="Name" id="name" value={name} onChange={onChange} />
                             </Grid>
                             <Grid item style={{marginBottom: "0.5em"}}>
-                                <TextField fullWidth label="Email" id="email" value={email} onChange={onChange} />
+                                <TextField error={emailHelper.length != 0} helperText={emailHelper} fullWidth label="Email" id="email" value={email} onChange={onChange} />
                             </Grid>
                             <Grid item style={{marginBottom: "0.5em"}}>
-                                <TextField fullWidth label="Phone" id="phone" value={phone} onChange={(event) => setPhone(event.target.value)} />
+                                <TextField error={phoneHelper.length != 0} helperText={phoneHelper} fullWidth label="Phone" id="phone" value={phone} onChange={onChange} />
                             </Grid>
                         </Grid>
                         <Grid item style={{maxWidth: "20em"}}>

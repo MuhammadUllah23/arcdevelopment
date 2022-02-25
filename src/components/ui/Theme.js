@@ -84,5 +84,26 @@ export default createMuiTheme({
             fontWeight: "bold",
           },
           
+    },
+    overrides: {
+      // allows us to customize the default components for our material ui setups.
+      MuiInputLabel: {
+        root: {
+          color: arcBlue,
+          fontSize: "1rem"
+        }
+      },
+      MuiInput: {
+        underline: {
+          
+          "&:before": {
+            // style underline before being clicked or hovered on
+            borderBottom: `2px solid ${arcBlue}`
+          },
+          "&:hover:not($disabled):not($focused):not($error):before": {
+            borderBottom: `2px solid ${arcBlue}`
+          }
+        }
+      }
     }
 })

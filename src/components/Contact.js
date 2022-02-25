@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 import { makeStyles, useTheme } from "@material-ui/styles";
 import { Grid } from "@material-ui/core";
@@ -32,6 +33,10 @@ export default function Contact() {
     const matchesSM = useMediaQuery(theme.breakpoints.down("sm"))
     const matchesXS = useMediaQuery(theme.breakpoints.down("xs"))
 
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [phone, setPhone] = useState('')
+
     return (
         <Grid container direction="row">
             <Grid item container direction="column" justify="center" lg={3}>
@@ -57,13 +62,13 @@ export default function Contact() {
                 </Grid>
                 <Grid item container >
                     <Grid item>
-                        <TextField label="Name" id="name" />
+                        <TextField label="Name" id="name" value={name} onChange={(event) => setName(event.target.value)} />
                     </Grid>
                     <Grid item>
-                        <TextField label="Email" id="email" />
+                        <TextField label="Email" id="email" value={email} onChange={(event) => setEmail(event.target.value)} />
                     </Grid>
                     <Grid item>
-                        <TextField label="Phone" id="phone" />
+                        <TextField label="Phone" id="phone" value={phone} onChange={(event) => setPhone(event.target.value)} />
                     </Grid>
                 </Grid>
             </Grid>

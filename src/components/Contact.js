@@ -41,10 +41,18 @@ export default function Contact() {
                 </Grid>
                 <Grid item container >
                     <Grid item>
-                        <img src={phoneIcon} alt="phone" />
+                        <img src={phoneIcon} alt="phone" style={{marginRight: "0.5em"}} />
                     </Grid>
                     <Grid item>
-                        <Typography variant="body1" style={{color: theme.palette.common.blue}}>(555) 555-5555</Typography>
+                        <Typography variant="body1" style={{color: theme.palette.common.blue, fontSize: "1rem"}}>(555) 555-5555</Typography>
+                    </Grid>
+                </Grid>
+                <Grid item container >
+                    <Grid item>
+                        <img src={emailIcon} alt="envelope" style={{marginRight: "0.5em", verticalAlign: "bottom"}} />
+                    </Grid>
+                    <Grid item>
+                        <Typography variant="body1" style={{color: theme.palette.common.blue, fontSize: "1rem"}}>youremail@gmail.com</Typography>
                     </Grid>
                 </Grid>
             </Grid>

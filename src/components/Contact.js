@@ -32,13 +32,13 @@ export default function Contact() {
 
     return (
         <Grid container direction="row">
-            <Grid item container direction="column" lg>
+            <Grid item container direction="column" lg={3}>
                 <Grid item>
                     <Typography variant="h2" style={{lineHeight: 1}}>Contact us</Typography>
                     <Typography variant="body1" style={{color: theme.palette.common.blue}}>We're Waiting</Typography>
                 </Grid>
             </Grid>
-            <Grid item container className={classes.background} lg>
+            <Grid item container className={classes.background} lg={9}>
 
             </Grid>
         </Grid>

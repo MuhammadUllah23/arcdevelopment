@@ -23,8 +23,8 @@ export default function Contact() {
         <Grid container direction="row">
             <Grid item container direction="column">
                 <Grid item>
-                    <Typography variant="h2">Contact us</Typography>
-                    <Typography variant="body1">We're Waiting</Typography>
+                    <Typography variant="h2" style={{lineHeight: 1}}>Contact us</Typography>
+                    <Typography variant="body1" style={{color: theme.palette.common.blue}}>We're Waiting</Typography>
                 </Grid>
             </Grid>
             <Grid item container >

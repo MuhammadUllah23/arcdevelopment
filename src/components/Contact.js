@@ -8,8 +8,19 @@ import { Button } from "@material-ui/core";
 import { TextField } from "@material-ui/core";
 import { useMediaQuery } from "@material-ui/core";
 
-const useStyles = makeStyles(theme => ({
+import background from '../assets/background.jpg'
 
+const useStyles = makeStyles(theme => ({
+    background: {
+        backgroundImage: `url(${background})`,
+        backgroundPosition: 'center',
+        // to cover the entire container
+        backgroundSize: 'cover',
+        // the extra space is not filled with duplicating the icon 
+        backgroundRepeat: 'no-repeat',
+        // to take all the space it can
+        height: '60em',
+    },
 }))
 
 export default function Contact() {
@@ -21,13 +32,13 @@ export default function Contact() {
 
     return (
         <Grid container direction="row">
-            <Grid item container direction="column">
+            <Grid item container direction="column" lg>
                 <Grid item>
                     <Typography variant="h2" style={{lineHeight: 1}}>Contact us</Typography>
                     <Typography variant="body1" style={{color: theme.palette.common.blue}}>We're Waiting</Typography>
                 </Grid>
             </Grid>
-            <Grid item container >
+            <Grid item container className={classes.background} lg>
 
             </Grid>
         </Grid>

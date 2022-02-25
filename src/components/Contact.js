@@ -86,12 +86,18 @@ export default function Contact(props) {
 
     return (
         <Grid container direction="row">
-            <Grid item container direction="column" justify="center" alignItems="center" style={{marginBottom: matchesMD ? "5em" : 0, marginTop: matchesMD ? "5em" : 0}} lg={4} xl={3}>
+            <Grid item container 
+                direction="column" 
+                justify="center" 
+                alignItems="center" 
+                style={{marginBottom: matchesMD ? "5em" : 0, marginTop: matchesMD ? "5em" : 0}} 
+                lg={4} xl={3}
+            >
                 <Grid item>
                     <Grid container direction="column">
                         <Grid item>
-                            <Typography variant="h2" style={{lineHeight: 1}}>Contact us</Typography>
-                            <Typography variant="body1" style={{color: theme.palette.common.blue}}>We're Waiting</Typography>
+                            <Typography align={matchesMD ? "center" : undefined} variant="h2" style={{lineHeight: 1}}>Contact us</Typography>
+                            <Typography align={matchesMD ? "center" : undefined} variant="body1" style={{color: theme.palette.common.blue}}>We're Waiting</Typography>
                         </Grid>
                         <Grid item container style={{marginTop: "2em"}} >
                             <Grid item>
@@ -110,13 +116,13 @@ export default function Contact(props) {
                             </Grid>
                         </Grid>
                         <Grid item container direction="column" style={{maxWidth: "20em"}}>
-                            <Grid item>
+                            <Grid item style={{marginBottom: "0.5em"}}>
                                 <TextField fullWidth label="Name" id="name" value={name} onChange={(event) => setName(event.target.value)} />
                             </Grid>
-                            <Grid item>
+                            <Grid item style={{marginBottom: "0.5em"}}>
                                 <TextField fullWidth label="Email" id="email" value={email} onChange={(event) => setEmail(event.target.value)} />
                             </Grid>
-                            <Grid item>
+                            <Grid item style={{marginBottom: "0.5em"}}>
                                 <TextField fullWidth label="Phone" id="phone" value={phone} onChange={(event) => setPhone(event.target.value)} />
                             </Grid>
                         </Grid>

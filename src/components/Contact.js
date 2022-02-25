@@ -36,6 +36,7 @@ export default function Contact() {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [phone, setPhone] = useState('')
+    const [message, setMessage] = useState('')
 
     return (
         <Grid container direction="row">
@@ -70,6 +71,9 @@ export default function Contact() {
                     <Grid item>
                         <TextField label="Phone" id="phone" value={phone} onChange={(event) => setPhone(event.target.value)} />
                     </Grid>
+                </Grid>
+                <Grid item>
+                    <TextField value={message} id ="message" onChange={event => setMessage(event.target.value)} />
                 </Grid>
             </Grid>
             <Grid item container className={classes.background} lg={9}>

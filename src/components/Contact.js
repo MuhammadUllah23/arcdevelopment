@@ -55,9 +55,19 @@ export default function Contact() {
                         <Typography variant="body1" style={{color: theme.palette.common.blue, fontSize: "1rem"}}>youremail@gmail.com</Typography>
                     </Grid>
                 </Grid>
+                <Grid item container >
+                    <Grid item>
+                        <TextField label="Name" id="name" />
+                    </Grid>
+                    <Grid item>
+                        <TextField label="Email" id="email" />
+                    </Grid>
+                    <Grid item>
+                        <TextField label="Phone" id="phone" />
+                    </Grid>
+                </Grid>
             </Grid>
             <Grid item container className={classes.background} lg={9}>
-
             </Grid>
         </Grid>
     )

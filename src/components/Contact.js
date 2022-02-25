@@ -104,28 +104,28 @@ export default function Contact(props) {
                     <Button varaint="contained">Send Message <img src={airplane} alt="paper airplane" /></Button>
                 </Grid>
             </Grid>
-            <Grid item container className={classes.background} lg={9}>
-            <Grid item 
-            style={{
-                marginLeft: matchesSM ? 0 : '5em', 
-                textAlign: matchesSM ? 'center' : 'inherit'}}
-            >
-                <Grid container direction='columns'>
-                    <Grid item>
-                        <Typography variant='h2' >Simple Software.<br />Revolutionary.</Typography>
-                        <Typography variant='subtitle2' style={{fontSize: '1.5em'}} >The advantage of the 21st Century.</Typography>
-                        <Grid container justify={matchesSM ? 'center' : 'undefined'} item>
-                            <Button component={Link} to="/revolution" onClick={() => props.setValue(2)} variant="outlined" className={classes.buttonLearnMore} >
-                                <span style={{marginRight: 5}}> Learn More </span>
-                                <ButtonArrow width={10} height={10} fill={theme.palette.common.blue} />
-                            </Button>
+            <Grid item container className={classes.background} lg={9} alignItems="center">
+                <Grid item 
+                style={{
+                    marginLeft: matchesSM ? 0 : '5em', 
+                    textAlign: matchesSM ? 'center' : 'inherit'}}
+                >
+                    <Grid container direction='columns'>
+                        <Grid item>
+                            <Typography variant='h2' >Simple Software.<br />Revolutionary.</Typography>
+                            <Typography variant='subtitle2' style={{fontSize: '1.5em'}} >The advantage of the 21st Century.</Typography>
+                            <Grid container justify={matchesSM ? 'center' : 'undefined'} item>
+                                <Button component={Link} to="/revolution" onClick={() => props.setValue(2)} variant="outlined" className={classes.buttonLearnMore} >
+                                    <span style={{marginRight: 5}}> Learn More </span>
+                                    <ButtonArrow width={10} height={10} fill={theme.palette.common.blue} />
+                                </Button>
+                            </Grid>
                         </Grid>
                     </Grid>
                 </Grid>
-            </Grid>
-            <Grid item >
-                <Button component={Link} to="/estimate"  onClick={() => props.setValue(5)} variant='contained' className={classes.estimateButton}>Free Estimate</Button>
-            </Grid>
+                <Grid item >
+                    <Button component={Link} to="/estimate"  onClick={() => props.setValue(5)} variant='contained' className={classes.estimateButton}>Free Estimate</Button>
+                </Grid>
             </Grid>
         </Grid>
     )

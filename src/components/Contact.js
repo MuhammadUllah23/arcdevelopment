@@ -113,6 +113,7 @@ export default function Contact(props) {
                     } else {
                         setPhoneHelper("")
                     }
+                    break;
                 default:
                     break;
         }
@@ -138,7 +139,9 @@ export default function Contact(props) {
                                 <img src={phoneIcon} alt="phone" style={{marginRight: "0.5em"}} />
                             </Grid>
                             <Grid item>
-                                <Typography variant="body1" style={{color: theme.palette.common.blue, fontSize: "1rem"}}>(555) 555-5555</Typography>
+                                <Typography variant="body1" style={{color: theme.palette.common.blue, fontSize: "1rem"}}>
+                                    <a href="tel:5555555555" style={{textDecoration: "none", color: "inherit"}}> (555) 555-5555 </a>
+                                </Typography>
                             </Grid>
                         </Grid>
                         <Grid item container style={{marginBottom: "2em"}} >
@@ -146,7 +149,9 @@ export default function Contact(props) {
                                 <img src={emailIcon} alt="envelope" style={{marginRight: "0.5em", verticalAlign: "bottom"}} />
                             </Grid>
                             <Grid item>
-                                <Typography variant="body1" style={{color: theme.palette.common.blue, fontSize: "1rem"}}>youremail@gmail.com</Typography>
+                                <Typography variant="body1" style={{color: theme.palette.common.blue, fontSize: "1rem"}}>
+                                    <a href="mailto:arcdvelopment@gamil.com" style={{textDecoration: "none", color: "inherit"}}> arcdevelopment@gmail.com </a>
+                                </Typography>
                             </Grid>
                         </Grid>
                         <Grid item container direction="column" style={{maxWidth: "20em"}}>

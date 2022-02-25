@@ -176,7 +176,7 @@ export default function Contact(props) {
                         </Grid>
                         <Grid item container justify="center" style={{marginTop: "2em"}} >
                             <Button variant="contained" className={classes.sendButton} 
-                                disabled={name.length === 0 || message.length === 0 || phone.length !=0 || emailHelper.length !== 0} >
+                                disabled={name.length === 0 || message.length === 0 || phoneHelper.length !== 0 || emailHelper.length !== 0} >
                                 Send Message 
                                 <img src={airplane} alt="paper airplane" style={{marginLeft: "1em"}} />
                             </Button>

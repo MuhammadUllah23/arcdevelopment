@@ -105,19 +105,19 @@ export default function Contact(props) {
                                 <Typography variant="body1" style={{color: theme.palette.common.blue, fontSize: "1rem"}}>youremail@gmail.com</Typography>
                             </Grid>
                         </Grid>
-                        <Grid item container style={{maxWidth: "20em"}}>
+                        <Grid item container direction="column" style={{maxWidth: "20em"}}>
                             <Grid item>
-                                <TextField label="Name" id="name" value={name} onChange={(event) => setName(event.target.value)} />
+                                <TextField fullWidth label="Name" id="name" value={name} onChange={(event) => setName(event.target.value)} />
                             </Grid>
                             <Grid item>
-                                <TextField label="Email" id="email" value={email} onChange={(event) => setEmail(event.target.value)} />
+                                <TextField fullWidth label="Email" id="email" value={email} onChange={(event) => setEmail(event.target.value)} />
                             </Grid>
                             <Grid item>
-                                <TextField label="Phone" id="phone" value={phone} onChange={(event) => setPhone(event.target.value)} />
+                                <TextField fullWidth label="Phone" id="phone" value={phone} onChange={(event) => setPhone(event.target.value)} />
                             </Grid>
                         </Grid>
                         <Grid item style={{maxWidth: "20em"}}>
-                            <TextField id ="message" 
+                            <TextField fullWidth id ="message" 
                                 value={message} 
                                 onChange={event => setMessage(event.target.value)} 
                                 multiline rows={10} 

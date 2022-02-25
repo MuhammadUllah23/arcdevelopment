@@ -36,7 +36,7 @@ const useStyles = makeStyles(theme => ({
         fontSize: '1.5rem',
         marginRight: '5em',
         marginLeft: '2em',
-        [theme.breakpoints.down('sm')]: {
+        [theme.breakpoints.down('md')]: {
             marginRight: 0,
             marginLeft: 0,
         },
@@ -46,7 +46,7 @@ const useStyles = makeStyles(theme => ({
         fontSize: "0.7rem",
         height: 35,
         padding: 5,
-        [theme.breakpoints.down("sm")]: {
+        [theme.breakpoints.down("md")]: {
             marginBottom: "2em"
         } 
     },
@@ -134,17 +134,17 @@ export default function Contact(props) {
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid item container className={classes.background} lg={8} xl={9} alignItems="center">
+            <Grid item container direction={matchesMD ? "column" : "row"} className={classes.background} lg={8} xl={9} alignItems="center">
                 <Grid item 
                 style={{
-                    marginLeft: matchesSM ? 0 : '3em', 
-                    textAlign: matchesSM ? 'center' : 'inherit'}}
+                    marginLeft: matchesMD ? 0 : '3em', 
+                    textAlign: matchesMD ? 'center' : 'inherit'}}
                 >
                     <Grid container direction='columns'>
                         <Grid item>
-                            <Typography variant='h2' >Simple Software.<br />Revolutionary.</Typography>
-                            <Typography variant='subtitle2' style={{fontSize: '1.5em'}} >The advantage of the 21st Century.</Typography>
-                            <Grid container justify={matchesSM ? 'center' : 'undefined'} item>
+                            <Typography variant='h2' align={matchesMD ? "center" : undefined} >Simple Software.<br />Revolutionary.</Typography>
+                            <Typography variant='subtitle2' align={matchesMD ? "center" : undefined} style={{fontSize: '1.5em'}} >The advantage of the 21st Century.</Typography>
+                            <Grid container justify={matchesMD ? 'center' : 'undefined'} item>
                                 <Button component={Link} to="/revolution" onClick={() => props.setValue(2)} variant="outlined" className={classes.buttonLearnMore} >
                                     <span style={{marginRight: 5}}> Learn More </span>
                                     <ButtonArrow width={10} height={10} fill={theme.palette.common.blue} />

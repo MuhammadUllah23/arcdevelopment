@@ -102,7 +102,7 @@ export default function Contact(props) {
                         <Typography variant="body1" style={{color: theme.palette.common.blue, fontSize: "1rem"}}>youremail@gmail.com</Typography>
                     </Grid>
                 </Grid>
-                <Grid item container >
+                <Grid item container style={{maxWidth: "20em"}}>
                     <Grid item>
                         <TextField label="Name" id="name" value={name} onChange={(event) => setName(event.target.value)} />
                     </Grid>
@@ -113,7 +113,7 @@ export default function Contact(props) {
                         <TextField label="Phone" id="phone" value={phone} onChange={(event) => setPhone(event.target.value)} />
                     </Grid>
                 </Grid>
-                <Grid item>
+                <Grid item style={{maxWidth: "20em"}}>
                     <TextField id ="message" 
                         value={message} 
                         onChange={event => setMessage(event.target.value)} 

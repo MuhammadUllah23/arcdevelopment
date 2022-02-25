@@ -94,8 +94,11 @@ export default createMuiTheme({
         }
       },
       MuiInput: {
+        root: {
+          color: arcGrey,
+          fontWeight: 300
+        },
         underline: {
-          
           "&:before": {
             // style underline before being clicked or hovered on
             borderBottom: `2px solid ${arcBlue}`

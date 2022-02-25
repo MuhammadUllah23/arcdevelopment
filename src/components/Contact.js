@@ -25,6 +25,7 @@ const useStyles = makeStyles(theme => ({
         backgroundRepeat: 'no-repeat',
         // to take all the space it can
         height: '60em',
+        paddingBottom: "10em"
     },
     estimateButton: {
         ...theme.typography.estimate,
@@ -136,7 +137,7 @@ export default function Contact(props) {
             <Grid item container className={classes.background} lg={8} xl={9} alignItems="center">
                 <Grid item 
                 style={{
-                    marginLeft: matchesSM ? 0 : '5em', 
+                    marginLeft: matchesSM ? 0 : '3em', 
                     textAlign: matchesSM ? 'center' : 'inherit'}}
                 >
                     <Grid container direction='columns'>

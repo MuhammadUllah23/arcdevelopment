@@ -9,6 +9,8 @@ import { TextField } from "@material-ui/core";
 import { useMediaQuery } from "@material-ui/core";
 
 import background from '../assets/background.jpg'
+import phoneIcon from '../assets/phone.svg'
+import emailIcon from '../assets/email.svg'
 
 const useStyles = makeStyles(theme => ({
     background: {
@@ -32,10 +34,18 @@ export default function Contact() {
 
     return (
         <Grid container direction="row">
-            <Grid item container direction="column" lg={3}>
+            <Grid item container direction="column" justify="center" lg={3}>
                 <Grid item>
                     <Typography variant="h2" style={{lineHeight: 1}}>Contact us</Typography>
                     <Typography variant="body1" style={{color: theme.palette.common.blue}}>We're Waiting</Typography>
+                </Grid>
+                <Grid item container >
+                    <Grid item>
+                        <img src={phoneIcon} alt="phone" />
+                    </Grid>
+                    <Grid item>
+                        <Typography variant="body1" style={{color: theme.palette.common.blue}}>(555) 555-5555</Typography>
+                    </Grid>
                 </Grid>
             </Grid>
             <Grid item container className={classes.background} lg={9}>

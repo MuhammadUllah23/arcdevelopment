@@ -13,6 +13,7 @@ import MobileApps from './MobileApps';
 import Websites from './Websites';
 import Revolution from './Revolution';
 import About from './About';
+import Contact from './Contact';
 
 
 function App() {
@@ -31,7 +32,7 @@ function App() {
           <Route path="/websites" element={<Websites setValue={setValue} setSelectedIndex={setSelectedIndex}/>}/>
           <Route path="/revolution" element={<Revolution setValue={setValue} setSelectedIndex={setSelectedIndex}/>}/>
           <Route path="/about" element={<About setValue={setValue} setSelectedIndex={setSelectedIndex}/>}/>
-          <Route path="/contact" element={<div style={{height: "400px"}}>contact</div>}/>
+          <Route path="/contact" element={<Contact />}/>
           <Route path="/estimate" element={<div style={{height: "400px"}}>estimate </div>}/>
         </Routes>
         <Footer setValue={setValue} setSelectedIndex={setSelectedIndex}/>

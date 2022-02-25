@@ -80,7 +80,6 @@ export default function Contact(props) {
     const matchesXS = useMediaQuery(theme.breakpoints.down("xs"))
 
     const [name, setName] = useState('')
-    const [nameHelper, setNameHelper] = useState("")
 
     const [email, setEmail] = useState('')
     const [emailHelper, setEmailHelper] = useState("")
@@ -89,8 +88,27 @@ export default function Contact(props) {
     const [phoneHelper, setPhoneHelper] = useState("")
     
     const [message, setMessage] = useState('')
-    const [messageHelper, setMessageHelper] = useState("")
-    
+
+    const onChange = event => {
+        let valid
+
+        switch (event.target.id) {
+            case 'email':
+                setEmail(event.target.value)
+                valid = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(event.target.value)
+                // test is a built in function that allows to test a regular expression on a string.
+                // Will return a boolean value based on whether or not the event.target.value matches the regex pattern for a valid email adddress
+                if (!valid) {
+                    setEmailHelper("Invalid email")
+                } else {
+                    setEmailHelper("")
+                }
+
+                break;
+                default:
+                    break;
+        }
+    }
 
     return (
         <Grid container direction="row">

@@ -25,6 +25,28 @@ const useStyles = makeStyles(theme => ({
         // to take all the space it can
         height: '60em',
     },
+    estimateButton: {
+        ...theme.typography.estimate,
+        backgroundColor: theme.palette.common.orange,
+        borderRadius: 50,
+        height: 80,
+        width: 205,
+        fontSize: '1.5rem',
+        marginRight: '5em',
+        marginLeft: '2em',
+        [theme.breakpoints.down('sm')]: {
+            marginRight: 0,
+            marginLeft: 0,
+        },
+        buttonLearnMore: {
+            ...theme.typography.learnMore,
+            fontSize: "0.7rem",
+            height: 35,
+            padding: 5,
+            [theme.breakpoints.down("sm")]: {
+                marginBottom: "2em"
+            } 
+        },
 }))
 
 export default function Contact() {

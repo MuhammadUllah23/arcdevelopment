@@ -11,6 +11,7 @@ import { useMediaQuery } from "@material-ui/core";
 import ButtonArrow from "./ui/ButtonArrow";
 
 import background from '../assets/background.jpg'
+import mobileBackground from '../assets/mobileBackground.jpg'
 import phoneIcon from '../assets/phone.svg'
 import emailIcon from '../assets/email.svg'
 import airplane from '../assets/send.svg'
@@ -25,7 +26,10 @@ const useStyles = makeStyles(theme => ({
         backgroundRepeat: 'no-repeat',
         // to take all the space it can
         height: '60em',
-        paddingBottom: "10em"
+        paddingBottom: "10em",
+        [theme.breakpoints.down("md")]: {
+            backgroundImage: `url(${mobileBackground})`
+        }
     },
     estimateButton: {
         ...theme.typography.estimate,

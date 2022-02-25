@@ -89,7 +89,7 @@ export default function Contact(props) {
                             <Typography variant="h2" style={{lineHeight: 1}}>Contact us</Typography>
                             <Typography variant="body1" style={{color: theme.palette.common.blue}}>We're Waiting</Typography>
                         </Grid>
-                        <Grid item container >
+                        <Grid item container style={{marginTop: "2em"}} >
                             <Grid item>
                                 <img src={phoneIcon} alt="phone" style={{marginRight: "0.5em"}} />
                             </Grid>
@@ -97,7 +97,7 @@ export default function Contact(props) {
                                 <Typography variant="body1" style={{color: theme.palette.common.blue, fontSize: "1rem"}}>(555) 555-5555</Typography>
                             </Grid>
                         </Grid>
-                        <Grid item container >
+                        <Grid item container style={{marginBottom: "2em"}} >
                             <Grid item>
                                 <img src={emailIcon} alt="envelope" style={{marginRight: "0.5em", verticalAlign: "bottom"}} />
                             </Grid>
@@ -125,7 +125,7 @@ export default function Contact(props) {
                                 InputProps={{disableUnderline: true}} 
                             />
                         </Grid>
-                        <Grid item container justify="center">
+                        <Grid item container justify="center" style={{marginTop: "2em"}} >
                             <Button variant="contained" className={classes.sendButton}>
                                 Send Message 
                                 <img src={airplane} alt="paper airplane" style={{marginLeft: "1em"}} />

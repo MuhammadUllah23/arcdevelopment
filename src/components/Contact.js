@@ -214,6 +214,12 @@ export default function Contact(props) {
                             />
                         </Grid>
                     </Grid>
+                    <Grid item container >
+                        <Grid item>
+                            <Button color="primary" onClick={() => setOpen(false)}>Cancel</Button>
+                        </Grid>
+                        
+                    </Grid>
                 </DialogContent>
             </Dialog>
             <Grid item container direction={matchesMD ? "column" : "row"} 

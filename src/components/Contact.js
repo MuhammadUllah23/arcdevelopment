@@ -180,7 +180,7 @@ export default function Contact(props) {
                         </Grid>
                         <Grid item container justify="center" style={{marginTop: "2em"}} >
                             <Button variant="contained" className={classes.sendButton} 
-                                disabled={name.length === 0 || message.length === 0 || phoneHelper.length !== 0 || emailHelper.length !== 0} 
+                               // disabled={name.length === 0 || message.length === 0 || phoneHelper.length !== 0 || emailHelper.length !== 0} 
                                 onClick={() => setOpen(true)} >
                                 Send Message 
                                 <img src={airplane} alt="paper airplane" style={{marginLeft: "1em"}} />
@@ -195,25 +195,23 @@ export default function Contact(props) {
                         <Grid item>
                             <Typography variant="h4" gutterBottom >Confirm Message</Typography>
                         </Grid>
-                        <Grid item container>
-                            <Grid item style={{marginBottom: "0.5em"}}>
-                                <TextField  fullWidth label="Name" id="name" value={name} onChange={event => setName(event.target.value)} />
-                            </Grid>
-                            <Grid item style={{marginBottom: "0.5em"}}>
-                                <TextField error={emailHelper.length != 0} helperText={emailHelper} fullWidth label="Email" id="email" value={email} onChange={onChange} />
-                            </Grid>
-                            <Grid item style={{marginBottom: "0.5em"}}>
-                                <TextField error={phoneHelper.length != 0} helperText={phoneHelper} fullWidth label="Phone" id="phone" value={phone} onChange={onChange} />
-                            </Grid>
-                            <Grid item style={{maxWidth: "20em"}}>
-                                <TextField fullWidth id ="message" 
-                                    value={message} 
-                                    onChange={event => setMessage(event.target.value)} 
-                                    multiline rows={10} 
-                                    className={classes.message}
-                                    InputProps={{disableUnderline: true}} 
-                                />
-                            </Grid>
+                        <Grid item style={{marginBottom: "0.5em"}}>
+                            <TextField  fullWidth label="Name" id="name" value={name} onChange={event => setName(event.target.value)} />
+                        </Grid>
+                        <Grid item style={{marginBottom: "0.5em"}}>
+                            <TextField error={emailHelper.length != 0} helperText={emailHelper} fullWidth label="Email" id="email" value={email} onChange={onChange} />
+                        </Grid>
+                        <Grid item style={{marginBottom: "0.5em"}}>
+                            <TextField error={phoneHelper.length != 0} helperText={phoneHelper} fullWidth label="Phone" id="phone" value={phone} onChange={onChange} />
+                        </Grid>
+                        <Grid item style={{maxWidth: "20em"}}>
+                            <TextField fullWidth id ="message" 
+                                value={message} 
+                                onChange={event => setMessage(event.target.value)} 
+                                multiline rows={10} 
+                                className={classes.message}
+                                InputProps={{disableUnderline: true}} 
+                            />
                         </Grid>
                     </Grid>
                 </DialogContent>

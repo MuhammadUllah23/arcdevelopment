@@ -75,6 +75,13 @@ const useStyles = makeStyles(theme => ({
             height: 40,
             width: 225
         }
+    },
+    dialog: {
+        // marginTop: ".25em",
+        
+        [theme.breakpoints.up("md")]: {
+            height: "45em"
+        }
     }
 }))
 
@@ -139,7 +146,7 @@ export default function Contact(props) {
                 <Grid item>
                     <Grid container direction="column">
                         <Grid item>
-                            <Typography align={matchesMD ? "center" : undefined} variant="h2" style={{lineHeight: 1}}>Testing</Typography>
+                            <Typography align={matchesMD ? "center" : undefined} variant="h2" style={{lineHeight: 1}}>Contact us</Typography>
                             <Typography align={matchesMD ? "center" : undefined} variant="body1" style={{color: theme.palette.common.blue}}>We're Waiting</Typography>
                         </Grid>
                         <Grid item container style={{marginTop: "2em"}} >
@@ -193,8 +200,8 @@ export default function Contact(props) {
                     </Grid>
                 </Grid>
             </Grid>
-            <Dialog style={{zIndex: 1302}} fullScreen={matchesXS} open={open} onClose={() => setOpen(false)} 
-            PaperProps={{style: {paddingTop: matchesXS ? "1em" : "5em", paddingBottom: matchesXS ? "1em" : "5em", 
+            <Dialog align="center" style={{zIndex: 1302}} fullScreen={matchesXS} open={open} className={classes.dialog} onClose={() => setOpen(false)} 
+            PaperProps={{style: {paddingTop: matchesXS ? "1em" : "2em", paddingBottom: matchesXS ? "1em" : "2em", 
                                  paddingLeft: matchesXS ? 0 : matchesSM ? "5em" : matchesMD ? "10em" : "20em", 
                                  paddingRight: matchesXS ? 0 : matchesSM ? "5em" : matchesMD ? "10em" : "20em"}}}>
                 <DialogContent>

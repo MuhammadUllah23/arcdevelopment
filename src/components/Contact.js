@@ -70,6 +70,10 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: theme.palette.common.orange,
         "&:hover": {
             backgroundColor: theme.palette.secondary.light
+        },
+        [theme.breakpoints.down("sm")]: {
+            height: 40,
+            width: 225
         }
     }
 }))
@@ -217,7 +221,7 @@ export default function Contact(props) {
                             />
                         </Grid>
                     </Grid>
-                    <Grid item container style={{marginTop: "2em"}} alignItems="center">
+                    <Grid item container direction={matchesSM ? "column" : "row"} style={{marginTop: "2em"}} alignItems="center">
                         <Grid item>
                             <Button style={{fontWeight: 300}} color="primary" onClick={() => setOpen(false)}>Cancel</Button>
                         </Grid>

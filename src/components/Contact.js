@@ -190,7 +190,24 @@ export default function Contact(props) {
                 </Grid>
             </Grid>
             <Dialog open={open} onClose={() => setOpen(false)}>
-
+                <DialogContent>
+                    <Grid container direction="column" >
+                        <Grid item>
+                            <Typography variant="h4" gutterBottom >Confirm Message</Typography>
+                        </Grid>
+                        <Grid item container>
+                            <Grid item style={{marginBottom: "0.5em"}}>
+                                <TextField  fullWidth label="Name" id="name" value={name} onChange={event => setName(event.target.value)} />
+                            </Grid>
+                            <Grid item style={{marginBottom: "0.5em"}}>
+                                <TextField error={emailHelper.length != 0} helperText={emailHelper} fullWidth label="Email" id="email" value={email} onChange={onChange} />
+                            </Grid>
+                            <Grid item style={{marginBottom: "0.5em"}}>
+                                <TextField error={phoneHelper.length != 0} helperText={phoneHelper} fullWidth label="Phone" id="phone" value={phone} onChange={onChange} />
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </DialogContent>
             </Dialog>
             <Grid item container direction={matchesMD ? "column" : "row"} 
                 className={classes.background} 

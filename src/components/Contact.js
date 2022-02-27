@@ -139,7 +139,7 @@ export default function Contact(props) {
                 <Grid item>
                     <Grid container direction="column">
                         <Grid item>
-                            <Typography align={matchesMD ? "center" : undefined} variant="h2" style={{lineHeight: 1}}>Contact us</Typography>
+                            <Typography align={matchesMD ? "center" : undefined} variant="h2" style={{lineHeight: 1}}>Testing</Typography>
                             <Typography align={matchesMD ? "center" : undefined} variant="body1" style={{color: theme.palette.common.blue}}>We're Waiting</Typography>
                         </Grid>
                         <Grid item container style={{marginTop: "2em"}} >

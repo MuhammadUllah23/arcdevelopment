@@ -8,6 +8,8 @@ import { Typography } from "@material-ui/core";
 import { Button } from "@material-ui/core";
 import { TextField } from "@material-ui/core";
 import { useMediaQuery } from "@material-ui/core";
+import { Dialog } from "@material-ui/core";
+import { DialogContent } from "@material-ui/core";
 import ButtonArrow from "./ui/ButtonArrow";
 
 import background from '../assets/background.jpg'

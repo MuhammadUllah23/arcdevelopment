@@ -189,11 +189,11 @@ export default function Contact(props) {
                     </Grid>
                 </Grid>
             </Grid>
-            <Dialog open={open} onClose={() => setOpen(false)}>
+            <Dialog open={open} onClose={() => setOpen(false)} PaperProps={{style: {paddingTop: "5em", paddingBottom: "5em", paddingLeft:"20em", paddingRight: "20em"}}}>
                 <DialogContent>
                     <Grid container direction="column" >
                         <Grid item>
-                            <Typography variant="h4" gutterBottom >Confirm Message</Typography>
+                            <Typography align="center" variant="h4" gutterBottom >Confirm Message</Typography>
                         </Grid>
                         <Grid item style={{marginBottom: "0.5em"}}>
                             <TextField  fullWidth label="Name" id="name" value={name} onChange={event => setName(event.target.value)} />
@@ -214,9 +214,9 @@ export default function Contact(props) {
                             />
                         </Grid>
                     </Grid>
-                    <Grid item container >
+                    <Grid item container style={{marginTop: "2em"}} alignItems="center">
                         <Grid item>
-                            <Button color="primary" onClick={() => setOpen(false)}>Cancel</Button>
+                            <Button style={{fontWeight: 300}} color="primary" onClick={() => setOpen(false)}>Cancel</Button>
                         </Grid>
                         <Grid item>
                             <Button variant="contained" className={classes.sendButton} 

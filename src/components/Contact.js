@@ -91,6 +91,8 @@ export default function Contact(props) {
     
     const [message, setMessage] = useState('')
 
+    const [open, setOpen] = useState(false)
+
     const onChange = event => {
         let valid
 
@@ -178,7 +180,8 @@ export default function Contact(props) {
                         </Grid>
                         <Grid item container justify="center" style={{marginTop: "2em"}} >
                             <Button variant="contained" className={classes.sendButton} 
-                                disabled={name.length === 0 || message.length === 0 || phoneHelper.length !== 0 || emailHelper.length !== 0} >
+                                disabled={name.length === 0 || message.length === 0 || phoneHelper.length !== 0 || emailHelper.length !== 0} 
+                                onClick={() => setOpen(true)} >
                                 Send Message 
                                 <img src={airplane} alt="paper airplane" style={{marginLeft: "1em"}} />
                             </Button>
@@ -186,6 +189,9 @@ export default function Contact(props) {
                     </Grid>
                 </Grid>
             </Grid>
+            <Dialog open={open} onClose={() => setOpen(false)}>
+
+            </Dialog>
             <Grid item container direction={matchesMD ? "column" : "row"} 
                 className={classes.background} 
                 justify={matchesMD ? "center" : undefined} 

@@ -73,34 +73,37 @@ const useStyles = makeStyles(theme => ({
         },
         [theme.breakpoints.down("sm")]: {
             height: 40,
-            width: 225
+            width: 190
         }
     },
     dialog: {
-        // marginTop: ".25em",
-        [theme.breakpoints.up("md")]: {
-            height: "45em"
-        }
+        
+        
+
     },
     dialogPaper: {
+        [theme.breakpoints.up("lg")]: {
+            // height: "44em",
+            verticalAlign: "top"
+        },
         paddingTop: "2em", 
         paddingBottom: "2em",                           
         paddingLeft: "20em", 
         paddingRight: "20em",
-        [theme.breakpoints.down("sm")]: {
+        [theme.breakpoints.down("md")]: {
             paddingLeft: "10em",
             paddingRight: "10em"
         },
         [theme.breakpoints.down("sm")]: {
             paddingLeft: "5em",
-            paddingRight: "5em"
+            paddingRight: "5em",
         },
-        // [theme.breakpoints.down("xs")]: {
-        //     paddingTop: "1em", 
-        //     paddingBottom: "1em",                           
-        //     paddingLeft: 0,
-        //     paddingRight: 0
-        // }
+        [theme.breakpoints.down("xs")]: {
+            paddingTop: "1em", 
+            paddingBottom: "1em",                           
+            paddingLeft: "2em",
+            paddingRight: "2em"
+        }
     }
 }))
 
@@ -220,13 +223,13 @@ export default function Contact(props) {
                 </Grid>
             </Grid>
             <Dialog 
-                align="center" 
+              
                 style={{zIndex: 1302}} 
                 fullScreen={matchesXS} 
                 open={open} 
                 className={classes.dialog} 
                 onClose={() => setOpen(false)} 
-                classes={{paper: classes.dialogPaper}}
+                classes={{paper: classes.dialogPaper} }
                 >
                 <DialogContent>
                     <Grid container direction="column" >

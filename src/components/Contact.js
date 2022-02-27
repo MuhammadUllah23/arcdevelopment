@@ -205,6 +205,15 @@ export default function Contact(props) {
                             <Grid item style={{marginBottom: "0.5em"}}>
                                 <TextField error={phoneHelper.length != 0} helperText={phoneHelper} fullWidth label="Phone" id="phone" value={phone} onChange={onChange} />
                             </Grid>
+                            <Grid item style={{maxWidth: "20em"}}>
+                                <TextField fullWidth id ="message" 
+                                    value={message} 
+                                    onChange={event => setMessage(event.target.value)} 
+                                    multiline rows={10} 
+                                    className={classes.message}
+                                    InputProps={{disableUnderline: true}} 
+                                />
+                            </Grid>
                         </Grid>
                     </Grid>
                 </DialogContent>

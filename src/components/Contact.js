@@ -189,7 +189,7 @@ export default function Contact(props) {
                     </Grid>
                 </Grid>
             </Grid>
-            <Dialog open={open} onClose={() => setOpen(false)} 
+            <Dialog style={{zIndex: 1302}} open={open} onClose={() => setOpen(false)} 
             PaperProps={{style: {paddingTop: matchesXS ? "1em" : "5em", paddingBottom: matchesXS ? "1em" : "5em", 
                                  paddingLeft: matchesXS ? 0 : matchesSM ? "5em" : matchesMD ? "10em" : "20em", 
                                  paddingRight: matchesXS ? 0 : matchesSM ? "5em" : matchesMD ? "10em" : "20em"}}}>

@@ -16,10 +16,15 @@ let mailOptions = {from: "Arc Development",
   subject: "Testing nodemailer",
   text: "Test Successful"};
 
-// // Create and Deploy Your First Cloud Functions
-// // https://firebase.google.com/docs/functions/write-firebase-functions
+// Create and Deploy Your First Cloud Functions
+// https://firebase.google.com/docs/functions/write-firebase-functions
 //
-// exports.helloWorld = functions.https.onRequest((request, response) => {
-//   functions.logger.info("Hello logs!", {structuredData: true});
-//   response.send("Hello from Firebase!");
-// });
+exports.sendMail = functions.https.onRequest((request, response) => {
+  transporter.sendMail(mailOptions, (error) => {
+    if (error) {
+      response.send(error);
+    } else {
+      response.send("Message sent successfully")
+    }
+  });
+});

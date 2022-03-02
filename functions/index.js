@@ -1,6 +1,6 @@
 const functions = require("firebase-functions");
 const admin = require("firebase-admin");
-const nodemailer = require("nodemailer"); 
+const nodemailer = require("nodemailer");
 const config = functions.config();
 
 admin.initializeApp();
@@ -11,7 +11,7 @@ const transporter = nodemailer.createTransport({
     pass: config.user.password},
 });
 
-let mailOptions = {from: "Arc Development",
+const mailOptions = {from: "Arc Development",
   to: "muhammadhullah23@gmail.com",
   subject: "Testing nodemailer",
   text: "Test Successful"};
@@ -24,7 +24,7 @@ exports.sendMail = functions.https.onRequest((request, response) => {
     if (error) {
       response.send(error);
     } else {
-      response.send("Message sent successfully")
+      response.send("Message sent successfully");
     }
   });
 });

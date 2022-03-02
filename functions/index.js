@@ -10,6 +10,12 @@ const transporter = nodemailer.createTransport({
   auth: {user: config.user.email,
     pass: config.user.password},
 });
+
+let mailOptions = {from: "Arc Development",
+  to: "muhammadhullah23@gmail.com",
+  subject: "Testing nodemailer",
+  text: "Test Successful"};
+
 // // Create and Deploy Your First Cloud Functions
 // // https://firebase.google.com/docs/functions/write-firebase-functions
 //

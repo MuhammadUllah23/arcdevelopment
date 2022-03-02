@@ -21,11 +21,14 @@ const mailOptions = {from: "Arc Development",
 // https://firebase.google.com/docs/functions/write-firebase-functions
 //
 exports.sendMail = functions.https.onRequest((request, response) => {
-  transporter.sendMail(mailOptions, (error) => {
+  cors(request, response, () +> {
+    transporter.sendMail(mailOptions, (error) => {
     if (error) {
       response.send(error);
     } else {
       response.send("Message sent successfully");
     }
-  });
+  }),  
+  })  
+  
 });

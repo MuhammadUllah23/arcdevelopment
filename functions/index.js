@@ -5,7 +5,11 @@ const config = functions.config();
 
 admin.initializeApp();
 
-const transporter = nodemailer.createTransport({service: "Gmail", auth: {}});
+const transporter = nodemailer.createTransport({
+  service: "Gmail",
+  auth: {user: config.user.email,
+    pass: config.user.password},
+});
 // // Create and Deploy Your First Cloud Functions
 // // https://firebase.google.com/docs/functions/write-firebase-functions
 //

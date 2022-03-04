@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
+import axios from "axios";
+
 import { makeStyles, useTheme } from "@material-ui/styles";
 import { Grid } from "@material-ui/core";
 import { Typography } from "@material-ui/core";
@@ -156,6 +158,10 @@ export default function Contact(props) {
         }
     }
 
+    const onConfirm = () => {
+        
+    }
+
     return (
         <Grid container direction="row">
             <Grid item container 
@@ -262,7 +268,7 @@ export default function Contact(props) {
                         <Grid item>
                             <Button variant="contained" className={classes.sendButton} 
                                disabled={name.length === 0 || message.length === 0 || phoneHelper.length !== 0 || emailHelper.length !== 0} 
-                                onClick={() => setOpen(true)} >
+                                onClick={() => {onConfirm}} >
                                 Send Message 
                                 <img src={airplane} alt="paper airplane" style={{marginLeft: "1em"}} />
                             </Button>

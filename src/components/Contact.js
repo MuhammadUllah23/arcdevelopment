@@ -159,7 +159,10 @@ export default function Contact(props) {
     }
 
     const onConfirm = () => {
-        
+        axios
+            .get('https://us-central1-arcdevelopment-practice.cloudfunctions.net/sendMail')
+            .then(res => console.log(res))
+            .catch(err => console.log(err))
     }
 
     return (

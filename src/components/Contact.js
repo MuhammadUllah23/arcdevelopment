@@ -271,7 +271,7 @@ export default function Contact(props) {
                         <Grid item>
                             <Button variant="contained" className={classes.sendButton} 
                                disabled={name.length === 0 || message.length === 0 || phoneHelper.length !== 0 || emailHelper.length !== 0} 
-                                onClick={() => {onConfirm}} >
+                                onClick={() => {onConfirm()}} >
                                 Send Message 
                                 <img src={airplane} alt="paper airplane" style={{marginLeft: "1em"}} />
                             </Button>

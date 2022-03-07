@@ -289,7 +289,7 @@ export default function Contact(props) {
                             <Button variant="contained" className={classes.sendButton} 
                                disabled={name.length === 0 || message.length === 0 || phoneHelper.length !== 0 || emailHelper.length !== 0} 
                                 onClick={() => {onConfirm()}} >
-                               {buttonContents}
+                               {loading ? <CircularProgress /> : buttonContents}
                             </Button>
                         </Grid>
                     </Grid>

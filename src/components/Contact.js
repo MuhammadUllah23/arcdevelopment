@@ -173,7 +173,7 @@ export default function Contact(props) {
                 setPhone("")
                 setMessage("")
             })
-            .catch(err => console.log(err));
+            .catch(err => setLoading(false));
     }
 
     return (

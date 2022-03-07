@@ -167,6 +167,11 @@ export default function Contact(props) {
             .get('https://us-central1-arcdevelopment-practice.cloudfunctions.net/sendMail')
             .then(res => {
                 setLoading(false)
+                setOpen(false)
+                setName("")
+                setEmail("")
+                setPhone("")
+                setMessage("")
             })
             .catch(err => console.log(err));
     }

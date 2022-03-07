@@ -176,6 +176,13 @@ export default function Contact(props) {
             .catch(err => setLoading(false));
     }
 
+    const buttonContents = (
+        <React.Fragment>
+             Send Message 
+            <img src={airplane} alt="paper airplane" style={{marginLeft: "1em"}} />
+        </React.Fragment>
+    )
+
     return (
         <Grid container direction="row">
             <Grid item container 
@@ -235,8 +242,7 @@ export default function Contact(props) {
                             <Button variant="contained" className={classes.sendButton} 
                                disabled={name.length === 0 || message.length === 0 || phoneHelper.length !== 0 || emailHelper.length !== 0} 
                                 onClick={() => setOpen(true)} >
-                                Send Message 
-                                <img src={airplane} alt="paper airplane" style={{marginLeft: "1em"}} />
+                                {buttonContents}
                             </Button>
                         </Grid>
                     </Grid>
@@ -283,8 +289,7 @@ export default function Contact(props) {
                             <Button variant="contained" className={classes.sendButton} 
                                disabled={name.length === 0 || message.length === 0 || phoneHelper.length !== 0 || emailHelper.length !== 0} 
                                 onClick={() => {onConfirm()}} >
-                                Send Message 
-                                <img src={airplane} alt="paper airplane" style={{marginLeft: "1em"}} />
+                               {buttonContents}
                             </Button>
                         </Grid>
                     </Grid>

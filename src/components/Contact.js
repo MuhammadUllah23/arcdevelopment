@@ -12,6 +12,8 @@ import { TextField } from "@material-ui/core";
 import { useMediaQuery } from "@material-ui/core";
 import { Dialog } from "@material-ui/core";
 import { DialogContent } from "@material-ui/core";
+import { CircularProgress } from "@material-ui/core";
+
 import ButtonArrow from "./ui/ButtonArrow";
 
 import background from '../assets/background.jpg'
@@ -115,6 +117,7 @@ export default function Contact(props) {
     const matchesMD = useMediaQuery(theme.breakpoints.down("md"))
     const matchesSM = useMediaQuery(theme.breakpoints.down("sm"))
     const matchesXS = useMediaQuery(theme.breakpoints.down("xs"))
+    const [loading, setLoading] = useState(false)
 
     const [name, setName] = useState('')
 

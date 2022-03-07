@@ -162,10 +162,13 @@ export default function Contact(props) {
     }
 
     const onConfirm = () => {
+        setLoading(true)
         axios
             .get('https://us-central1-arcdevelopment-practice.cloudfunctions.net/sendMail')
-            .then(res => console.log(res))
-            .catch(err => console.log(err))
+            .then(res => {
+                setLoading(false)
+            })
+            .catch(err => console.log(err));
     }
 
     return (

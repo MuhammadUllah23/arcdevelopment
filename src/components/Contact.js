@@ -179,8 +179,12 @@ export default function Contact(props) {
                 setEmail("")
                 setPhone("")
                 setMessage("")
+                setAlert({open: true, message: "Message sent successfully!", backgroundColor: "#4BB543"})
             })
-            .catch(err => setLoading(false));
+            .catch(err => {
+                setLoading(false)
+                setAlert({open: true, message: "Something went wrong, please try again!", backgroundColor: "#ff3232"})
+            });
     }
 
     const buttonContents = (

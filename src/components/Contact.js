@@ -132,7 +132,11 @@ export default function Contact(props) {
 
     const [open, setOpen] = useState(false)
 
-    const [alert, setAlert] = useState({open: false, message: "", backgroundColor: ""})
+    const [alert, setAlert] = useState({
+        open: false, 
+        message: "", 
+        backgroundColor: ""
+    })
 
     const onChange = event => {
         let valid
@@ -298,6 +302,14 @@ export default function Contact(props) {
                     </Grid>
                 </DialogContent>
             </Dialog>
+            <Snackbar 
+                open={alert.open} 
+                message={alert.message} 
+                ContentProps={{style: {backgroundColor: alert.backgroundColor}}} 
+                anchorOrigin={{vertical: "top", horizontal: "center"}} 
+                onClose={() => setAlert({...alert, open: false})}
+                autoHideDuration={4000} 
+            />
             <Grid item container direction={matchesMD ? "column" : "row"} 
                 className={classes.background} 
                 justify={matchesMD ? "center" : undefined} 

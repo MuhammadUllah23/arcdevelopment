@@ -13,6 +13,7 @@ import { useMediaQuery } from "@material-ui/core";
 import { Dialog } from "@material-ui/core";
 import { DialogContent } from "@material-ui/core";
 import { CircularProgress } from "@material-ui/core";
+import { Snackbar } from "@material-ui/core";
 
 import ButtonArrow from "./ui/ButtonArrow";
 
@@ -130,6 +131,8 @@ export default function Contact(props) {
     const [message, setMessage] = useState('')
 
     const [open, setOpen] = useState(false)
+
+    const [alert, setAlert] = useState({open: false, message: "", backgroundColor: ""})
 
     const onChange = event => {
         let valid

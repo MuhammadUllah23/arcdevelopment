@@ -171,7 +171,14 @@ export default function Contact(props) {
     const onConfirm = () => {
         setLoading(true)
         axios
-            .get('https://us-central1-arcdevelopment-practice.cloudfunctions.net/sendMail')
+            .get(
+                'https://us-central1-arcdevelopment-practice.cloudfunctions.net/sendMail', {params: {
+                    name: name,
+                    email: email,
+                    phone: phone,
+                    message: message
+                }}
+                )
             .then(res => {
                 setLoading(false)
                 setOpen(false)

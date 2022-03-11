@@ -22,6 +22,19 @@ const mailOptions = {
 //
 exports.sendMail = functions.https.onRequest((request, response) => {
   cors(request, response, () => {
+    const { name, email, phone, message } = request.query
+
+    mailOptions = {
+      from: "Arc Development",
+      to: "muhammadhullah23@gmail.com",
+      subject: "Message Received!",
+      html: `
+        <p style="sont-size: 16px">From: ${name}</p>
+        <p style="sont-size: 16px">From: ${email}</p>
+        <p style="sont-size: 16px">From: ${phone}</p>
+        <p style="sont-size: 16px">From: ${message}</p>
+        `};
+
     transporter.sendMail(mailOptions, (error) => {
       if (error) {
         response.send(error);

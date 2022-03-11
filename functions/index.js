@@ -14,7 +14,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-const mailOptions = {
+let mailOptions = {
   from: "Arc Development",
 };
 // // Create and Deploy Your First Cloud Functions
@@ -22,7 +22,7 @@ const mailOptions = {
 //
 exports.sendMail = functions.https.onRequest((request, response) => {
   cors(request, response, () => {
-    const { name, email, phone, message } = request.query
+    const {name, email, phone, message} = request.query;
 
     mailOptions = {
       from: "Arc Development",

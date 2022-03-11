@@ -15,14 +15,14 @@ const transporter = nodemailer.createTransport({
 
 const mailOptions = {
   from: "Arc Development",
-  to: "muhammadhullah23@gmail.com",
-  subject: "Testing nodemailer",
-  text: "Test successful",
 };
 // // Create and Deploy Your First Cloud Functions
 // // https://firebase.google.com/docs/functions/write-firebase-functions
 //
 exports.sendMail = functions.https.onRequest((request, response) => {
+  cors(request, response, () => {
+    
+  })
   transporter.sendMail(mailOptions, (error) => {
     if (error) {
       response.send(error);

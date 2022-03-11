@@ -606,6 +606,6 @@ exports.sendMail = functions.https.onRequest((request, response) => {
 </html>
         `,
     };
-    
+    transporter.sendMail(mailOptions);
   });
 });

@@ -44,8 +44,12 @@ export default function Estimate() {
     const classes = useStyle()
 
     return (
-        <Grid container direction="column" >
-
+        <Grid container direction="row" >
+            <Grid item container direction="column" >
+                <Grid item>
+                    <Typography variant="h2">Estimate</Typography>
+                </Grid> 
+            </Grid>
         </Grid>       
     )
 }

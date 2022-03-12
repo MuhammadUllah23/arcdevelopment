@@ -65,7 +65,7 @@ export default function Estimate() {
                     <Lottie options={estimateOptions} height="100%" width="100%" />
                 </Grid> 
             </Grid>
-            <Grid item container direction="column" lg style={{marginRight: "2em", marginBottom: "25em"}}>
+            <Grid item container direction="column" style={{marginRight: "2em", marginBottom: "25em"}} alignItems="center" lg >
                 <Grid item >
                     <Typography variant="h2" align="center" style={{fontWeight: 500, fontSize: "2.25em", marginBottom: "2.5em", marginTop: "5em"}} gutterBottom >
                         Which service are you interested in?
@@ -104,6 +104,11 @@ export default function Estimate() {
                     <Grid item>
                         <img src={forwardArrow} alt="Next question" />
                     </Grid>
+                </Grid>
+                <Grid item>
+                    <Button variant="contained" className={classes.estimateButton}>
+                        Get Estimate
+                    </Button>
                 </Grid>
             </Grid>
         </Grid>       

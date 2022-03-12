@@ -43,11 +43,23 @@ export default function Estimate() {
     const theme = useTheme()
     const classes = useStyle()
 
+    const estimateOptions = {
+        loop: true,
+        autoplay: true, 
+        animationData: estimateAnimation,
+        rendererSettings: {
+          preserveAspectRatio: 'xMidYMid slice'
+        }
+      };
+
     return (
         <Grid container direction="row" >
             <Grid item container direction="column" >
                 <Grid item>
                     <Typography variant="h2">Estimate</Typography>
+                </Grid>
+                <Grid item>
+                    <Lottie options={estimateOptions} height="100%" width="100%" />
                 </Grid> 
             </Grid>
         </Grid>       

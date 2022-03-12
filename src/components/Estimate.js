@@ -66,6 +66,13 @@ export default function Estimate() {
                 <Grid item >
                     <Typography variant="h2" align="center" style={{fontWeight: 300}} gutterBottom >Which service are you interested in?</Typography>
                 </Grid> 
+                <Grid item container >
+                    <Grid item container direction="column">
+                        <Grid item style={{maxWidth: "12em"}}>
+                            <Typography variant="h6" align="center">Custom Software Development</Typography>
+                        </Grid>
+                    </Grid>
+                </Grid>
             </Grid>
         </Grid>       
     )

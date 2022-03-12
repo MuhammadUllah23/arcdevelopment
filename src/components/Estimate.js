@@ -62,6 +62,11 @@ export default function Estimate() {
                     <Lottie options={estimateOptions} height="100%" width="100%" />
                 </Grid> 
             </Grid>
+            <Grid item container direction="column" >
+                <Grid item >
+                    <Typography variant="h2" align="center" style={{fontWeight: 300}} gutterBottom >Which service are you interested in?</Typography>
+                </Grid> 
+            </Grid>
         </Grid>       
     )
 }

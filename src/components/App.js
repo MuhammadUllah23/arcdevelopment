@@ -14,7 +14,7 @@ import Websites from './Websites';
 import Revolution from './Revolution';
 import About from './About';
 import Contact from './Contact';
-
+import Estimate from './Estimate';
 
 function App() {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -33,7 +33,7 @@ function App() {
           <Route path="/revolution" element={<Revolution setValue={setValue} setSelectedIndex={setSelectedIndex}/>}/>
           <Route path="/about" element={<About setValue={setValue} setSelectedIndex={setSelectedIndex}/>}/>
           <Route path="/contact" element={<Contact setValue={setValue} />}/>
-          <Route path="/estimate" element={<div style={{height: "400px"}}>estimate </div>}/>
+          <Route path="/estimate" element={<Estimate />}/>
         </Routes>
         <Footer setValue={setValue} setSelectedIndex={setSelectedIndex}/>
       </BrowserRouter>

@@ -61,7 +61,7 @@ export default function Estimate() {
                 <Grid item>
                     <Typography variant="h2">Estimate</Typography>
                 </Grid>
-                <Grid item>
+                <Grid item style={{marginRight: "10em", maxWidth: "50em"}}>
                     <Lottie options={estimateOptions} height="100%" width="100%" />
                 </Grid> 
             </Grid>

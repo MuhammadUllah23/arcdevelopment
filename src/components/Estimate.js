@@ -71,7 +71,19 @@ export default function Estimate() {
                         <Grid item style={{maxWidth: "12em"}}>
                             <Typography variant="h6" align="center">Custom Software Development</Typography>
                         </Grid>
+                        <Grid item >
+                            <img src={software} alt="three floating screens" />
+                        </Grid>
                     </Grid>
+                    <Grid item container direction="column">
+                        <Grid item style={{maxWidth: "12em"}}>
+                            <Typography variant="h6" align="center">IOS/Android App Development</Typography>
+                        </Grid>
+                        <Grid item >
+                            <img src={mobile} alt="phones and tablet outline" />
+                        </Grid>
+                    </Grid>
+                    
                 </Grid>
             </Grid>
         </Grid>       

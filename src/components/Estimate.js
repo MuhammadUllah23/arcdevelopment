@@ -97,6 +97,14 @@ export default function Estimate() {
                         </Grid>
                     </Grid>
                 </Grid>
+                <Grid item container>
+                    <Grid item>
+                        <img src={backArrow} alt="Previous question" />
+                    </Grid>
+                    <Grid item>
+                        <img src={forwardArrow} alt="Next question" />
+                    </Grid>
+                </Grid>
             </Grid>
         </Grid>       
     )

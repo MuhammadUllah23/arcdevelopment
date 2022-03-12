@@ -83,7 +83,14 @@ export default function Estimate() {
                             <img src={mobile} alt="phones and tablet outline" />
                         </Grid>
                     </Grid>
-                    
+                    <Grid item container direction="column">
+                        <Grid item style={{maxWidth: "12em"}}>
+                            <Typography variant="h6" align="center">Website Development</Typography>
+                        </Grid>
+                        <Grid item >
+                            <img src={website} alt="computer outline" />
+                        </Grid>
+                    </Grid>
                 </Grid>
             </Grid>
         </Grid>       

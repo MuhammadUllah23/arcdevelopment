@@ -54,7 +54,7 @@ export default function Estimate() {
 
     return (
         <Grid container direction="row" >
-            <Grid item container direction="column" >
+            <Grid item container direction="column" lg>
                 <Grid item>
                     <Typography variant="h2">Estimate</Typography>
                 </Grid>
@@ -62,7 +62,7 @@ export default function Estimate() {
                     <Lottie options={estimateOptions} height="100%" width="100%" />
                 </Grid> 
             </Grid>
-            <Grid item container direction="column" >
+            <Grid item container direction="column" lg>
                 <Grid item >
                     <Typography variant="h2" align="center" style={{fontWeight: 300}} gutterBottom >Which service are you interested in?</Typography>
                 </Grid> 

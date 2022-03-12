@@ -35,9 +35,12 @@ import globe from "../assets/globe.svg";
 import biometrics from "../assets/biometrics.svg";
 import estimateAnimation from "../animations/estimateAnimation/data.json"
 
-const useStyle = makeStyles((theme) => {
-
-})
+const useStyle = makeStyles(theme => ({
+    icon: {
+        width: "12em",
+        height: "10em"
+    }
+}))
 
 export default function Estimate() {
     const theme = useTheme()
@@ -72,7 +75,7 @@ export default function Estimate() {
                             <Typography variant="h6" align="center">Custom Software Development</Typography>
                         </Grid>
                         <Grid item >
-                            <img src={software} alt="three floating screens" />
+                            <img src={software} alt="three floating screens" className={classes.icon}/>
                         </Grid>
                     </Grid>
                     <Grid item container direction="column" md>
@@ -80,7 +83,7 @@ export default function Estimate() {
                             <Typography variant="h6" align="center">IOS/Android App Development</Typography>
                         </Grid>
                         <Grid item >
-                            <img src={mobile} alt="phones and tablet outline" />
+                            <img src={mobile} alt="phones and tablet outline" className={classes.icon}/>
                         </Grid>
                     </Grid>
                     <Grid item container direction="column" md>
@@ -88,7 +91,7 @@ export default function Estimate() {
                             <Typography variant="h6" align="center">Website Development</Typography>
                         </Grid>
                         <Grid item >
-                            <img src={website} alt="computer outline" />
+                            <img src={website} alt="computer outline" className={classes.icon}/>
                         </Grid>
                     </Grid>
                 </Grid>

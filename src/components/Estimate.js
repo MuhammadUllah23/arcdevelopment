@@ -39,6 +39,18 @@ const useStyle = makeStyles(theme => ({
     icon: {
         width: "12em",
         height: "10em"
+    },
+    estimateButton: {
+        ...theme.typography.estimate,
+        borderRadius: 50,
+        backgroundColor: theme.palette.common.orange,
+        height: 50,
+        width: 225,
+        fontSize: "1.25rem",
+        marginTop: "5em",
+        "&:hover": {
+            backgroundColor: theme.palette.secondary.light
+        }
     }
 }))
 

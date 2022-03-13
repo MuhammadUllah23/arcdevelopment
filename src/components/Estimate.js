@@ -126,13 +126,13 @@ export default function Estimate() {
                             {question.options.map(option => (
                                 <Grid item container direction="column" md>
                                     <Grid item style={{maxWidth: "12em"}}>
-                                        <Typography variant="h6" align="center" style={{marginBottom: "1em"}}>Custom Software Development</Typography>
+                                        <Typography variant="h6" align="center" style={{marginBottom: "1em"}}>{option.title}</Typography>
                                         <Typography variant="caption" align="center">
                                             {option.subtitle}
                                         </Typography>
                                     </Grid>
                                     <Grid item >
-                                        <img src={software} alt="three floating screens" className={classes.icon}/>
+                                        <img src={option.icon} alt={option.iconAlt} className={classes.icon}/>
                                     </Grid>
                                 </Grid>
                             ))}

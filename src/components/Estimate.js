@@ -54,7 +54,7 @@ const useStyle = makeStyles(theme => ({
     }
 }))
 
-const defaultQuestion = [
+const defaultQuestions = [
     {
         id: 1, title: "Which service are you interested in?",
         active: true, options: [
@@ -110,6 +110,11 @@ export default function Estimate() {
                 </Grid> 
             </Grid>
             <Grid item container direction="column" style={{marginRight: "2em", marginBottom: "25em"}} alignItems="center" lg >
+                {defaultQuestions.filter(question => question.active).map((question, index) => (
+                    <React.Fragment>
+
+                    </React.Fragment>
+                ))}
                 <Grid item >
                     <Typography variant="h2" align="center" style={{fontWeight: 500, fontSize: "2.25em", marginBottom: "2.5em", marginTop: "5em"}} gutterBottom >
                         Which service are you interested in?

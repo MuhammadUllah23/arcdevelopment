@@ -54,6 +54,21 @@ const useStyle = makeStyles(theme => ({
     }
 }))
 
+const defaultQuestion = [
+    {
+        id: 1, title: "Which service are you interested in?",
+        active: true, options: [
+            {
+                id: 1, title: "Custom Software Development",
+                subtitle: null, 
+                icon: software, iconAlt: "three floating screens", 
+                selected: false,
+                cost: 0
+            }
+        ]
+    }
+]
+
 export default function Estimate() {
     const theme = useTheme()
     const classes = useStyle()

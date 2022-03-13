@@ -121,6 +121,32 @@ export default function Estimate() {
                             <Typography variant="body1" align="center" style={{marginBottom: "2.5em"}} gutterBottom>
                                 {question.subtitle}
                             </Typography>
+                        </Grid>
+                        <Grid item container>
+                            <Grid item container direction="column" alignItems="center" md>
+                                <Grid item style={{maxWidth: "12em"}}>
+                                    <Typography variant="h6" align="center" style={{marginBottom: "1em"}}>Custom Software Development</Typography>
+                                </Grid>
+                                <Grid item >
+                                    <img src={software} alt="three floating screens" className={classes.icon}/>
+                                </Grid>
+                            </Grid>
+                            <Grid item container direction="column" alignItems="center" md>
+                                <Grid item style={{maxWidth: "12em"}}>
+                                    <Typography variant="h6" align="center" style={{marginBottom: "1em"}}>IOS/Android App Development</Typography>
+                                </Grid>
+                                <Grid item >
+                                    <img src={mobile} alt="phones and tablet outline" className={classes.icon}/>
+                                </Grid>
+                            </Grid>
+                            <Grid item container direction="column" alignItems="center" md>
+                                <Grid item style={{maxWidth: "12em"}}>
+                                    <Typography variant="h6" align="center" style={{marginBottom: "1em"}}>Website Development</Typography>
+                                </Grid>
+                                <Grid item >
+                                    <img src={website} alt="computer outline" className={classes.icon}/>
+                                </Grid>
+                            </Grid>
                         </Grid> 
                     </React.Fragment>
                 ))}

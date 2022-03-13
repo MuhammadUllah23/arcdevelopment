@@ -113,8 +113,11 @@ export default function Estimate() {
                 {defaultQuestions.filter(question => question.active).map((question, index) => (
                     <React.Fragment>
                         <Grid item >
-                            <Typography variant="h2" align="center" style={{fontWeight: 500, fontSize: "2.25em", marginBottom: "2.5em", marginTop: "5em"}} gutterBottom >
+                            <Typography variant="h2" align="center" style={{fontWeight: 500, fontSize: "2.25em", marginTop: "5em"}}>
                                 {question.title}
+                            </Typography>
+                            <Typography variant="body1" align="center" style={{marginBottom: "2.5em"}} gutterBottom>
+                                {question.subtitle}
                             </Typography>
                         </Grid> 
                     </React.Fragment>

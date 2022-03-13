@@ -59,9 +59,26 @@ const defaultQuestion = [
         id: 1, title: "Which service are you interested in?",
         active: true, options: [
             {
-                id: 1, title: "Custom Software Development",
+                id: 1, 
+                title: "Custom Software Development",
                 subtitle: null, 
                 icon: software, iconAlt: "three floating screens", 
+                selected: false,
+                cost: 0
+            },
+            {
+                id: 2, 
+                title: "IOS/Android App Development",
+                subtitle: null, 
+                icon: mobile, iconAlt: "phones and tablet outline", 
+                selected: false,
+                cost: 0
+            },
+            {
+                id: 3, 
+                title: "Website Development",
+                subtitle: null, 
+                icon: website, iconAlt: "computer outline", 
                 selected: false,
                 cost: 0
             }

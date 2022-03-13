@@ -112,14 +112,14 @@ export default function Estimate() {
             <Grid item container direction="column" style={{marginRight: "2em", marginBottom: "25em"}} alignItems="center" lg >
                 {defaultQuestions.filter(question => question.active).map((question, index) => (
                     <React.Fragment>
-
+                        <Grid item >
+                            <Typography variant="h2" align="center" style={{fontWeight: 500, fontSize: "2.25em", marginBottom: "2.5em", marginTop: "5em"}} gutterBottom >
+                                {question.title}
+                            </Typography>
+                        </Grid> 
                     </React.Fragment>
                 ))}
-                <Grid item >
-                    <Typography variant="h2" align="center" style={{fontWeight: 500, fontSize: "2.25em", marginBottom: "2.5em", marginTop: "5em"}} gutterBottom >
-                        Which service are you interested in?
-                    </Typography>
-                </Grid> 
+                
                 <Grid item container>
                     <Grid item container direction="column" alignItems="center" md>
                         <Grid item style={{maxWidth: "12em"}}>

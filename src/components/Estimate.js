@@ -83,8 +83,8 @@ export default function Estimate() {
                         Which service are you interested in?
                     </Typography>
                 </Grid> 
-                <Grid item container >
-                    <Grid item container direction="column" md>
+                <Grid item container>
+                    <Grid item container direction="column" alignItems="center" md>
                         <Grid item style={{maxWidth: "12em"}}>
                             <Typography variant="h6" align="center" style={{marginBottom: "1em"}}>Custom Software Development</Typography>
                         </Grid>
@@ -92,7 +92,7 @@ export default function Estimate() {
                             <img src={software} alt="three floating screens" className={classes.icon}/>
                         </Grid>
                     </Grid>
-                    <Grid item container direction="column" md>
+                    <Grid item container direction="column" alignItems="center" md>
                         <Grid item style={{maxWidth: "12em"}}>
                             <Typography variant="h6" align="center" style={{marginBottom: "1em"}}>IOS/Android App Development</Typography>
                         </Grid>
@@ -100,7 +100,7 @@ export default function Estimate() {
                             <img src={mobile} alt="phones and tablet outline" className={classes.icon}/>
                         </Grid>
                     </Grid>
-                    <Grid item container direction="column" md>
+                    <Grid item container direction="column" alignItems="center" md>
                         <Grid item style={{maxWidth: "12em"}}>
                             <Typography variant="h6" align="center" style={{marginBottom: "1em"}}>Website Development</Typography>
                         </Grid>

@@ -2,6 +2,8 @@ import React from 'react'
 import Lottie from 'react-lottie'
 import { Link } from "react-router-dom";
 
+import { cloneDeep } from "lodash"
+
 import { makeStyles, useTheme } from "@material-ui/styles";
 import { Grid } from "@material-ui/core";
 import { Typography } from "@material-ui/core";
@@ -87,6 +89,8 @@ const defaultQuestions = [
         ]
     }
 ]
+
+const newQuestions = cloneDeep(defaultQuestions)
 
 const softwareQuestions = [
     { ...defaultQuestions[0], active: false },

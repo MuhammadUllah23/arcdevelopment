@@ -25,8 +25,8 @@ import persons from "../assets/persons.svg";
 import info from "../assets/info.svg";
 import bell from "../assets/bell.svg";
 import people from "../assets/people.svg";
-import usersIcon from "../assets/users.svg";
-import iPhone from "../assets/iphone.svg";
+import users from "../assets/users.svg"
+import iphone from "../assets/iphone.svg"
 import gps from "../assets/gps.svg";
 import customized from "../assets/customized.svg";
 import data from "../assets/data.svg";
@@ -108,7 +108,7 @@ const softwareQuestions = [
           id: 2,
           title: "iOS Application",
           subtitle: null,
-          icon: iPhone,
+          icon: iphone,
           iconAlt: "outline of iphone",
           selected: false,
           cost: 100
@@ -169,7 +169,7 @@ const softwareQuestions = [
           id: 1,
           title: "Users/Authentication",
           subtitle: null,
-          icon: usersIcon,
+          icon: users,
           iconAlt: "outline of a person with a plus sign",
           selected: false,
           cost: 25

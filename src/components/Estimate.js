@@ -265,7 +265,46 @@ const softwareQuestions = [
       ],
       active: false
     }
-  ];
+];
+
+const websiteQuestions = [
+    { ...defaultQuestions[0], active: false },
+    {
+      id: 2,
+      title: "Which type of website are you wanting?",
+      subtitle: "Select one.",
+      options: [
+        {
+          id: 1,
+          title: "Basic",
+          subtitle: "(Informational)",
+          icon: info,
+          iconAlt: "person outline",
+          selected: false,
+          cost: 100
+        },
+        {
+          id: 2,
+          title: "Interactive",
+          subtitle: "(Users, API's, Messaging)",
+          icon: customized,
+          iconAlt: "outline of two people",
+          selected: false,
+          cost: 200
+        },
+        {
+          id: 3,
+          title: "E-Commerce",
+          subtitle: "(Sales)",
+          icon: globe,
+          iconAlt: "outline of three people",
+          selected: false,
+          cost: 250
+        }
+      ],
+      active: true
+    }
+];
 
 export default function Estimate() {
     const theme = useTheme()

@@ -350,6 +350,16 @@ export default function Estimate() {
         setQuestions(newQuestions)
       }
 
+      const navigationPreviousDisabled = () => {
+        const currentlyActive = questions.filter(question => question.active)
+
+        if (currentlyActive,id === 1) {
+          return true
+        } else {
+          reuturn false
+        }
+      }
+
     return (
         <Grid container direction="row" >
             <Grid item container direction="column" lg>
@@ -392,12 +402,12 @@ export default function Estimate() {
                 
                 <Grid item container justify="space-between" style={{width: "18em", marginTop: "3em"}}>
                     <Grid item>
-                      <IconButton onClick={previousQuestion}>
+                      <IconButton disabled={navigationPreviousDisabled} onClick={previousQuestion}>
                         <img src={backArrow} alt="Previous question" />
                       </IconButton>  
                     </Grid>
                     <Grid item>
-                      <IconButton onClick={nextQuestion}>
+                      <IconButton disabled={} onClick={nextQuestion}>
                         <img src={forwardArrow} alt="Next question" />
                       </IconButton>
                     </Grid>

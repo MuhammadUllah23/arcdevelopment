@@ -90,8 +90,6 @@ const defaultQuestions = [
     }
 ]
 
-const newQuestions = cloneDeep(defaultQuestions)
-
 const softwareQuestions = [
     { ...defaultQuestions[0], active: false },
     {
@@ -322,6 +320,10 @@ export default function Estimate() {
           preserveAspectRatio: 'xMidYMid slice'
         }
       };
+
+      const nextQuestion = () => {
+        const newQuestions = cloneDeep(questions)
+      }
 
     return (
         <Grid container direction="row" >

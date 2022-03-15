@@ -361,7 +361,7 @@ export default function Estimate() {
                 </Grid> 
             </Grid>
             <Grid item container direction="column" style={{marginRight: "2em", marginBottom: "25em"}} alignItems="center" lg >
-                {defaultQuestions.filter(question => question.active).map((question, index) => (
+                {questions.filter(question => question.active).map((question, index) => (
                     <React.Fragment>
                         <Grid item >
                             <Typography variant="h2" align="center" style={{fontWeight: 500, fontSize: "2.25em", marginTop: "5em"}}>

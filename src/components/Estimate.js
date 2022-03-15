@@ -313,7 +313,7 @@ export default function Estimate() {
     const theme = useTheme()
     const classes = useStyle()
 
-    const [questions, useQuestions] = useState(defaultQuestions)
+    const [questions, setQuestions] = useState(defaultQuestions)
 
     const estimateOptions = {
         loop: true,
@@ -328,6 +328,13 @@ export default function Estimate() {
         const newQuestions = cloneDeep(questions)
         const currentlyActive = newQuestions.filter(question => question.active)
         const activeIndex = currentlyActive[0].id - 1
+
+        const nextIndex = activeIndex + 1
+
+        newQuestions[activeIndex] = {...currentlyActive[0], active: false}
+        newQuestions[nextIndex] = {...newQuestions[nextIndex], active: true}
+
+        setQuestions(newQuestions)
       }
 
     return (

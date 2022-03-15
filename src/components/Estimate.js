@@ -337,6 +337,19 @@ export default function Estimate() {
         setQuestions(newQuestions)
       }
 
+      const previousQuestion = () => {
+        const newQuestions = cloneDeep(questions)
+        const currentlyActive = newQuestions.filter(question => question.active)
+        const activeIndex = currentlyActive[0].id - 1
+
+        const nextIndex = activeIndex - 1
+
+        newQuestions[activeIndex] = {...currentlyActive[0], active: false}
+        newQuestions[nextIndex] = {...newQuestions[nextIndex], active: true}
+
+        setQuestions(newQuestions)
+      }
+
     return (
         <Grid container direction="row" >
             <Grid item container direction="column" lg>

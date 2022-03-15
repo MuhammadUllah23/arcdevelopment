@@ -390,7 +390,7 @@ export default function Estimate() {
                     </React.Fragment>
                 ))}
                 
-                <Grid item container justify="space-between" style={{width: "15em", marginTop: "3em"}}>
+                <Grid item container justify="space-between" style={{width: "18em", marginTop: "3em"}}>
                     <Grid item>
                       <IconButton>
                         <img src={backArrow} alt="Previous question" />

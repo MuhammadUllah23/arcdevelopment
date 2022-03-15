@@ -360,6 +360,7 @@ export default function Estimate() {
         }
       }
 
+      
     return (
         <Grid container direction="row" >
             <Grid item container direction="column" lg>
@@ -403,7 +404,7 @@ export default function Estimate() {
                 <Grid item container justify="space-between" style={{width: "18em", marginTop: "3em"}}>
                     <Grid item>
                       <IconButton disabled={navigationPreviousDisabled} onClick={previousQuestion}>
-                        <img src={backArrow} alt="Previous question" />
+                        <img src={navigationPreviousDisabled() ? backArrowDisabled : backArrow} alt="Previous question" />
                       </IconButton>  
                     </Grid>
                     <Grid item>

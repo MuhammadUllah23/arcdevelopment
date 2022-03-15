@@ -313,7 +313,7 @@ export default function Estimate() {
     const theme = useTheme()
     const classes = useStyle()
 
-    const [questions, setQuestions] = useState(defaultQuestions)
+    const [questions, setQuestions] = useState(softwareQuestions)
 
     const estimateOptions = {
         loop: true,
@@ -392,12 +392,12 @@ export default function Estimate() {
                 
                 <Grid item container justify="space-between" style={{width: "18em", marginTop: "3em"}}>
                     <Grid item>
-                      <IconButton>
+                      <IconButton onClick={previousQuestion}>
                         <img src={backArrow} alt="Previous question" />
                       </IconButton>  
                     </Grid>
                     <Grid item>
-                      <IconButton>
+                      <IconButton onClick={nextQuestion}>
                         <img src={forwardArrow} alt="Next question" />
                       </IconButton>
                     </Grid>

@@ -355,9 +355,17 @@ export default function Estimate() {
 
         if (currentlyActive[0].id === 1) {
           return true
-        } else {
-          return false
-        }
+        } 
+        return false
+      }
+
+      const navigationNextDisabled = () => {
+        const currentlyActive = questions.filter(question => question.active)
+
+        if (currentlyActive[0].id === questions[questions.length - 1]) {
+          return true
+        } 
+        return false
       }
 
       
@@ -409,7 +417,7 @@ export default function Estimate() {
                     </Grid>
                     <Grid item>
                       <IconButton disabled={navigationNextDisabled} onClick={nextQuestion}>
-                        <img src={forwardArrow} alt="Next question" />
+                        <img src={navigationNextDisabled() ? forwardArrowDisabled : forwardArrow} alt="Next question" />
                       </IconButton>
                     </Grid>
                 </Grid>

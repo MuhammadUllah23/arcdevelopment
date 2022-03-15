@@ -326,6 +326,8 @@ export default function Estimate() {
 
       const nextQuestion = () => {
         const newQuestions = cloneDeep(questions)
+        const currentlyActive = newQuestions.filter(question => question.active)
+        const activeIndex = currentlyActive[0].id - 1
       }
 
     return (

@@ -392,10 +392,14 @@ export default function Estimate() {
                 
                 <Grid item container justify="space-between" style={{width: "15em", marginTop: "3em"}}>
                     <Grid item>
+                      <IconButton>
                         <img src={backArrow} alt="Previous question" />
+                      </IconButton>  
                     </Grid>
                     <Grid item>
+                      <IconButton>
                         <img src={forwardArrow} alt="Next question" />
+                      </IconButton>
                     </Grid>
                 </Grid>
                 <Grid item>

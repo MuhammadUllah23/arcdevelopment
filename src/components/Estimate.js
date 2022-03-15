@@ -1,6 +1,7 @@
 import React from 'react'
 import Lottie from 'react-lottie'
 import { Link } from "react-router-dom";
+import { useState } from 'react';
 
 import { cloneDeep } from "lodash"
 
@@ -311,6 +312,8 @@ const websiteQuestions = [
 export default function Estimate() {
     const theme = useTheme()
     const classes = useStyle()
+
+    const [questions, useQuestions] = useState(defaultQuestions)
 
     const estimateOptions = {
         loop: true,

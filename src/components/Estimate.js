@@ -73,7 +73,7 @@ const defaultQuestions = [
             },
             {
                 id: 2, 
-                title: "IOS/Android App Development",
+                title: "iOS/Android App Development",
                 subtitle: null, 
                 icon: mobile, iconAlt: "phones and tablet outline", 
                 selected: false,

@@ -392,7 +392,17 @@ export default function Estimate() {
             break;
         }
 
-       
+        switch(newSelected.title) {
+          case 'Custom Software Development':
+           setQuestions(softwareQuestions)
+           break;
+          case 'iOS/Android App Development':
+            setQuestions(softwareQuestions)
+            break; 
+          case 'Website Development':
+            setQuestions(websiteQuestions)
+            break;
+        }
         
       }
 

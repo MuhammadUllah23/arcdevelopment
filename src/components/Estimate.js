@@ -402,6 +402,9 @@ export default function Estimate() {
           case 'Website Development':
             setQuestions(websiteQuestions)
             break;
+          default:
+            setQuestions(newQuestions);
+            break;
         }
         
       }

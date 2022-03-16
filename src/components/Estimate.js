@@ -376,9 +376,24 @@ export default function Estimate() {
         const activeIndex = currentlyActive[0].id -1
 
         const newSelected = newQuestions[activeIndex].options[id - 1]
+        const previouslySelected = currentlyActive[0].options.filter(option => option.selected)
 
-        newSelected.selected = !newSelected.selected 
-        setQuestions(newQuestions)
+         
+
+        switch(currentlyActive[0].subtitle) {
+          case 'Select one':
+            if (previouslySelected[0]) {
+              previouslySelected[0].selected = !previouslySelected[0].selected
+            }
+            newSelected.selected = !newSelected.selected
+            break;
+          default: 
+            newSelected.selected = !newSelected.selected
+            break;
+        }
+
+       
+        
       }
 
       
@@ -412,7 +427,7 @@ export default function Estimate() {
                                   alignItems='center' 
                                   component={Button}
                                   onClick={() => handleSelect(option.id)} 
-                                  style={{display: "grid", textTransform: "none", backgroundColor: option.selected ? theme.palette.common.orange : null}} 
+                                  style={{display: "grid", borderRadius: 0, textTransform: "none", backgroundColor: option.selected ? theme.palette.common.orange : null}} 
                                   md
                                 >
                                     <Grid item style={{maxWidth: "14em"}}>

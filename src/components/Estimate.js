@@ -313,7 +313,7 @@ export default function Estimate() {
     const theme = useTheme()
     const classes = useStyle()
 
-    const [questions, setQuestions] = useState(softwareQuestions)
+    const [questions, setQuestions] = useState(defaultQuestions)
 
     const estimateOptions = {
         loop: true,

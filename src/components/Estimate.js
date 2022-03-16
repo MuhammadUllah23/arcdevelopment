@@ -394,7 +394,7 @@ export default function Estimate() {
                         </Grid>
                         <Grid item container>
                             {question.options.map(option => (
-                                <Grid item container direction="column" alignItems='center' md>
+                                <Grid item container direction="column" alignItems='center' component={Button} md>
                                     <Grid item style={{maxWidth: "12em"}}>
                                         <Typography variant="h6" align="center" style={{marginBottom: "1em"}}>{option.title}</Typography>
                                         <Typography variant="caption" align="center">

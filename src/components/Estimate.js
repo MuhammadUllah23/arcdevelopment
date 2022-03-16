@@ -371,27 +371,28 @@ export default function Estimate() {
       }
 
       const handleSelect = (id) => {
-        const newQuestions = cloneDeep(questions)
-        const currentlyActive = newQuestions.filter(question => question.active)
-        const activeIndex = currentlyActive[0].id -1
+        const newQuestions = cloneDeep(questions);
 
-        const newSelected = newQuestions[activeIndex].options[id - 1]
-        const previouslySelected = currentlyActive[0].options.filter(option => option.selected)
+        const currentlyActive = newQuestions.filter(question => question.active);
+        const activeIndex = currentlyActive[0].id - 1;
 
-         
+        const newSelected = newQuestions[activeIndex].options[id - 1];
 
-        switch(currentlyActive[0].subtitle) {
-          case 'Select one':
-            if (previouslySelected[0]) {
-              previouslySelected[0].selected = !previouslySelected[0].selected
+        const previousSelected = currentlyActive[0].options.filter(
+          option => option.selected
+        );
+
+        switch (currentlyActive[0].subtitle) {
+          case "Select one.":
+            if (previousSelected[0]) {
+              previousSelected[0].selected = !previousSelected[0].selected;
             }
-            newSelected.selected = !newSelected.selected
+            newSelected.selected = !newSelected.selected;
             break;
-          default: 
-            newSelected.selected = !newSelected.selected
+          default:
+            newSelected.selected = !newSelected.selected;
             break;
         }
-
         switch(newSelected.title) {
           case 'Custom Software Development':
            setQuestions(softwareQuestions)

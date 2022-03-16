@@ -385,7 +385,7 @@ export default function Estimate() {
                 {questions.filter(question => question.active).map((question, index) => (
                     <React.Fragment>
                         <Grid item >
-                            <Typography variant="h2" align="center" style={{fontWeight: 500, fontSize: "2.25em", marginTop: "5em"}}>
+                            <Typography variant="h2" align="center" style={{fontWeight: 500, fontSize: "2.25em", marginTop: "5em", lineHeight: 1.25}}>
                                 {question.title}
                             </Typography>
                             <Typography variant="body1" align="center" style={{marginBottom: "2.5em"}} gutterBottom>
@@ -394,8 +394,8 @@ export default function Estimate() {
                         </Grid>
                         <Grid item container>
                             {question.options.map(option => (
-                                <Grid item container direction="column" alignItems='center' component={Button} md>
-                                    <Grid item style={{maxWidth: "12em"}}>
+                                <Grid item container direction="column" alignItems='center' component={Button} style={{display: "grid", textTransform: "none"}} md>
+                                    <Grid item style={{maxWidth: "14em"}}>
                                         <Typography variant="h6" align="center" style={{marginBottom: "1em"}}>{option.title}</Typography>
                                         <Typography variant="caption" align="center">
                                             {option.subtitle}

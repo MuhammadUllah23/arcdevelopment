@@ -370,6 +370,17 @@ export default function Estimate() {
         return false
       }
 
+      const handleSelect = (id) => {
+        const newQuestions = cloneDeep(questions)
+        const currentlyActive = newQuestions.filter(question => question.active)
+        const activeIndex = currentlyActive[0].id
+
+        const newSelected = newQuestions[activeIndex].options[id - 1]
+
+        newSelected.selected = !newSelected.selected 
+        setQuestions(newQuestions)
+      }
+
       
     return (
         <Grid container direction="row" >
@@ -394,7 +405,16 @@ export default function Estimate() {
                         </Grid>
                         <Grid item container>
                             {question.options.map(option => (
-                                <Grid item container direction="column" alignItems='center' component={Button} style={{display: "grid", textTransform: "none"}} md>
+                                <Grid  
+                                  item 
+                                  container 
+                                  direction="column" 
+                                  alignItems='center' 
+                                  component={Button}
+                                  onClick={() => handleSelect(option.id)} 
+                                  style={{display: "grid", textTransform: "none"}} 
+                                  md
+                                >
                                     <Grid item style={{maxWidth: "14em"}}>
                                         <Typography variant="h6" align="center" style={{marginBottom: "1em"}}>{option.title}</Typography>
                                         <Typography variant="caption" align="center">

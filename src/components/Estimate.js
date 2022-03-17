@@ -484,7 +484,11 @@ export default function Estimate() {
             </Grid>
             <Dialog open={dialogOpen} onClose={() => setDialogOpen(false)}>
               <Grid container justify="center">
-                
+                <Grid item>
+                  <Typography variant="h2" align="center">
+                    Estimate
+                  </Typography>
+                </Grid>
               </Grid>
             </Dialog>
         </Grid>       

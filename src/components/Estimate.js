@@ -57,7 +57,12 @@ const useStyle = makeStyles(theme => ({
         "&:hover": {
             backgroundColor: theme.palette.secondary.light
         }
-    }
+    },
+    message: {
+      border: `2px solid ${theme.palette.common.blue}`,
+      marginTop: "5em",
+      borderRadius: 5,
+  },
 }))
 
 const defaultQuestions = [

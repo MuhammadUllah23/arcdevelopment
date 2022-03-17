@@ -482,6 +482,11 @@ export default function Estimate() {
                     </Button>
                 </Grid>
             </Grid>
+            <Dialog open={dialogOpen} onClose={() => setDialogOpen(false)}>
+              <Grid container justify="center">
+                
+              </Grid>
+            </Dialog>
         </Grid>       
     )
 }

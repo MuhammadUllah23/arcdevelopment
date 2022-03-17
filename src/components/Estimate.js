@@ -477,7 +477,7 @@ export default function Estimate() {
                     </Grid>
                 </Grid>
                 <Grid item>
-                    <Button variant="contained" className={classes.estimateButton}>
+                    <Button onClick={() => setDialogOpen(true)} variant="contained" className={classes.estimateButton}>
                         Get Estimate
                     </Button>
                 </Grid>

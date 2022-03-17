@@ -11,6 +11,8 @@ import { Typography } from "@material-ui/core";
 import { Button } from "@material-ui/core";
 import { useMediaQuery } from "@material-ui/core"
 import { IconButton } from '@material-ui/core';
+import { Dialog } from '@material-ui/core';
+import { DialogContent } from '@material-ui/core';
 
 import check from "../assets/check.svg";
 import send from "../assets/send.svg";
@@ -314,6 +316,8 @@ export default function Estimate() {
     const classes = useStyle()
 
     const [questions, setQuestions] = useState(defaultQuestions)
+
+    const [dialogOpen, setDialogOpen] = useState(false)
 
     const estimateOptions = {
         loop: true,

@@ -558,6 +558,14 @@ export default function Estimate() {
                           InputProps={{disableUnderline: true}} 
                       />
                   </Grid>
+                  <Grid item>
+                    <Typography variant="body1" paragraph>
+                      We can create this digital solution for an estimated
+                    </Typography>
+                    <Typography variant="body1" paragraph>
+                      Fill your name, phone number, and email, place your request, and we'll get back to you with details moving forward and a final price.
+                    </Typography>
+                  </Grid>
                 </Grid>
               </DialogContent>
             </Dialog>

@@ -320,6 +320,16 @@ export default function Estimate() {
 
     const [dialogOpen, setDialogOpen] = useState(false)
 
+    const [name, setName] = useState('')
+
+    const [email, setEmail] = useState('')
+    const [emailHelper, setEmailHelper] = useState("")
+    
+    const [phone, setPhone] = useState('')
+    const [phoneHelper, setPhoneHelper] = useState("")
+    
+    const [message, setMessage] = useState('')
+
     const estimateOptions = {
         loop: true,
         autoplay: true, 

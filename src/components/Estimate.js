@@ -490,6 +490,30 @@ export default function Estimate() {
                   </Typography>
                 </Grid>
               </Grid>
+              <DialogContent>
+                <Grid container>
+                  <Grid item container directoin="column" >
+                      <Grid item style={{marginBottom: "0.5em"}}>
+                          <TextField  fullWidth label="Name" id="name" value={name} onChange={event => setName(event.target.value)} />
+                      </Grid>
+                      <Grid item style={{marginBottom: "0.5em"}}>
+                          <TextField error={emailHelper.length !== 0} helperText={emailHelper} fullWidth label="Email" id="email" value={email} onChange={onChange} />
+                      </Grid>
+                      <Grid item style={{marginBottom: "0.5em"}}>
+                          <TextField error={phoneHelper.length !== 0} helperText={phoneHelper} fullWidth label="Phone" id="phone" value={phone} onChange={onChange} />
+                      </Grid>
+                  </Grid>
+                  <Grid item style={{maxWidth: "20em"}}>
+                      <TextField fullWidth id ="message" 
+                          value={message} 
+                          onChange={event => setMessage(event.target.value)} 
+                          multiline rows={10} 
+                          className={classes.message}
+                          InputProps={{disableUnderline: true}} 
+                      />
+                  </Grid>
+                </Grid>
+              </DialogContent>
             </Dialog>
         </Grid>       
     )

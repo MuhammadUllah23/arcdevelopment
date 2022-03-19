@@ -40,6 +40,7 @@ import android from "../assets/android.svg";
 import globe from "../assets/globe.svg";
 import biometrics from "../assets/biometrics.svg";
 import estimateAnimation from "../animations/estimateAnimation/data.json"
+import { GetAppTwoTone } from '@material-ui/icons';
 
 const useStyle = makeStyles(theme => ({
     icon: {
@@ -465,7 +466,9 @@ export default function Estimate() {
     const getTotal = () => {
       let cost = 0
 
-      const selections = questions.map(question => question.options.filter(option => option.selected))
+      const selections = questions.map(question => question.options.filter(option => option.selected)).filter(question => question.lenth > 0)
+      console.log(selections)
+      
     }
 
       
@@ -531,7 +534,7 @@ export default function Estimate() {
                     </Grid>
                 </Grid>
                 <Grid item>
-                    <Button onClick={() => setDialogOpen(true)} variant="contained" className={classes.estimateButton}>
+                    <Button onClick={() => {setDialogOpen(true); getTotal()}} variant="contained" className={classes.estimateButton}>
                         Get Estimate
                     </Button>
                 </Grid>

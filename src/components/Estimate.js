@@ -466,7 +466,9 @@ export default function Estimate() {
     const getTotal = () => {
       let cost = 0
 
-      const selections = questions.map(question => question.options.filter(option => option.selected)).filter(question => question.lenth > 0)
+      const selections = questions.map(question => question.options
+        .filter(option => option.selected))
+        .filter(question => question.length > 0)
       console.log(selections)
       
     }

@@ -64,6 +64,12 @@ const useStyle = makeStyles(theme => ({
       marginTop: "5em",
       borderRadius: 5,
   },
+  specialText: {
+    fontFamily: "Raleway",
+    fontWeight: 700,
+    fontSize: "1.5em",
+    color: theme.palette.common.orange
+  },
 }))
 
 const defaultQuestions = [
@@ -480,8 +486,7 @@ export default function Estimate() {
             cost -= userCost
 
             cost *= userCost
-          
-          console.log(cost)
+
         }
 
         setTotal(cost)

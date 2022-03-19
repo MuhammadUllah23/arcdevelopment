@@ -462,6 +462,10 @@ export default function Estimate() {
         }
     }
 
+    const getTotal = () => {
+      let cost = 0
+    }
+
       
     return (
         <Grid container direction="row" >

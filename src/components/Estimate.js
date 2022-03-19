@@ -335,6 +335,8 @@ export default function Estimate() {
     
     const [message, setMessage] = useState('')
 
+    const [total, setTotal] = useState(0)
+
     const estimateOptions = {
         loop: true,
         autoplay: true, 

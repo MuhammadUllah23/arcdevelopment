@@ -476,6 +476,10 @@ export default function Estimate() {
           const userCost = questions
             .filter(question => question.title === "How many users do you expect?")
             .map(question => question.options.filter(option => option.selected))[0][0].cost;
+
+            cost -= userCost
+
+            cost *= userCost
           
           console.log(userCost)
         }

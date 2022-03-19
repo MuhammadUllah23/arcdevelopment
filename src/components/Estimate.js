@@ -592,7 +592,7 @@ export default function Estimate() {
                   </Grid>
                   <Grid item>
                     <Typography variant="body1" paragraph>
-                      We can create this digital solution for an estimated <span className={classes.specialText}>${total}</span>
+                      We can create this digital solution for an estimated <span className={classes.specialText}>${total.toFixed(2)}</span>
                     </Typography>
                     <Typography variant="body1" paragraph>
                       Fill your name, phone number, and email, place your request, and we'll get back to you with details moving forward and a final price.

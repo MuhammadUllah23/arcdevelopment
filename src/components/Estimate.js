@@ -481,7 +481,7 @@ export default function Estimate() {
 
             cost *= userCost
           
-          console.log(userCost)
+          console.log(cost)
         }
 
         setTotal(cost)
@@ -587,7 +587,7 @@ export default function Estimate() {
                   </Grid>
                   <Grid item>
                     <Typography variant="body1" paragraph>
-                      We can create this digital solution for an estimated
+                      We can create this digital solution for an estimated <span className={classes.specialText}>${total}</span>
                     </Typography>
                     <Typography variant="body1" paragraph>
                       Fill your name, phone number, and email, place your request, and we'll get back to you with details moving forward and a final price.

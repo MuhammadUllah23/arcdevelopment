@@ -469,11 +469,11 @@ export default function Estimate() {
       const selections = questions.map(question => question.options
         .filter(option => option.selected))
         .filter(question => question.length > 0)
-      console.log(selections)
+        
+        selections.map(options => options.map(option => cost += option.cost))
       
     }
 
-      
     return (
         <Grid container direction="row" >
             <Grid item container direction="column" lg>

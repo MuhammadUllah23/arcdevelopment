@@ -599,7 +599,18 @@ export default function Estimate() {
                       </Grid>
                   </Grid>
                   <Grid item container direction="column">
-                    
+                    <Grid item>
+                      <Grid container direction="column">
+                        <Grid item container alignItems="center">
+                          <Grid item>
+                            <img src={check} alt="checkmark" />
+                          </Grid>
+                          <Grid item>
+                            <Typography variant="body1">First options check</Typography>
+                          </Grid>
+                        </Grid>
+                      </Grid>
+                    </Grid>
                   </Grid>
                 </Grid>
               </DialogContent>

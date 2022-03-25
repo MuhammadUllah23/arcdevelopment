@@ -570,7 +570,7 @@ export default function Estimate() {
               </Grid>
               <DialogContent>
                 <Grid container>
-                  <Grid item container directoin="column" >
+                  <Grid item container directoin="column" md={7}>
                       <Grid item style={{marginBottom: "0.5em"}}>
                           <TextField  fullWidth label="Name" id="name" value={name} onChange={event => setName(event.target.value)} />
                       </Grid>
@@ -598,7 +598,7 @@ export default function Estimate() {
                         </Typography>
                       </Grid>
                   </Grid>
-                  <Grid item container direction="column">
+                  <Grid item container direction="column" md={5}>
                     <Grid item>
                       <Grid container direction="column">
                         <Grid item container alignItems="center">

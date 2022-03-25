@@ -580,24 +580,25 @@ export default function Estimate() {
                       <Grid item style={{marginBottom: "0.5em"}}>
                           <TextField error={phoneHelper.length !== 0} helperText={phoneHelper} fullWidth label="Phone" id="phone" value={phone} onChange={onChange} />
                       </Grid>
+                      <Grid item style={{maxWidth: "20em"}}>
+                          <TextField fullWidth id ="message" 
+                              value={message} 
+                              onChange={event => setMessage(event.target.value)} 
+                              multiline rows={10} 
+                              className={classes.message}
+                              InputProps={{disableUnderline: true}} 
+                          />
+                      </Grid>
+                      <Grid item>
+                        <Typography variant="body1" paragraph>
+                          We can create this digital solution for an estimated <span className={classes.specialText}>${total.toFixed(2)}</span>
+                        </Typography>
+                        <Typography variant="body1" paragraph>
+                          Fill your name, phone number, and email, place your request, and we'll get back to you with details moving forward and a final price.
+                        </Typography>
+                      </Grid>
                   </Grid>
-                  <Grid item style={{maxWidth: "20em"}}>
-                      <TextField fullWidth id ="message" 
-                          value={message} 
-                          onChange={event => setMessage(event.target.value)} 
-                          multiline rows={10} 
-                          className={classes.message}
-                          InputProps={{disableUnderline: true}} 
-                      />
-                  </Grid>
-                  <Grid item>
-                    <Typography variant="body1" paragraph>
-                      We can create this digital solution for an estimated <span className={classes.specialText}>${total.toFixed(2)}</span>
-                    </Typography>
-                    <Typography variant="body1" paragraph>
-                      Fill your name, phone number, and email, place your request, and we'll get back to you with details moving forward and a final price.
-                    </Typography>
-                  </Grid>
+                  
                 </Grid>
               </DialogContent>
             </Dialog>

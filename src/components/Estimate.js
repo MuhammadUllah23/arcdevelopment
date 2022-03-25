@@ -627,6 +627,11 @@ export default function Estimate() {
                         </Grid>
                       </Grid>
                     </Grid>
+                    <Grid item >
+                      <button variant="contained" className={classes.estimateButton}>
+                        Place Request
+                      </button>
+                    </Grid>
                   </Grid>
                 </Grid>
               </DialogContent>

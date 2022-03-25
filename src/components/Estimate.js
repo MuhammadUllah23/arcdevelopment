@@ -617,6 +617,14 @@ export default function Estimate() {
                             <Typography variant="body1">Second options check</Typography>
                           </Grid>
                         </Grid>
+                        <Grid item container alignItems="center">
+                          <Grid item>
+                            <img src={check} alt="checkmark" />
+                          </Grid>
+                          <Grid item>
+                            <Typography variant="body1">Third options check</Typography>
+                          </Grid>
+                        </Grid>
                       </Grid>
                     </Grid>
                   </Grid>

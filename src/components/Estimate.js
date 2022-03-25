@@ -598,7 +598,9 @@ export default function Estimate() {
                         </Typography>
                       </Grid>
                   </Grid>
-                  
+                  <Grid item container direction="column">
+                    
+                  </Grid>
                 </Grid>
               </DialogContent>
             </Dialog>

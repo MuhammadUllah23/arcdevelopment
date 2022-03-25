@@ -617,7 +617,7 @@ export default function Estimate() {
                             <img src={check} alt="checkmark" />
                           </Grid>
                           <Grid item>
-                            <Typography variant="body1">First options check</Typography>
+                            <Typography variant="body1">You want {service} </Typography>
                           </Grid>
                         </Grid>
                         <Grid item container alignItems="center">

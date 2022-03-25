@@ -630,6 +630,7 @@ export default function Estimate() {
                     <Grid item >
                       <button variant="contained" className={classes.estimateButton}>
                         Place Request
+                        <img src={send} alt="paper airplane" style={{marginLeft: "0.5em"}} />
                       </button>
                     </Grid>
                   </Grid>

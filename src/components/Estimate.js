@@ -344,6 +344,13 @@ export default function Estimate() {
 
     const [total, setTotal] = useState(0)
 
+    const [service, setService] = useState([])
+    const [platform, setPlatform] = useState([])
+    const [Features, setFeatures] = useState([])
+    const [customFeatures, setCustomFeatures] = useState("")
+    const [category, setCategory] = useState("")
+    const [users, setUsers] = useState("")
+
     const estimateOptions = {
         loop: true,
         autoplay: true, 

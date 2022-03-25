@@ -346,10 +346,11 @@ export default function Estimate() {
 
     const [service, setService] = useState([])
     const [platform, setPlatform] = useState([])
-    const [Features, setFeatures] = useState([])
+    const [features, setFeatures] = useState([])
     const [customFeatures, setCustomFeatures] = useState("")
     const [category, setCategory] = useState("")
     const [users, setUsers] = useState("")
+
 
     const estimateOptions = {
         loop: true,
@@ -432,12 +433,15 @@ export default function Estimate() {
         switch(newSelected.title) {
           case 'Custom Software Development':
            setQuestions(softwareQuestions)
+           setService(newSelected.title)
            break;
           case 'iOS/Android App Development':
             setQuestions(softwareQuestions)
+            setService(newSelected.title)
             break; 
           case 'Website Development':
             setQuestions(websiteQuestions)
+            setService(newSelected.title)
             break;
           default:
             setQuestions(newQuestions);

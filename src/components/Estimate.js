@@ -707,9 +707,7 @@ export default function Estimate() {
                               <span key={index}>{`${feature}, `}</span>
                             ))
                           : null}
-                        {features.length > 0 &&
-                          features.length !== 1 &&
-                          features.length !== 2
+                        {features.length > 2
                             ? //...and then finally add the last feature with 'and' in front of it
                             ` and ${features[features.length - 1]}.`
                             : null}

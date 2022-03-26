@@ -504,6 +504,19 @@ export default function Estimate() {
       
     }
 
+    const getPlatforms = () => {
+      let newPlatforms = []
+
+      if (questions.length > 2) {
+        newPlatforms = questions.filter(question => question.title === "Which platforms do you need supported?")
+          .map(
+            question => question.options.filter(
+              option => option.selected
+            ))
+        console.log(newPlatforms)
+      }
+    }
+
     return (
         <Grid container direction="row" >
             <Grid item container direction="column" lg>
@@ -566,7 +579,7 @@ export default function Estimate() {
                     </Grid>
                 </Grid>
                 <Grid item>
-                    <Button onClick={() => {setDialogOpen(true); getTotal()}} variant="contained" className={classes.estimateButton}>
+                    <Button onClick={() => {setDialogOpen(true); getTotal(); getPlatforms()}} variant="contained" className={classes.estimateButton}>
                         Get Estimate
                     </Button>
                 </Grid>

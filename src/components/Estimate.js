@@ -779,8 +779,8 @@ export default function Estimate() {
                       </Grid>
                   </Grid>
                   <Grid item container direction="column" md={5}>
-                    <Grid item>
-
+                    <Grid item >
+                      {questions.length > 2 ? softwareSelection : websiteSelection}
                     </Grid>
                     <Grid item >
                       <button variant="contained" className={classes.estimateButton}>

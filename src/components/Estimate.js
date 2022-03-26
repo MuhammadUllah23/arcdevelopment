@@ -434,14 +434,29 @@ export default function Estimate() {
           case 'Custom Software Development':
            setQuestions(softwareQuestions)
            setService(newSelected.title)
+           setPlatforms([])
+           setFeatures([])
+           setCustomFeatures([])
+           setCategory([])
+           setUsers([])
            break;
           case 'iOS/Android App Development':
             setQuestions(softwareQuestions)
             setService(newSelected.title)
+            setPlatforms([])
+            setFeatures([])
+            setCustomFeatures([])
+            setCategory([])
+            setUsers([])
             break; 
           case 'Website Development':
             setQuestions(websiteQuestions)
             setService(newSelected.title)
+            setPlatforms([])
+            setFeatures([])
+            setCustomFeatures([])
+            setCategory([])
+            setUsers([])
             break;
           default:
             setQuestions(newQuestions);

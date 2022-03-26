@@ -731,9 +731,8 @@ export default function Estimate() {
                           </Grid>
                           <Grid item>
                             <Typography variant="body1">
-                              The custom features will be of 
-                              {customFeatures.toLowerCase()}
-                              {`, and the project will be used by about ${users} users.`}
+                            {`The custom features will be of ${customFeatures.toLowerCase()}, 
+                             and the project will be used by about ${users} users.`}
                             </Typography>
                           </Grid>
                         </Grid>

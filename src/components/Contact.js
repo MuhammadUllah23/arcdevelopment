@@ -236,7 +236,7 @@ export default function Contact(props) {
                                 </Typography>
                             </Grid>
                         </Grid>
-                        <Grid item container direction="column" style={{maxWidth: "20em"}}>
+                        <Grid item container direction="column" style={{width: "20em"}}>
                             <Grid item style={{marginBottom: "0.5em"}}>
                                 <TextField  fullWidth label="Name" id="name" value={name} onChange={event => setName(event.target.value)} />
                             </Grid>

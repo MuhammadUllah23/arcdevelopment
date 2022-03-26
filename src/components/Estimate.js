@@ -534,6 +534,16 @@ export default function Estimate() {
       }
     }
 
+    const getCustomFeatures = () => {
+      if (questions.length > 2) {
+        const newCustomFeatures = questions
+          .filter(question => question.title === "What type of custom features do you expect to need?")
+          .map(question => question.options
+            .filter(option => option.selected))[0][0].title
+        
+        setCustomFeatures(newCustomFeatures)
+      }
+    }
 
     return (
         <Grid container direction="row" >
@@ -597,7 +607,7 @@ export default function Estimate() {
                     </Grid>
                 </Grid>
                 <Grid item>
-                    <Button onClick={() => {setDialogOpen(true); getTotal(); getPlatforms(); getFeatures()}} variant="contained" className={classes.estimateButton}>
+                    <Button onClick={() => {setDialogOpen(true); getTotal(); getPlatforms(); getFeatures(); getCustomFeatures()}} variant="contained" className={classes.estimateButton}>
                         Get Estimate
                     </Button>
                 </Grid>

@@ -561,6 +561,16 @@ export default function Estimate() {
       }
     }
 
+    const getCategory = () => {
+      if (questions.length === 2) {
+        const newCategory = questions
+          .filter(question => question.title === "Which type of website are you wanting?")[0].options
+          .filter(option => option.selected)[0].title
+
+          setCategory(newCategory)
+      }
+    }
+
     const softwareSelection = (
       <Grid container direction="column">
       <Grid item container alignItems="center">
@@ -723,7 +733,7 @@ export default function Estimate() {
                     </Grid>
                 </Grid>
                 <Grid item>
-                    <Button onClick={() => {setDialogOpen(true); getTotal(); getPlatforms(); getFeatures(); getCustomFeatures()}} variant="contained" className={classes.estimateButton}>
+                    <Button onClick={() => {setDialogOpen(true); getTotal(); getPlatforms(); getFeatures(); getCustomFeatures(); getCategory()}} variant="contained" className={classes.estimateButton}>
                         Get Estimate
                     </Button>
                 </Grid>

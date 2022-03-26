@@ -634,7 +634,7 @@ export default function Estimate() {
                           <Grid item>
                             <Typography variant="body1">
                               You want {service}
-                              {platforms.length > 0 ? `for ${
+                              {platforms.length > 0 ? ` for ${
                               //if only web application is selected...
                               platforms.indexOf("Web Application") > -1 &&
                               platforms.length === 1

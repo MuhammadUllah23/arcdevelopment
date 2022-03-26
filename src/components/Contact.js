@@ -269,7 +269,7 @@ export default function Contact(props) {
             <Dialog 
               
                 style={{zIndex: 1302}} 
-                fullScreen={matchesXS} 
+                fullScreen={matchesSM} 
                 open={open} 
                 className={classes.dialog} 
                 onClose={() => setOpen(false)} 
@@ -289,7 +289,7 @@ export default function Contact(props) {
                         <Grid item style={{marginBottom: "0.5em"}}>
                             <TextField error={phoneHelper.length !== 0} helperText={phoneHelper} fullWidth label="Phone" id="phone" value={phone} onChange={onChange} />
                         </Grid>
-                        <Grid item style={{maxWidth: matchesXS ? "100%" : "20em"}}>
+                        <Grid item style={{maxWidth: matchesSM? "100%" : "20em"}}>
                             <TextField fullWidth id ="message" 
                                 value={message} 
                                 onChange={event => setMessage(event.target.value)} 

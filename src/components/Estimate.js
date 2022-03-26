@@ -744,7 +744,6 @@ export default function Estimate() {
               style={{zIndex: 1302}} 
               open={dialogOpen} 
               onClose={() => setDialogOpen(false)} 
-              PaperProps={{style: {paddingTop: "5em", paddingBottom: "5em", paddingLeft: "25em", paddingRight: "25em"}}}
             >
               <Grid container justify="center">
                 <Grid item>

@@ -345,7 +345,7 @@ export default function Estimate() {
     const [total, setTotal] = useState(0)
 
     const [service, setService] = useState([])
-    const [platform, setPlatform] = useState([])
+    const [platforms, setPlatforms] = useState([])
     const [features, setFeatures] = useState([])
     const [customFeatures, setCustomFeatures] = useState("")
     const [category, setCategory] = useState("")
@@ -505,17 +505,20 @@ export default function Estimate() {
     }
 
     const getPlatforms = () => {
-      let newPlatforms = []
-
       if (questions.length > 2) {
-        newPlatforms = questions.filter(question => question.title === "Which platforms do you need supported?")
-          .map(
-            question => question.options.filter(
-              option => option.selected
-            ))[0].map(option => newPlatforms.push(option.title))
-        console.log(newPlatforms)
+        let newPlatforms = [];
+  
+        questions
+          .filter(
+            question =>
+              question.title === "Which platforms do you need supported?"
+          )
+          .map(question => question.options.filter(option => option.selected))[0]
+          .map(option => newPlatforms.push(option.title));
+  
+        setPlatforms(newPlatforms);
       }
-    }
+    };
 
     return (
         <Grid container direction="row" >

@@ -665,7 +665,9 @@ export default function Estimate() {
           <img src={check} alt="checkmark" />
         </Grid>
         <Grid item>
-          
+          <Typography variant="body1">
+            You want {category === "Basic" ? "a Basic Website" : `an ${category} Website.`}
+          </Typography>
         </Grid>
       </Grid>
     </Grid>

@@ -519,18 +519,18 @@ export default function Estimate() {
       }
     }
 
-    const getPlatforms = () => {
-      let newPlatforms = []
+    const getFeatures = () => {
+      let newFeatures = []
 
       if (questions.length > 2) {
         questions
           .filter(
             question => 
-              question.title === "Which platforms do you need supported?"
+              question.title === "Which features do you expect to use?"
           )
-          .map(question => question.options.filter(option => option.selected))[0]
-          .map(option => newPlatforms.push(option.title))
-        setPlatforms(newPlatforms)
+          .map(question => question.options.filter(option => option.selected))
+          .map(option => option.map(newFeature => newFeatures.push(newFeature.title)))
+        setFeatures(newFeatures)
       }
     }
 
@@ -597,7 +597,7 @@ export default function Estimate() {
                     </Grid>
                 </Grid>
                 <Grid item>
-                    <Button onClick={() => {setDialogOpen(true); getTotal(); getPlatforms()}} variant="contained" className={classes.estimateButton}>
+                    <Button onClick={() => {setDialogOpen(true); getTotal(); getPlatforms(); getFeatures()}} variant="contained" className={classes.estimateButton}>
                         Get Estimate
                     </Button>
                 </Grid>

@@ -632,7 +632,10 @@ export default function Estimate() {
                             <img src={check} alt="checkmark" />
                           </Grid>
                           <Grid item>
-                            <Typography variant="body1">You want {service} </Typography>
+                            <Typography variant="body1">
+                              You want {service}
+                              {platforms.length > 0 ?  : null}
+                            </Typography>
                           </Grid>
                         </Grid>
                         <Grid item container alignItems="center">

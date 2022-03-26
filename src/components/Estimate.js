@@ -512,7 +512,7 @@ export default function Estimate() {
           .map(
             question => question.options.filter(
               option => option.selected
-            ))
+            ))[0].map(option => newPlatforms.push(option.title))
         console.log(newPlatforms)
       }
     }

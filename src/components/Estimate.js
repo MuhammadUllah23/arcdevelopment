@@ -749,7 +749,7 @@ export default function Estimate() {
               maxWidth="lg"
             >
               <Grid container justify="center">
-                <Grid item style={{marginTop: "1em"}}>
+                <Grid item style={{marginTop: "1em", marginBottom: "1em"}}>
                   <Typography variant="h2" align="center">
                     Estimate
                   </Typography>

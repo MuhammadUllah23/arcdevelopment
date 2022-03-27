@@ -810,7 +810,7 @@ export default function Estimate() {
                       </Button>
                     </Grid>
                     <Hidden mdUp>
-                      <Grid item>
+                      <Grid item style={{marginBottom: matchesSM ? "5em" : 0}}>
                         <Button style={{fontWeight: 300}} color="primary" onClick={() => setDialogOpen(false)}>
                           Cancel
                         </Button>

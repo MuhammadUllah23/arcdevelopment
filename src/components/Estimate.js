@@ -326,12 +326,13 @@ const websiteQuestions = [
 ];
 
 export default function Estimate() {
+    const theme = useTheme()
+    const classes = useStyle()
+
     const matchesMD = useMediaQuery(theme.breakpoints.down("md"))
     const matchesSM = useMediaQuery(theme.breakpoints.down("sm"))
     const matchesXS = useMediaQuery(theme.breakpoints.down("xs"))
-
-    const theme = useTheme()
-    const classes = useStyle()
+    
 
     const [questions, setQuestions] = useState(defaultQuestions)
 
@@ -680,11 +681,11 @@ export default function Estimate() {
 
     return (
         <Grid container direction="row" >
-            <Grid item container direction="column" lg>
+            <Grid item container direction="column" lg alignItems={matchesMD ? "center" : undefined}>
                 <Grid item style={{marginTop: "2em", marginLeft: matchesMD ? 0 :"5em"}}>
                     <Typography variant="h2" align={matchesMD ? "center" : undefined}>Estimate</Typography>
                 </Grid>
-                <Grid item style={{marginRight: "10em", maxWidth: "50em", marginTop: "7.5em"}}>
+                <Grid item style={{marginRight: matchesMD ? 0 : "10em", maxWidth: "50em", marginTop: "7.5em"}}>
                     <Lottie options={estimateOptions} height="100%" width="100%" />
                 </Grid> 
             </Grid>

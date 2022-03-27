@@ -693,7 +693,7 @@ export default function Estimate() {
                 {questions.filter(question => question.active).map((question, index) => (
                     <React.Fragment>
                         <Grid item >
-                            <Typography variant="h2" align="center" style={{fontWeight: 500, fontSize: "2.25em", marginTop: "5em", lineHeight: 1.25}}>
+                            <Typography variant="h2" align="center" style={{fontWeight: 500, fontSize: "2.25em", marginTop: "5em", lineHeight: 1.25, marginRight: matchesSM ? "1em" : 0, marginLeft: matchesSM ? "1em" : 0}}>
                                 {question.title}
                             </Typography>
                             <Typography variant="body1" align="center" style={{marginBottom: "2.5em"}} gutterBottom>
@@ -709,7 +709,12 @@ export default function Estimate() {
                                   alignItems='center' 
                                   component={Button}
                                   onClick={() => handleSelect(option.id)} 
-                                  style={{display: "grid", borderRadius: 0, textTransform: "none", backgroundColor: option.selected ? theme.palette.common.orange : null}} 
+                                  style= {{
+                                    display: "grid", 
+                                    borderRadius: 0, 
+                                    textTransform: "none", 
+                                    backgroundColor: option.selected ? theme.palette.common.orange : null, 
+                                    marginBottom: matchesSM ? "1.5em" : 0}} 
                                   md
                                 >
                                     <Grid item style={{maxWidth: "14em"}}>

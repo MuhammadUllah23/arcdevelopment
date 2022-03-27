@@ -809,9 +809,14 @@ export default function Estimate() {
                         <img src={send} alt="paper airplane" style={{marginLeft: "0.5em"}} />
                       </Button>
                     </Grid>
-                    <Grid item>
-                        
-                    </Grid>
+                    <Hidden mdUp>
+                      <Grid item>
+                        <Button style={{fontWeight: 300}} color="primary" onClick={() => setDialogOpen(false)}>
+                          Cancel
+                        </Button>
+                      </Grid>
+                    </Hidden>
+                    
                   </Grid>
                 </Grid>
               </DialogContent>

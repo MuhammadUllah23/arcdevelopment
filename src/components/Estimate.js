@@ -48,20 +48,21 @@ const useStyle = makeStyles(theme => ({
         height: "10em"
     },
     estimateButton: {
-        ...theme.typography.estimate,
-        borderRadius: 50,
-        backgroundColor: theme.palette.common.orange,
-        height: 50,
-        width: 225,
-        fontSize: "1.25rem",
-        marginTop: "5em",
-        "&:hover": {
-            backgroundColor: theme.palette.secondary.light
-        }
+      ...theme.typography.estimate,
+      borderRadius: 50,
+      backgroundColor: theme.palette.common.orange,
+      height: 50,
+      width: 225,
+      marginTop: "5em",
+      fontSize: "1.25rem",
+      "&:hover": {
+        backgroundColor: theme.palette.secondary.light
+      }
     },
     message: {
       border: `2px solid ${theme.palette.common.blue}`,
-      marginTop: "5em",
+      marginTop: "3em",
+      marginBottom: "2em",
       borderRadius: 5,
   },
   specialText: {
@@ -748,7 +749,7 @@ export default function Estimate() {
               maxWidth="lg"
             >
               <Grid container justify="center">
-                <Grid item>
+                <Grid item style={{marginTop: "1em"}}>
                   <Typography variant="h2" align="center">
                     Estimate
                   </Typography>

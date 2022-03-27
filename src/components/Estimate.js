@@ -757,6 +757,7 @@ export default function Estimate() {
               onClose={() => setDialogOpen(false)} 
               fullWidth
               maxWidth="lg"
+              fullScreen={matchesSM}
             >
               <Grid container justify="center">
                 <Grid item style={{marginTop: "1em", marginBottom: "1em"}}>

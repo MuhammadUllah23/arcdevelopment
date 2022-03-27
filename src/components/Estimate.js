@@ -797,7 +797,7 @@ export default function Estimate() {
                         </Typography>
                       </Grid>
                   </Grid>
-                  <Grid item container direction="column" md={5} style={{maxWidth: "30em"}}>
+                  <Grid item container direction="column" alignItems={matchesSM ? "center" : undefined} md={5} style={{maxWidth: "30em"}}>
                     <Hidden smDown>
                       <Grid item >
                         {questions.length > 2 ? softwareSelection : websiteSelection}

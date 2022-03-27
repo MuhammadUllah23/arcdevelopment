@@ -689,7 +689,7 @@ export default function Estimate() {
                     <Lottie options={estimateOptions} height="100%" width="100%" />
                 </Grid> 
             </Grid>
-            <Grid item container direction="column" style={{marginRight: "2em", marginBottom: "25em"}} alignItems="center" lg >
+            <Grid item container direction="column" style={{marginRight: matchesMD ? 0 : "2em", marginBottom: "25em"}} alignItems="center" lg >
                 {questions.filter(question => question.active).map((question, index) => (
                     <React.Fragment>
                         <Grid item >

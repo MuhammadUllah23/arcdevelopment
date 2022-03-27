@@ -798,9 +798,11 @@ export default function Estimate() {
                       </Grid>
                   </Grid>
                   <Grid item container direction="column" md={5} style={{maxWidth: "30em"}}>
-                    <Grid item >
-                      {questions.length > 2 ? softwareSelection : websiteSelection}
-                    </Grid>
+                    <Hidden smDown>
+                      <Grid item >
+                        {questions.length > 2 ? softwareSelection : websiteSelection}
+                      </Grid>
+                    </Hidden>
                     <Grid item >
                       <button variant="contained" className={classes.estimateButton}>
                         Place Request

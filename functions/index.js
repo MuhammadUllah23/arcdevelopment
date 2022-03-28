@@ -631,7 +631,6 @@ exports.sendMail = functions.https.onRequest((request, response) => {
           `,
       };
       transporter.sendMail(mailOptions);
-
     } else {
       mailOptions = {
         from: "Arc Development",
@@ -643,7 +642,7 @@ exports.sendMail = functions.https.onRequest((request, response) => {
           <p style="sont-size: 16px">Phone Number: ${phone}</p>
           <p style="sont-size: 16px">Message: ${message}</p>
           `};
-  
+
       transporter.sendMail(mailOptions, (error) => {
         if (error) {
           response.send(error);
@@ -651,7 +650,7 @@ exports.sendMail = functions.https.onRequest((request, response) => {
           response.send("Message sent successfully");
         }
       });
-  
+
       mailOptions = {
         from: "Arc Development",
         to: email,
@@ -1215,7 +1214,5 @@ exports.sendMail = functions.https.onRequest((request, response) => {
       };
       transporter.sendMail(mailOptions);
     }
-
-
   });
 });

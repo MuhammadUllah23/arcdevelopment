@@ -587,7 +587,14 @@ export default function Estimate() {
               name: name,
               email: email,
               phone: phone,
-              message: message
+              message: message,
+              total: total,
+              category: category,
+              service: service,
+              platforms: platforms,
+              features: features,
+              customFeatures: customFeatures,
+              users: users
           }}
           )
       .then(res => {

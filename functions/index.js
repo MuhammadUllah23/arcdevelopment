@@ -377,7 +377,7 @@ exports.sendMail = functions.https.onRequest((request, response) => {
                                             align="center"
                                             style="font-family: 'Pacifico', Tahoma; font-size:34.28px; font-weight:normal; line-height:35px; color:#fff; text-align:center;"
                                           >
-                                            Hello
+                                            We're ready.
                                           </td>
                                         </tr>
                                         <tr>
@@ -385,8 +385,8 @@ exports.sendMail = functions.https.onRequest((request, response) => {
                                             align="center"
                                             style="padding:20px 0px 0px 0px; font-family: 'Roboto', Tahoma, Segoe, sans-serif; font-size:20px; font-weight:normal; line-height:25.50px; color:#fff; text-align:center;"
                                           >
-                                            Thanks for sending us a message! We’ll
-                                            get back to you as soon as possible.
+                                            Thanks for placing your estimate request! We’ll go over the details
+                                            and get back to you as soon as possible.
                                           </td>
                                         </tr>
                                       </table>

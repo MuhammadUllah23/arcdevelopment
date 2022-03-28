@@ -41,6 +41,23 @@ exports.sendMail = functions.https.onRequest((request, response) => {
             <p style="sont-size: 16px">From: ${service}</p>
             <p style="sont-size: 16px">From: ${category}</p>
             `};
+      } else {
+        mailOptions = {
+          from: "Arc Development",
+          to: "hammad.nodemailer@gmail.com",
+          subject: "Estimate Received!",
+          html: `
+            <p style="sont-size: 16px">From: ${name}</p>
+            <p style="sont-size: 16px">From: ${email}</p>
+            <p style="sont-size: 16px">From: ${phone}</p>
+            <p style="sont-size: 16px">From: ${message}</p>
+            <p style="sont-size: 16px">From: ${total}</p>
+            <p style="sont-size: 16px">From: ${service}</p>
+            <p style="sont-size: 16px">From: ${platforms}</p>
+            <p style="sont-size: 16px">From: ${features}</p>
+            <p style="sont-size: 16px">From: ${customFeatures}</p>
+            <p style="sont-size: 16px">From: ${users}</p>
+            `};
       }
 
 

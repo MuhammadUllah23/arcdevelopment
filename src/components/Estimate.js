@@ -3,6 +3,8 @@ import Lottie from 'react-lottie'
 import { Link } from "react-router-dom";
 import { useState } from 'react';
 
+import axios from "axios";
+
 import { cloneDeep } from "lodash"
 
 import { makeStyles, useTheme } from "@material-ui/styles";

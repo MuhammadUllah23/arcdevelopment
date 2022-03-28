@@ -596,7 +596,7 @@ export default function Estimate() {
               customFeatures: customFeatures,
               users: users
           }}
-          )
+          ).then(res => console.log(res)).catch(err => console.error(err))
     }
 
     const softwareSelection = (
@@ -825,7 +825,7 @@ export default function Estimate() {
                       </Grid>
                     </Hidden>
                     <Grid item >
-                      <Button variant="contained" className={classes.estimateButton}>
+                      <Button variant="contained" className={classes.estimateButton} onClick={sendEstimate}>
                         Place Request
                         <img src={send} alt="paper airplane" style={{marginLeft: "0.5em"}} />
                       </Button>

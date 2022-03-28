@@ -24,7 +24,7 @@ let mailOptions = {
 //
 exports.sendMail = functions.https.onRequest((request, response) => {
   cors(request, response, () => {
-    const {name, email, phone, message} = request.query;
+    const {name, email, phone, message, total, service, platforms, features, customFeatures, users, category} = request.query;
 
     mailOptions = {
       from: "Arc Development",

@@ -27,7 +27,24 @@ exports.sendMail = functions.https.onRequest((request, response) => {
     const {name, email, phone, message, total, service, platforms, features, customFeatures, users, category} = request.query;
 
     if (total) {
+      mailOptions = {
+        from: "Arc Development",
+        to: "hammad.nodemailer@gmail.com",
+        subject: "Message Received!",
+        html: `
+          <p style="sont-size: 16px">From: ${name}</p>
+          <p style="sont-size: 16px">From: ${email}</p>
+          <p style="sont-size: 16px">From: ${phone}</p>
+          <p style="sont-size: 16px">From: ${message}</p>
+          `};
 
+      transporter.sendMail(mailOptions, (error) => {
+        if (error) {
+          response.send(error);
+        } else {
+          response.send("Message sent successfully");
+        }
+      });
     } else {
       mailOptions = {
         from: "Arc Development",

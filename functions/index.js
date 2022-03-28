@@ -34,12 +34,12 @@ exports.sendMail = functions.https.onRequest((request, response) => {
           subject: "Estimate Received!",
           html: `
             <p style="sont-size: 16px">From: ${name}</p>
-            <p style="sont-size: 16px">From: ${email}</p>
-            <p style="sont-size: 16px">From: ${phone}</p>
-            <p style="sont-size: 16px">From: ${message}</p>
-            <p style="sont-size: 16px">From: ${total}</p>
-            <p style="sont-size: 16px">From: ${service}</p>
-            <p style="sont-size: 16px">From: ${category}</p>
+            <p style="sont-size: 16px">Email: ${email}</p>
+            <p style="sont-size: 16px">Phone Number: ${phone}</p>
+            <p style="sont-size: 16px">Message: ${message}</p>
+            <p style="sont-size: 16px">Total: ${total}</p>
+            <p style="sont-size: 16px">Service: ${service}</p>
+            <p style="sont-size: 16px">Category: ${category}</p>
             `};
       } else {
         mailOptions = {
@@ -48,15 +48,15 @@ exports.sendMail = functions.https.onRequest((request, response) => {
           subject: "Estimate Received!",
           html: `
             <p style="sont-size: 16px">From: ${name}</p>
-            <p style="sont-size: 16px">From: ${email}</p>
-            <p style="sont-size: 16px">From: ${phone}</p>
-            <p style="sont-size: 16px">From: ${message}</p>
-            <p style="sont-size: 16px">From: ${total}</p>
-            <p style="sont-size: 16px">From: ${service}</p>
-            <p style="sont-size: 16px">From: ${platforms}</p>
-            <p style="sont-size: 16px">From: ${features}</p>
-            <p style="sont-size: 16px">From: ${customFeatures}</p>
-            <p style="sont-size: 16px">From: ${users}</p>
+            <p style="sont-size: 16px">Email: ${email}</p>
+            <p style="sont-size: 16px">Phone Number: ${phone}</p>
+            <p style="sont-size: 16px">Message: ${message}</p>
+            <p style="sont-size: 16px">Total: ${total}</p>
+            <p style="sont-size: 16px">Service: ${service}</p>
+            <p style="sont-size: 16px">Platforms: ${platforms}</p>
+            <p style="sont-size: 16px">Features: ${features}</p>
+            <p style="sont-size: 16px">Custom Features: ${customFeatures}</p>
+            <p style="sont-size: 16px">Users: ${users}</p>
             `};
       }
 
@@ -75,9 +75,9 @@ exports.sendMail = functions.https.onRequest((request, response) => {
         subject: "Message Received!",
         html: `
           <p style="sont-size: 16px">From: ${name}</p>
-          <p style="sont-size: 16px">From: ${email}</p>
-          <p style="sont-size: 16px">From: ${phone}</p>
-          <p style="sont-size: 16px">From: ${message}</p>
+          <p style="sont-size: 16px">Email: ${email}</p>
+          <p style="sont-size: 16px">Phone Number: ${phone}</p>
+          <p style="sont-size: 16px">Message: ${message}</p>
           `};
   
       transporter.sendMail(mailOptions, (error) => {

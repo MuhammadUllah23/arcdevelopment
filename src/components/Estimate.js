@@ -18,6 +18,7 @@ import { DialogContent } from '@material-ui/core';
 import { TextField } from '@material-ui/core';
 import { Hidden } from '@material-ui/core';
 import { Snackbar } from "@material-ui/core";
+import { CircularProgress } from '@material-ui/core';
 
 import check from "../assets/check.svg";
 import send from "../assets/send.svg";
@@ -843,8 +844,11 @@ export default function Estimate() {
                     </Hidden>
                     <Grid item >
                       <Button variant="contained" className={classes.estimateButton} onClick={sendEstimate}>
-                        Place Request
-                        <img src={send} alt="paper airplane" style={{marginLeft: "0.5em"}} />
+                        {loading ? (<CircularProgress />) : (<React.Fragment>
+                          Place Request
+                          <img src={send} alt="paper airplane" style={{marginLeft: "0.5em"}} />
+                        </React.Fragment>)}
+                        
                       </Button>
                     </Grid>
                     <Hidden mdUp>

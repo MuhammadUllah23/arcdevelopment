@@ -17,6 +17,7 @@ import { Dialog } from '@material-ui/core';
 import { DialogContent } from '@material-ui/core';
 import { TextField } from '@material-ui/core';
 import { Hidden } from '@material-ui/core';
+import { Snackbar } from "@material-ui/core";
 
 import check from "../assets/check.svg";
 import send from "../assets/send.svg";

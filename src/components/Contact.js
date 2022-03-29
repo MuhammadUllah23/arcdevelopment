@@ -118,8 +118,8 @@ export default function Contact(props) {
     const matchesMD = useMediaQuery(theme.breakpoints.down("md"))
     const matchesSM = useMediaQuery(theme.breakpoints.down("sm"))
     const matchesXS = useMediaQuery(theme.breakpoints.down("xs"))
-    const [loading, setLoading] = useState(false)
 
+    
     const [name, setName] = useState('')
 
     const [email, setEmail] = useState('')
@@ -131,7 +131,8 @@ export default function Contact(props) {
     const [message, setMessage] = useState('')
 
     const [open, setOpen] = useState(false)
-
+    
+    const [loading, setLoading] = useState(false)
     const [alert, setAlert] = useState({
         open: false, 
         message: "", 

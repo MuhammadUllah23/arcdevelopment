@@ -361,6 +361,12 @@ export default function Estimate() {
     const [category, setCategory] = useState("")
     const [users, setUsers] = useState("")
 
+    const [loading, setLoading] = useState(false)
+    const [alert, setAlert] = useState({
+        open: false, 
+        message: "", 
+        backgroundColor: ""
+    })
 
     const estimateOptions = {
         loop: true,

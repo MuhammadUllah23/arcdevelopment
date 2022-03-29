@@ -836,12 +836,19 @@ export default function Estimate() {
                           Cancel
                         </Button>
                       </Grid>
-                    </Hidden>
-                    
+                    </Hidden>                    
                   </Grid>
                 </Grid>
               </DialogContent>
             </Dialog>
+            <Snackbar 
+                open={alert.open} 
+                message={alert.message} 
+                ContentProps={{style: {backgroundColor: alert.backgroundColor}}} 
+                anchorOrigin={{vertical: "top", horizontal: "center"}} 
+                onClose={() => setAlert({...alert, open: false})}
+                autoHideDuration={4000} 
+            />
         </Grid>       
     )
 }

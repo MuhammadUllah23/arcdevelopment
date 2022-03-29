@@ -609,6 +609,11 @@ export default function Estimate() {
             setAlert({open: true, message: "Estimate placed successfully!", backgroundColor: "#4BB543"})
             setDialogOpen(false)
           })
+          .catch(err => {
+            console.log(err)
+            setLoading(false)
+            setAlert({open: true, message: "Something went wrong, please try again!", backgroundColor: "#ff3232"})
+          });
     }
 
     const softwareSelection = (

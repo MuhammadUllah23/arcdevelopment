@@ -604,7 +604,11 @@ export default function Estimate() {
               customFeatures: customFeatures,
               users: users
           }}
-          ).then(res => console.log(res)).catch(err => console.error(err))
+          ).then(res => {
+            setLoading(false)
+            setAlert({open: true, message: "Estimate placed successfully!", backgroundColor: "#4BB543"})
+            setDialogOpen(false)
+          })
     }
 
     const softwareSelection = (

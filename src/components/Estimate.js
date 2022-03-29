@@ -588,6 +588,7 @@ export default function Estimate() {
     }
 
     const sendEstimate = () => {
+      setLoading(true)
       axios
       .get(
           'https://us-central1-arcdevelopment-practice.cloudfunctions.net/sendMail', {params: {

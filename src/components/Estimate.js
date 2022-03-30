@@ -829,7 +829,7 @@ export default function Estimate() {
         {questions
           .filter((question) => question.active)
           .map((question, index) => (
-            <React.Fragment>
+            <React.Fragment key={index}>
               <Grid item>
                 <Typography
                   variant="h2"
@@ -855,10 +855,11 @@ export default function Estimate() {
                 </Typography>
               </Grid>
               <Grid item container>
-                {question.options.map((option) => (
+                {question.options.map((option, index) => (
                   <Grid
                     item
                     container
+                    key={index}
                     direction="column"
                     alignItems="center"
                     component={Button}

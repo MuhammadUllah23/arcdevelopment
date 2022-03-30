@@ -225,7 +225,7 @@ export default function LandingPage(props) {
                             Reach More. Discover More. Sell More.
                         </Typography>
                         <Typography variant="subtitle1">
-                            Optimiazed for Serch Engines, built for speed.
+                            Optimiazed for Search Engines, built for speed.
                         </Typography>
                         <Button component={Link} to="/websites" onClick={() => {props.setValue(1); props.setSelectedIndex(3)}} variant="outlined" className={classes.buttonLearnMore} >
                             <span style={{marginRight: 10}}> Learn More </span>

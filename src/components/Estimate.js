@@ -1016,6 +1016,7 @@ export default function Estimate() {
                   value={message}
                   onChange={(event) => setMessage(event.target.value)}
                   multiline
+                  placeholder="Tell us more about your project"
                   rows={10}
                   className={classes.message}
                   InputProps={{ disableUnderline: true }}

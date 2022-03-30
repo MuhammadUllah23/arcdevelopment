@@ -1026,6 +1026,7 @@ export default function Estimate() {
                   variant="body1"
                   align={matchesSM ? "center" : undefined}
                   paragraph
+                  style={{lineHeight: 1.25}}
                 >
                   We can create this digital solution for an estimated{" "}
                   <span className={classes.specialText}>

@@ -1063,6 +1063,12 @@ export default function Estimate() {
                   variant="contained"
                   className={classes.estimateButton}
                   onClick={sendEstimate}
+                  disabled= {
+                    name.length === 0 ||
+                    message.length === 0 ||
+                    phoneHelper.length !== 0 ||
+                    emailHelper.length !== 0
+                  }
                 >
                   {loading ? (
                     <CircularProgress />
